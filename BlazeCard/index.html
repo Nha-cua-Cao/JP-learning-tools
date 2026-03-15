@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blazecard  — Nhà của Cáo</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap (chỉ dùng reset/utility nhỏ, không dùng components) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════════════════
+   BIẾN CSS — Toàn bộ màu sắc, kích thước dùng biến
+   để dễ thay đổi về sau
+══════════════════════════════════════════════════════ */
+:root {
+  /* Màu nhấn chính — san hô ấm */
+  --accent:           #ff7a6b;
+  --accent-light:     #fff0ee;
+  --accent-hover:     #ff5c4a;
+  --accent-deep:      #e85d4e;
+
+  /* Nền & bề mặt */
+  --bg:               #f0ece8;
+  --sidebar-bg:       #f7f4f1;
+  --card-bg:          #ffffff;
+
+  /* Chữ */
+  --text-main:        #1e1e1e;
+  --text-sub:         #4a4a4a;
+  --text-muted:       #9e9a96;
+
+  /* Đường viền & bóng đổ */
+  --border:           #e0dbd5;
+  --shadow-sm:        0 1px 4px rgba(0,0,0,0.07);
+  --shadow:           0 4px 16px rgba(0,0,0,0.09);
+  --shadow-lg:        0 8px 30px rgba(0,0,0,0.14);
+
+  /* Vàng sao */
+  --gold:             #f5c842;
+  --gold-light:       #fefae8;
+  --gold-deep:        #c9a000;
+
+  /* Màu cho chế độ ôn sao — nền vàng nhẹ */
+  --star-bg:          #fdf7e3;
+  --star-border:      #f0d98a;
+
+  /* Điểm phát âm */
+  --score-great:      #2ecc71;
+  --score-ok:         #f39c12;
+  --score-poor:       #e74c3c;
+
+  /* Kích thước layout */
+  --header-h:         54px;
+  --sidebar-w:        288px;
+  --radius:           16px;
+  --radius-sm:        10px;
+  --radius-xs:        6px;
+}
+
+/* ══════════════════════════════════════════════════════
+   RESET & BASE
+══════════════════════════════════════════════════════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+  color: var(--text-main);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ══════════════════════════════════════════════════════
+   HEADER — Thanh tiêu đề trên cùng
+══════════════════════════════════════════════════════ */
+.header {
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: var(--card-bg);
+  border-bottom: 2px solid var(--accent);
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+/* Logo & tên ứng dụng */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header-brand .gate-icon {
+  font-size: 20px;
+}
+
+/* Gợi ý phím tắt bên phải header */
+.header-hint {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Style cho các phím */
+.kbd {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 2px 7px;
+  font-size: 11px;
+  color: var(--text-sub);
+  font-family: inherit;
+}
+
+/* ══════════════════════════════════════════════════════
+   LAYOUT — Sidebar + Main nằm ngang
+══════════════════════════════════════════════════════ */
+.layout {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* ══════════════════════════════════════════════════════
+   SIDEBAR — Cột trái chọn bài học
+══════════════════════════════════════════════════════ */
+.sidebar {
+  width: var(--sidebar-w);
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Tiêu đề sidebar */
+.sidebar-header {
+  padding: 14px 16px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background: var(--sidebar-bg);
+}
+
+/* Vùng cuộn danh sách bài học */
+.sidebar-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 12px;
+}
+
+.sidebar-scroll::-webkit-scrollbar { width: 4px; }
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+/* Vùng nút bên dưới sidebar */
+.sidebar-actions {
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex-shrink: 0;
+  background: var(--sidebar-bg);
+}
+
+/* ── Nhóm sách (details/summary) ────────────────────── */
+.book-group {
+  margin-bottom: 6px;
+}
+
+.book-group summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+  border-radius: var(--radius-xs);
+  font-weight: 600;
+  font-size: 12.5px;
+  color: var(--text-sub);
+  transition: background 0.15s, color 0.15s;
+  letter-spacing: 0.01em;
+}
+
+.book-group summary:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+/* Ẩn mũi tên mặc định của browser */
+.book-group summary::-webkit-details-marker { display: none; }
+
+/* Thêm mũi tên custom — xoay khi mở */
+.book-group summary::after {
+  content: '\f107';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 10px;
+  transition: transform 0.2s;
+  color: var(--text-muted);
+}
+
+.book-group[open] summary::after {
+  transform: rotate(180deg);
+}
+
+/* Danh sách unit bên trong mỗi sách */
+.units-list {
+  padding: 4px 2px 2px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Chip mỗi unit */
+.unit-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: var(--radius-xs);
+  font-size: 12.5px;
+  color: var(--text-sub);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  user-select: none;
+}
+
+.unit-chip:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+/* Checkbox trong chip */
+.unit-chip input[type="checkbox"] {
+  accent-color: var(--accent);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Chip đã được chọn */
+.unit-chip.checked {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── Nút sidebar chung ───────────────────────────────── */
+.btn-sidebar {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: var(--radius-xs);
+  font-size: 12.5px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: all 0.17s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  letter-spacing: 0.01em;
+}
+
+/* Nút chế độ ôn sao */
+.btn-star-mode {
+  background: transparent;
+  border-color: var(--gold);
+  color: var(--gold-deep);
+}
+
+.btn-star-mode:hover {
+  background: var(--gold-light);
+}
+
+.btn-star-mode.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #4a3000;
+  box-shadow: 0 2px 8px rgba(245,200,66,0.35);
+}
+
+/* Nút tải lại */
+.btn-reload {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text-sub);
+}
+
+.btn-reload:hover {
+  background: var(--bg);
+  border-color: #c0bbb5;
+}
+
+/* Nút Import */
+.btn-import {
+  background: var(--text-main);
+  border-color: var(--text-main);
+  color: #fff;
+}
+
+.btn-import:hover {
+  background: #333;
+  border-color: #333;
+}
+
+/* Nút Export */
+.btn-export {
+  background: transparent;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-export:hover {
+  background: var(--accent-light);
+}
+
+/* ══════════════════════════════════════════════════════
+   MAIN — Vùng chính hiển thị flashcard
+══════════════════════════════════════════════════════ */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 24px;
+  overflow: hidden;
+  transition: background 0.4s ease;
+  position: relative;
+}
+
+/* Chế độ ôn sao — đổi màu nền để phân biệt */
+.main.star-mode {
+  background: var(--star-bg);
+}
+
+/* Dải viền vàng nhẹ bên trái main khi ôn sao */
+.main.star-mode::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--gold), transparent);
+  opacity: 0.7;
+}
+
+/* Badge hiển thị khi đang ôn sao */
+.star-mode-badge {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  display: none;
+  align-items: center;
+  gap: 6px;
+  background: var(--gold);
+  color: #4a3000;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(245,200,66,0.4);
+}
+
+.main.star-mode .star-mode-badge {
+  display: flex;
+}
+
+/* ══════════════════════════════════════════════════════
+   EMPTY STATE — Trạng thái chưa chọn bài
+══════════════════════════════════════════════════════ */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.empty-state .empty-icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.empty-state p {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 240px;
+  line-height: 1.7;
+}
+
+/* ══════════════════════════════════════════════════════
+   FLASHCARD — Thẻ học lật 3D
+══════════════════════════════════════════════════════ */
+.flashcard-wrap {
+  perspective: 1200px;
+  width: 660px;
+  height: 300px;
+  cursor: pointer;
+}
+
+/* Phần chứa 2 mặt — xoay khi lật */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+/* Trạng thái đã lật */
+.flashcard-wrap.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Mặt chung của thẻ */
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  box-shadow: var(--shadow), 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  overflow: hidden;
+}
+
+/* Mặt trước — gradient nhẹ ấm */
+.card-front {
+  background: linear-gradient(160deg, #ffffff 0%, #fff8f6 100%);
+}
+
+/* Dải màu nhấn ở đỉnh thẻ trước */
+.card-face.card-front::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #ffb36b);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* Chữ 表/裏 trang trí góc thẻ */
+.card-face.card-front::after {
+  content: '表';
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  font-size: 10px;
+  color: var(--accent);
+  opacity: 0.25;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Mặt sau — gradient xanh nhẹ */
+.card-back {
+  background: linear-gradient(160deg, #ffffff 0%, #f4f7ff 100%);
+  transform: rotateY(180deg);
+  padding: 28px 44px;
+  text-align: center;
+  gap: 0;
+}
+
+.card-face.card-back::after {
+  content: '裏';
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  font-size: 10px;
+  color: #7090d0;
+  opacity: 0.25;
+  font-weight: 700;
+}
+
+/* ── Nội dung thẻ trước ──────────────────────────────── */
+.card-kanji {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 26px;
+  color: var(--text-muted);
+  font-weight: 400;
+  min-height: 34px;
+  line-height: 1.2;
+}
+
+/* Chữ đọc (Hiragana/Katakana) — lớn, màu nhấn */
+.card-reading {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+/* Hiệu ứng đang phát âm — nhảy nhẹ */
+.card-reading.speaking {
+  animation: speakPulse 0.4s ease-in-out infinite;
+}
+
+@keyframes speakPulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+/* ── Nội dung thẻ sau ────────────────────────────────── */
+.card-meaning {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.card-divider {
+  width: 36px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  border-radius: 2px;
+  margin: 4px auto 14px;
+}
+
+.card-example {
+  font-size: 13.5px;
+  color: var(--text-sub);
+  line-height: 1.8;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  max-width: 480px;
+}
+
+/* ── Nút phát âm (loa) — giữa đáy thẻ trước ─────────── */
+.speak-btn {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.95);
+  box-shadow: var(--shadow-sm), 0 0 0 1px rgba(0,0,0,0.06);
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.speak-btn:hover {
+  box-shadow: var(--shadow);
+  transform: translateX(-50%) scale(1.08);
+}
+
+.speak-btn:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+/* ── Nút mic kiểm tra phát âm — góc phải đáy thẻ ────── */
+.mic-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.95);
+  box-shadow: var(--shadow-sm), 0 0 0 1px rgba(0,0,0,0.06);
+  cursor: pointer;
+  font-size: 15px;
+  color: #4b8cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.15s, transform 0.15s, background 0.2s, color 0.2s;
+}
+
+.mic-btn:hover {
+  box-shadow: var(--shadow);
+  transform: scale(1.08);
+}
+
+.mic-btn:active {
+  transform: scale(0.95);
+}
+
+/* Trạng thái đang ghi âm — đỏ + vòng nhấp nháy */
+.mic-btn.recording {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.5);
+  animation: recordPulse 1s ease infinite;
+}
+
+/* Hiệu ứng vòng sóng khi đang ghi âm */
+@keyframes recordPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.5); }
+  70%  { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+}
+
+/* ══════════════════════════════════════════════════════
+   BẢNG KẾT QUẢ PHÁT ÂM — Popup hiện sau khi ghi âm
+   Hiện ngay trên thẻ, không dùng toast
+══════════════════════════════════════════════════════ */
+.pronun-result {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 14px 20px 18px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.92);
+  border-top: 1px solid rgba(0,0,0,0.07);
+  z-index: 5;
+  animation: slideUp 0.25s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Hiển thị kết quả */
+.pronun-result.visible {
+  display: flex;
+}
+
+/* Hàng đầu: điểm số lớn + label */
+.pronun-score-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Số điểm phần trăm — lớn, đậm, đổi màu theo mức */
+.pronun-score-num {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  transition: color 0.3s;
+}
+
+.pronun-score-num.great { color: var(--score-great); }
+.pronun-score-num.ok    { color: var(--score-ok); }
+.pronun-score-num.poor  { color: var(--score-poor); }
+
+/* Nhãn mô tả bên cạnh điểm */
+.pronun-score-label {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
+
+.pronun-score-label.great { background: #d4f7e5; color: #1a7a45; }
+.pronun-score-label.ok    { background: #fef3db; color: #9a6200; }
+.pronun-score-label.poor  { background: #fde4e1; color: #8c1a12; }
+
+/* Thanh tiến trình điểm số */
+.pronun-bar-track {
+  height: 6px;
+  background: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pronun-bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s;
+  width: 0%;
+}
+
+.pronun-bar-fill.great { background: linear-gradient(90deg, #2ecc71, #00b894); }
+.pronun-bar-fill.ok    { background: linear-gradient(90deg, #f39c12, #f1c40f); }
+.pronun-bar-fill.poor  { background: linear-gradient(90deg, #e74c3c, #e17055); }
+
+/* Dòng chữ "Bạn nói: ..." */
+.pronun-spoken-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.pronun-spoken-text {
+  font-weight: 600;
+  color: var(--text-sub);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Nút đóng kết quả */
+.pronun-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 2px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.pronun-close:hover { color: var(--text-main); }
+
+/* ── Overlay "Đang ghi âm..." trên thẻ ──────────────── */
+.recording-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  background: rgba(231, 76, 60, 0.06);
+  display: none;
+  align-items: stretch;
+  justify-content: center;
+  z-index: 4;
+  pointer-events: none;
+  padding: 40px;
+}
+
+.recording-overlay.visible {
+  display: flex;
+}
+
+/* Vòng sóng âm thanh khi ghi âm */
+.recording-wave {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.recording-wave span {
+  width: 14px;
+  border-radius: 8px;
+  background: #e74c3c;
+  animation: waveBar 0.7s ease-in-out infinite;
+}
+
+.recording-wave span:nth-child(1) { height: 40%; }
+.recording-wave span:nth-child(2) { height: 65%; }
+.recording-wave span:nth-child(3) { height: 90%; }
+.recording-wave span:nth-child(4) { height: 65%; }
+.recording-wave span:nth-child(5) { height: 40%; }
+
+@keyframes waveBar {
+  0%, 100% { transform: scaleY(0.4); opacity: 0.6; }
+  50%       { transform: scaleY(1);   opacity: 1; }
+}
+
+.recording-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #e74c3c;
+  letter-spacing: 0.05em;
+}
+
+/* ══════════════════════════════════════════════════════
+   DECK META — Thanh tiến trình + số thẻ
+══════════════════════════════════════════════════════ */
+.deck-meta {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 660px;
+}
+
+.deck-info-text {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  min-width: 72px;
+  font-variant-numeric: tabular-nums;
+}
+
+.progress-track {
+  flex: 1;
+  height: 4px;
+  background: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #ffb36b);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+  width: 0%;
+}
+
+/* ══════════════════════════════════════════════════════
+   CONTROLS — Nút điều hướng bên dưới thẻ
+══════════════════════════════════════════════════════ */
+.controls {
+  margin-top: 18px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Nút Trước / Tiếp */
+.ctrl-btn {
+  background: var(--card-bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--text-sub);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: all 0.17s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.ctrl-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.ctrl-btn:active {
+  transform: translateY(0);
+}
+
+/* Nút sao tròn giữa */
+.star-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--text-muted);
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: var(--shadow-sm);
+}
+
+.star-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: scale(1.12);
+}
+
+/* Trạng thái đã gắn sao */
+.star-btn.starred {
+  background: var(--gold-light);
+  border-color: var(--gold);
+  color: var(--gold);
+  box-shadow: 0 2px 10px rgba(245,200,66,0.35);
+}
+
+.star-btn.starred i {
+  animation: starPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes starPop {
+  0%   { transform: scale(0.5) rotate(-15deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* ══════════════════════════════════════════════════════
+   FLIP HINT — Gợi ý cách lật thẻ
+══════════════════════════════════════════════════════ */
+.flip-hint {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 10px;
+  opacity: 0.65;
+  letter-spacing: 0.01em;
+}
+
+/* ══════════════════════════════════════════════════════
+   SCROLLBAR — Dọn dẹp scrollbar toàn trang
+══════════════════════════════════════════════════════ */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+/* ══════════════════════════════════════════════════════
+   HIỆU ỨNG VÀO — Animation khi thẻ xuất hiện
+══════════════════════════════════════════════════════ */
+.card-enter {
+  animation: cardIn 0.28s ease;
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ══════════════════════════════════════════════════════
+   TOAST — Thông báo nổi ở đáy màn hình
+══════════════════════════════════════════════════════ */
+.toast-wrap {
+  position: fixed;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.toast-msg {
+  background: rgba(20,20,20,0.9);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  white-space: nowrap;
+  backdrop-filter: blur(8px);
+  animation: toastIn 0.28s ease, toastOut 0.3s ease 2.2s forwards;
+  pointer-events: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes toastOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* ══════════════════════════════════════════════════════
+   RESPONSIVE — Điều chỉnh cho màn hình nhỏ hơn
+══════════════════════════════════════════════════════ */
+@media (max-width: 960px) {
+  .flashcard-wrap {
+    width: min(660px, calc(100vw - var(--sidebar-w) - 48px));
+  }
+  .deck-meta {
+    width: min(660px, calc(100vw - var(--sidebar-w) - 48px));
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ── Header ─────────────────────────────────────────── -->
+<div class="header">
+  <div class="header-brand">
+    <i class="fa-solid fa-torii-gate gate-icon"></i>
+    Nhà của Cáo &nbsp;·&nbsp; Blazecard
+  </div>
+  <div class="header-hint">
+    <span class="kbd"><i class="fa-regular fa-rectangle-wide" style="font-size:9px"></i>&nbsp;Space</span> Lật thẻ
+    <span class="kbd">← →</span> Điều hướng
+    <span class="kbd">S</span> ⭐ Gắn sao
+  </div>
+</div>
+
+<!-- ── Layout: Sidebar + Main ──────────────────────────── -->
+<div class="layout">
+
+  <!-- ── Sidebar ──────────────────────────────────────── -->
+  <div class="sidebar">
+
+    <!-- Tiêu đề sidebar -->
+    <div class="sidebar-header">
+      <span>Chọn bài học</span>
+      <span id="selectedCount" style="font-size:11px;font-weight:600;color:var(--accent)"></span>
+    </div>
+
+    <!-- Danh sách sách/unit có thể cuộn -->
+    <div class="sidebar-scroll">
+      <div id="unitSelect"></div>
+    </div>
+
+    <!-- Nút chức năng -->
+    <div class="sidebar-actions">
+
+      <!-- Bật/tắt chế độ ôn thẻ đã gắn sao -->
+      <button class="btn-sidebar btn-star-mode" id="starModeBtn" onclick="toggleStarMode()">
+        <i class="fa-solid fa-star"></i> Ôn thẻ đã gắn sao
+      </button>
+
+      <!-- Tải lại file data.tsv từ server -->
+      <button class="btn-sidebar btn-reload" onclick="reloadData()">
+        <i class="fa-solid fa-rotate"></i> Tải lại data.tsv
+      </button>
+
+      <!-- Import & Export nằm cạnh nhau -->
+      <div style="display:flex;gap:7px;">
+        <button class="btn-sidebar btn-import" style="flex:1"
+                onclick="document.getElementById('fileInput').click()">
+          <i class="fa-solid fa-file-import"></i> Import
+        </button>
+        <button class="btn-sidebar btn-export" style="flex:1" onclick="exportStarred()">
+          <i class="fa-solid fa-download"></i> Export ⭐
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Main ─────────────────────────────────────────── -->
+  <div class="main" id="mainArea">
+
+    <!-- Badge hiển thị khi đang ở chế độ ôn sao -->
+    <div class="star-mode-badge">
+      <i class="fa-solid fa-star" style="font-size:9px"></i>
+      Chế độ ôn sao
+    </div>
+
+    <!-- Trạng thái chưa chọn bài (mặc định) -->
+    <div class="empty-state" id="emptyState">
+      <div class="empty-icon">🦊</div>
+      <p>Chọn một bài học từ sidebar để bắt đầu học flashcard.</p>
+    </div>
+
+    <!-- Vùng flashcard (ẩn cho đến khi có bài) -->
+    <div id="cardArea" style="display:none;flex-direction:column;align-items:center;">
+
+      <!-- ── Flashcard ─────────────────────────────── -->
+      <div class="flashcard-wrap" id="flashcard" onclick="flipCard()">
+        <div class="card-inner">
+
+          <!-- Mặt trước: hiển thị chữ và cách đọc -->
+          <div class="card-face card-front">
+
+            <!-- Chữ Kanji (có thể rỗng) -->
+            <div class="card-kanji" id="kanji"></div>
+
+            <!-- Cách đọc (Hiragana/Katakana) -->
+            <div class="card-reading" id="reading"></div>
+
+            <!-- Nút phát âm — giữa đáy thẻ -->
+            <button class="speak-btn" id="speakBtn" onclick="speakCurrent(event)"
+                    title="Nghe phát âm">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+
+            <!-- Nút mic kiểm tra phát âm — góc phải -->
+            <button class="mic-btn" id="micBtn" onclick="checkPronunciation(event)"
+                    title="Kiểm tra phát âm của bạn">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+
+            <!-- Overlay hiển thị sóng âm khi đang ghi -->
+            <div class="recording-overlay" id="recordingOverlay">
+              <div class="recording-wave">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <!-- Bảng kết quả phát âm — xuất hiện sau ghi âm -->
+            <div class="pronun-result" id="pronunResult">
+              <!-- Nút đóng -->
+              <button class="pronun-close" onclick="closePronunResult(event)"
+                      title="Đóng">✕</button>
+
+              <!-- Hàng điểm số -->
+              <div class="pronun-score-row">
+                <div>
+                  <div style="font-size:10.5px;color:var(--text-muted);margin-bottom:2px;letter-spacing:0.04em;text-transform:uppercase;">Độ chính xác</div>
+                  <div class="pronun-score-num" id="pronunScoreNum">0%</div>
+                </div>
+                <span class="pronun-score-label" id="pronunScoreLabel">—</span>
+              </div>
+
+              <!-- Thanh tiến trình điểm số -->
+              <div class="pronun-bar-track">
+                <div class="pronun-bar-fill" id="pronunBarFill"></div>
+              </div>
+
+              <!-- Chữ người dùng đã nói -->
+              <div class="pronun-spoken-row">
+                <i class="fa-solid fa-microphone" style="font-size:10px;color:var(--text-muted)"></i>
+                <span>Bạn nói:</span>
+                <span class="pronun-spoken-text" id="pronunSpokenText">—</span>
+              </div>
+            </div>
+
+          </div><!-- /card-front -->
+
+          <!-- Mặt sau: nghĩa và ví dụ -->
+          <div class="card-face card-back">
+            <div class="card-meaning" id="meaning"></div>
+            <div class="card-divider"></div>
+            <div class="card-example" id="example"></div>
+          </div>
+
+        </div><!-- /card-inner -->
+      </div><!-- /flashcard-wrap -->
+
+      <!-- Thanh tiến trình và số thẻ -->
+      <div class="deck-meta">
+        <span class="deck-info-text" id="deckInfo"></span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressBar"></div>
+        </div>
+      </div>
+
+      <!-- Nút điều hướng -->
+      <div class="controls">
+        <button class="ctrl-btn" onclick="prevCard()">
+          <i class="fa-solid fa-arrow-left"></i> Trước
+        </button>
+
+        <button class="star-btn" id="starBtn" onclick="toggleStar()" title="Gắn sao (S)">
+          <i class="fa-solid fa-star"></i>
+        </button>
+
+        <button class="ctrl-btn" onclick="nextCard()">
+          Tiếp <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Gợi ý lật thẻ -->
+      <div class="flip-hint">
+        Nhấn vào thẻ hoặc bấm <kbd style="font-family:inherit;font-size:inherit">Space</kbd> để lật
+      </div>
+
+    </div><!-- /cardArea -->
+
+  </div><!-- /main -->
+
+</div><!-- /layout -->
+
+<!-- Input file ẩn để import TSV -->
+<input type="file" id="fileInput" accept=".tsv,.txt" hidden>
+
+<!-- Container toast thông báo -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+
+<!-- ═══════════════════════════════════════════ SCRIPT ═══ -->
+<script>
+
+/* ══════════════════════════════════════════════════════
+   BIẾN TRẠNG THÁI
+══════════════════════════════════════════════════════ */
+let starMode = false          // Có đang ở chế độ ôn sao không
+let rawData  = []             // Toàn bộ dữ liệu sau khi parse TSV
+let deck     = []             // Bộ thẻ hiện tại (đã lọc và xáo)
+let index    = 0              // Vị trí thẻ hiện tại trong deck
+let isRecording = false       // Có đang ghi âm hay không
+let recognition = null
+
+// Đọc danh sách thẻ đã gắn sao từ localStorage (nếu có)
+let starred = new Set(JSON.parse(localStorage.getItem("kq_starred") || "[]"))
+
+/* ══════════════════════════════════════════════════════
+   THAM CHIẾU DOM — Lấy một lần để dùng lại
+══════════════════════════════════════════════════════ */
+const flashcard        = document.getElementById("flashcard")
+const cardArea         = document.getElementById("cardArea")
+const emptyState       = document.getElementById("emptyState")
+const starBtn          = document.getElementById("starBtn")
+const mainArea         = document.getElementById("mainArea")
+const micBtn           = document.getElementById("micBtn")
+const recordingOverlay = document.getElementById("recordingOverlay")
+const pronunResult     = document.getElementById("pronunResult")
+
+/* ══════════════════════════════════════════════════════
+   LẬT THẺ — Flip 3D + phát âm khi lật về mặt trước
+══════════════════════════════════════════════════════ */
+function flipCard() {
+
+  // Nếu đang ghi âm thì dừng lại
+  if (isRecording && recognition) {
+    recognition.stop()
+    setRecordingState(false)
+  }
+
+  const flipped = flashcard.classList.toggle("flipped")
+
+  // Phát âm tự động khi lật về mặt trước
+  if (!flipped && deck.length) {
+    speak(deck[index].reading)
+  }
+}
+
+/* ══════════════════════════════════════════════════════
+   IMPORT FILE — Xử lý file .tsv người dùng kéo vào
+══════════════════════════════════════════════════════ */
+document.getElementById("fileInput").addEventListener("change", e => {
+  const file = e.target.files[0]
+  if (!file) return
+
+  const reader = new FileReader()
+  reader.onload = () => {
+    // Reset sao khi import bộ từ mới
+    starred = new Set()
+    saveStarred()
+    parseTSV(reader.result)
+    toast("✅ Đã import: " + file.name)
+  }
+  reader.readAsText(file, "UTF-8")
+
+  // Reset input để có thể chọn lại cùng file
+  e.target.value = ""
+})
+
+/* ══════════════════════════════════════════════════════
+   PARSE TSV — Chuyển text TSV thành mảng đối tượng
+   Cấu trúc cột: STT | Kanji | Reading | Meaning | Example | Unit | Book
+══════════════════════════════════════════════════════ */
+function parseTSV(text) {
+  const lines = text.trim().split("\n")
+  lines.shift() // Bỏ dòng tiêu đề
+
+  rawData = lines
+    .filter(r => r.trim())
+    .map(r => {
+      const c = r.split("\t")
+      return {
+        stt:     c[0]?.trim() || "",
+        kanji:   c[1]?.trim() || "",
+        reading: c[2]?.trim() || "",
+        meaning: c[3]?.trim() || "",
+        example: c[4]?.trim() || "",
+        unit:    parseInt(c[5]) || 0,
+        book:    c[6]?.trim() || "Unknown",
+        raw:     r
+      }
+    })
+
+  buildSidebar()
+}
+
+/* ══════════════════════════════════════════════════════
+   XÂY SIDEBAR — Tạo nhóm sách và danh sách unit
+══════════════════════════════════════════════════════ */
+function buildSidebar() {
+  const container = document.getElementById("unitSelect")
+  container.innerHTML = ""
+
+  // Lấy danh sách sách duy nhất
+  const books = [...new Set(rawData.map(r => r.book))]
+
+  books.forEach(book => {
+    // Lấy danh sách unit của sách này, sắp xếp tăng dần
+    const units = [...new Set(
+      rawData.filter(r => r.book === book).map(r => r.unit)
+    )].sort((a, b) => a - b)
+
+    // Tạo nhóm có thể thu gọn (details/summary)
+    const group = document.createElement("details")
+    group.className = "book-group"
+    group.open = true
+
+    const summary = document.createElement("summary")
+    summary.textContent = book
+    group.appendChild(summary)
+
+    const list = document.createElement("div")
+    list.className = "units-list"
+
+    units.forEach(u => {
+      // Đếm số thẻ trong unit này
+      const count = rawData.filter(r => r.book === book && r.unit === u).length
+
+      const chip = document.createElement("label")
+      chip.className = "unit-chip"
+      chip.innerHTML = `
+        <input type="checkbox"
+               class="unitCheck"
+               data-book="${escHtml(book)}"
+               value="${u}">
+        <span>Unit ${u}</span>
+        <span style="margin-left:auto;font-size:11px;color:var(--text-muted)">${count}</span>
+      `
+
+      // Cập nhật UI chip và tải lại deck khi thay đổi
+      chip.querySelector("input").addEventListener("change", function() {
+        chip.classList.toggle("checked", this.checked)
+        updateSelectedCount()
+        loadDeck()
+      })
+
+      list.appendChild(chip)
+    })
+
+    group.appendChild(list)
+    container.appendChild(group)
+  })
+
+  updateSelectedCount()
+}
+
+/* ══════════════════════════════════════════════════════
+   CẬP NHẬT SỐ UNIT ĐÃ CHỌN — Hiện trên header sidebar
+══════════════════════════════════════════════════════ */
+function updateSelectedCount() {
+  const n = document.querySelectorAll(".unitCheck:checked").length
+  const el = document.getElementById("selectedCount")
+  el.textContent = n > 0 ? `${n} unit` : ""
+}
+
+/* ══════════════════════════════════════════════════════
+   TẢI DECK — Lọc và xáo bài theo unit đã chọn
+══════════════════════════════════════════════════════ */
+function loadDeck() {
+  const checks = [...document.querySelectorAll(".unitCheck:checked")]
+
+  if (checks.length === 0) {
+    deck = []
+    index = 0
+    showEmptyState("🦊", "Chọn một bài học từ sidebar để bắt đầu học flashcard.")
+    return
+  }
+
+  // Lọc theo unit đã tick
+  deck = rawData.filter(r =>
+    checks.some(c => c.dataset.book === r.book && parseInt(c.value) === r.unit)
+  )
+
+  // Trong chế độ ôn sao: chỉ giữ thẻ có sao
+  if (starMode) {
+    deck = deck.filter(r => starred.has(r.raw))
+  }
+
+  if (deck.length === 0) {
+    const msg = starMode
+      ? "⭐ Không có thẻ nào được gắn sao trong unit này."
+      : "Không có thẻ nào phù hợp."
+    showEmptyState("📭", msg)
+    return
+  }
+
+  shuffle(deck)
+  index = 0
+  showCardArea()
+  showCard()
+}
+
+/* ══════════════════════════════════════════════════════
+   TOGGLE EMPTY / CARD AREA
+══════════════════════════════════════════════════════ */
+function showEmptyState(icon, msg) {
+  emptyState.querySelector(".empty-icon").textContent = icon
+  emptyState.querySelector("p").textContent = msg
+  emptyState.style.display = "flex"
+  cardArea.style.display   = "none"
+  document.getElementById("progressBar").style.width = "0%"
+}
+
+function showCardArea() {
+  emptyState.style.display = "none"
+  cardArea.style.display   = "flex"
+}
+
+/* ══════════════════════════════════════════════════════
+   HIỂN THỊ THẺ — Điền nội dung và cập nhật UI
+══════════════════════════════════════════════════════ */
+function showCard() {
+  if (!deck.length) return
+
+  const c = deck[index]
+
+  // Điền Kanji (ẩn nếu không có)
+  const kanjiEl = document.getElementById("kanji")
+  kanjiEl.textContent = c.kanji || ""
+  kanjiEl.style.display = c.kanji ? "block" : "none"
+
+  // Điền các trường còn lại
+  document.getElementById("reading").textContent  = c.reading  || ""
+  document.getElementById("meaning").textContent  = c.meaning  || ""
+  document.getElementById("example").textContent  = c.example  || ""
+
+  // Đặt về mặt trước khi chuyển thẻ
+  flashcard.classList.remove("flipped")
+
+  // Ẩn kết quả phát âm cũ khi chuyển thẻ
+  closePronunResult()
+
+  // Cập nhật trạng thái nút sao
+  const isStarred = starred.has(c.raw)
+  starBtn.classList.toggle("starred", isStarred)
+
+  // Cập nhật thanh tiến trình
+  const pct = ((index + 1) / deck.length) * 100
+  document.getElementById("progressBar").style.width = pct + "%"
+  document.getElementById("deckInfo").textContent = `${index + 1} / ${deck.length}`
+}
+
+/* ══════════════════════════════════════════════════════
+   ĐIỀU HƯỚNG — Tiếp / Trước
+══════════════════════════════════════════════════════ */
+function nextCard() {
+  if (!deck.length) return
+  index++
+  // Hết bộ: xáo lại từ đầu
+  if (index >= deck.length) {
+    shuffle(deck)
+    index = 0
+    toast("🔁 Đã học hết! Xáo bài lại…")
+  }
+  showCard()
+}
+
+function prevCard() {
+  if (!deck.length) return
+  index = (index - 1 + deck.length) % deck.length
+  showCard()
+}
+
+/* ══════════════════════════════════════════════════════
+   TOGGLE SAO — Thêm/bỏ thẻ khỏi danh sách đã sao
+══════════════════════════════════════════════════════ */
+function toggleStar() {
+  if (!deck.length) return
+  const c = deck[index]
+
+  if (starred.has(c.raw)) {
+    starred.delete(c.raw)
+  } else {
+    starred.add(c.raw)
+    // Reset animation để trigger lại hiệu ứng nảy
+    starBtn.classList.remove("starred")
+    void starBtn.offsetWidth // buộc reflow
+  }
+
+  saveStarred()
+  showCard()
+}
+
+/* Lưu danh sách sao vào localStorage */
+function saveStarred() {
+  localStorage.setItem("kq_starred", JSON.stringify([...starred]))
+}
+
+/* ══════════════════════════════════════════════════════
+   CHẾ ĐỘ ÔN SAO — Bật/tắt và đổi màu nền main
+══════════════════════════════════════════════════════ */
+function toggleStarMode() {
+  starMode = !starMode
+
+  // Cập nhật nút sidebar
+  const btn = document.getElementById("starModeBtn")
+  btn.classList.toggle("active", starMode)
+
+  // Đổi màu nền main để phân biệt chế độ
+  mainArea.classList.toggle("star-mode", starMode)
+
+  // Tải lại deck với bộ lọc mới
+  loadDeck()
+}
+
+/* ══════════════════════════════════════════════════════
+   EXPORT SAO — Tải xuống file TSV các thẻ đã sao
+══════════════════════════════════════════════════════ */
+function exportStarred() {
+  if (starred.size === 0) {
+    toast("⚠️ Chưa có thẻ nào được gắn sao!")
+    return
+  }
+
+  const header = "STT\tChữ Hán\tCách đọc\tÝ nghĩa\tVí dụ\tUnit\tTên Giáo Trình\n"
+  const rows   = [...starred].join("\n")
+  const blob   = new Blob([header + rows], { type: "text/tab-separated-values" })
+  const a      = document.createElement("a")
+  a.href       = URL.createObjectURL(blob)
+  a.download   = "starred.tsv"
+  a.click()
+
+  toast(`✅ Đã export ${starred.size} thẻ`)
+}
+
+/* ══════════════════════════════════════════════════════
+   TẢI FILE data.tsv MẶC ĐỊNH — Gọi khi khởi động
+══════════════════════════════════════════════════════ */
+async function loadDefault() {
+  try {
+    const r = await fetch("data.tsv")
+    if (!r.ok) return
+    const t = await r.text()
+    parseTSV(t)
+  } catch(e) {
+    // Không có file — người dùng có thể import thủ công
+  }
+}
+
+/* ══════════════════════════════════════════════════════
+   RELOAD data.tsv — Khi nhấn nút "Tải lại"
+══════════════════════════════════════════════════════ */
+async function reloadData() {
+  try {
+    // Thêm timestamp để tránh cache
+    const r = await fetch("data.tsv?t=" + Date.now())
+    if (!r.ok) throw new Error(`Status ${r.status}`)
+    const t = await r.text()
+
+    // Reset toàn bộ
+    rawData = []; deck = []; index = 0
+    document.getElementById("unitSelect").innerHTML = ""
+    parseTSV(t)
+    toast("✅ Đã reload data.tsv")
+  } catch(e) {
+    toast("❌ Không tìm thấy data.tsv: " + e.message)
+  }
+}
+
+/* ══════════════════════════════════════════════════════
+   XÁO BÀI — Fisher-Yates shuffle
+══════════════════════════════════════════════════════ */
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+}
+
+/* ══════════════════════════════════════════════════════
+   ESCAPE HTML — Ngăn XSS khi chèn dữ liệu vào HTML
+══════════════════════════════════════════════════════ */
+function escHtml(s) {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+}
+
+/* ══════════════════════════════════════════════════════
+   TOAST THÔNG BÁO — Hiện popup ngắn ở đáy màn hình
+══════════════════════════════════════════════════════ */
+function toast(msg) {
+  const wrap = document.getElementById("toastWrap")
+  wrap.innerHTML = ""
+  const t = document.createElement("div")
+  t.className = "toast-msg"
+  t.textContent = msg
+  wrap.appendChild(t)
+  // Tự ẩn sau 2.5 giây
+  setTimeout(() => { if (wrap.contains(t)) wrap.removeChild(t) }, 2500)
+}
+
+/* ══════════════════════════════════════════════════════
+   PHÁT ÂM — Dùng Web Speech Synthesis để đọc text Nhật
+══════════════════════════════════════════════════════ */
+function speak(text) {
+  if (!text) return
+
+  const readingEl = document.getElementById("reading")
+
+  const utter = new SpeechSynthesisUtterance(text)
+  utter.lang  = "ja-JP"
+  utter.rate  = 0.9
+  utter.pitch = 1
+
+  // Thêm class nhảy khi đang đọc
+  utter.onstart = () => readingEl.classList.add("speaking")
+  utter.onend   = () => readingEl.classList.remove("speaking")
+
+  speechSynthesis.cancel()
+  speechSynthesis.speak(utter)
+}
+
+/* Phát âm thẻ hiện tại (gắn vào nút loa) */
+function speakCurrent(e) {
+  e.stopPropagation() // Tránh vô tình lật thẻ
+  if (!deck.length) return
+  speak(deck[index].reading)
+}
+
+/* ══════════════════════════════════════════════════════
+   PHÍM TẮT BÀN PHÍM
+══════════════════════════════════════════════════════ */
+document.addEventListener("keydown", e => {
+  // Bỏ qua khi đang nhập liệu
+  if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return
+
+  if (e.code === "Space")            { e.preventDefault(); flipCard() }
+  if (e.key === "ArrowRight")        nextCard()
+  if (e.key === "ArrowLeft")         prevCard()
+  if (e.key.toLowerCase() === "s")   toggleStar()
+})
+
+/* ══════════════════════════════════════════════════════
+   KIỂM TRA PHÁT ÂM — Dùng Web Speech Recognition
+   Ghi âm giọng người dùng và so sánh với cách đọc đúng
+══════════════════════════════════════════════════════ */
+function checkPronunciation(e) {
+  e.stopPropagation()
+
+  if (!deck.length) return
+
+  // Nếu đang ghi âm → bấm lần nữa để dừng
+  if (isRecording && recognition) {
+    recognition.stop()
+    setRecordingState(false)
+    return
+  }
+
+  recognition = new SpeechRecognition()
+  recognition.lang            = "ja-JP"
+  recognition.interimResults  = false
+  recognition.maxAlternatives = 3  // Lấy 3 ứng viên để chọn tốt nhất
+
+  // ── Contextual Biasing — Gợi ý từ mong đợi ─────────
+  // SpeechGrammarList giúp recognizer ưu tiên nhận dạng
+  // đúng từ đang học thay vì đoán lung tung
+  if (window.SpeechGrammarList || window.webkitSpeechGrammarList) {
+    const GrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList
+    const card        = deck[index]
+    // Tập hợp các biến thể: reading + kanji (nếu có)
+    const hints = [card.reading, card.kanji].filter(Boolean)
+    // Định dạng JSGF chuẩn cho SpeechGrammarList
+    const grammar = `#JSGF V1.0; grammar hint; public <hint> = ${hints.join(" | ")};`
+    const list    = new GrammarList()
+    list.addFromString(grammar, 1)  // weight = 1 (cao nhất)
+    recognition.grammars = list
+  }
+
+  // ── Bật trạng thái ghi âm ──────────────────────────
+  setRecordingState(true)
+
+  recognition.start()
+
+  recognition.onresult = function(event) {
+    const card    = deck[index]
+    const targets = [card.reading, card.kanji].filter(Boolean).map(normalize)
+
+    // ── Duyệt tất cả alternatives, chọn cái cho điểm cao nhất ──
+    let bestScore  = 0
+    let bestSpoken = ""
+
+    const result = event.results[0]
+    for (let i = 0; i < result.length; i++) {
+      const transcript = result[i].transcript.trim()
+      const spokenN    = normalize(transcript)
+
+      // So với từng target (reading + kanji), lấy max
+      for (const targetN of targets) {
+        const s = similarity(spokenN, targetN)
+        if (s > bestScore) {
+          bestScore  = s
+          bestSpoken = transcript
+        }
+      }
+    }
+
+    // Fallback nếu không có alternative nào
+    if (!bestSpoken) bestSpoken = result[0].transcript.trim()
+
+    // Tắt trạng thái ghi âm và hiện kết quả
+    setRecordingState(false)
+    showPronunResult(bestScore, bestSpoken)
+  }
+
+  recognition.onerror = function(err) {
+    setRecordingState(false)
+
+    // Hiển thị lỗi phù hợp
+    if      (err.error === "no-speech")     toast("🎤 Không nghe thấy gì, thử nói lại nhé")
+    else if (err.error === "not-allowed")   toast("❌ Trình duyệt chưa được cấp quyền micro")
+    else if (err.error === "audio-capture") toast("🎤 Không tìm thấy micro")
+    else                                    toast("⚠️ Lỗi: " + err.error)
+  }
+}
+
+/* ── Bật/tắt UI trạng thái ghi âm ───────────────────── */
+function setRecordingState(active) {
+  isRecording = active
+
+  // Nút mic đổi màu đỏ + animation
+  micBtn.classList.toggle("recording", active)
+
+  // Overlay sóng âm hiện trên thẻ
+  recordingOverlay.classList.toggle("visible", active)
+
+  // Ẩn kết quả cũ khi bắt đầu ghi mới
+  if (active) {
+    pronunResult.classList.remove("visible")
+  }
+}
+
+/* ── Hiện bảng kết quả phát âm ───────────────────────── */
+function showPronunResult(score, spoken) {
+  // Xác định mức: great ≥80%, ok 50-79%, poor <50%
+  const level = score >= 80 ? "great" : score >= 50 ? "ok" : "poor"
+  const label = score >= 80 ? "Tốt lắm! 🎉" : score >= 50 ? "Ổn đó 👍" : "Cần luyện thêm 📖"
+
+  // Cập nhật số điểm và màu
+  const scoreNum = document.getElementById("pronunScoreNum")
+  scoreNum.textContent = score + "%"
+  scoreNum.className   = "pronun-score-num " + level
+
+  // Cập nhật nhãn
+  const scoreLbl = document.getElementById("pronunScoreLabel")
+  scoreLbl.textContent = label
+  scoreLbl.className   = "pronun-score-label " + level
+
+  // Cập nhật thanh tiến trình
+  const barFill = document.getElementById("pronunBarFill")
+  barFill.className = "pronun-bar-fill " + level
+  // Timeout nhỏ để animation chạy mượt sau khi hiện
+  setTimeout(() => { barFill.style.width = score + "%" }, 50)
+
+  // Hiện text người dùng nói
+  document.getElementById("pronunSpokenText").textContent = spoken || "—"
+
+  // Hiện bảng kết quả
+  pronunResult.classList.add("visible")
+}
+
+/* ── Đóng bảng kết quả phát âm ───────────────────────── */
+function closePronunResult(e) {
+  if (e) e.stopPropagation()
+  pronunResult.classList.remove("visible")
+  // Reset thanh để animation lại lần sau
+  document.getElementById("pronunBarFill").style.width = "0%"
+}
+
+/* ══════════════════════════════════════════════════════
+   CHUẨN HOÁ TEXT NHẬT
+   Pipeline: NFKC → katakana→hiragana → romaji thống nhất
+             → bỏ dấu câu → bỏ khoảng trắng → lowercase
+══════════════════════════════════════════════════════ */
+
+/* Bảng ánh xạ romaji không thống nhất → dạng chuẩn */
+const ROMAJI_MAP = [
+  // Phụ âm đặc biệt — khớp dài trước để tránh sai
+  [/shi/g,  "si"],
+  [/chi/g,  "ti"],
+  [/tsu/g,  "tu"],
+  [/tchi/g, "tti"],
+  [/cchi/g, "tti"],
+  [/cci/g,  "tti"],
+  [/sshi/g, "ssi"],
+  [/ffu/g,  "hhu"],
+  [/fu/g,   "hu"],
+  [/sha/g,  "sya"],
+  [/she/g,  "sye"],
+  [/sho/g,  "syo"],
+  [/shu/g,  "syu"],
+  [/cha/g,  "tya"],
+  [/che/g,  "tye"],
+  [/cho/g,  "tyo"],
+  [/chu/g,  "tyu"],
+  [/ja/g,   "zya"],
+  [/ji/g,   "zi"],
+  [/ju/g,   "zyu"],
+  [/jo/g,   "zyo"],
+  // r/l — tiếng Nhật không phân biệt khi nói
+  [/l/g,    "r"],
+  // n trước b/p/m → m (biến thể phát âm)
+  [/nb/g,   "mb"],
+  [/np/g,   "mp"],
+]
+
+/* Chuyển Katakana → Hiragana */
+function katakanaToHiragana(str) {
+  return str.replace(/[\u30a1-\u30f6]/g,
+    ch => String.fromCharCode(ch.charCodeAt(0) - 0x60)
+  )
+}
+
+/* Chuẩn hoá tổng quát */
+function normalize(str) {
+  if (!str) return ""
+  str = str.normalize("NFKC")
+  str = katakanaToHiragana(str)
+  str = str.toLowerCase()
+  // Bỏ dấu câu tiếng Nhật + ASCII phổ biến
+  str = str.replace(/[。、！？…・ー〜.,!?~\-]/g, "")
+  // Bỏ khoảng trắng
+  str = str.replace(/\s+/g, "")
+  // Thống nhất romaji
+  for (const [pat, rep] of ROMAJI_MAP) {
+    str = str.replace(pat, rep)
+  }
+  return str
+}
+
+/* ══════════════════════════════════════════════════════
+   WEIGHTED LEVENSHTEIN — Khoảng cách chỉnh sửa có trọng số
+   Các cặp âm gần nhau (shi/si, chi/ti…) bị phạt nhẹ hơn
+══════════════════════════════════════════════════════ */
+
+/* Danh sách cặp âm thay thế nhau với chi phí thấp
+   Ghi theo dạng đã normalize (romaji chuẩn hoá) */
+const LOW_COST_PAIRS = [
+  // Đã được normalize về cùng dạng nên cost = 0,
+  // nhưng giữ lại để handle edge-case chưa normalize
+  ["si",  "shi",  0.1],
+  ["ti",  "chi",  0.1],
+  ["tu",  "tsu",  0.1],
+  ["hu",  "fu",   0.1],
+  ["zi",  "ji",   0.1],
+  ["zu",  "dzu",  0.15],
+  ["o",   "wo",   0.15],
+  ["e",   "we",   0.15],
+  ["wa",  "ha",   0.2],   // particle は đọc là "wa"
+  ["he",  "e",    0.2],   // particle へ đọc là "e"
+  ["n",   "m",    0.2],   // n biến âm
+  ["r",   "l",    0.1],
+]
+
+/* Tra bảng chi phí thay thế cho 2 ký tự/chuỗi */
+function substitutionCost(ca, cb) {
+  if (ca === cb) return 0
+  for (const [x, y, cost] of LOW_COST_PAIRS) {
+    if ((ca === x && cb === y) || (ca === y && cb === x)) return cost
+  }
+  return 1 // lỗi thật sự
+}
+
+/* Weighted Levenshtein — ma trận DP với chi phí tuỳ chỉnh */
+function weightedLevenshtein(a, b) {
+  const la = a.length, lb = b.length
+  if (la === 0) return lb
+  if (lb === 0) return la
+
+  // Tạo ma trận (la+1) × (lb+1)
+  const dp = Array.from({ length: la + 1 }, (_, i) =>
+    Array.from({ length: lb + 1 }, (_, j) => (i === 0 ? j : j === 0 ? i : 0))
+  )
+
+  for (let i = 1; i <= la; i++) {
+    for (let j = 1; j <= lb; j++) {
+      const cost = substitutionCost(a[i - 1], b[j - 1])
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,          // xoá
+        dp[i][j - 1] + 1,          // thêm
+        dp[i - 1][j - 1] + cost    // thay thế (có thể cost thấp)
+      )
+    }
+  }
+  return dp[la][lb]
+}
+
+/* Chuyển khoảng cách → điểm phần trăm 0–100 */
+function similarity(a, b) {
+  if (!a && !b) return 100
+  const maxLen = Math.max(a.length, b.length)
+  if (maxLen === 0) return 100
+  const dist  = weightedLevenshtein(a, b)
+  const score = Math.max(0, 1 - dist / maxLen)
+  return Math.round(score * 100)
+}
+
+/* ══════════════════════════════════════════════════════
+   KHỞI ĐỘNG — Tải data mặc định khi trang load xong
+══════════════════════════════════════════════════════ */
+loadDefault()
+
+</script>
+</body>
+</html>
