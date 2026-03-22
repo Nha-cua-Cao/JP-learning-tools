@@ -1446,8 +1446,10 @@ function showCard() {
   // Điền các trường còn lại
   document.getElementById("reading").textContent  = c.reading  || ""
   document.getElementById("meaning").textContent  = c.meaning  || ""
-  document.getElementById("example").textContent  = c.example  || ""
-  document.getElementById("example").innerHTML.replace(/\n/g, "<br />")
+
+  const exampleEle = document.getElementById("example")
+  exampleEle.textContent  = c.example  || ""
+  exampleEle.innerHTML = exampleEle.innerHTML.replace(/\n/g, "<br />") // Allow new line char
 
   // Đặt về mặt trước khi chuyển thẻ
   flashcard.classList.remove("flipped")
