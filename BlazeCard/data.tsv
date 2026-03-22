@@ -1,33 +1,33 @@
 STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
-1	初めまして。	はじめまして。	Rất hân hạnh được làm quen với bạn.	初めまして。<br />Rất hân hạnh được làm quen với bạn	1	Nhà của Cáo N5
-2	私	わたし	Tôi/Mình	私はイヌです。<br />Tôi là Inu.	1	Nhà của Cáo N5
-3	人	じん	(Hậu tố) Người nước ~	私はベトナム人です。<br />Tôi là người Việt Nam.	1	Nhà của Cáo N5
-4	ベトナム	ベトナム	Việt Nam	私はベトナム人です。<br />Tôi là người Việt Nam.	1	Nhà của Cáo N5
-5	日本	にほん	Nhật Bản	私は日本人です。<br />Tôi là người Nhật Bản.	1	Nhà của Cáo N5
-6	インド	インド	Ấn Độ	私はインド人です。<br />Tôi là người Ấn Độ.	1	Nhà của Cáo N5
-7	マレーシア	マレーシア	Malaysia	私はマレーシア人です。<br />Tôi là người Malaysia.	1	Nhà của Cáo N5
-8	インドネシア	インドネシア	Indonesia	私はインドネシア人です。<br />Tôi là người Indonesia.	1	Nhà của Cáo N5
-9	ミャンマー	ミャンマー	Myanmar	私はミャンマー人です。<br />Tôi là người Myanmar.	1	Nhà của Cáo N5
-10	韓国	かんこく	Hàn Quốc	私は韓国人です。<br />Tôi là người Hàn Quốc.	1	Nhà của Cáo N5
-11	トルコ	トルコ	Thổ Nhĩ Kỳ	私はトルコ人です。<br />Tôi là người Thổ Nhĩ Kỳ.	1	Nhà của Cáo N5
-12	タイ	タイ	Thái Lan	私はタイ人です。<br />Tôi là người Thái Lan.	1	Nhà của Cáo N5
-13	オーストラリア	オーストラリア	Úc	私はオーストラリア人です。<br />Tôi là người Úc.	1	Nhà của Cáo N5
-14	台湾	たいわん	Đài Loan	私は台湾人です。<br />Tôi là người Đài Loan.	1	Nhà của Cáo N5
-15	ニュージーランド	ニュージーランド	New Zealand	私はニュージーランド人です。<br />Tôi là người New Zealand.	1	Nhà của Cáo N5
-16	中国	ちゅうごく	Trung Quốc	私は中国人です。<br />Tôi là người Trung Quốc.	1	Nhà của Cáo N5
-17	アメリカ	アメリカ	Mỹ	私はアメリカ人です。<br />Tôi là người Mỹ.	1	Nhà của Cáo N5
-18	ネパール	ネパール	Nepal	私はネパール人です。<br />Tôi là người Nepal.	1	Nhà của Cáo N5
-19	カナダ	カナダ	Canada	私はカナダ人です。<br />Tôi là người Canada.	1	Nhà của Cáo N5
-20	フィリピン	フィリピン	Philippines	私はフィリピン人です。<br />Tôi là người Philippines.	1	Nhà của Cáo N5
-21	メキシコ	メキシコ	Mexico	私はメキシコ人です。<br />Tôi là người Mexico.	1	Nhà của Cáo N5
-22	ブラジル	ブラジル	Brazil	私はブラジル人です。<br />Tôi là người Brazil.	1	Nhà của Cáo N5
-23	スイス	スイス	Thụy Sĩ	私はスイス人です。<br />Tôi là người Thụy Sĩ.	1	Nhà của Cáo N5
-24	ロシア	ロシア	Nga	私はロシア人です。<br />Tôi là người Nga.	1	Nhà của Cáo N5
-25	イタリア	イタリア	Ý	私はイタリア人です。<br />Tôi là người Ý.	1	Nhà của Cáo N5
-26	イギリス	イギリス	Anh	私はイギリス人です。<br />Tôi là người Anh.	1	Nhà của Cáo N5
-27	スペイン	スペイン	Tây Ban Nha	私はスペイン人です。<br />Tôi là người Tây Ban Nha.	1	Nhà của Cáo N5
-28	フランス	フランス	Pháp	私はフランス人です。<br />Tôi là người Pháp.	1	Nhà của Cáo N5
-29	エジプト	エジプト	Ai Cập	私はエジプト人です。<br />Tôi là người Ai Cập.	1	Nhà của Cáo N5
-30	ドイツ	ドイツ	Đức	私はドイツ人です。<br />Tôi là người Đức.	1	Nhà của Cáo N5
-31	ケニア	ケニア	Kenya	私はケニア人です。<br />Tôi là người Kenya.	1	Nhà của Cáo N5
-32	よろしくお願いします。	よろしくおねがいします。	Rất mong được sự giúp đỡ.	初めまして。よろしくお願いします。<br />Rất hân hạnh được làm quen. Rất mong được sự giúp đỡ.	1	Nhà của Cáo N5
+1	初めまして。	はじめまして。	Rất hân hạnh được làm quen với bạn.	初めまして。\nRất hân hạnh được làm quen với bạn	1	Nhà của Cáo N5
+2	私	わたし	Tôi/Mình	私はイヌです。\nTôi là Inu.	1	Nhà của Cáo N5
+3	人	じん	(Hậu tố) Người nước ~	私はベトナム人です。\nTôi là người Việt Nam.	1	Nhà của Cáo N5
+4	ベトナム	ベトナム	Việt Nam	私はベトナム人です。\nTôi là người Việt Nam.	1	Nhà của Cáo N5
+5	日本	にほん	Nhật Bản	私は日本人です。\nTôi là người Nhật Bản.	1	Nhà của Cáo N5
+6	インド	インド	Ấn Độ	私はインド人です。\nTôi là người Ấn Độ.	1	Nhà của Cáo N5
+7	マレーシア	マレーシア	Malaysia	私はマレーシア人です。\nTôi là người Malaysia.	1	Nhà của Cáo N5
+8	インドネシア	インドネシア	Indonesia	私はインドネシア人です。\nTôi là người Indonesia.	1	Nhà của Cáo N5
+9	ミャンマー	ミャンマー	Myanmar	私はミャンマー人です。\nTôi là người Myanmar.	1	Nhà của Cáo N5
+10	韓国	かんこく	Hàn Quốc	私は韓国人です。\nTôi là người Hàn Quốc.	1	Nhà của Cáo N5
+11	トルコ	トルコ	Thổ Nhĩ Kỳ	私はトルコ人です。\nTôi là người Thổ Nhĩ Kỳ.	1	Nhà của Cáo N5
+12	タイ	タイ	Thái Lan	私はタイ人です。\nTôi là người Thái Lan.	1	Nhà của Cáo N5
+13	オーストラリア	オーストラリア	Úc	私はオーストラリア人です。\nTôi là người Úc.	1	Nhà của Cáo N5
+14	台湾	たいわん	Đài Loan	私は台湾人です。\nTôi là người Đài Loan.	1	Nhà của Cáo N5
+15	ニュージーランド	ニュージーランド	New Zealand	私はニュージーランド人です。\nTôi là người New Zealand.	1	Nhà của Cáo N5
+16	中国	ちゅうごく	Trung Quốc	私は中国人です。\nTôi là người Trung Quốc.	1	Nhà của Cáo N5
+17	アメリカ	アメリカ	Mỹ	私はアメリカ人です。\nTôi là người Mỹ.	1	Nhà của Cáo N5
+18	ネパール	ネパール	Nepal	私はネパール人です。\nTôi là người Nepal.	1	Nhà của Cáo N5
+19	カナダ	カナダ	Canada	私はカナダ人です。\nTôi là người Canada.	1	Nhà của Cáo N5
+20	フィリピン	フィリピン	Philippines	私はフィリピン人です。\nTôi là người Philippines.	1	Nhà của Cáo N5
+21	メキシコ	メキシコ	Mexico	私はメキシコ人です。\nTôi là người Mexico.	1	Nhà của Cáo N5
+22	ブラジル	ブラジル	Brazil	私はブラジル人です。\nTôi là người Brazil.	1	Nhà của Cáo N5
+23	スイス	スイス	Thụy Sĩ	私はスイス人です。\nTôi là người Thụy Sĩ.	1	Nhà của Cáo N5
+24	ロシア	ロシア	Nga	私はロシア人です。\nTôi là người Nga.	1	Nhà của Cáo N5
+25	イタリア	イタリア	Ý	私はイタリア人です。\nTôi là người Ý.	1	Nhà của Cáo N5
+26	イギリス	イギリス	Anh	私はイギリス人です。\nTôi là người Anh.	1	Nhà của Cáo N5
+27	スペイン	スペイン	Tây Ban Nha	私はスペイン人です。\nTôi là người Tây Ban Nha.	1	Nhà của Cáo N5
+28	フランス	フランス	Pháp	私はフランス人です。\nTôi là người Pháp.	1	Nhà của Cáo N5
+29	エジプト	エジプト	Ai Cập	私はエジプト人です。\nTôi là người Ai Cập.	1	Nhà của Cáo N5
+30	ドイツ	ドイツ	Đức	私はドイツ人です。\nTôi là người Đức.	1	Nhà của Cáo N5
+31	ケニア	ケニア	Kenya	私はケニア人です。\nTôi là người Kenya.	1	Nhà của Cáo N5
+32	よろしくお願いします。	よろしくおねがいします。	Rất mong được sự giúp đỡ.	初めまして。よろしくお願いします。\nRất hân hạnh được làm quen. Rất mong được sự giúp đỡ.	1	Nhà của Cáo N5
