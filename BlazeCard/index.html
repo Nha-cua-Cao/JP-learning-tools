@@ -1596,10 +1596,12 @@ function shuffle(a) {
 ══════════════════════════════════════════════════════ */
 function escHtml(s) {
   return s
+    .replace("<br />", "_____")
     .replace(/&/g, "&amp;")
     .replace(/"/g, "&quot;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
+    .replace("_____", "<br />") // Only keep <br />
 }
 
 /* ══════════════════════════════════════════════════════
