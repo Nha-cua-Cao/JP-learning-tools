@@ -1462,6 +1462,7 @@ function showCard() {
   const pct = ((index + 1) / deck.length) * 100
   document.getElementById("progressBar").style.width = pct + "%"
   document.getElementById("deckInfo").textContent = `${index + 1} / ${deck.length}`
+  speakCurrent();
 }
 
 /* ══════════════════════════════════════════════════════
