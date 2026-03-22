@@ -1449,7 +1449,7 @@ function showCard() {
 
   const exampleEle = document.getElementById("example")
   exampleEle.textContent  = c.example  || ""
-  exampleEle.innerHTML = exampleEle.innerHTML.replace(/\n/g, "<br />") // Allow new line char
+  exampleEle.innerHTML = exampleEle.innerHTML.replace(/\n/g, "<br />") + "&nbsp;&nbsp;" // Allow new line char
 
   // Đặt về mặt trước khi chuyển thẻ
   flashcard.classList.remove("flipped")
