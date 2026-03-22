@@ -1447,6 +1447,7 @@ function showCard() {
   document.getElementById("reading").textContent  = c.reading  || ""
   document.getElementById("meaning").textContent  = c.meaning  || ""
   document.getElementById("example").textContent  = c.example  || ""
+  document.getElementById("example").innerHTML.replace(/\n/g, "<br />")
 
   // Đặt về mặt trước khi chuyển thẻ
   flashcard.classList.remove("flipped")
@@ -1462,7 +1463,7 @@ function showCard() {
   const pct = ((index + 1) / deck.length) * 100
   document.getElementById("progressBar").style.width = pct + "%"
   document.getElementById("deckInfo").textContent = `${index + 1} / ${deck.length}`
-  speakCurrent();
+  speakCurrent({stopPropagation: () => {}});
 }
 
 /* ══════════════════════════════════════════════════════
@@ -1597,12 +1598,10 @@ function shuffle(a) {
 ══════════════════════════════════════════════════════ */
 function escHtml(s) {
   return s
-    .replace("<br />", "_____")
     .replace(/&/g, "&amp;")
     .replace(/"/g, "&quot;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
-    .replace("_____", "<br />") // Only keep <br />
 }
 
 /* ══════════════════════════════════════════════════════
