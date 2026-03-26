@@ -221,6 +221,7 @@ let deck     = []             // Bộ thẻ hiện tại (đã lọc và xáo)
 let index    = 0              // Vị trí thẻ hiện tại trong deck
 let isRecording = false       // Có đang ghi âm hay không
 let recognition = null
+let metaData = []
 
 // Đọc danh sách thẻ đã gắn sao từ localStorage (nếu có)
 let starred = new Set(JSON.parse(localStorage.getItem("kq_starred") || "[]"))
@@ -552,13 +553,151 @@ function exportStarred() {
 ══════════════════════════════════════════════════════ */
 async function loadDefault() {
   try {
-    const r = await fetch("data.tsv")
+    const r = await fetch("UnitMetaData.tsv")
     if (!r.ok) return
     const t = await r.text()
-    parseTSV(t)
+    parseMetadata(t)
   } catch(e) {
     // Không có file — người dùng có thể import thủ công
   }
+}
+
+function parseMetadata(text) {
+  const lines = text.trim().split("\n");
+  lines.shift(); // Bỏ header
+
+  metadata = lines.map(line => {
+    const c = line.split("\t");
+    return {
+      book: c[0]?.trim(),
+      unit: parseInt(c[1]),
+      count: c[2]?.trim(),
+      url: c[3]?.trim()
+    };
+  });
+  buildSidebarFromMeta();
+}
+
+function buildSidebarFromMeta() {
+  const container = document.getElementById("unitSelect");
+  container.innerHTML = "";
+
+  const books = [...new Set(metadata.map(m => m.book))];
+
+  books.forEach(book => {
+    const group = document.createElement("details");
+    group.className = "book-group";
+    group.open = true;
+
+    const summary = document.createElement("summary");
+    summary.textContent = book;
+    group.appendChild(summary);
+
+    const list = document.createElement("div");
+    list.className = "units-list";
+
+    metadata.filter(m => m.book === book).forEach(m => {
+      const chip = document.createElement("label");
+      chip.className = "unit-chip";
+      chip.innerHTML = `
+        <input type="checkbox" class="unitCheck" 
+               data-url="${m.url}" 
+               data-book="${escHtml(m.book)}" 
+               value="${m.unit}">
+        <span>Unit ${m.unit}</span>
+        <span style="margin-left:auto;font-size:11px;color:var(--text-muted)">${m.count}</span>
+      `;
+
+      chip.querySelector("input").addEventListener("change", async function() {
+        chip.classList.toggle("checked", this.checked);
+        updateSelectedCount();
+        await loadDeckDynamic(); // Hàm tải data mới
+      });
+      list.appendChild(chip);
+    });
+    group.appendChild(list);
+    container.appendChild(group);
+  });
+}
+
+async function loadDeckDynamic() {
+  const selectedChecks = [...document.querySelectorAll(".unitCheck:checked")];
+  
+  if (selectedChecks.length === 0) {
+    rawData = [];
+    loadDeck(); // Sẽ hiện Empty State
+    return;
+  }
+
+  // Hiển thị loading nhẹ nếu muốn
+  toast("⏳ Đang tải dữ liệu...");
+
+  // Tạo danh sách các Unit cần tải (những cái chưa có trong rawData)
+  const promises = selectedChecks.map(async (chk) => {
+    const url = chk.dataset.url;
+    const book = chk.dataset.book;
+    const unit = parseInt(chk.value);
+
+    // Kiểm tra xem dữ liệu Unit này đã được tải vào rawData chưa
+    const alreadyLoaded = rawData.some(r => r.book === book && r.unit === unit);
+    
+    if (!alreadyLoaded) {
+      try {
+        const res = await fetch(url);
+        const text = await res.text();
+        // Parse và gộp vào rawData
+        const newItems = parseSingleTSV(text, book, unit);
+        rawData = [...rawData, ...newItems];
+      } catch (e) {
+        console.error("Lỗi tải file:", url);
+      }
+    }
+  });
+
+  await Promise.all(promises);
+  
+  // Sau khi tải xong xuôi, lọc lại rawData để loại bỏ những unit đã bị bỏ tick
+  const activeUnits = selectedChecks.map(c => ({ book: c.dataset.book, unit: parseInt(c.value) }));
+  
+  const filteredData = rawData.filter(r => 
+    activeUnits.some(u => u.book === r.book && u.unit === r.unit)
+  );
+
+  // Gán data đã lọc cho deck và hiển thị
+  deck = [...filteredData];
+  
+  if (starMode) {
+    deck = deck.filter(r => starred.has(r.raw));
+  }
+
+  if (deck.length === 0) {
+    showEmptyState("📭", "Không có thẻ nào.");
+  } else {
+    shuffle(deck);
+    index = 0;
+    showCardArea();
+    showCard();
+  }
+}
+
+// Hàm bổ trợ để parse từng file nhỏ
+function parseSingleTSV(text, book, unit) {
+  const lines = text.trim().split("\n");
+  if (lines[0].includes("STT")) lines.shift(); // Bỏ header nếu có
+
+  return lines.filter(r => r.trim()).map(r => {
+    const c = r.split("\t");
+    return {
+      stt: c[0]?.trim() || "",
+      kanji: c[1]?.trim() || "",
+      reading: c[2]?.trim() || "",
+      meaning: c[3]?.trim() || "",
+      example: c[4]?.trim() || "",
+      unit: unit,
+      book: book,
+      raw: r
+    };
+  });
 }
 
 /* ══════════════════════════════════════════════════════
