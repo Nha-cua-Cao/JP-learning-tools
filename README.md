@@ -5,4 +5,4 @@ Tools to learn Japanese
 1. [BlazeCard](https://nha-cua-cao.github.io/JP-learning-tools/BlazeCard/ 'A flashcard tools for everyone')
 
 ## N5
-1. [Kana Quest](https://nha-cua-cao.github.io/JP-learning-tools/index.html 'Practice kana') 
+1. [Kana Quest](https://nha-cua-cao.github.io/JP-learning-tools/KanaQuest/ 'Practice kana') 
