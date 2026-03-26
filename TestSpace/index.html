@@ -706,14 +706,14 @@ function parseSingleTSV(text, book, unit) {
 async function reloadData() {
   try {
     // Thêm timestamp để tránh cache
-    const r = await fetch("data.tsv?t=" + Date.now())
+    const r = await fetch("UnitMetaData.tsv?t=" + Date.now())
     if (!r.ok) throw new Error(`Status ${r.status}`)
     const t = await r.text()
 
     // Reset toàn bộ
     rawData = []; deck = []; index = 0
     document.getElementById("unitSelect").innerHTML = ""
-    parseTSV(t)
+    parseMetadata(t)
     toast("✅ Đã reload data.tsv")
   } catch(e) {
     toast("❌ Không tìm thấy data.tsv: " + e.message)
