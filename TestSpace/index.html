@@ -983,7 +983,7 @@ function normalize(str) {
   str = katakanaToHiragana(str)
   str = str.toLowerCase()
   // Bỏ dấu câu tiếng Nhật + ASCII phổ biến
-  str = str.replace(/[。、！？…・ー〜.,!?~\-]/g, "")
+  str = str.replace(/[。、（）！？…・ー〜.,!?~\-]/g, "")
   // Bỏ khoảng trắng
   str = str.replace(/\s+/g, "")
   // Thống nhất romaji
