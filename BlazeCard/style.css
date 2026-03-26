@@ -517,6 +517,7 @@ body {
   font-weight: 400;
   min-height: 34px;
   line-height: 1.2;
+  text-align: center;
 }
 
 /* Chữ đọc (Hiragana/Katakana) — lớn, màu nhấn */
@@ -527,6 +528,8 @@ body {
   color: var(--accent);
   line-height: 1.1;
   letter-spacing: -0.01em;
+  text-align: center;
+  padding: 0 12px;
 }
 
 /* Hiệu ứng đang phát âm — nhảy nhẹ */
