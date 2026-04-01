@@ -12,16 +12,59 @@
 
 'use strict';
 
+const { lazy } = require("react");
+
 /* ══════════════════════════════════════════════════════
    1. DATA MANAGER — Quản lý và xử lý dữ liệu TSV
 ══════════════════════════════════════════════════════ */
 const DataManager = (() => {
+
+  // Mảng lưu toàn bộ sách và unit
+  let bookUnits = [];
 
   // Mảng lưu toàn bộ câu hỏi đã parse
   let allItems = [];
 
   // Tập hợp filter hiện tại: { "GiaoTrinh___Unit" }
   let selectedFilters = new Set();
+
+  /**
+   * Dùng meta TSV để load sidebar trước, không cần phải load toàn bộ câu hỏi
+   * Cấu trúc cột: Book\tUnit\tCount\tUrl
+   */
+  function parseMetaTSV(metaRaw) {
+    const lines = metaRaw.trim().split('\n');
+    const result = [];
+
+    lines.forEach((line) => {
+      const trimmed = line.trim();
+      if (!trimmed) return;
+
+      const cols = trimmed.split('\t');
+      if (cols.length < 4) return; // Bỏ qua dòng thiếu cột
+
+      const book = cols[0].trim();
+      const unit = cols[1].trim();
+      const count = cols[2].trim();
+      const url = cols[3].trim();
+
+      result.push({
+        book, unit, count, url, isLoaded: false
+      });
+    });
+
+    return result;
+  }
+
+  /**
+   * loadMetaData — Load dữ liệu metadata vào DataManager
+   */
+  function loadMetaData(metaRawTSV) {
+    bookUnits = parseMetaTSV(metaRawTSV);
+    // Mặc định chọn tất cả khi load lần đầu
+    selectedFilters.clear();
+    return bookUnits.length;
+  }
 
   /**
    * parseTSV — Chuyển chuỗi TSV thành mảng object
@@ -59,15 +102,24 @@ const DataManager = (() => {
    * loadData — Load dữ liệu vào DataManager
    */
   function loadData(rawTSV) {
-    allItems = parseTSV(rawTSV);
-    // Mặc định chọn tất cả khi load lần đầu
+    // Add các câu hỏi mới vào allItems (giữ nguyên các câu đã load trước đó)
+    allItems.push(...parseTSV(rawTSV));
     selectedFilters.clear();
-    getGroupedData().forEach(group => {
-      group.units.forEach(u => {
-        selectedFilters.add(makeKey(group.book, u));
-      });
-    });
     return allItems.length;
+  }
+
+  /**
+   * lazyLoadUnit — Lazy load dữ liệu cho một unit cụ thể
+   */
+  async function lazyLoadUnit(book, unit) {
+    if (isLoaded(book, unit)) return;
+
+    const bookUnit = bookUnits.find(u => u.book === book && u.unit === unit);
+    if (!bookUnit || !bookUnit.url) return;
+
+    const r = await fetch(bookUnit.url);
+    const tsv = await r.text();
+    loadData(book, unit, tsv);
   }
 
   /**
@@ -83,7 +135,7 @@ const DataManager = (() => {
    */
   function getGroupedData() {
     const map = new Map();
-    allItems.forEach(item => {
+    bookUnits.forEach(item => {
       if (!map.has(item.book)) map.set(item.book, new Set());
       map.get(item.book).add(item.unit);
     });
@@ -108,6 +160,17 @@ const DataManager = (() => {
       selectedFilters.has(makeKey(item.book, item.unit))
     );
   }
+
+  /**
+   * getFilteredCount — Lấy số lượng câu hỏi được lọc
+   */
+  function getFilteredCount() {
+    if (selectedFilters.size === 0) return 0;
+    return bookUnits.filter(item =>
+      selectedFilters.has(makeKey(item.book, item.unit))
+    ).reduce((sum, item) => sum + parseInt(item.count), 0);
+  }
+
 
   /**
    * toggleFilter — Bật/tắt filter cho một cặp (book, unit)
@@ -146,14 +209,25 @@ const DataManager = (() => {
     return units.every(u => selectedFilters.has(makeKey(book, u)));
   }
 
+  /**
+   * isLoaded — Kiểm tra xem unit đã được load chưa
+   */
+  function isLoaded(book, unit) {
+    return bookUnits.some(u => u.book === book && u.unit === unit && u.isLoaded);
+  }
+
   return {
+    loadMetaData,
     loadData,
+    lazyLoadUnit,
     getGroupedData,
     getFilteredItems,
+    getFilteredCount,
     toggleFilter,
     setBookFilter,
     isFilterActive,
     isBookAllActive,
+    isLoaded,
     getAllItems: () => allItems,
   };
 })();
@@ -440,8 +514,8 @@ const UIRenderer = (() => {
     if (groups.length === 0) {
       scroll.innerHTML = `
         <div style="padding:20px 12px;color:var(--text-muted);font-size:12px;text-align:center">
-          <i class="fa-solid fa-arrow-up-from-bracket" style="margin-bottom:6px;font-size:18px;display:block"></i>
-          Import file TSV để bắt đầu
+          <i class="fa-solid fa-bug" style="margin-bottom:6px;font-size:18px;display:block"></i>
+          Hình như có lỗi gì mất rồi. Bạn liên hệ với fanpage chúng mình để được hỗ trợ nhé!
         </div>`;
       updateFilteredCount();
       return;
@@ -476,7 +550,7 @@ const UIRenderer = (() => {
     }).join('');
 
     updateFilteredCount();
-  }
+  } 
 
   /**
    * renderQuestion — Vẽ câu hỏi và đáp án lên màn hình
@@ -553,7 +627,7 @@ const UIRenderer = (() => {
    * updateFilteredCount — Cập nhật badge số câu được lọc
    */
   function updateFilteredCount() {
-    const count = DataManager.getFilteredItems().length;
+    const count = DataManager.getFilteredCount();
     document.getElementById('filteredCount').textContent = `${count} câu`;
   }
 
@@ -688,9 +762,15 @@ const App = (() => {
   /**
    * init — Khởi tạo app khi trang load
    */
-  function init() {
+  async function init() {
     // Lắng nghe phím tắt
     document.addEventListener('keydown', handleKeyDown);
+
+    // Load dữ liệu từ DB
+    const r = await fetch("UnitMetaData.tsv?t=" + Date.now());
+    const tsv = await r.text();
+    DataManager.loadMetaData(tsv);
+
     // Render sidebar trống
     UIRenderer.renderSidebar();
   }
@@ -718,7 +798,12 @@ const App = (() => {
   /**
    * toggleUnitFilter — Bật/tắt filter theo unit
    */
-  function toggleUnitFilter(book, unit) {
+  async function toggleUnitFilter(book, unit) {
+    // Lazy load unit từ bookUnits.url nếu unit chưa từng được load trước đó
+    if (!DataManager.isLoaded(book, unit)) {
+      await DataManager.lazyLoadUnit(book, unit);
+    }
+
     DataManager.toggleFilter(book, unit);
     UIRenderer.renderSidebar(); // Re-render sidebar với trạng thái mới
   }
