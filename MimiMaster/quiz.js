@@ -541,10 +541,9 @@ const UIRenderer = (() => {
             ${group.units.map(unit => {
               const active = DataManager.isFilterActive(group.book, unit);
               return `
-                <label class="unit-chip ${active ? 'checked' : ''}"
-                  onclick="App.toggleUnitFilter('${escapeSingleQ(group.book)}', '${escapeSingleQ(unit)}')">
+                <label class="unit-chip ${active ? 'checked' : ''}">
                   <input type="checkbox" ${active ? 'checked' : ''}
-                    style="pointer-events:none" />
+                    style="pointer-events:none" onclick="App.toggleUnitFilter('${escapeSingleQ(group.book)}', '${escapeSingleQ(unit)}')" />
                   Unit ${escapeHtml(unit)}
                 </label>`;
             }).join('')}
