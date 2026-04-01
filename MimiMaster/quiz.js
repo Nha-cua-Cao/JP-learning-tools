@@ -31,7 +31,7 @@ const DataManager = (() => {
     const lines = raw.trim().split('\n');
     const result = [];
 
-    lines.forEach((line, idx) => {
+    lines.forEach((line) => {
       // Bỏ qua dòng header (dòng đầu tiên có chữ "STT" hoặc "stt")
       const trimmed = line.trim();
       if (!trimmed) return;
@@ -953,7 +953,6 @@ const App = (() => {
   return {
     init,
     handleFileImport,
-    loadSampleData,
     toggleUnitFilter,
     toggleBookFilter,
     startQuiz,
