@@ -34,12 +34,15 @@ const DataManager = (() => {
     const lines = metaRaw.trim().split('\n');
     const result = [];
 
-    lines.forEach((line) => {
+    lines.forEach((line, idx) => {
       const trimmed = line.trim();
       if (!trimmed) return;
 
       const cols = trimmed.split('\t');
       if (cols.length < 4) return; // Bỏ qua dòng thiếu cột
+
+      // Bỏ qua line header (dòng đầu tiên)
+      if (idx === 0) return;
 
       const book = cols[0].trim();
       const unit = cols[1].trim();
