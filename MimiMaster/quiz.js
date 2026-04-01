@@ -716,34 +716,6 @@ const App = (() => {
   }
 
   /**
-   * loadSampleData — Load data mẫu demo
-   */
-  function loadSampleData() {
-    const sampleTSV = [
-      'STT\tCâu tiếng Nhật\tCâu tiếng Nhật đồng nghĩa\tCâu tiếng Việt\tUnit\tGiáo trình',
-      '1\t私はカイです。\t私の名前はカイです。\tTôi là Khải.\t1\tDekiru Nihongo',
-      '2\tこれは本です。\tこれは書物です。\tĐây là cuốn sách.\t1\tDekiru Nihongo',
-      '3\tあなたは学生ですか。\t君は学生ですか。\tBạn có phải là học sinh không?\t1\tDekiru Nihongo',
-      '4\t今日はいい天気ですね。\t今日は良い天気ですね。\tHôm nay thời tiết đẹp nhỉ.\t2\tDekiru Nihongo',
-      '5\tすみません、トイレはどこですか。\tすみません、お手洗いはどこですか。\tXin lỗi, nhà vệ sinh ở đâu ạ?\t2\tDekiru Nihongo',
-      '6\tいくらですか。\t値段はいくらですか。\tGiá bao nhiêu tiền?\t2\tDekiru Nihongo',
-      '7\t電車で行きます。\t電車を使って行きます。\tTôi đi bằng tàu điện.\t3\tDekiru Nihongo',
-      '8\t毎朝、コーヒーを飲みます。\t毎朝、コーヒーを飲んでいます。\tMỗi sáng tôi uống cà phê.\t3\tDekiru Nihongo',
-      '9\t日本語を勉強しています。\t日本語を学んでいます。\tTôi đang học tiếng Nhật.\t3\tDekiru Nihongo',
-      '10\t友達に会いました。\t友人と会いました。\tTôi đã gặp bạn bè.\t4\tDekiru Nihongo',
-      '11\t明日、どこへ行きますか。\t明日、どこに行きますか。\tNgày mai bạn sẽ đi đâu?\t4\tDekiru Nihongo',
-      '12\tお腹が空きました。\t空腹です。\tTôi đói bụng rồi.\t4\tDekiru Nihongo',
-      '13\t映画を見に行きたいです。\t映画を観に行きたいです。\tTôi muốn đi xem phim.\t1\tMinato',
-      '14\tここに座ってもいいですか。\tここに座っていいですか。\tTôi có thể ngồi đây không?\t1\tMinato',
-      '15\t少し待ってください。\tちょっと待ってください。\tXin hãy đợi một chút.\t2\tMinato',
-    ].join('\n');
-
-    const count = DataManager.loadData(sampleTSV);
-    UIRenderer.renderSidebar();
-    UIRenderer.showToast(`✅ Đã load ${count} câu mẫu`);
-  }
-
-  /**
    * toggleUnitFilter — Bật/tắt filter theo unit
    */
   function toggleUnitFilter(book, unit) {
