@@ -120,7 +120,9 @@ const DataManager = (() => {
 
     const r = await fetch(bookUnit.url);
     const tsv = await r.text();
-    loadData(book, unit, tsv);
+    loadData(tsv);
+
+    bookUnit.isLoaded = true;
   }
 
   /**
