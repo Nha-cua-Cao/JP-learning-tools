@@ -533,7 +533,7 @@ const UIRenderer = (() => {
           </summary>
           <!-- Nút chọn/bỏ chọn tất cả unit của sách -->
           <div class="units-list">
-            <div class="select-all-row" onclick="App.toggleBookFilter('${escapeSingleQ(group.book)}', ${JSON.stringify(group.units)})">
+            <div class="select-all-row" onclick="App.toggleBookFilter('${escapeSingleQ(group.book)}', ${JSON.stringify(group.units).replaceAll('"', '\'')})">
               <input type="checkbox" ${allActive ? 'checked' : ''}
                 style="accent-color:var(--accent);width:14px;height:14px;pointer-events:none" />
               <span>Tất cả</span>
