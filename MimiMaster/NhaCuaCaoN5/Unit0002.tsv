@@ -1,5 +1,78 @@
-STT	Câu tiếng Nhật	Câu tiếng Nhật đồng nghĩa	Câu tiếng Việt	Unit	Giáo trình
-1	私はカイです。	私の名前はカイです。	Tôi là Khải.	1	Nhà của Cáo N5
-2	私はキツネです。	私の名前はキツネです。	Tôi là Kitsune.	1	Nhà của Cáo N5
-3	私はイヌです。	私の名前はイヌです。	Tôi là Inu.	1	Nhà của Cáo N5
-4	私はネコです。	私の名前はネコです。	Tôi là Neko.	1	Nhà của Cáo N5
+1	お名前は？	お名前（なまえ）は？	Tên của bạn là gì?	2	Nhà của Cáo N5
+2	お国は？	お国（くに）は？	Đất nước của bạn là nước nào?	2	Nhà của Cáo N5
+3	お仕事は？	お仕事（しごと）は？	Bạn đang làm nghề gì?	2	Nhà của Cáo N5
+4	私はデザイナーです。	私（わたし）はデザイナー（デザイナー）です。	Mình là designer.	2	Nhà của Cáo N5
+5	私は経営者です。	私（わたし）は経営者（けいえいしゃ）です。	Mình là doanh nhân.	2	Nhà của Cáo N5
+6	私は会社員です。	私（わたし）は会社員（かいしゃいん）です。	Mình là nhân viên công ty.	2	Nhà của Cáo N5
+7	私は銀行員です。	私（わたし）は銀行員（ぎんこういん）です。	Mình là nhân viên ngân hàng.	2	Nhà của Cáo N5
+8	私は医者です。	私（わたし）は医者（いしゃ）です。	Mình là bác sĩ.	2	Nhà của Cáo N5
+9	私は看護師です。	私（わたし）は看護師（かんごし）です。	Mình là y tá.	2	Nhà của Cáo N5
+10	私は介護士です。	私（わたし）は介護士（かいごし）です。	Mình là hộ lý.	2	Nhà của Cáo N5
+11	私は警察官です。	私（わたし）は警察官（けいさつかん）です。	Mình là cảnh sát.	2	Nhà của Cáo N5
+12	私は駅員です。	私（わたし）は駅員（えきいん）です。	Mình là nhân viên nhà ga.	2	Nhà của Cáo N5
+13	私は運転手です。	私（わたし）は運転手（うんてんしゅ）です。	Mình là tài xế.	2	Nhà của Cáo N5
+14	私は教師です。	私（わたし）は教師（きょうし）です。	Mình là giáo viên.	2	Nhà của Cáo N5
+15	私は学生です。	私（わたし）は学生（がくせい）です。	Mình là học sinh.	2	Nhà của Cáo N5
+16	イヌさんはデザイナーですか。	イヌさんはデザイナー（デザイナー）ですか。	Anh Inu là designer phải không?	2	Nhà của Cáo N5
+17	ネコさんは経営者ですか。	ネコさんは経営者（けいえいしゃ）ですか。	Anh Neko là doanh nhân phải không?	2	Nhà của Cáo N5
+18	イヌさんは会社員ですか。	イヌさんは会社員（かいしゃいん）ですか。	Anh Inu là nhân viên công ty phải không?	2	Nhà của Cáo N5
+19	キツネさんは銀行員ですか。	キツネさんは銀行員（ぎんこういん）ですか。	Anh Kitsune là nhân viên ngân hàng phải không?	2	Nhà của Cáo N5
+20	キツネさんはお医者さんですか。	キツネさんはお医者（いしゃ）さんですか。	Anh Kitsune là bác sĩ phải không?	2	Nhà của Cáo N5
+21	イヌさんは看護師さんですか。	イヌさんは看護師（かんごし）さんですか。	Anh Inu là y tá phải không?	2	Nhà của Cáo N5
+22	キツネさんは介護士さんですか。	キツネさんは介護士（かいごし）さんですか。	Anh Kitsune là hộ lý phải không?	2	Nhà của Cáo N5
+23	イヌさんはお巡りさんですか。	イヌさんはお巡（まわ）りさんですか。	Anh Inu là cảnh sát phải không?	2	Nhà của Cáo N5
+24	ネコさんは駅員さんですか。	ネコさんは駅員（えきいん）さんですか。	Anh Neko là nhân viên nhà ga phải không?	2	Nhà của Cáo N5
+25	キツネさんは運転手さんですか。	キツネさんは運転手（うんてんしゅ）さんですか。	Anh Kitsune là tài xế phải không?	2	Nhà của Cáo N5
+26	ネコさんは先生ですか。	ネコさんは先生（せんせい）ですか。	Anh Neko là giáo viên phải không?	2	Nhà của Cáo N5
+27	キツネさんは学生ですか。	キツネさんは学生（がくせい）ですか。	Anh Kitsune là học sinh phải không?	2	Nhà của Cáo N5
+28	はい、イヌさんはデザイナーです。	はい、イヌさんはデザイナー（デザイナー）です。	Vâng, anh Inu là designer.	2	Nhà của Cáo N5
+29	はい、イヌさんは経営者です。	はい、イヌさんは経営者（けいえいしゃ）です。	Vâng, anh Inu là doanh nhân/chủ doanh nghiệp.	2	Nhà của Cáo N5
+30	はい、キツネさんは会社員です。	はい、キツネさんは会社員（かいしゃいん）です。	Vâng, anh Kitsune là nhân viên công ty.	2	Nhà của Cáo N5
+31	はい、イヌさんは銀行員です。	はい、イヌさんは銀行員（ぎんこういん）です。	Vâng, anh Inu là nhân viên ngân hàng.	2	Nhà của Cáo N5
+32	はい、イヌさんはお医者さんです。	はい、イヌさんはお医者（いしゃ）さんです。	Vâng, anh Inu là bác sĩ.	2	Nhà của Cáo N5
+33	はい、ネコさんは看護師さんです。	はい、ネコさんは看護師（かんごし）さんです。	Vâng, anh Neko là y tá/điều dưỡng.	2	Nhà của Cáo N5
+34	はい、イヌさんは介護士さんです。	はい、イヌさんは介護士（かいごし）さんです。	Vâng, anh Inu là hộ lý.	2	Nhà của Cáo N5
+35	はい、イヌさんはお巡りさんです。	はい、イヌさんはお巡（まわ）りさんです。	Vâng, anh Inu là cảnh sát.	2	Nhà của Cáo N5
+36	はい、イヌさんは駅員さんです。	はい、イヌさんは駅員さ（えきいん）んです。	Vâng, anh Inu là nhân viên nhà ga.	2	Nhà của Cáo N5
+37	はい、キツネさんは運転手さんです。	はい、キツネさんは運転手（うんてんしゅ）さんです。	Vâng, anh Kitsune là tài xế.	2	Nhà của Cáo N5
+38	はい、キツネさんは先生です。	はい、キツネさんは先生（せんせい）です。	Vâng, anh Kitsune là giáo viên.	2	Nhà của Cáo N5
+39	はい、ネコさんは学生です。	はい、ネコさんは学生（がくせい）です。	Vâng, anh Neko là học sinh/sinh viên.	2	Nhà của Cáo N5
+40	はい、デザイナーです。	はい、デザイナー（デザイナー）です。	Vâng, mình là designer.	2	Nhà của Cáo N5
+41	はい、経営者です。	はい、経営者（けいえいしゃ）です。	Vâng, mình là doanh nhân.	2	Nhà của Cáo N5
+42	はい、会社員です。	はい、会社員（かいしゃいん）です。	Vâng, mình là nhân viên công ty.	2	Nhà của Cáo N5
+43	はい、銀行員です。	はい、銀行員（ぎんこういん）です。	Vâng, mình là nhân viên ngân hàng.	2	Nhà của Cáo N5
+44	はい、医者です。	はい、医者（いしゃ）です。	Vâng, mình là bác sĩ.	2	Nhà của Cáo N5
+45	はい、看護師です。	はい、看護師（かんごし）です。	Vâng, mình là y tá.	2	Nhà của Cáo N5
+46	はい、介護士です。	はい、介護士（かいごし）です。	Vâng, mình là hộ lý.	2	Nhà của Cáo N5
+47	はい、警察官です。	はい、警察官（けいさつかん）です。	Vâng, mình là cảnh sát.	2	Nhà của Cáo N5
+48	はい、駅員です。	はい、駅員（えきいん）です。	Vâng, mình là nhân viên nhà ga.	2	Nhà của Cáo N5
+49	はい、運転手です。	はい、運転手（うんてんしゅ）です。	Vâng, mình là tài xế.	2	Nhà của Cáo N5
+50	はい、教師です。	はい、教師（きょうし）です。	Vâng, mình là giáo viên.	2	Nhà của Cáo N5
+51	はい、学生です。	はい、学生（がくせい）です。	Vâng, mình là học sinh.	2	Nhà của Cáo N5
+52	いいえ、キツネさんはデザイナーじゃありません。	いいえ、キツネさんはデザイナー（デザイナー）じゃありません。	Dạ không, anh Kitsune không phải là designer.	2	Nhà của Cáo N5
+53	いいえ、イヌさんは経営者じゃありません。	いいえ、イヌさんは経営者（けいえいしゃ）じゃありません。	Dạ không, anh Inu không phải là doanh nhân.	2	Nhà của Cáo N5
+54	いいえ、キツネさんは会社員じゃありません。	いいえ、キツネさんは会社員（かいしゃいん）じゃありません。	Dạ không, anh Kitsune không phải là nhân viên công ty.	2	Nhà của Cáo N5
+55	いいえ、ネコさんは銀行員じゃありません。	いいえ、ネコさんは銀行員（ぎんこういん）じゃありません。	Dạ không, anh Neko không phải là nhân viên ngân hàng.	2	Nhà của Cáo N5
+56	いいえ、ネコさんはお医者さんじゃありません。	いいえ、ネコさんはお医者（いしゃ）さんじゃありません。	Dạ không, anh Neko không phải là bác sĩ.	2	Nhà của Cáo N5
+57	いいえ、ネコさんは看護師さんじゃありません。	いいえ、ネコさんは看護師（かんごし）さんじゃありません。	Dạ không, anh Neko không phải là y tá.	2	Nhà của Cáo N5
+58	いいえ、ネコさんは介護士さんじゃありません。	いいえ、ネコさんは介護士（かいごし）さんじゃありません。	Dạ không, anh Neko không phải là hộ lý.	2	Nhà của Cáo N5
+59	いいえ、ネコさんはお巡りさんじゃありません。	いいえ、ネコさんはお巡（まわ）りさんじゃありません。	Dạ không, anh Neko không phải là cảnh sát.	2	Nhà của Cáo N5
+60	いいえ、キツネさんは駅員さんじゃありません。	いいえ、キツネさんは駅員（えきいん）さんじゃありません。	Dạ không, anh Kitsune không phải là nhân viên nhà ga.	2	Nhà của Cáo N5
+61	いいえ、イヌさんは運転手さんじゃありません。	いいえ、イヌさんは運転手（うんてんしゅ）さんじゃありません。	Dạ không, anh Inu không phải là tài xế.	2	Nhà của Cáo N5
+62	いいえ、キツネさんは先生じゃありません。	いいえ、キツネさんは先生（せんせい）じゃありません。	Dạ không, anh Kitsune không phải là giáo viên.	2	Nhà của Cáo N5
+63	いいえ、ネコさんは学生じゃありません。	いいえ、ネコさんは学生（がくせい）じゃありません。	Dạ không, anh Neko không phải là học sinh.	2	Nhà của Cáo N5
+64	いいえ、デザイナーじゃありません。	いいえ、デザイナー（デザイナー）じゃありません。	Dạ không, mình không phải là designer.	2	Nhà của Cáo N5
+65	いいえ、経営者じゃありません。	いいえ、経営者（けいえいしゃ）じゃありません。	Dạ không, mình không phải là doanh nhân.	2	Nhà của Cáo N5
+66	いいえ、会社員じゃありません。	いいえ、会社員（かいしゃいん）じゃありません。	Dạ không, mình không phải là nhân viên công ty.	2	Nhà của Cáo N5
+67	いいえ、銀行員じゃありません。	いいえ、銀行員（ぎんこういん）じゃありません。	Dạ không, mình không phải là nhân viên ngân hàng.	2	Nhà của Cáo N5
+68	いいえ、医者じゃありません。	いいえ、医者（いしゃ）じゃありません。	Dạ không, mình không phải là bác sĩ.	2	Nhà của Cáo N5
+69	いいえ、看護師じゃありません。	いいえ、看護師（かんごし）じゃありません。	Dạ không, mình không phải là y tá.	2	Nhà của Cáo N5
+70	いいえ、介護士じゃありません。	いいえ、介護士（かいごし）じゃありません。	Dạ không, mình không phải là hộ lý.	2	Nhà của Cáo N5
+71	いいえ、警察官じゃありません。	いいえ、警察官（けいさつかん）じゃありません。	Dạ không, mình không phải là cảnh sát.	2	Nhà của Cáo N5
+72	いいえ、駅員じゃありません。	いいえ、駅員（えきいん）じゃありません。	Dạ không, mình không phải là nhân viên nhà ga.	2	Nhà của Cáo N5
+73	いいえ、運転手じゃありません。	いいえ、運転手（うんてんしゅ）じゃありません。	Dạ không, mình không phải là tài xế.	2	Nhà của Cáo N5
+74	いいえ、教師じゃありません。	いいえ、教師（きょうし）じゃありません。	Dạ không, mình không phải là giáo viên.	2	Nhà của Cáo N5
+75	いいえ、学生じゃありません。	いいえ、学生（がくせい）じゃありません。	Dạ không, mình không phải là học sinh.	2	Nhà của Cáo N5
+76	すみません。お名前は？	すみません。お名前（なまえ）は？	Xin lỗi. Tên của bạn là gì?	2	Nhà của Cáo N5
+77	すみません。お国は？	すみません。お国（くに）は？	Xin lỗi. Đất nước của bạn là nước nào?	2	Nhà của Cáo N5
+78	すみません。お仕事は？	すみません。お仕事（しごと）は？	Xin lỗi. Bạn đang làm nghề gì?	2	Nhà của Cáo N5

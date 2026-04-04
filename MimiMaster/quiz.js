@@ -259,7 +259,7 @@ const AudioPlayer = (() => {
 
     const utter = new SpeechSynthesisUtterance(text);
     utter.lang = 'ja-JP'; // Tiếng Nhật
-    utter.rate = 0.9;     // Tốc độ đọc hơi chậm để dễ nghe
+    utter.rate = 1.0;     // Tốc độ đọc hơi chậm để dễ nghe
     utter.pitch = 1.0;
 
     utter.onstart = () => { isSpeaking = true; };
@@ -813,9 +813,28 @@ const App = (() => {
   /**
    * toggleBookFilter — Bật/tắt tất cả unit của một giáo trình
    */
-  function toggleBookFilter(book, units) {
+  async function toggleBookFilter(book, units) {
     const allActive = DataManager.isBookAllActive(book, units);
-    DataManager.setBookFilter(book, units, !allActive);
+    const nextState = !allActive;
+
+    // 1. Nếu bật "Tất cả", thực hiện lazy load cho những unit chưa load
+    if (nextState) {
+      // Tạo danh sách các Promise load dữ liệu
+      const loadPromises = units
+        .filter(u => !DataManager.isLoaded(book, u))
+        .map(u => DataManager.lazyLoadUnit(book, u));
+      
+      if (loadPromises.length > 0) {
+        // Hiển thị thông báo đang tải nếu cần
+        UIRenderer.showToast(`Đang tải dữ liệu ${book}...`);
+        await Promise.all(loadPromises);
+      }
+    }
+
+    // 2. Cập nhật filter trong DataManager
+    DataManager.setBookFilter(book, units, nextState);
+
+    // 3. Re-render sidebar sau khi đã load xong và cập nhật filter
     UIRenderer.renderSidebar();
   }
 
