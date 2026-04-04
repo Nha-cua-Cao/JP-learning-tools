@@ -59,7 +59,7 @@
 
 body {
   background: var(--bg);
-  font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP', 'M PLUS Rounded 1c', sans-serif;
   color: var(--text-main);
   height: 100vh;
   overflow: hidden;
