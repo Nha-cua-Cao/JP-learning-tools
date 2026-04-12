@@ -12,6 +12,7 @@
 
   --bg:           #f0ece8;        /* Nền trang tổng thể */
   --surface:      #f7f4f1;        /* Nền card / sidebar */
+  --card-bg:      #ffffff;
   --border:       #e0dbd5;        /* Đường kẻ nhẹ */
   --shadow-sm:    0 1px 4px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.05);
   --shadow-md:    0 2px 8px rgba(0,0,0,.07), 0 8px 32px rgba(0,0,0,.07);
@@ -49,13 +50,15 @@ body {
 
 /* ─── HEADER ────────────────────────────────────────── */
 .app-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--surface);
-  border-bottom: 2px solid var(--coral);
   height: var(--header-h);
-  box-shadow: 0 1px 12px rgba(255,127,102,.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: var(--card-bg);
+  border-bottom: 2px solid var(--coral);
+  flex-shrink: 0;
+  z-index: 10;
 }
 
 .header-inner {
@@ -71,8 +74,11 @@ body {
 .header-brand {
   display: flex;
   align-items: center;
-  gap: 14px;
-  text-decoration: none;
+  gap: 10px;
+  color: var(--coral);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.04em;
 }
 
 .header-logo {
