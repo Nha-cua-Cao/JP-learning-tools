@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHÀ CỦA CÁO · MIMIMASTER</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet" />
+<style>
+/* ── BIẾN CSS (từ style.css) ── */
+:root {
+  --accent:           #ff7a6b;
+  --accent-light:     #fff0ee;
+  --accent-hover:     #ff5c4a;
+  --accent-deep:      #e85d4e;
+  --bg:               #f0ece8;
+  --sidebar-bg:       #f7f4f1;
+  --card-bg:          #ffffff;
+  --text-main:        #1e1e1e;
+  --text-sub:         #4a4a4a;
+  --text-muted:       #9e9a96;
+  --border:           #e0dbd5;
+  --shadow-sm:        0 1px 4px rgba(0,0,0,0.07);
+  --shadow:           0 4px 16px rgba(0,0,0,0.09);
+  --shadow-lg:        0 8px 30px rgba(0,0,0,0.14);
+  --gold:             #f5c842;
+  --gold-light:       #fefae8;
+  --gold-deep:        #c9a000;
+  --header-h:         54px;
+  --sidebar-w:        288px;
+  --radius:           16px;
+  --radius-sm:        10px;
+  --radius-xs:        6px;
+  /* backward compat */
+  --text:             #1e1e1e;
+  --text-muted:       #9e9a96;
+  --accent-mid:       #ffd5d0;
+  --green:            #16a34a;
+  --green-bg:         #f0fdf4;
+  --green-border:     #bbf7d0;
+  --sidebar:          #ffffff;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Noto Sans JP', 'M PLUS Rounded 1c', sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+/* ── HEADER liền mạch ── */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-h);
+  background: var(--card-bg);
+  border-bottom: 2px solid #ff7a6b;
+  flex-shrink: 0;
+  z-index: 10;
+  padding: 0 24px;
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #ff7a6b;
+}
+
+.mode-pill {
+  background: var(--accent-light);
+  color: #ff7a6b;
+  border: 1px solid var(--accent-mid);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+.topbar-tools {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.kbd-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #ff7a6b;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.kbd-btn:hover { background: var(--bg); box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.kbd-key {
+  background: rgba(255,122,107,0.12);
+  color: #ff7a6b;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+/* ── LAYOUT ── */
+.layout { display: flex; flex: 1; overflow: hidden; }
+
+/* ── SIDEBAR ── */
+.sidebar {
+  width: var(--sidebar-w);
+  min-width: var(--sidebar-w);
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidebar-lesson-hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px 10px;
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+.selected-badge { color: var(--accent); font-weight: 800; }
+
+.sidebar-scroll { flex: 1; overflow-y: auto; padding: 6px 0; }
+.sidebar-scroll::-webkit-scrollbar { width: 3px; }
+.sidebar-scroll::-webkit-scrollbar-thumb { background: #ddd; border-radius: 2px; }
+
+.course-group { margin-bottom: 2px; }
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.12s;
+}
+.course-header:hover { background: #f0ece8; }
+
+.chevron { font-size: 10px; color: var(--text-muted); transition: transform 0.2s; }
+.course-group.collapsed .chevron { transform: rotate(-90deg); }
+.course-group.collapsed .units-list { display: none; }
+
+.unit-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 16px 7px 22px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.12s;
+  border-left: 3px solid transparent;
+}
+.unit-item:hover { background: #f5f2ee; }
+.unit-item.active {
+  background: var(--accent-light);
+  border-left-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+.chkbox {
+  width: 16px; height: 16px;
+  border: 2px solid #d0ccc5;
+  border-radius: 4px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  font-size: 9px; font-weight: 900;
+  color: transparent;
+}
+.unit-item.active .chkbox { background: var(--accent); border-color: var(--accent); color: white; }
+.unit-label { flex: 1; }
+.unit-count { font-size: 11px; color: var(--text-muted); font-weight: 500; }
+.unit-item.active .unit-count { color: var(--accent); opacity: 0.65; }
+
+/* Sidebar bottom */
+.sidebar-bottom {
+  border-top: 1px solid var(--border);
+  padding: 12px 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* API Key section */
+.api-section {
+  background: #faf9f7;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+}
+.api-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9.5px;
+  font-weight: 800;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 7px;
+}
+.api-label-row a {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 9.5px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.api-label-row a:hover { text-decoration: underline; }
+
+.api-input-row { display: flex; gap: 5px; }
+.api-input {
+  flex: 1;
+  padding: 7px 10px;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  font-size: 11.5px;
+  font-family: inherit;
+  background: white;
+  outline: none;
+  color: var(--text-main);
+  transition: border-color 0.15s;
+}
+.api-input:focus { border-color: var(--accent); }
+
+.api-confirm-btn {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 7px;
+  background: var(--accent);
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.api-confirm-btn:hover { background: var(--accent-hover); }
+
+.api-status {
+  margin-top: 6px;
+  font-size: 10.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+.api-status.empty { color: var(--text-muted); background: transparent; }
+.api-status.set { color: var(--green); background: var(--green-bg); border: 1px solid var(--green-border); }
+.api-status.unset { color: #92400e; background: #fffbeb; border: 1px solid #fde68a; }
+
+.sbtn {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  letter-spacing: 0.01em;
+}
+.sbtn-import { background: var(--text-main); color: white; }
+.sbtn-import:hover { background: #333; }
+
+/* ── MAIN ── */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 24px;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Quiz card */
+.quiz-card-wrap { width: 100%; max-width: 600px; }
+.quiz-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.quiz-card::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), #ffb36b);
+}
+.quiz-card-body { padding: 30px 40px 28px; text-align: center; }
+
+.card-lang-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--accent);
+  word-break: break-word;
+}
+.card-text.sm { font-size: 26px; }
+.card-text.xs { font-size: 20px; }
+
+.card-grammar-tag {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 4px 13px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+.quiz-dir {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin: 18px 0 10px;
+}
+
+.quiz-input-row { display: flex; gap: 8px; margin-top: 4px; }
+.quiz-input {
+  flex: 1;
+  padding: 13px 18px;
+  border: 2px solid var(--border);
+  border-radius: 11px;
+  font-size: 15px;
+  font-family: inherit;
+  background: white;
+  outline: none;
+  color: var(--text-main);
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+.quiz-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255,122,107,0.12); }
+.quiz-input:disabled { background: #f5f4f0; color: var(--text-muted); }
+
+.quiz-submit-btn {
+  padding: 0 20px;
+  border-radius: 11px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.quiz-submit-btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+.quiz-submit-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+/* ── PROGRESS ── */
+.progress-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+.progress-num { font-size: 12px; font-weight: 700; color: var(--text-muted); white-space: nowrap; min-width: 38px; }
+.progress-track { flex: 1; height: 4px; background: rgba(0,0,0,0.08); border-radius: 2px; position: relative; overflow: visible; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width 0.3s ease; position: relative; }
+.progress-dot { position: absolute; right: -4px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+
+/* ── NAV ── */
+.nav-row { display: flex; align-items: center; gap: 14px; }
+.nav-btn {
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-main);
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.nav-btn:hover { background: #f5f2ec; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+/* ── EMPTY STATE ── */
+.empty { text-align: center; color: var(--text-muted); }
+.empty-icon { font-size: 52px; margin-bottom: 16px; opacity: 0.25; filter: grayscale(0.3); }
+.empty-title { font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 8px; }
+.empty-desc { font-size: 13px; line-height: 1.7; max-width: 300px; color: var(--text-muted); }
+
+/* ── GRADING OVERLAY (blur backdrop) ── */
+.grading-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 18, 16, 0.38);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 190;
+  display: none;
+  cursor: pointer;
+}
+.grading-overlay.visible { display: block; }
+
+/* ── RESULT PANEL — canh giữa màn hình ── */
+.result-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.22), 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+  z-index: 200;
+  animation: panelIn 0.24s cubic-bezier(0.2, 0, 0, 1);
+}
+@keyframes panelIn {
+  from { opacity: 0; transform: translate(-50%, -48%) scale(0.97); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+/* Score badge */
+.score-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  gap: 14px;
+}
+.score-circle {
+  FONT-VARIANT: JIS90;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 900;
+  flex-shrink: 0;
+  border: 3px solid;
+}
+.score-circle.ok  { color: var(--green); border-color: var(--green); background: var(--green-bg); }
+.score-circle.bad { color: var(--accent); border-color: var(--accent); background: var(--accent-light); }
+.score-circle.loading { color: var(--text-muted); border-color: var(--border); background: #f7f5f2; animation: pulse 1s infinite; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+.score-info { flex: 1; }
+.result-status-text {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.result-status-text.ok  { color: var(--green); }
+.result-status-text.bad { color: var(--accent); }
+.result-status-text.loading { color: var(--text-muted); }
+.result-status-sub {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+/* Loading indicator bar */
+.grading-bar {
+  width: 100%;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.grading-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  animation: loadingBar 1.4s ease-in-out infinite;
+}
+@keyframes loadingBar {
+  0%   { width: 0%; margin-left: 0; }
+  50%  { width: 70%; margin-left: 0; }
+  100% { width: 0%; margin-left: 100%; }
+}
+
+.result-section { margin-bottom: 12px; }
+.result-lbl {
+  font-size: 10px; font-weight: 800; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 5px;
+}
+.result-lbl.ai { color: #3b82f6; }
+.result-val {
+  font-size: 13.5px; color: var(--text-main);
+  background: #f7f5f2; padding: 9px 13px; border-radius: 9px;
+  line-height: 1.55;
+}
+.result-val.ai-text { color: #1d4ed8; font-style: italic; background: #eff6ff; }
+
+.btn-next {
+  width: 100%; padding: 13px;
+  background: var(--text-main); color: white;
+  border: none; border-radius: 11px;
+  font-size: 13.5px; font-weight: 800;
+  cursor: pointer; font-family: inherit;
+  letter-spacing: 0.04em;
+  transition: background 0.15s;
+  margin-top: 4px;
+}
+.btn-next:hover { background: #333; }
+
+#fileInput { display: none; }
+
+/* ── TOAST ── */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  background: var(--green);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 13.5px;
+  font-weight: 700;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: toastIn 0.25s cubic-bezier(0.2, 0, 0.2, 1);
+}
+.toast.hiding { animation: toastOut 0.3s ease forwards; }
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+@keyframes toastOut {
+  from { opacity: 1; transform: translateX(-50%) translateY(0); }
+  to   { opacity: 0; transform: translateX(-50%) translateY(10px); }
+}
+
+/* Card entrance anim */
+@keyframes cardSlideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card-enter { animation: cardSlideUp 0.28s cubic-bezier(0.2, 0, 0.2, 1); }
+</style>
+</head>
+<body>
+
+<!-- HEADER liền mạch -->
+<header class="topbar">
+  <div class="topbar-brand">
+    ⛩️ NHÀ CỦA CÁO · MIMIMASTER
+    <span class="mode-pill">✏️ LUYỆN DỊCH</span>
+  </div>
+  <div class="topbar-tools">
+    <button class="kbd-btn" onclick="prevCard()"><span class="kbd-key">←</span> Trước</button>
+    <button class="kbd-btn" onclick="nextCard()">Tiếp <span class="kbd-key">→</span></button>
+  </div>
+</header>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-lesson-hd">
+      <span>CHỌN BÀI HỌC</span>
+      <span class="selected-badge" id="selCount">0 CÂU</span>
+    </div>
+
+    <div class="sidebar-scroll" id="sidebarList">
+      <div style="padding:28px 16px; text-align:center; color:var(--text-muted);">
+        <div style="font-size:32px;margin-bottom:10px;">📂</div>
+        <div style="font-size:12px; line-height:1.6;">Import file TSV để xem danh sách bài học</div>
+      </div>
+    </div>
+
+    <div class="sidebar-bottom">
+      <!-- API Key section -->
+      <div class="api-section">
+        <div class="api-label-row">
+          <span>Gemini API Key</span>
+          <a href="https://aistudio.google.com/app/api-keys" target="_blank">Lấy miễn phí ↗</a>
+        </div>
+        <div class="api-input-row">
+          <input type="password" class="api-input" id="apiKeyInput" placeholder="Dán API Key...">
+          <button class="api-confirm-btn" onclick="confirmApiKey()">Xác nhận</button>
+        </div>
+        <div class="api-status empty" id="apiStatus">
+          <span>○</span><span>Chưa nhập key</span>
+        </div>
+      </div>
+
+      <label class="sbtn sbtn-import" for="fileInput">📥 Import TSV</label>
+    </div>
+
+    <input type="file" id="fileInput" accept=".tsv,.txt">
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main" id="mainArea">
+    <div class="empty">
+      <div class="empty-icon">🦊</div>
+      <div class="empty-title">Chào mừng đến Nhà của Cáo!</div>
+      <div class="empty-desc">Import file TSV và chọn Unit ở bên trái để bắt đầu luyện dịch.</div>
+    </div>
+  </main>
+
+</div>
+
+<!-- GRADING OVERLAY -->
+<div class="grading-overlay" id="gradingOverlay"></div>
+
+<!-- RESULT PANEL -->
+<div class="result-panel" id="resultPanel" style="display:none;"></div>
+
+<script type="module">
+import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
+
+// ─── STATE ───────────────────────────────────────────
+let allData     = [];
+let filtered    = [];
+let idx         = 0;
+let jpToVi      = true;
+let lastFile    = null;
+
+// ─── HELPERS ──────────────────────────────────────────
+function g(id) { return document.getElementById(id); }
+
+function esc(s) {
+  if (!s) return '';
+  return String(s)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#39;');
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// ─── TOAST ────────────────────────────────────────────
+function showToast(msg, emoji = '✅') {
+  const existing = document.querySelector('.toast');
+  if (existing) existing.remove();
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.innerHTML = `<span>${emoji}</span><span>${msg}</span>`;
+  document.body.appendChild(t);
+  setTimeout(() => {
+    t.classList.add('hiding');
+    setTimeout(() => t.remove(), 320);
+  }, 2000);
+}
+
+// ─── API KEY ──────────────────────────────────────────
+const savedKey = localStorage.getItem('blazecard_gemini_key');
+if (savedKey) {
+  g('apiKeyInput').value = savedKey;
+  updateApiStatus(true);
+} else {
+  updateApiStatus(false);
+}
+
+function updateApiStatus(isSet) {
+  const el = g('apiStatus');
+  if (isSet) {
+    el.className = 'api-status set';
+    el.innerHTML = `<span>●</span><span>Key đã được lưu</span>`;
+  } else {
+    el.className = 'api-status unset';
+    el.innerHTML = `<span>○</span><span>Chưa có key — AI không hoạt động</span>`;
+  }
+}
+
+window.confirmApiKey = function() {
+  const val = g('apiKeyInput').value.trim();
+  if (!val) {
+    g('apiStatus').className = 'api-status unset';
+    g('apiStatus').innerHTML = `<span>○</span><span>Vui lòng nhập API Key</span>`;
+    return;
+  }
+  localStorage.setItem('blazecard_gemini_key', val);
+  updateApiStatus(true);
+  showToast('Đã lưu Gemini API Key!', '🔑');
+};
+
+// ─── FILE IMPORT ──────────────────────────────────────
+g('fileInput').addEventListener('change', e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  lastFile = file;
+  readFile(file);
+  e.target.value = '';
+});
+
+function readFile(file) {
+  const reader = new FileReader();
+  reader.onload = ev => parseTSV(ev.target.result, file.name);
+  reader.readAsText(file, 'UTF-8');
+}
+
+function parseTSV(text, fileName) {
+  const lines = text.split(/\r?\n/).filter(l => l.trim());
+  allData = [];
+  for (let i = 1; i < lines.length; i++) {
+    const cols = lines[i].split('\t').map(c => c.trim());
+    if (cols.length >= 6 && cols[2] && cols[3]) {
+      allData.push({ id: cols[0], grammar: cols[1], jp: cols[2], vi: cols[3], unit: cols[4], course: cols[5] });
+    }
+  }
+  if (allData.length === 0) { alert('Không đọc được dữ liệu. Kiểm tra định dạng TSV.'); return; }
+  buildSidebar();
+  showToast(`Import thành công: ${allData.length} câu!`, '📥');
+}
+
+// ─── SIDEBAR ──────────────────────────────────────────
+function buildSidebar() {
+  const courses = [...new Set(allData.map(i => i.course))];
+  let html = '';
+  courses.forEach(course => {
+    const units = [...new Set(allData.filter(i => i.course === course).map(i => i.unit))];
+    units.sort((a, b) => parseInt(a) - parseInt(b));
+    html += `<div class="course-group" data-course="${esc(course)}">
+      <div class="course-header" onclick="toggleCourse(this)">
+        <span>${esc(course)}</span><span class="chevron">▾</span>
+      </div>
+      <div class="units-list">`;
+    units.forEach(u => {
+      const cnt = allData.filter(i => i.course === course && i.unit === u).length;
+      html += `<div class="unit-item" data-course="${esc(course)}" data-unit="${esc(u)}" onclick="toggleUnit(this)">
+        <div class="chkbox">✓</div>
+        <span class="unit-label">Unit ${esc(u)}</span>
+        <span class="unit-count">${cnt}</span>
+      </div>`;
+    });
+    html += `</div></div>`;
+  });
+  g('sidebarList').innerHTML = html;
+  updateCount();
+}
+
+window.toggleCourse = function(el) { el.parentElement.classList.toggle('collapsed'); };
+window.toggleUnit = function(el) {
+  el.classList.toggle('active');
+  updateCount();
+  applyFilter();
+};
+
+function updateCount() {
+  const sel = [...document.querySelectorAll('.unit-item.active')];
+  const cnt = sel.reduce((sum, el) => {
+    const c = el.dataset.course, u = el.dataset.unit;
+    return sum + allData.filter(i => i.course === c && i.unit === u).length;
+  }, 0);
+  g('selCount').textContent = `${cnt} CÂU`;
+}
+
+function applyFilter() {
+  const active = [...document.querySelectorAll('.unit-item.active')];
+  if (!active.length) { filtered = []; renderMain(); return; }
+  const sel = active.map(el => ({ course: el.dataset.course, unit: el.dataset.unit }));
+  filtered = shuffle(allData.filter(i => sel.some(s => s.course === i.course && s.unit === i.unit)));
+  idx = 0;
+  closeResultPanel();
+  renderMain();
+}
+
+// ─── CLOSE RESULT PANEL ───────────────────────────────
+function closeResultPanel() {
+  g('resultPanel').style.display = 'none';
+  g('gradingOverlay').classList.remove('visible');
+}
+
+// Click overlay to close result panel
+g('gradingOverlay').addEventListener('click', () => {
+  closeResultPanel();
+  // Re-enable quiz input if still on quiz
+  const qi = g('quizInput');
+  const sb = g('quizSubmitBtn');
+  if (qi) qi.disabled = false;
+  if (sb) sb.disabled = false;
+});
+
+// ─── RENDER MAIN ─────────────────────────────────────
+function renderMain() {
+  closeResultPanel();
+  if (!filtered.length) {
+    g('mainArea').innerHTML = `<div class="empty">
+      <div class="empty-icon">🦊</div>
+      <div class="empty-title">Chưa có thẻ nào</div>
+      <div class="empty-desc">Chọn ít nhất một Unit từ danh sách bên trái để bắt đầu luyện dịch.</div>
+    </div>`;
+    return;
+  }
+  renderQuiz();
+}
+
+// ─── QUIZ ─────────────────────────────────────────────
+function renderQuiz() {
+  // Hướng dịch ngẫu nhiên mỗi câu
+  jpToVi = Math.random() > 0.5;
+
+  const item = filtered[idx];
+  const question = jpToVi ? item.jp : item.vi;
+  const dir = jpToVi ? 'Dịch sang tiếng Việt:' : 'Dịch sang tiếng Nhật:';
+  const textSize = t => t.length > 40 ? 'xs' : t.length > 22 ? 'sm' : '';
+  const pct = ((idx + 1) / filtered.length * 100).toFixed(1);
+
+  g('mainArea').innerHTML = `
+    <div class="quiz-card-wrap card-enter">
+      <div class="quiz-card">
+        <div class="quiz-card-body">
+          <div class="card-lang-tag">${esc(jpToVi ? 'Tiếng Nhật' : 'Tiếng Việt')}</div>
+          <div class="card-text ${textSize(question)}">${esc(question)}</div>
+          <div class="card-grammar-tag">${esc(item.grammar)}</div>
+          <div class="quiz-dir">${esc(dir)}</div>
+          <div class="quiz-input-row">
+            <input type="text" class="quiz-input" id="quizInput"
+              placeholder="Nhập bản dịch của bạn..." autocomplete="off">
+				<button class="quiz-submit-btn" id="quizSubmitBtn">
+              Gửi ▶
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-row">
+      <span class="progress-num">${idx + 1}/${filtered.length}</span>
+      <div class="progress-track">
+        <div class="progress-fill" style="width:${pct}%">
+          <div class="progress-dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <button class="nav-btn" onclick="prevCard()">← Trước</button>
+      <button class="nav-btn" onclick="nextCard()">Tiếp →</button>
+    </div>
+  `;
+
+const qi = g('quizInput');
+  const sb = g('quizSubmitBtn');
+  
+  // Xử lý nhấn Enter
+  if (qi) qi.addEventListener('keypress', e => { 
+    if (e.key === 'Enter') window.evaluate(); 
+  });
+  
+  // Xử lý bấm nút Gửi
+  if (sb) sb.addEventListener('click', () => {
+    window.evaluate();
+  });
+
+  setTimeout(() => qi && qi.focus(), 60);
+}
+
+// ─── NAVIGATION ───────────────────────────────────────
+window.nextCard = function() {
+  if (!filtered.length) return;
+  idx = (idx + 1) % filtered.length;
+  closeResultPanel();
+  renderMain();
+};
+
+window.prevCard = function() {
+  if (!filtered.length) return;
+  idx = (idx - 1 + filtered.length) % filtered.length;
+  closeResultPanel();
+  renderMain();
+};
+
+// ─── EVALUATE ─────────────────────────────────────────
+window.evaluate = async function() {
+  const qi = g('quizInput');
+  const submitBtn = g('quizSubmitBtn');
+  if (!qi) return;
+  const val = qi.value.trim();
+  if (!val) { qi.focus(); return; }
+
+  const item    = filtered[idx];
+  const correct = jpToVi ? item.vi : item.jp;
+  const panel   = g('resultPanel');
+
+  // Disable input while grading
+  qi.disabled = true;
+  if (submitBtn) submitBtn.disabled = true;
+
+  // Show overlay + panel
+  g('gradingOverlay').classList.add('visible');
+  panel.style.display = 'block';
+  panel.innerHTML = `
+    <div class="score-badge">
+      <div class="score-circle loading">⏳</div>
+      <div class="score-info">
+        <div class="result-status-text loading">Đang chấm bài...</div>
+        <div class="result-status-sub">Giáo viên AI đang phân tích câu trả lời của bạn</div>
+      </div>
+    </div>
+    <div class="grading-bar"><div class="grading-bar-fill"></div></div>
+    <div class="result-section">
+      <div class="result-lbl">Đáp án chuẩn:</div>
+      <div class="result-val">${esc(correct)}</div>
+    </div>
+    <div class="result-section">
+      <div class="result-lbl">Câu của bạn:</div>
+      <div class="result-val">${esc(val)}</div>
+    </div>
+  `;
+
+  // Exact match check
+  if (val.toLowerCase().trim() === correct.toLowerCase().trim()) {
+    showResult({ score: 100, is_correct: true, feedback: 'Hoàn hảo! Bạn đã dùng đúng từng từ so với đáp án mẫu.' }, val, correct);
+    return;
+  }
+
+  const apiKey = localStorage.getItem('blazecard_gemini_key') || '';
+  if (!apiKey) {
+    showResult({ score: null, is_correct: false, feedback: 'Câu chưa khớp đáp án mẫu. Nhập Gemini API Key để AI phân tích và chấm điểm chi tiết.' }, val, correct);
+    return;
+  }
+
+  try {
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+
+    const prompt = `Bạn là giáo viên ngôn ngữ chấm bài dịch.
+
+Câu gốc: "${jpToVi ? item.jp : item.vi}"
+Đáp án mẫu: "${correct}"
+Ngữ pháp cần luyện: "${item.grammar}"
+Bài làm của học viên: "${val}"
+
+Hãy đánh giá bài làm:
+${jpToVi
+  ? '- Nếu bài làm là tiếng Việt: Ưu tiên nội dung cốt lõi (Ai làm gì, ở đâu, tính chất gì). Chấp nhận mọi cách diễn đạt tự nhiên, không bắt lỗi cấu trúc ngữ pháp hay sắc thái nhấn mạnh nếu ý chính đã đúng. Nếu đúng thông tin cơ bản, điểm phải >= 70.'
+  : '- Nếu bài làm là tiếng Nhật: Đánh giá cả ngữ nghĩa lẫn cấu trúc ngữ pháp. Điểm ngữ pháp (đặc biệt là mẫu cấu trúc cần luyện) chiếm 70% trọng số điểm.'}
+- Cho điểm từ 0 đến 100 dựa trên độ chính xác về ý nghĩa.
+- Trên 75 điểm coi là đúng.
+- Nhận xét ngắn gọn bằng tiếng Việt, gọi người học là " bạn".
+
+Trả về JSON (không có markdown, không có backtick):
+{"score": <số 0-100>, "is_correct": <true/false>, "feedback": "<nhận xét>"}`;
+
+    const result = await model.generateContent(prompt);
+    let text = result.response.text().replace(/```json|```/g, '').trim();
+    const m = text.match(/\{[\s\S]*\}/);
+    if (!m) throw new Error('No JSON');
+    const ai = JSON.parse(m[0]);
+    showResult(ai, val, correct);
+  } catch (err) {
+    console.error(err);
+    showResult({ score: null, is_correct: false, feedback: 'Không thể kết nối AI. Vui lòng kiểm tra lại API Key và kết nối mạng.' }, val, correct);
+  }
+};
+
+function showResult(ai, val, correct) {
+  const panel = g('resultPanel');
+  const score = ai.score;
+  const isOk  = ai.is_correct || (score !== null && score >= 75);
+  const scoreLabel = score !== null ? `${score}/100` : '—';
+  const statusText = isOk ? '✅ ĐÚNG RỒI!' : '❌ CHƯA ĐÚNG';
+  const subText    = isOk
+    ? (score === 100 ? 'Chính xác tuyệt đối!' : `Đạt ${scoreLabel} — Câu dịch tốt`)
+    : (score !== null ? `Đạt ${scoreLabel} — Cần cải thiện` : 'Chưa khớp đáp án mẫu');
+
+  panel.innerHTML = `
+    <div class="score-badge">
+      <div class="score-circle ${isOk ? 'ok' : 'bad'}">${scoreLabel}</div>
+      <div class="score-info">
+        <div class="result-status-text ${isOk ? 'ok' : 'bad'}">${statusText}</div>
+        <div class="result-status-sub">${subText}</div>
+      </div>
+    </div>
+    <div class="result-section">
+      <div class="result-lbl">Đáp án chuẩn:</div>
+      <div class="result-val">${esc(correct)}</div>
+    </div>
+    <div class="result-section">
+      <div class="result-lbl">Câu của bạn:</div>
+      <div class="result-val">${esc(val)}</div>
+    </div>
+    <div class="result-section">
+      <div class="result-lbl ai">AI nhận xét:</div>
+      <div class="result-val ai-text">${esc(ai.feedback)}</div>
+    </div>
+    <button class="btn-next" id="btnNext">CÂU TIẾP THEO →</button>
+  `;
+
+  g('btnNext').onclick = () => { closeResultPanel(); window.nextCard(); };
+
+  // Re-enable input
+  const qi = g('quizInput');
+  const sb = g('quizSubmitBtn');
+  if (qi) qi.disabled = false;
+  if (sb) sb.disabled = false;
+}
+
+// ─── TTS ──────────────────────────────────────────────
+window.speak = function(text, lang) {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = lang;
+  window.speechSynthesis.speak(u);
+};
+
+// ─── KEYBOARD ─────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (['input','textarea'].includes(document.activeElement.tagName.toLowerCase())) return;
+  if (e.key === 'ArrowRight') { e.preventDefault(); window.nextCard(); }
+  else if (e.key === 'ArrowLeft') { e.preventDefault(); window.prevCard(); }
+  else if (e.key === 'Escape') { closeResultPanel(); }
+});
+</script>
+</body>
+</html>
