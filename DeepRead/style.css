@@ -5,30 +5,30 @@
 
 /* ─── BIẾN THIẾT KẾ ─────────────────────────────────── */
 :root {
-  --coral:        #FF7F66;        /* Màu chủ đạo Cam san hô */
-  --coral-dark:   #e5634a;        /* Coral đậm hơn khi hover */
-  --coral-light:  #fff1ee;        /* Coral cực nhạt làm nền nhấn */
+  --coral:        #ff7a6b;        /* Màu chủ đạo Cam san hô */
+  --coral-dark:   #ff5c4a;        /* Coral đậm hơn khi hover */
+  --coral-light:  #fff0ee;        /* Coral cực nhạt làm nền nhấn */
   --coral-muted:  rgba(255,127,102,.15);
 
-  --bg:           #f7f7f5;        /* Nền trang tổng thể */
-  --surface:      #ffffff;        /* Nền card / sidebar */
-  --border:       #ebebeb;        /* Đường kẻ nhẹ */
+  --bg:           #f0ece8;        /* Nền trang tổng thể */
+  --surface:      #f7f4f1;        /* Nền card / sidebar */
+  --border:       #e0dbd5;        /* Đường kẻ nhẹ */
   --shadow-sm:    0 1px 4px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.05);
   --shadow-md:    0 2px 8px rgba(0,0,0,.07), 0 8px 32px rgba(0,0,0,.07);
 
-  --text-primary:   #1a1a1a;
-  --text-secondary: #5a5a5a;
-  --text-muted:     #9a9a9a;
+  --text-primary:   #1e1e1e;
+  --text-secondary: #4a4a4a;
+  --text-muted:     #9e9a96;
 
-  --sidebar-w:    280px;          /* Chiều rộng cố định của sidebar */
+  --sidebar-w:    288px;          /* Chiều rộng cố định của sidebar */
   --header-h:     60px;
 
   --radius-sm:    6px;
   --radius-md:    10px;
   --radius-lg:    16px;
 
-  --font-ui:      'DM Sans', sans-serif;
-  --font-jp:      'Noto Serif JP', serif;
+  --font-ui:      'Noto Sans JP', 'M PLUS Rounded 1c', sans-serif;
+  --font-jp:      'Noto Sans JP', 'M PLUS Rounded 1c', sans-serif;
 
   --transition:   .18s cubic-bezier(.4,0,.2,1);
 }
