@@ -100,34 +100,38 @@
       <!-- Khu vực bài đọc (ẩn cho tới khi chọn bài) -->
       <div class="reading-area" id="reading-area" hidden>
 
-        <!-- Thẻ thông tin bài đọc -->
-        <div class="reading-meta-bar" id="reading-meta-bar">
-          <span class="reading-level-badge" id="reading-level-badge"></span>
-          <h1 class="reading-title" id="reading-title"></h1>
+        <div class="reading-text-section">
+          <!-- Thẻ thông tin bài đọc -->
+          <div class="reading-meta-bar" id="reading-meta-bar">
+            <span class="reading-level-badge" id="reading-level-badge"></span>
+            <h1 class="reading-title" id="reading-title"></h1>
+          </div>
+
+          <!-- Thẻ nội dung bài đọc -->
+          <div class="card reading-card" id="reading-card">
+            <div class="reading-body" id="reading-body"></div>
+          </div>
         </div>
 
-        <!-- Thẻ nội dung bài đọc -->
-        <div class="card reading-card" id="reading-card">
-          <div class="reading-body" id="reading-body"></div>
-        </div>
+        <div class="reading-question-section">
+          <!-- Khu vực câu hỏi -->
+          <div class="questions-section" id="questions-section"></div>
 
-        <!-- Khu vực câu hỏi -->
-        <div class="questions-section" id="questions-section"></div>
+          <!-- Nút Nộp bài (chỉ hiện ở chế độ Kiểm tra) -->
+          <div class="submit-bar" id="submit-bar" hidden>
+            <button class="btn btn-submit" id="submit-btn" onclick="handleSubmitExam()">
+              <span>Nộp bài</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </button>
+          </div>
 
-        <!-- Nút Nộp bài (chỉ hiện ở chế độ Kiểm tra) -->
-        <div class="submit-bar" id="submit-bar" hidden>
-          <button class="btn btn-submit" id="submit-btn" onclick="handleSubmitExam()">
-            <span>Nộp bài</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          </button>
-        </div>
-
-        <!-- Kết quả tổng quát (chế độ Kiểm tra) -->
-        <div class="result-summary card" id="result-summary" hidden>
-          <div class="result-icon" id="result-icon"></div>
-          <div class="result-text">
-            <p class="result-score" id="result-score"></p>
-            <p class="result-message" id="result-message"></p>
+          <!-- Kết quả tổng quát (chế độ Kiểm tra) -->
+          <div class="result-summary card" id="result-summary" hidden>
+            <div class="result-icon" id="result-icon"></div>
+            <div class="result-text">
+              <p class="result-score" id="result-score"></p>
+              <p class="result-message" id="result-message"></p>
+            </div>
           </div>
         </div>
 

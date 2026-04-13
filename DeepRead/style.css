@@ -22,7 +22,7 @@
   --text-muted:     #9e9a96;
 
   --sidebar-w:    288px;          /* Chiều rộng cố định của sidebar */
-  --header-h:     60px;
+  --header-h:     54px;
 
   --radius-sm:    6px;
   --radius-md:    10px;
@@ -81,40 +81,8 @@ body {
   letter-spacing: 0.04em;
 }
 
-.header-logo {
-  width: 38px;
-  height: 38px;
-  background: var(--coral);
-  color: #fff;
-  font-family: var(--font-jp);
-  font-size: 1.3rem;
-  font-weight: 700;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.header-titles {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-.header-title-ja {
-  font-family: var(--font-jp);
-  font-size: .95rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: .04em;
-}
-
-.header-title-vi {
-  font-size: .72rem;
-  color: var(--text-muted);
-  font-weight: 400;
-  letter-spacing: .03em;
+.header-brand .gate-icon {
+  font-size: 20px;
 }
 
 /* ─── CÔNG TẮC CHẾ ĐỘ ──────────────────────────────── */
@@ -180,6 +148,7 @@ body.exam-mode #label-exam     { color: var(--coral); }
   display: flex;
   flex: 1;
   height: calc(100vh - var(--header-h));
+  max-height: calc(100vh - var(--header-h));
   overflow: hidden;
 }
 
@@ -299,6 +268,7 @@ body.exam-mode #label-exam     { color: var(--coral); }
 
 /* ─── NỘI DUNG CHÍNH ─────────────────────────────────── */
 .main-content {
+  max-height: calc(100vh - var(--header-h));
   flex: 1;
   overflow-y: auto;
   padding: 32px 40px;
@@ -379,7 +349,30 @@ body.exam-mode #label-exam     { color: var(--coral); }
 }
 
 /* ─── KHU VỰC BÀI ĐỌC ───────────────────────────────── */
-.reading-area { max-width: 800px; margin: 0 auto; }
+.reading-area { 
+  display: flex; 
+  gap: 32px;
+  align-items: center;
+  max-width: 1000px; 
+  margin: 0 auto; 
+  max-height: calc(100vh - var(--header-h) - 64px); /* Trừ header và padding */
+}
+
+.reading-text-section {
+  width: 50%;
+  max-height: calc(100vh - var(--header-h) - 64px);
+  overflow-y: auto;
+  scrollbar-width: none; /* Ẩn scrollbar mặc định */
+  scrollbar-color: var(--border) transparent;
+}
+
+.reading-question-section {
+  width: 50%;
+  max-height: calc(100vh - var(--header-h) - 64px);
+  overflow-y: auto;
+  scrollbar-width: none; /* Ẩn scrollbar mặc định */
+  scrollbar-color: var(--border) transparent;
+}
 
 .reading-meta-bar {
   display: flex;

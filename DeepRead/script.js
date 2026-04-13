@@ -143,7 +143,7 @@ function renderSidebar(lessons) {
 
     const heading = document.createElement('div');
     heading.className = 'level-heading';
-    heading.innerHTML = `<span class="level-badge-tag">${level}</span> Cấp độ`;
+    heading.innerHTML = `Cấp độ <span class="level-badge-tag">${level}</span>`;
     group.appendChild(heading);
 
     for (const lesson of items) {
@@ -217,9 +217,12 @@ function renderReading(data, lesson) {
   state.submitted   = false;
   renderQuestions(data.questions);
 
+  // Ẩn thông tin welcome-screen nếu đang hiển thị
+  document.getElementById('welcome-screen').style.display = 'none';
+
   // Ẩn/hiện nút Nộp bài và kết quả tuỳ chế độ
-  document.getElementById('submit-bar').hidden     = !state.isExamMode;
-  document.getElementById('result-summary').hidden = true;
+  document.getElementById('submit-bar').style.display     = state.isExamMode ? 'flex' : 'none';
+  document.getElementById('result-summary').style.display = state.isExamMode ? 'flex' : 'none';;
 
   // Bỏ skeleton, hiện reading-area
   hideLoadingState();
@@ -251,13 +254,30 @@ function buildQuestionCard(question, idx) {
   `;
 
   const list = card.querySelector(`#options-${question.id}`);
-  question.options.forEach(opt => {
-    const btn = document.createElement('button');
-    btn.className   = 'option-btn';
-    btn.dataset.key = opt.key;
-    btn.innerHTML   = `<span class="option-key">${opt.key}</span><span class="option-text">${opt.text}</span>`;
-    btn.addEventListener('click', () => onOptionClick(question, opt.key, card));
-    list.appendChild(btn);
+
+  // 1. Tạo một bản sao và xáo trộn mảng options (Fisher-Yates Shuffle)
+  const shuffledOptions = [...question.options].sort(() => Math.random() - 0.5); 
+  // Lưu ý: Cách dùng .sort() ở trên đơn giản nhưng nếu muốn ngẫu nhiên tuyệt đối, 
+  // bạn nên dùng thuật toán Fisher-Yates chuẩn.
+
+  shuffledOptions.forEach((opt, index) => {
+      const btn = document.createElement('button');
+      btn.className = 'option-btn';
+      
+      // Giữ nguyên opt.key trong dataset để logic check đáp án không bị thay đổi
+      btn.dataset.key = opt.key;
+
+      // 2. Chuyển index (0, 1, 2, 3) thành (A, B, C, D)
+      // 65 là mã ASCII của chữ 'A'
+      const label = String.fromCharCode(65 + index);
+
+      btn.innerHTML = `
+          <span class="option-key">${label}</span>
+          <span class="option-text">${opt.text}</span>
+      `;
+
+      btn.addEventListener('click', () => onOptionClick(question, opt.key, card));
+      list.appendChild(btn);
   });
 
   return card;
