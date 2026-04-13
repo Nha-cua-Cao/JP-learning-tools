@@ -187,16 +187,16 @@ function updateSidebarCompleted(jsonName) {
    ═══════════════════════════════════════════════════════ */
 
 function showLoadingState() {
-  document.getElementById('welcome-screen').hidden = true;
+  document.getElementById('welcome-screen').style.display = 'flex';
   // Ẩn reading-area (giữ nguyên DOM bên trong, không xóa)
-  document.getElementById('reading-area').hidden   = true;
+  document.getElementById('reading-area').style.display = 'none';
   // Hiện skeleton loader độc lập
-  document.getElementById('reading-loader').hidden = false;
+  document.getElementById('reading-loader').style.display = 'auto';
 }
 
 function hideLoadingState() {
-  document.getElementById('reading-loader').hidden = true;
-  document.getElementById('reading-area').hidden   = false;
+  document.getElementById('reading-loader').style.display = 'none';
+  document.getElementById('reading-area').style.display = 'flex';
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -222,7 +222,7 @@ function renderReading(data, lesson) {
 
   // Ẩn/hiện nút Nộp bài và kết quả tuỳ chế độ
   document.getElementById('submit-bar').style.display     = state.isExamMode ? 'flex' : 'none';
-  document.getElementById('result-summary').style.display = state.isExamMode ? 'flex' : 'none';;
+  document.getElementById('result-summary').style.display = 'none';;
 
   // Bỏ skeleton, hiện reading-area
   hideLoadingState();
@@ -403,7 +403,7 @@ function showResultSummary(correct, total) {
                   'Cần cố gắng thêm nhé! Đọc lại bài và thử lại.';
 
   const summary = document.getElementById('result-summary');
-  summary.hidden = false;
+  summary.style.display = 'flex';
   summary.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
