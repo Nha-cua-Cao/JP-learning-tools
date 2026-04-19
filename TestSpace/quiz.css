@@ -1,0 +1,485 @@
+/* ══════════════════════════════════════════════════════
+   QUIZ.CSS — CSS bổ sung cho BlazePoll quiz app
+   Kế thừa toàn bộ biến CSS từ style.css gốc
+══════════════════════════════════════════════════════ */
+
+/* ── Score trên header ───────────────────────────────── */
+.header-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--accent-light);
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid #ffd0c8;
+}
+
+.score-correct {
+  color: var(--score-great);
+  font-size: 15px;
+}
+
+.score-total {
+  color: var(--text-sub);
+  font-size: 15px;
+}
+
+/* ── Số câu được lọc ─────────────────────────────────── */
+.filtered-count {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+/* ══════════════════════════════════════════════════════
+   QUIZ QUESTION CARD — Thẻ câu hỏi (chỉ có loa)
+══════════════════════════════════════════════════════ */
+.quiz-question-card {
+  width: 100%;
+  max-width: 660px;
+  height: 220px;
+  background: linear-gradient(160deg, #ffffff 0%, #fff8f6 100%);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow), 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+/* Dải màu đỉnh card */
+.qcard-top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #ffb36b);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* Nội dung giữa card */
+.qcard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Nhãn hướng dẫn */
+.qcard-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
+/* Nút phát âm lớn ở giữa card */
+.speak-big-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2.5px solid var(--accent);
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 16px rgba(255, 122, 107, 0.25);
+  position: relative;
+}
+
+.speak-big-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(255, 122, 107, 0.45);
+}
+
+.speak-big-btn:active {
+  transform: scale(0.96);
+}
+
+/* Hiệu ứng đang phát — vòng sóng lan rộng */
+.speak-big-btn.speaking {
+  animation: speakRing 0.6s ease-in-out infinite;
+}
+
+@keyframes speakRing {
+  0%   { box-shadow: 0 0 0 0 rgba(255,122,107,0.5); }
+  70%  { box-shadow: 0 0 0 18px rgba(255,122,107,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,122,107,0); }
+}
+
+/* Đã hết lượt nghe — mờ đi */
+.speak-big-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Số lần phát còn lại */
+.play-count {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.play-count.warn {
+  color: var(--score-ok);
+  font-weight: 700;
+}
+
+.play-count.danger {
+  color: var(--score-poor);
+  font-weight: 700;
+}
+
+/* Số thứ tự câu hỏi — góc phải đáy card */
+.qcard-number {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  font-size: 10px;
+  color: var(--accent);
+  opacity: 0.3;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* ══════════════════════════════════════════════════════
+   ANSWERS GRID — Lưới 4 đáp án
+══════════════════════════════════════════════════════ */
+.answers-grid {
+  width: 100%;
+  max-width: 660px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Mỗi nút đáp án */
+.answer-btn {
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  font-size: 14px;
+  font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+  color: var(--text-main);
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  transition: all 0.15s ease;
+  box-shadow: var(--shadow-sm);
+  line-height: 1.6;
+  min-height: 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+.answer-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--accent-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.answer-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Badge số thứ tự (1, 2, 3, 4) */
+.answer-badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-top: 1px;
+  transition: all 0.15s;
+}
+
+/* Trạng thái đáp án đúng */
+.answer-btn.correct {
+  border-color: var(--score-great);
+  background: #e8faf1;
+  color: #1a7a45;
+  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.15);
+}
+
+.answer-btn.correct .answer-badge {
+  background: var(--score-great);
+  border-color: var(--score-great);
+  color: #fff;
+}
+
+/* Trạng thái đáp án sai (người dùng chọn nhầm) */
+.answer-btn.wrong {
+  border-color: var(--score-poor);
+  background: #fef0ee;
+  color: #8c1a12;
+  animation: shakeBounce 0.4s ease;
+}
+
+.answer-btn.wrong .answer-badge {
+  background: var(--score-poor);
+  border-color: var(--score-poor);
+  color: #fff;
+}
+
+/* Khoá tất cả sau khi trả lời */
+.answer-btn:disabled {
+  cursor: default;
+}
+
+/* Hiệu ứng rung khi sai */
+@keyframes shakeBounce {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-6px); }
+  40%  { transform: translateX(6px); }
+  60%  { transform: translateX(-4px); }
+  80%  { transform: translateX(4px); }
+  100% { transform: translateX(0); }
+}
+
+/* ══════════════════════════════════════════════════════
+   RESULT OVERLAY — Màn hình toàn trang đúng/sai
+══════════════════════════════════════════════════════ */
+.result-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  pointer-events: none;
+  /* Nền trong suốt để thấy nội dung bên dưới */
+}
+
+/* Hiển thị overlay */
+.result-overlay.visible {
+  display: flex;
+}
+
+/* Emoji lớn ở giữa */
+.overlay-emoji {
+  font-size: 90px;
+  line-height: 1;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.2));
+}
+
+/* Text mô tả */
+.overlay-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  letter-spacing: 0.02em;
+}
+
+/* Đúng — nền xanh lá nhạt + emoji nhảy */
+.result-overlay.correct-overlay {
+  background: rgba(46, 204, 113, 0.18);
+  backdrop-filter: blur(2px);
+}
+
+.result-overlay.correct-overlay .overlay-emoji {
+  animation: correctPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes correctPop {
+  0%   { transform: scale(0.3) rotate(-10deg); opacity: 0; }
+  60%  { transform: scale(1.2) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Sai — nền đỏ nhạt + emoji rung */
+.result-overlay.wrong-overlay {
+  background: rgba(231, 76, 60, 0.18);
+  backdrop-filter: blur(2px);
+}
+
+.result-overlay.wrong-overlay .overlay-emoji {
+  animation: wrongShake 0.5s ease;
+}
+
+@keyframes wrongShake {
+  0%   { transform: translateX(0) scale(1); opacity: 0; }
+  10%  { transform: scale(1.2); opacity: 1; }
+  30%  { transform: translateX(-10px); }
+  50%  { transform: translateX(10px); }
+  70%  { transform: translateX(-6px); }
+  90%  { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+/* ══════════════════════════════════════════════════════
+   QUIZ AREA ANIMATION
+══════════════════════════════════════════════════════ */
+#quizArea {
+  animation: none;
+}
+
+#quizArea.visible {
+  display: flex !important;
+}
+
+/* ══════════════════════════════════════════════════════
+   RETRY MODE — Chế độ ôn câu sai
+══════════════════════════════════════════════════════ */
+.main.retry-mode {
+  background: linear-gradient(160deg, #fff8f0 0%, #fff3ee 100%);
+}
+
+.main.retry-mode::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent), transparent);
+  opacity: 0.7;
+}
+
+/* Badge retry mode */
+#retryBadge {
+  display: none;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(255,122,107,0.35);
+}
+
+.main.retry-mode #retryBadge {
+  display: flex;
+}
+
+/* ── Btn retry active ────────────────────────────────── */
+.btn-star-mode.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(255,122,107,0.35);
+}
+
+/* ══════════════════════════════════════════════════════
+   SIDEBAR BOOK GROUP — Nhóm giáo trình + unit
+══════════════════════════════════════════════════════ */
+.select-all-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: var(--radius-xs);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: background 0.15s;
+}
+
+.select-all-row:hover {
+  background: var(--accent-light);
+}
+
+/* ══════════════════════════════════════════════════════
+   PHẦN KẾT THÚC QUIZ — Hiển thị kết quả cuối
+══════════════════════════════════════════════════════ */
+.quiz-end-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 40px 48px;
+  text-align: center;
+  max-width: 420px;
+  animation: cardIn 0.35s ease;
+}
+
+.quiz-end-emoji {
+  font-size: 56px;
+  margin-bottom: 12px;
+}
+
+.quiz-end-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.quiz-end-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.quiz-end-score {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.quiz-end-score span {
+  font-size: 18px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.quiz-end-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* ══════════════════════════════════════════════════════
+   RESPONSIVE — Điều chỉnh màn nhỏ
+══════════════════════════════════════════════════════ */
+@media (max-width: 760px) {
+  .answers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-question-card {
+    height: 180px;
+  }
+
+  .speak-big-btn {
+    width: 64px;
+    height: 64px;
+    font-size: 22px;
+  }
+}

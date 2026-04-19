@@ -1,89 +1,165 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nghe Tiếng Nhật - Blazecard</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MimiMaster  — Nhà của Cáo</title>
+  <!-- Font chữ nhật Nhật -->
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- CSS gốc từ flashcard app -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- CSS bổ sung cho quiz app -->
+  <link rel="stylesheet" href="quiz.css" />
 </head>
 <body>
 
+  <!-- ═══════════════════════════════════════════════════
+       HEADER — Thanh tiêu đề trên cùng
+  ═══════════════════════════════════════════════════ -->
   <header class="header">
     <div class="header-brand">
-      <i class="fa-solid fa-torii-gate gate-icon"></i>
-      <span>NHÀ CỦA CÁO . BLAZECARD</span>
-    </div>
+    <i class="fa-solid fa-torii-gate gate-icon"></i>
+    Nhà của Cáo &nbsp;·&nbsp; MimiMaster
+  </div>
     <div class="header-hint">
-      <span><kbd class="kbd">Space</kbd> Nghe lại</span>
-      <span><kbd class="kbd">1-4</kbd> Chọn đáp án</span>
-      <span><kbd class="kbd">→</kbd> Câu tiếp</span>
+      <!-- Điểm số hiển thị trên header -->
+      <span id="headerScore" class="header-score" style="display:none">
+        <span class="score-correct" id="scoreCorrect">0</span>
+        <span style="color:var(--text-muted)">/</span>
+        <span class="score-total" id="scoreTotal">0</span>
+        <span style="color:var(--text-muted);font-size:10px;margin-left:2px">đúng</span>
+      </span>
+      <span class="kbd"><i class="fa-solid fa-volume-high" style="font-size:9px"></i> Phát âm</span>
+      <span class="kbd">1–4 Chọn đáp án</span>
     </div>
   </header>
 
+  <!-- ═══════════════════════════════════════════════════
+       LAYOUT — Sidebar + Main
+  ═══════════════════════════════════════════════════ -->
   <div class="layout">
-    
+
+    <!-- ─── SIDEBAR — Cột trái lọc và điều khiển ─────── -->
     <aside class="sidebar">
       <div class="sidebar-header">
-        <span>CHỌN BÀI HỌC</span>
+        <span>Chọn bài học</span>
+        <!-- Số lượng câu hỏi được lọc -->
+        <span id="filteredCount" class="filtered-count">0 câu</span>
       </div>
-      
-      <div class="sidebar-scroll" id="sidebarList">
+
+      <!-- Vùng cuộn danh sách unit / giáo trình -->
+      <div class="sidebar-scroll" id="sidebarScroll">
+        <!-- Được render động bởi JS -->
+        <div class="empty-hint" id="sidebarEmptyHint" style="padding:20px 12px;color:var(--text-muted);font-size:12px;text-align:center">
+          <i class="fa-solid fa-arrow-up-from-bracket" style="margin-bottom:6px;font-size:18px;display:block"></i>
+          Import file TSV để bắt đầu
         </div>
-      
+      </div>
+
+      <!-- Nút hành động dưới sidebar -->
       <div class="sidebar-actions">
-        <button class="btn-sidebar btn-star-mode" id="btnRetry">
-          <i class="fa-solid fa-star"></i> Ôn câu sai (0)
+        <!-- Chế độ ôn câu sai -->
+        <button class="btn-sidebar btn-star-mode" id="btnRetryMode" onclick="App.toggleRetryMode()">
+          <i class="fa-solid fa-rotate-left"></i>
+          Ôn câu sai (<span id="wrongCount">0</span>)
         </button>
-        <button class="btn-sidebar btn-reload" id="btnReset">
-          <i class="fa-solid fa-rotate"></i> Tải lại danh sách
+        <!-- Bắt đầu quiz -->
+        <button class="btn-sidebar btn-import" id="btnStart" onclick="App.startQuiz()" style="background:var(--accent);border-color:var(--accent)">
+          <i class="fa-solid fa-play"></i>
+          Bắt đầu Quiz
         </button>
-        <div style="display: flex; gap: 8px;">
-          <button class="btn-sidebar btn-import" id="btnImport" style="flex: 1;">
-            <i class="fa-solid fa-file-import"></i> Import TSV
-          </button>
-        </div>
-        <input type="file" id="fileInput" accept=".tsv,.txt" style="display: none;">
       </div>
     </aside>
 
+    <!-- ─── MAIN — Vùng hiển thị câu hỏi quiz ────────── -->
     <main class="main" id="mainArea">
+
+      <!-- Badge chế độ ôn câu sai -->
+      <div class="star-mode-badge" id="retryBadge">
+        <i class="fa-solid fa-rotate-left"></i>
+        Ôn câu sai
+      </div>
+
+      <!-- Trạng thái ban đầu — chưa bắt đầu -->
       <div class="empty-state" id="emptyState">
         <div class="empty-icon">🦊</div>
-        <p>Chọn một bài học từ sidebar hoặc Import file TSV để bắt đầu luyện nghe.</p>
+        <p>Chọn bài học từ sidebar và nhấn<br/><strong>Bắt đầu Quiz</strong> để học.</p>
       </div>
 
-      <div class="quiz-container" id="quizContainer" style="display: none;">
-        <div class="quiz-header">
-          <div class="quiz-progress" id="quizProgress">Câu 1/20</div>
-          <div class="quiz-score" id="quizScore">Điểm: 0/0</div>
+      <!-- Vùng quiz — ẩn ban đầu -->
+      <div id="quizArea" style="display:none;width:100%;max-width:680px;display:none;flex-direction:column;align-items:center;gap:0">
+
+        <!-- Thanh tiến trình + số câu -->
+        <div class="deck-meta" style="width:100%;max-width:660px;margin-bottom:18px">
+          <span class="deck-info-text" id="progressText">0 / 0</span>
+          <div class="progress-track" style="flex:1">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <span class="deck-info-text" id="scoreDisplay" style="text-align:right;min-width:80px">
+            ✅ <span id="scoreNum">0</span>/<span id="scoreDen">0</span>
+          </span>
         </div>
 
-        <div class="speaker-area">
-          <button class="huge-speaker-btn" id="btnSpeak">
-            <i class="fa-solid fa-volume-high"></i>
-          </button>
-          <div class="play-count" id="playCountText">Còn 3 lần nghe</div>
-        </div>
+        <!-- Thẻ câu hỏi — chỉ có nút loa, không hiện chữ Nhật -->
+        <div class="quiz-question-card card-enter" id="questionCard">
+          <!-- Dải màu đỉnh -->
+          <div class="qcard-top-bar"></div>
 
-        <div class="answers-grid" id="answersGrid">
+          <!-- Nội dung giữa card -->
+          <div class="qcard-body">
+            <p class="qcard-label">Câu tiếng Nhật là gì?</p>
+
+            <!-- Nút phát âm lớn -->
+            <button class="speak-big-btn" id="speakBtn" onclick="App.playAudio()" title="Nghe câu tiếng Nhật">
+              <i class="fa-solid fa-volume-high" id="speakIcon"></i>
+            </button>
+
+            <!-- Số lần còn được nghe -->
+            <div class="play-count" id="playCount">
+              <span id="playCountNum">3</span> lần nghe còn lại
+            </div>
           </div>
 
-        <div class="quiz-controls">
-          <button class="ctrl-btn" id="btnNext" style="display: none;">
-            Câu tiếp theo <i class="fa-solid fa-arrow-right"></i>
+          <!-- Số thứ tự câu hỏi -->
+          <div class="qcard-number" id="qNumber">#1</div>
+        </div>
+
+        <!-- Lưới 4 đáp án -->
+        <div class="answers-grid" id="answersGrid">
+          <!-- Được render động bởi JS -->
+        </div>
+
+        <!-- Nút điều hướng -->
+        <div class="controls" style="margin-top:16px;width:100%;max-width:400px">
+          <button class="ctrl-btn" onclick="App.prevQuestion()">
+            <i class="fa-solid fa-chevron-left"></i> Trước
+          </button>
+          <button class="ctrl-btn" id="btnNext" onclick="App.nextQuestion()" style="background:var(--accent);color:#fff;border-color:var(--accent)">
+            Tiếp <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
+
+        <!-- Gợi ý phím tắt -->
+        <div class="flip-hint">Nhấn phím <strong>1–4</strong> để chọn đáp án · <strong>Space</strong> để nghe lại</div>
       </div>
+
     </main>
-
   </div>
 
-  <div class="fullscreen-overlay" id="resultOverlay">
-    <div class="overlay-content" id="overlayContent"></div>
+  <!-- ═══════════════════════════════════════════════════
+       OVERLAY — Hiệu ứng toàn màn hình đúng/sai
+  ═══════════════════════════════════════════════════ -->
+  <div class="result-overlay" id="resultOverlay">
+    <div class="overlay-emoji" id="overlayEmoji">🎉</div>
+    <div class="overlay-text" id="overlayText">Chính xác!</div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Toast thông báo -->
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <!-- Script logic quiz -->
+  <script src="quiz.js"></script>
 </body>
 </html>
