@@ -245,6 +245,7 @@ const AudioPlayer = (() => {
   const MAX_PLAYS = 3;
   let playCount = 0;
   let isSpeaking = false;
+  let voiceIndex = 0; // Biến theo dõi để đổi giọng mỗi lần gọi hàm
 
   /**
    * speak — Phát âm một chuỗi tiếng Nhật
@@ -252,20 +253,42 @@ const AudioPlayer = (() => {
    * @param {Function} onDone — Callback sau khi phát xong
    */
   function speak(text, onDone) {
-    if (playCount >= MAX_PLAYS) return; // Hết lượt nghe
+    if (playCount >= MAX_PLAYS) return;
+    
     if (isSpeaking) {
-      window.speechSynthesis.cancel(); // Huỷ nếu đang phát
+        window.speechSynthesis.cancel();
     }
 
+    // 1. Lấy tất cả các giọng hiện có trong hệ thống
+    const allVoices = window.speechSynthesis.getVoices();
+    
+    // 2. Lọc ra danh sách các giọng tiếng Nhật (ja-JP)
+    const japaneseVoices = allVoices.filter(voice => voice.lang.includes('ja'));
+
     const utter = new SpeechSynthesisUtterance(text);
-    utter.lang = 'ja-JP'; // Tiếng Nhật
-    utter.rate = 1.0;     // Tốc độ đọc hơi chậm để dễ nghe
+    
+    // 3. Chọn giọng từ danh sách tiếng Nhật
+    if (japaneseVoices.length > 0) {
+        // Lấy giọng dựa trên voiceIndex để mỗi lần gọi là một giọng khác nhau
+        utter.voice = japaneseVoices[voiceIndex % japaneseVoices.length];
+        
+        // Tăng index cho lần gọi tiếp theo
+        voiceIndex++; 
+        
+        // Log để bạn kiểm tra tên giọng đang dùng trong Console
+        console.log(`Đang đọc bằng giọng: ${utter.voice.name}`);
+    } else {
+        // Fallback nếu không tìm thấy danh sách giọng cụ thể
+        utter.lang = 'ja-JP'; 
+    }
+
+    utter.rate = 1.0;
     utter.pitch = 1.0;
 
     utter.onstart = () => { isSpeaking = true; };
-    utter.onend   = () => {
-      isSpeaking = false;
-      if (typeof onDone === 'function') onDone();
+    utter.onend = () => {
+        isSpeaking = false;
+        if (typeof onDone === 'function') onDone();
     };
     utter.onerror = () => { isSpeaking = false; };
 
@@ -1074,6 +1097,10 @@ const App = (() => {
 /* ══════════════════════════════════════════════════════
    KHỞI ĐỘNG — Chạy khi DOM sẵn sàng
 ══════════════════════════════════════════════════════ */
+window.speechSynthesis.onvoiceschanged = () => {
+    window.speechSynthesis.getVoices(); // Cập nhật voice trước khi bắt đầu quiz
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   App.init();
 });
