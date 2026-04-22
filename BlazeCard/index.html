@@ -587,7 +587,7 @@ function buildSidebarFromMeta() {
   books.forEach(book => {
     const group = document.createElement("details");
     group.className = "book-group";
-    group.open = true;
+    // group.open = true; // Mặc định đóng nhóm, người dùng click để mở
 
     const summary = document.createElement("summary");
     summary.textContent = book;
