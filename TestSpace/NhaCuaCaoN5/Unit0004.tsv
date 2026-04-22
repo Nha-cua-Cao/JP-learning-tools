@@ -9,93 +9,93 @@ STT	Câu tiếng Nhật	Câu tiếng Nhật đồng nghĩa	Câu tiếng Việt	U
 8	お国は？	お国（くに）はどちらですか？	Đất nước bạn ở đâu thế?	4	Nhà của Cáo N5
 9	キツネさんの誕生日はいつですか？	キツネさんの誕生日（たんじょうび）は？	Sinh nhật anh Kitsune là khi nào thế?	4	Nhà của Cáo N5
 10	キツネさんの誕生日は？	キツネさんの誕生日（たんじょうび）はいつですか？	Sinh nhật anh Kitsune là khi nào thế?	4	Nhà của Cáo N5
-11	キツネさんの名前は何ですか？	キツネさんの名前（なまえ）は？	Tên của anh Kitsune là gì?	4	Nhà của Cáo N5
-12	キツネさんの名前は？	キツネさんの名前（なまえ）は何（なん）ですか？	Tên của anh Kitsune là gì?	4	Nhà của Cáo N5
-13	キツネさんの仕事は何ですか。	キツネさんの仕事（しごと）は？	Công việc của anh Kitsune là gì?	4	Nhà của Cáo N5
-14	キツネさんの仕事は？	キツネさんの仕事（しごと）は何（なん）ですか。	Công việc của anh Kitsune là gì?	4	Nhà của Cáo N5
-15	キツネさんの国はどちらですか？	キツネさんの国（くに）は？	Đất nước anh Kitsune ở đâu thế?	4	Nhà của Cáo N5
-16	キツネさんの国は？	キツネさんの国（くに）はどちらですか？	Đất nước anh Kitsune ở đâu thế?	4	Nhà của Cáo N5
-17	ネコさんの誕生日はいつですか？	ネコさんの誕生日（たんじょうび）は？	Sinh nhật anh Neko là khi nào thế?	4	Nhà của Cáo N5
-18	ネコさんの誕生日は？	ネコさんの誕生日（たんじょうび）はいつですか？	Sinh nhật anh Neko là khi nào thế?	4	Nhà của Cáo N5
-19	ネコさんの名前は何ですか？	ネコさんの名前（なまえ）は？	Tên của anh Neko là gì?	4	Nhà của Cáo N5
-20	ネコさんの名前は？	ネコさんの名前（なまえ）は何（なん）ですか？	Tên của anh Neko là gì?	4	Nhà của Cáo N5
-21	ネコさんの仕事は何ですか。	ネコさんの仕事（しごと）は？	Công việc của anh Neko là gì?	4	Nhà của Cáo N5
-22	ネコさんの仕事は？	ネコさんの仕事（しごと）は何（なん）ですか。	Công việc của anh Neko là gì?	4	Nhà của Cáo N5
-23	ネコさんの国はどちらですか？	ネコさんの国（くに）は？	Đất nước anh Neko ở đâu thế?	4	Nhà của Cáo N5
-24	ネコさんの国は？	ネコさんの国（くに）はどちらですか？	Đất nước anh Neko ở đâu thế?	4	Nhà của Cáo N5
-25	イヌさんの誕生日はいつですか？	イヌさんの誕生日（たんじょうび）は？	Sinh nhật anh Inu là khi nào thế?	4	Nhà của Cáo N5
-26	イヌさんの誕生日は？	イヌさんの誕生日（たんじょうび）はいつですか？	Sinh nhật anh Inu là khi nào thế?	4	Nhà của Cáo N5
-27	イヌさんの名前は何ですか？	イヌさんの名前（なまえ）は？	Tên của anh Inu là gì?	4	Nhà của Cáo N5
-28	イヌさんの名前は？	イヌさんの名前（なまえ）は何（なん）ですか？	Tên của anh Inu là gì?	4	Nhà của Cáo N5
-29	イヌさんの仕事は何ですか。	イヌさんの仕事（しごと）は？	Công việc của anh Inu là gì?	4	Nhà của Cáo N5
-30	イヌさんの仕事は？	イヌさんの仕事（しごと）は何（なん）ですか。	Công việc của anh Inu là gì?	4	Nhà của Cáo N5
-31	イヌさんの国はどちらですか？	イヌさんの国（くに）は？	Đất nước anh Inu ở đâu thế?	4	Nhà của Cáo N5
-32	イヌさんの国は？	イヌさんの国（くに）はどちらですか？	Đất nước anh Inu ở đâu thế?	4	Nhà của Cáo N5
-33	お誕生日は３月３日ですか。	お誕生日（たんじょうび）は３月（さんがつ）３日（みっか）ですか。	Sinh nhật bạn là ngày 3 tháng 3 phải không?	4	Nhà của Cáo N5
-34	お誕生日は１２月２１日じゃありません。	お誕生日（たんじょうび）は１２月（じゅうにがつ）２１日（にじゅういちにち）じゃありません。	Sinh nhật tôi không phải là ngày 21 tháng 12.	4	Nhà của Cáo N5
-35	お誕生日は６月１１日です。	お誕生日（たんじょうび）は６月（ろくがつ）１１日（じゅういちにち）です。	Sinh nhật tôi là ngày 11 tháng 6.	4	Nhà của Cáo N5
-36	キツネさんの誕生日は１１月１８日ですか。	キツネさんの誕生日（たんじょうび）は１１月（じゅういちがつ）１８日（じゅうはちにち）ですか。	Sinh nhật của anh Kitsune là ngày 18 tháng 11 phải không?	4	Nhà của Cáo N5
-37	キツネさんの誕生日は５月１０日じゃありません。	キツネさんの誕生日（たんじょうび）は５月（ごがつ）１０日（とおか）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 10 tháng 5.	4	Nhà của Cáo N5
-38	キツネさんの誕生日は１０月２５日です。	キツネさんの誕生日（たんじょうび）は１０月（じゅうがつ）２５日（にじゅうごにち）です。	Sinh nhật của anh Kitsune là ngày 25 tháng 10.	4	Nhà của Cáo N5
-39	ネコさんの誕生日は９月２日ですか。	ネコさんの誕生日（たんじょうび）は９月（くがつ）２日（ふつか）ですか。	Sinh nhật của anh Neko là ngày 2 tháng 9 phải không?	4	Nhà của Cáo N5
-40	ネコさんの誕生日は８月３日じゃありません。	ネコさんの誕生日（たんじょうび）は８月（はちがつ）３日（みっか）じゃありません。	Sinh nhật của anh Neko không phải là ngày 3 tháng 8.	4	Nhà của Cáo N5
-41	ネコさんの誕生日は２月２日です。	ネコさんの誕生日（たんじょうび）は２月（にがつ）２日（ふつか）です。	Sinh nhật của anh Neko là ngày 2 tháng 2.	4	Nhà của Cáo N5
-42	イヌさんの誕生日は４月２１日ですか。	イヌさんの誕生日（たんじょうび）は４月（しがつ）２１日（にじゅういちにち）ですか。	Sinh nhật của anh Inu là ngày 21 tháng 4 phải không?	4	Nhà của Cáo N5
-43	イヌさんの誕生日は１月２５日じゃありません。	イヌさんの誕生日（たんじょうび）は１月（いちがつ）２５日（にじゅうごにち）じゃありません。	Sinh nhật của anh Inu không phải là ngày 25 tháng 1.	4	Nhà của Cáo N5
-44	イヌさんの誕生日は７月２７日です。	イヌさんの誕生日（たんじょうび）は７月（しちがつ）２７日（にじゅうななにち）です。	Sinh nhật của anh Inu là ngày 27 tháng 7.	4	Nhà của Cáo N5
-45	お誕生日は９月１日ですか。	お誕生日（たんじょうび）は９月（くがつ）１日（ついたち）ですか。	Sinh nhật của bạn là ngày 1 tháng 9 phải không?	4	Nhà của Cáo N5
-46	私の誕生日は６月１８日じゃありません。	私（わたし）の誕生日（たんじょうび）は６月（ろくがつ）１８日（じゅうはちにち）じゃありません。	Sinh nhật của mình không phải là ngày 18 tháng 6.	4	Nhà của Cáo N5
-47	キツネさんの誕生日は８月１９日ですか。	キツネさんの誕生日（たんじょうび）は８月（はちがつ）１９日（じゅうきゅうにち）ですか。	Sinh nhật của anh kitsune là ngày 19 tháng 8 phải không?	4	Nhà của Cáo N5
-48	キツネさんの誕生日は１２月９日です。	キツネさんの誕生日（たんじょうび）は１２月（じゅうにがつ）９日（ここのか）です。	Sinh nhật của anh kitsune là ngày 9 tháng 12.	4	Nhà của Cáo N5
-49	お誕生日は５月３０日ですか。	お誕生日（たんじょうび）は５月（ごがつ）３０日（さんじゅうにち）ですか。	Sinh nhật của bạn là ngày 30 tháng 5 phải không?	4	Nhà của Cáo N5
-50	キツネさんの誕生日は６月６日じゃありません。	キツネさんの誕生日（たんじょうび）は６月（ろくがつ）６日（むいか）じゃありません。	Sinh nhật của anh kitsune không phải là ngày 6 tháng 6.	4	Nhà của Cáo N5
-51	ネコさんの誕生日は１月１１日ですか。	ネコさんの誕生日（たんじょうび）は１月（いちがつ）１１日（じゅういちにち）ですか。	Sinh nhật của anh neko là ngày 11 tháng 1 phải không?	4	Nhà của Cáo N5
-52	私の誕生日は２月１日じゃありません。	私（わたし）の誕生日（たんじょうび）は２月（にがつ）１日（ついたち）じゃありません。	Sinh nhật của mình không phải là ngày 1 tháng 2.	4	Nhà của Cáo N5
-53	イヌさんの誕生日は１２月１日じゃありません。	イヌさんの誕生日（たんじょうび）は１２月（じゅうにがつ）１日（ついたち）じゃありません。	Sinh nhật của anh inu không phải là ngày 1 tháng 12.	4	Nhà của Cáo N5
-54	ネコさんの誕生日は８月２７日じゃありません。	ネコさんの誕生日（たんじょうび）は８月（はちがつ）２７日（にじゅうななにち）じゃありません。	Sinh nhật của anh neko không phải là ngày 27 tháng 8.	4	Nhà của Cáo N5
-55	私の誕生日は５月８日じゃありません。	私（わたし）の誕生日（たんじょうび）は５月（ごがつ）８日（ようか）じゃありません。	Sinh nhật của mình không phải là ngày 8 tháng 5.	4	Nhà của Cáo N5
-56	イヌさんの誕生日は２月２８日じゃありません。	イヌさんの誕生日（たんじょうび）は２月（にがつ）２８日（にじゅうはちにち）じゃありません。	Sinh nhật của anh inu không phải là ngày 28 tháng 2.	4	Nhà của Cáo N5
-57	キツネさんの誕生日は５月２７日じゃありません。	キツネさんの誕生日（たんじょうび）は５月（ごがつ）２７日（にじゅうななにち）じゃありません。	Sinh nhật của anh kitsune không phải là ngày 27 tháng 5.	4	Nhà của Cáo N5
-58	イヌさんの誕生日は７月２６日じゃありません。	イヌさんの誕生日（たんじょうび）は７月（しちがつ）２６日（にじゅうろくにち）じゃありません。	Sinh nhật của anh inu không phải là ngày 26 tháng 7.	4	Nhà của Cáo N5
-59	キツネさんの誕生日は１１月１１日じゃありません。	キツネさんの誕生日（たんじょうび）は１１月（じゅういちがつ）１１日（じゅういちにち）じゃありません。	Sinh nhật của anh kitsune không phải là ngày 11 tháng 11.	4	Nhà của Cáo N5
-60	イヌさんの誕生日は１０月４日じゃありません。	イヌさんの誕生日（たんじょうび）は１０月（じゅうがつ）４日（よっか）じゃありません。	Sinh nhật của anh inu không phải là ngày 4 tháng 10.	4	Nhà của Cáo N5
-61	キツネさんの誕生日は１１月２２日です。	キツネさんの誕生日（たんじょうび）は１１月（じゅういちがつ）２２日（にじゅうににち）です。	Sinh nhật của anh kitsune là ngày 22 tháng 11.	4	Nhà của Cáo N5
-62	イヌさんの誕生日は１月２４日です。	イヌさんの誕生日（たんじょうび）は１月（いちがつ）２４日（にじゅうよっか）です。	Sinh nhật của anh inu là ngày 24 tháng 1.	4	Nhà của Cáo N5
-63	ネコさんの誕生日は１０月１１日ですか。	ネコさんの誕生日（たんじょうび）は１０月（じゅうがつ）１１日（じゅういちにち）ですか。	Sinh nhật của anh neko là ngày 11 tháng 10 phải không?	4	Nhà của Cáo N5
-64	私の誕生日は８月５日じゃありません。	私（わたし）の誕生日（たんじょうび）は８月（はちがつ）５日（いつか）じゃありません。	Sinh nhật của mình không phải là ngày 5 tháng 8.	4	Nhà của Cáo N5
-65	ネコさんの誕生日は９月９日じゃありません。	ネコさんの誕生日（たんじょうび）は９月（くがつ）９日（ここのか）じゃありません。	Sinh nhật của anh neko không phải là ngày 9 tháng 9.	4	Nhà của Cáo N5
-66	キツネさんの誕生日は２月１４日じゃありません。	キツネさんの誕生日（たんじょうび）は２月（にがつ）１４日（じゅうよっか）じゃありません。	Sinh nhật của anh kitsune không phải là ngày 14 tháng 2.	4	Nhà của Cáo N5
-67	ネコさんの誕生日は６月１１日ですか。	ネコさんの誕生日（たんじょうび）は６月（ろくがつ）１１日（じゅういちにち）ですか。	Sinh nhật của anh neko là ngày 11 tháng 6 phải không?	4	Nhà của Cáo N5
-68	イヌさんの誕生日は１２月１日です。	イヌさんの誕生日（たんじょうび）は１２月（じゅうにがつ）１日（ついたち）です。	Sinh nhật của anh inu là ngày 1 tháng 12.	4	Nhà của Cáo N5
-69	私の誕生日は４月１１日ですか。	私（わたし）の誕生日（たんじょうび）は４月（しがつ）１１日（じゅういちにち）ですか。	Sinh nhật của mình là ngày 11 tháng 4 phải không?	4	Nhà của Cáo N5
-70	私の誕生日は１１月１７日じゃありません。	私（わたし）の誕生日（たんじょうび）は１１月（じゅういちがつ）１７日（じゅうななにち）じゃありません。	Sinh nhật của mình không phải là ngày 17 tháng 11.	4	Nhà của Cáo N5
-71	私の誕生日は５月３日じゃありません。	私（わたし）の誕生日（たんじょうび）は５月（ごがつ）３日（みっか）じゃありません。	Sinh nhật của mình không phải là ngày 3 tháng 5.	4	Nhà của Cáo N5
-72	キツネさんの誕生日は２月１５日です。	キツネさんの誕生日（たんじょうび）は２月（にがつ）１５日（じゅうごにち）です。	Sinh nhật của anh kitsune là ngày 15 tháng 2.	4	Nhà của Cáo N5
-73	ネコさんの誕生日は１２月３日です。	ネコさんの誕生日（たんじょうび）は１２月（じゅうにがつ）３日（みっか）です。	Sinh nhật của anh neko là ngày 3 tháng 12.	4	Nhà của Cáo N5
-74	キツネさんの誕生日は１２月１１日じゃありません。	キツネさんの誕生日（たんじょうび）は１２月（じゅうにがつ）１１日（じゅういちにち）じゃありません。	Sinh nhật của anh kitsune không phải là ngày 11 tháng 12.	4	Nhà của Cáo N5
-75	キツネさんの誕生日は８月１７日ですか。	キツネさんの誕生日（たんじょうび）は８月（はちがつ）１７日（じゅうななにち）ですか。	Sinh nhật của anh kitsune là ngày 17 tháng 8 phải không?	4	Nhà của Cáo N5
-76	イヌさんの誕生日は１月１０日じゃありません。	イヌさんの誕生日（たんじょうび）は１月（いちがつ）１０日（とおか）じゃありません。	Sinh nhật của anh inu không phải là ngày 10 tháng 1.	4	Nhà của Cáo N5
-77	ネコさんの誕生日は４月８日じゃありません。	ネコさんの誕生日（たんじょうび）は４月（しがつ）８日（ようか）じゃありません。	Sinh nhật của anh neko không phải là ngày 8 tháng 4.	4	Nhà của Cáo N5
-78	私の誕生日は４月２７日ですか。	私（わたし）の誕生日（たんじょうび）は４月（しがつ）２７日（にじゅうななにち）ですか。	Sinh nhật của mình là ngày 27 tháng 4 phải không?	4	Nhà của Cáo N5
-79	私の誕生日は１１月１７日じゃありません。	私（わたし）の誕生日（たんじょうび）は１１月（じゅういちがつ）１７日（じゅうななにち）じゃありません。	Sinh nhật của mình không phải là ngày 17 tháng 11.	4	Nhà của Cáo N5
-80	イヌさんの誕生日は３月６日じゃありません。	イヌさんの誕生日（たんじょうび）は３月（さんがつ）６日（むいか）じゃありません。	Sinh nhật của anh inu không phải là ngày 6 tháng 3.	4	Nhà của Cáo N5
-81	私の誕生日は１１月７日じゃありません。	私（わたし）の誕生日（たんじょうび）は１１月（じゅういちがつ）７日（なのか）じゃありません。	Sinh nhật của mình không phải là ngày 7 tháng 11.	4	Nhà của Cáo N5
-82	イヌさんの誕生日は６月２８日です。	イヌさんの誕生日（たんじょうび）は６月（ろくがつ）２８日（にじゅうはちにち）です。	Sinh nhật của anh inu là ngày 28 tháng 6.	4	Nhà của Cáo N5
-83	私の誕生日は１０月１９日じゃありません。	私（わたし）の誕生日（たんじょうび）は１０月（じゅうがつ）１９日（じゅうきゅうにち）じゃありません。	Sinh nhật của mình không phải là ngày 19 tháng 10.	4	Nhà của Cáo N5
-84	お誕生日は２月１３日ですか。	お誕生日（たんじょうび）は２月（にがつ）１３日（じゅうさんにち）ですか。	Sinh nhật của bạn là ngày 13 tháng 2 phải không?	4	Nhà của Cáo N5
-85	キツネさんの誕生日は２月２３日じゃありません。	キツネさんの誕生日（たんじょうび）は２月（にがつ）２３日（にじゅうさんにち）じゃありません。	Sinh nhật của anh kitsune không phải là ngày 23 tháng 2.	4	Nhà của Cáo N5
-86	ネコさんの誕生日は８月１２日です。	ネコさんの誕生日（たんじょうび）は８月（はちがつ）１２日（じゅうににち）です。	Sinh nhật của anh neko là ngày 12 tháng 8.	4	Nhà của Cáo N5
-87	キツネさんの誕生日は８月１４日じゃありません。	キツネさんの誕生日（たんじょうび）は８月（はちがつ）１４日（じゅうよっか）じゃありません。	Sinh nhật của anh kitsune không phải là ngày 14 tháng 8.	4	Nhà của Cáo N5
-88	私の誕生日は６月４日ですか。	私（わたし）の誕生日（たんじょうび）は６月（ろくがつ）４日（よっか）ですか。	Sinh nhật của mình là ngày 4 tháng 6 phải không?	4	Nhà của Cáo N5
-89	キツネさんの誕生日は８月７日じゃありません。	キツネさんの誕生日（たんじょうび）は８月（はちがつ）７日（なのか）じゃありません。	Sinh nhật của anh kitsune không phải là ngày 7 tháng 8.	4	Nhà của Cáo N5
-90	ネコさんの誕生日は２月１０日ですか。	ネコさんの誕生日（たんじょうび）は２月（にがつ）１０日（とおか）ですか。	Sinh nhật của anh neko là ngày 10 tháng 2 phải không?	4	Nhà của Cáo N5
-91	ネコさんの誕生日は４月３日ですか。	ネコさんの誕生日（たんじょうび）は４月（しがつ）３日（みっか）ですか。	Sinh nhật của anh neko là ngày 3 tháng 4 phải không?	4	Nhà của Cáo N5
-92	イヌさんの誕生日は７月１９日ですか。	イヌさんの誕生日（たんじょうび）は７月（しちがつ）１９日（じゅうきゅうにち）ですか。	Sinh nhật của anh inu là ngày 19 tháng 7 phải không?	4	Nhà của Cáo N5
-93	イヌさんの誕生日は４月２９日ですか。	イヌさんの誕生日（たんじょうび）は４月（しがつ）２９日（にじゅうきゅうにち）ですか。	Sinh nhật của anh inu là ngày 29 tháng 4 phải không?	4	Nhà của Cáo N5
-94	私の誕生日は７月１１日です。	私（わたし）の誕生日（たんじょうび）は７月（しちがつ）１１日（じゅういちにち）です。	Sinh nhật của mình là ngày 11 tháng 7.	4	Nhà của Cáo N5
-95	ネコさんの誕生日は２月１５日じゃありません。	ネコさんの誕生日（たんじょうび）は２月（にがつ）１５日（じゅうごにち）じゃありません。	Sinh nhật của anh neko không phải là ngày 15 tháng 2.	4	Nhà của Cáo N5
-96	イヌさんの誕生日は９月８日です。	イヌさんの誕生日（たんじょうび）は９月（くがつ）８日（ようか）です。	Sinh nhật của anh inu là ngày 8 tháng 9.	4	Nhà của Cáo N5
-97	イヌさんの誕生日は１１月２１日じゃありません。	イヌさんの誕生日（たんじょうび）は１１月（じゅういちがつ）２１日（にじゅういちにち）じゃありません。	Sinh nhật của anh inu không phải là ngày 21 tháng 11.	4	Nhà của Cáo N5
-98	私の誕生日は８月２日ですか。	私（わたし）の誕生日（たんじょうび）は８月（はちがつ）２日（ふつか）ですか。	Sinh nhật của mình là ngày 2 tháng 8 phải không?	4	Nhà của Cáo N5
-99	イヌさんの誕生日は８月３０日ですか。	イヌさんの誕生日（たんじょうび）は８月（はちがつ）３０日（さんじゅうにち）ですか。	Sinh nhật của anh inu là ngày 30 tháng 8 phải không?	4	Nhà của Cáo N5
-100	私の誕生日は５月２６日です。	私（わたし）の誕生日（たんじょうび）は５月（ごがつ）２６日（にじゅうろくにち）です。	Sinh nhật của mình là ngày 26 tháng 5.	4	Nhà của Cáo N5
+11	キツネさんの仕事は何ですか。	キツネさんの仕事（しごと）は？	Công việc của anh Kitsune là gì?	4	Nhà của Cáo N5
+12	キツネさんの仕事は？	キツネさんの仕事（しごと）は何（なん）ですか。	Công việc của anh Kitsune là gì?	4	Nhà của Cáo N5
+13	キツネさんの国はどちらですか？	キツネさんの国（くに）は？	Đất nước anh Kitsune ở đâu thế?	4	Nhà của Cáo N5
+14	キツネさんの国は？	キツネさんの国（くに）はどちらですか？	Đất nước anh Kitsune ở đâu thế?	4	Nhà của Cáo N5
+15	ネコさんの誕生日はいつですか？	ネコさんの誕生日（たんじょうび）は？	Sinh nhật anh Neko là khi nào thế?	4	Nhà của Cáo N5
+16	ネコさんの誕生日は？	ネコさんの誕生日（たんじょうび）はいつですか？	Sinh nhật anh Neko là khi nào thế?	4	Nhà của Cáo N5
+17	ネコさんの仕事は何ですか。	ネコさんの仕事（しごと）は？	Công việc của anh Neko là gì?	4	Nhà của Cáo N5
+18	ネコさんの仕事は？	ネコさんの仕事（しごと）は何（なん）ですか。	Công việc của anh Neko là gì?	4	Nhà của Cáo N5
+19	ネコさんの国はどちらですか？	ネコさんの国（くに）は？	Đất nước anh Neko ở đâu thế?	4	Nhà của Cáo N5
+20	ネコさんの国は？	ネコさんの国（くに）はどちらですか？	Đất nước anh Neko ở đâu thế?	4	Nhà của Cáo N5
+21	イヌさんの誕生日はいつですか？	イヌさんの誕生日（たんじょうび）は？	Sinh nhật anh Inu là khi nào thế?	4	Nhà của Cáo N5
+22	イヌさんの誕生日は？	イヌさんの誕生日（たんじょうび）はいつですか？	Sinh nhật anh Inu là khi nào thế?	4	Nhà của Cáo N5
+23	イヌさんの仕事は何ですか。	イヌさんの仕事（しごと）は？	Công việc của anh Inu là gì?	4	Nhà của Cáo N5
+24	イヌさんの仕事は？	イヌさんの仕事（しごと）は何（なん）ですか。	Công việc của anh Inu là gì?	4	Nhà của Cáo N5
+25	イヌさんの国はどちらですか？	イヌさんの国（くに）は？	Đất nước anh Inu ở đâu thế?	4	Nhà của Cáo N5
+26	イヌさんの国は？	イヌさんの国（くに）はどちらですか？	Đất nước anh Inu ở đâu thế?	4	Nhà của Cáo N5
+27	お誕生日は３月３日ですか。	お誕生日（たんじょうび）は３月（さんがつ）３日（みっか）ですか。	Sinh nhật bạn là ngày 3 tháng 3 phải không?	4	Nhà của Cáo N5
+28	お誕生日は１２月２１日じゃありません。	お誕生日（たんじょうび）は１２月（じゅうにがつ）２１日（にじゅういちにち）じゃありません。	Sinh nhật tôi không phải là ngày 21 tháng 12.	4	Nhà của Cáo N5
+29	お誕生日は６月１１日です。	お誕生日（たんじょうび）は６月（ろくがつ）１１日（じゅういちにち）です。	Sinh nhật tôi là ngày 11 tháng 6.	4	Nhà của Cáo N5
+30	キツネさんの誕生日は１１月１８日ですか。	キツネさんの誕生日（たんじょうび）は１１月（じゅういちがつ）１８日（じゅうはちにち）ですか。	Sinh nhật của anh Kitsune là ngày 18 tháng 11 phải không?	4	Nhà của Cáo N5
+31	キツネさんの誕生日は５月１０日じゃありません。	キツネさんの誕生日（たんじょうび）は５月（ごがつ）１０日（とおか）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 10 tháng 5.	4	Nhà của Cáo N5
+32	キツネさんの誕生日は１０月２５日です。	キツネさんの誕生日（たんじょうび）は１０月（じゅうがつ）２５日（にじゅうごにち）です。	Sinh nhật của anh Kitsune là ngày 25 tháng 10.	4	Nhà của Cáo N5
+33	ネコさんの誕生日は９月２日ですか。	ネコさんの誕生日（たんじょうび）は９月（くがつ）２日（ふつか）ですか。	Sinh nhật của anh Neko là ngày 2 tháng 9 phải không?	4	Nhà của Cáo N5
+34	ネコさんの誕生日は８月３日じゃありません。	ネコさんの誕生日（たんじょうび）は８月（はちがつ）３日（みっか）じゃありません。	Sinh nhật của anh Neko không phải là ngày 3 tháng 8.	4	Nhà của Cáo N5
+35	ネコさんの誕生日は２月２日です。	ネコさんの誕生日（たんじょうび）は２月（にがつ）２日（ふつか）です。	Sinh nhật của anh Neko là ngày 2 tháng 2.	4	Nhà của Cáo N5
+36	イヌさんの誕生日は４月２１日ですか。	イヌさんの誕生日（たんじょうび）は４月（しがつ）２１日（にじゅういちにち）ですか。	Sinh nhật của anh Inu là ngày 21 tháng 4 phải không?	4	Nhà của Cáo N5
+37	イヌさんの誕生日は１月２５日じゃありません。	イヌさんの誕生日（たんじょうび）は１月（いちがつ）２５日（にじゅうごにち）じゃありません。	Sinh nhật của anh Inu không phải là ngày 25 tháng 1.	4	Nhà của Cáo N5
+38	イヌさんの誕生日は７月２７日です。	イヌさんの誕生日（たんじょうび）は７月（しちがつ）２７日（にじゅうななにち）です。	Sinh nhật của anh Inu là ngày 27 tháng 7.	4	Nhà của Cáo N5
+39	お誕生日は９月１日ですか。	お誕生日（たんじょうび）は９月（くがつ）１日（ついたち）ですか。	Sinh nhật của bạn là ngày 1 tháng 9 phải không?	4	Nhà của Cáo N5
+40	私の誕生日は６月１８日じゃありません。	私（わたし）の誕生日（たんじょうび）は６月（ろくがつ）１８日（じゅうはちにち）じゃありません。	Sinh nhật của mình không phải là ngày 18 tháng 6.	4	Nhà của Cáo N5
+41	キツネさんの誕生日は８月１９日ですか。	キツネさんの誕生日（たんじょうび）は８月（はちがつ）１９日（じゅうきゅうにち）ですか。	Sinh nhật của anh Kitsune là ngày 19 tháng 8 phải không?	4	Nhà của Cáo N5
+42	キツネさんの誕生日は１２月９日です。	キツネさんの誕生日（たんじょうび）は１２月（じゅうにがつ）９日（ここのか）です。	Sinh nhật của anh Kitsune là ngày 9 tháng 12.	4	Nhà của Cáo N5
+43	お誕生日は５月３０日ですか。	お誕生日（たんじょうび）は５月（ごがつ）３０日（さんじゅうにち）ですか。	Sinh nhật của bạn là ngày 30 tháng 5 phải không?	4	Nhà của Cáo N5
+44	キツネさんの誕生日は６月６日じゃありません。	キツネさんの誕生日（たんじょうび）は６月（ろくがつ）６日（むいか）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 6 tháng 6.	4	Nhà của Cáo N5
+45	ネコさんの誕生日は１月１１日ですか。	ネコさんの誕生日（たんじょうび）は１月（いちがつ）１１日（じゅういちにち）ですか。	Sinh nhật của anh Neko là ngày 11 tháng 1 phải không?	4	Nhà của Cáo N5
+46	私の誕生日は２月１日じゃありません。	私（わたし）の誕生日（たんじょうび）は２月（にがつ）１日（ついたち）じゃありません。	Sinh nhật của mình không phải là ngày 1 tháng 2.	4	Nhà của Cáo N5
+47	イヌさんの誕生日は１２月１日じゃありません。	イヌさんの誕生日（たんじょうび）は１２月（じゅうにがつ）１日（ついたち）じゃありません。	Sinh nhật của anh Inu không phải là ngày 1 tháng 12.	4	Nhà của Cáo N5
+48	ネコさんの誕生日は８月２７日じゃありません。	ネコさんの誕生日（たんじょうび）は８月（はちがつ）２７日（にじゅうななにち）じゃありません。	Sinh nhật của anh Neko không phải là ngày 27 tháng 8.	4	Nhà của Cáo N5
+49	私の誕生日は５月８日じゃありません。	私（わたし）の誕生日（たんじょうび）は５月（ごがつ）８日（ようか）じゃありません。	Sinh nhật của mình không phải là ngày 8 tháng 5.	4	Nhà của Cáo N5
+50	イヌさんの誕生日は２月２８日じゃありません。	イヌさんの誕生日（たんじょうび）は２月（にがつ）２８日（にじゅうはちにち）じゃありません。	Sinh nhật của anh Inu không phải là ngày 28 tháng 2.	4	Nhà của Cáo N5
+51	キツネさんの誕生日は５月２７日じゃありません。	キツネさんの誕生日（たんじょうび）は５月（ごがつ）２７日（にじゅうななにち）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 27 tháng 5.	4	Nhà của Cáo N5
+52	イヌさんの誕生日は７月２６日じゃありません。	イヌさんの誕生日（たんじょうび）は７月（しちがつ）２６日（にじゅうろくにち）じゃありません。	Sinh nhật của anh Inu không phải là ngày 26 tháng 7.	4	Nhà của Cáo N5
+53	キツネさんの誕生日は１１月１１日じゃありません。	キツネさんの誕生日（たんじょうび）は１１月（じゅういちがつ）１１日（じゅういちにち）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 11 tháng 11.	4	Nhà của Cáo N5
+54	イヌさんの誕生日は１０月４日じゃありません。	イヌさんの誕生日（たんじょうび）は１０月（じゅうがつ）４日（よっか）じゃありません。	Sinh nhật của anh Inu không phải là ngày 4 tháng 10.	4	Nhà của Cáo N5
+55	キツネさんの誕生日は１１月２２日です。	キツネさんの誕生日（たんじょうび）は１１月（じゅういちがつ）２２日（にじゅうににち）です。	Sinh nhật của anh Kitsune là ngày 22 tháng 11.	4	Nhà của Cáo N5
+56	イヌさんの誕生日は１月２４日です。	イヌさんの誕生日（たんじょうび）は１月（いちがつ）２４日（にじゅうよっか）です。	Sinh nhật của anh Inu là ngày 24 tháng 1.	4	Nhà của Cáo N5
+57	ネコさんの誕生日は１０月１１日ですか。	ネコさんの誕生日（たんじょうび）は１０月（じゅうがつ）１１日（じゅういちにち）ですか。	Sinh nhật của anh Neko là ngày 11 tháng 10 phải không?	4	Nhà của Cáo N5
+58	私の誕生日は８月５日じゃありません。	私（わたし）の誕生日（たんじょうび）は８月（はちがつ）５日（いつか）じゃありません。	Sinh nhật của mình không phải là ngày 5 tháng 8.	4	Nhà của Cáo N5
+59	ネコさんの誕生日は９月９日じゃありません。	ネコさんの誕生日（たんじょうび）は９月（くがつ）９日（ここのか）じゃありません。	Sinh nhật của anh Neko không phải là ngày 9 tháng 9.	4	Nhà của Cáo N5
+60	キツネさんの誕生日は２月１４日じゃありません。	キツネさんの誕生日（たんじょうび）は２月（にがつ）１４日（じゅうよっか）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 14 tháng 2.	4	Nhà của Cáo N5
+61	ネコさんの誕生日は６月１１日ですか。	ネコさんの誕生日（たんじょうび）は６月（ろくがつ）１１日（じゅういちにち）ですか。	Sinh nhật của anh Neko là ngày 11 tháng 6 phải không?	4	Nhà của Cáo N5
+62	イヌさんの誕生日は１２月１日です。	イヌさんの誕生日（たんじょうび）は１２月（じゅうにがつ）１日（ついたち）です。	Sinh nhật của anh Inu là ngày 1 tháng 12.	4	Nhà của Cáo N5
+63	私の誕生日は４月１１日ですか。	私（わたし）の誕生日（たんじょうび）は４月（しがつ）１１日（じゅういちにち）ですか。	Sinh nhật của mình là ngày 11 tháng 4 phải không?	4	Nhà của Cáo N5
+64	私の誕生日は１１月１７日じゃありません。	私（わたし）の誕生日（たんじょうび）は１１月（じゅういちがつ）１７日（じゅうななにち）じゃありません。	Sinh nhật của mình không phải là ngày 17 tháng 11.	4	Nhà của Cáo N5
+65	私の誕生日は５月３日じゃありません。	私（わたし）の誕生日（たんじょうび）は５月（ごがつ）３日（みっか）じゃありません。	Sinh nhật của mình không phải là ngày 3 tháng 5.	4	Nhà của Cáo N5
+66	キツネさんの誕生日は２月１５日です。	キツネさんの誕生日（たんじょうび）は２月（にがつ）１５日（じゅうごにち）です。	Sinh nhật của anh Kitsune là ngày 15 tháng 2.	4	Nhà của Cáo N5
+67	ネコさんの誕生日は１２月３日です。	ネコさんの誕生日（たんじょうび）は１２月（じゅうにがつ）３日（みっか）です。	Sinh nhật của anh Neko là ngày 3 tháng 12.	4	Nhà của Cáo N5
+68	キツネさんの誕生日は１２月１１日じゃありません。	キツネさんの誕生日（たんじょうび）は１２月（じゅうにがつ）１１日（じゅういちにち）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 11 tháng 12.	4	Nhà của Cáo N5
+69	キツネさんの誕生日は８月１７日ですか。	キツネさんの誕生日（たんじょうび）は８月（はちがつ）１７日（じゅうななにち）ですか。	Sinh nhật của anh Kitsune là ngày 17 tháng 8 phải không?	4	Nhà của Cáo N5
+70	イヌさんの誕生日は１月１０日じゃありません。	イヌさんの誕生日（たんじょうび）は１月（いちがつ）１０日（とおか）じゃありません。	Sinh nhật của anh Inu không phải là ngày 10 tháng 1.	4	Nhà của Cáo N5
+71	ネコさんの誕生日は４月８日じゃありません。	ネコさんの誕生日（たんじょうび）は４月（しがつ）８日（ようか）じゃありません。	Sinh nhật của anh Neko không phải là ngày 8 tháng 4.	4	Nhà của Cáo N5
+72	私の誕生日は４月２７日ですか。	私（わたし）の誕生日（たんじょうび）は４月（しがつ）２７日（にじゅうななにち）ですか。	Sinh nhật của mình là ngày 27 tháng 4 phải không?	4	Nhà của Cáo N5
+73	私の誕生日は１１月１７日じゃありません。	私（わたし）の誕生日（たんじょうび）は１１月（じゅういちがつ）１７日（じゅうななにち）じゃありません。	Sinh nhật của mình không phải là ngày 17 tháng 11.	4	Nhà của Cáo N5
+74	イヌさんの誕生日は３月６日じゃありません。	イヌさんの誕生日（たんじょうび）は３月（さんがつ）６日（むいか）じゃありません。	Sinh nhật của anh Inu không phải là ngày 6 tháng 3.	4	Nhà của Cáo N5
+75	私の誕生日は１１月７日じゃありません。	私（わたし）の誕生日（たんじょうび）は１１月（じゅういちがつ）７日（なのか）じゃありません。	Sinh nhật của mình không phải là ngày 7 tháng 11.	4	Nhà của Cáo N5
+76	イヌさんの誕生日は６月２８日です。	イヌさんの誕生日（たんじょうび）は６月（ろくがつ）２８日（にじゅうはちにち）です。	Sinh nhật của anh Inu là ngày 28 tháng 6.	4	Nhà của Cáo N5
+77	私の誕生日は１０月１９日じゃありません。	私（わたし）の誕生日（たんじょうび）は１０月（じゅうがつ）１９日（じゅうきゅうにち）じゃありません。	Sinh nhật của mình không phải là ngày 19 tháng 10.	4	Nhà của Cáo N5
+78	お誕生日は２月１３日ですか。	お誕生日（たんじょうび）は２月（にがつ）１３日（じゅうさんにち）ですか。	Sinh nhật của bạn là ngày 13 tháng 2 phải không?	4	Nhà của Cáo N5
+79	キツネさんの誕生日は２月２３日じゃありません。	キツネさんの誕生日（たんじょうび）は２月（にがつ）２３日（にじゅうさんにち）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 23 tháng 2.	4	Nhà của Cáo N5
+80	ネコさんの誕生日は８月１２日です。	ネコさんの誕生日（たんじょうび）は８月（はちがつ）１２日（じゅうににち）です。	Sinh nhật của anh Neko là ngày 12 tháng 8.	4	Nhà của Cáo N5
+81	キツネさんの誕生日は８月１４日じゃありません。	キツネさんの誕生日（たんじょうび）は８月（はちがつ）１４日（じゅうよっか）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 14 tháng 8.	4	Nhà của Cáo N5
+82	私の誕生日は６月４日ですか。	私（わたし）の誕生日（たんじょうび）は６月（ろくがつ）４日（よっか）ですか。	Sinh nhật của mình là ngày 4 tháng 6 phải không?	4	Nhà của Cáo N5
+83	キツネさんの誕生日は８月７日じゃありません。	キツネさんの誕生日（たんじょうび）は８月（はちがつ）７日（なのか）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 7 tháng 8.	4	Nhà của Cáo N5
+84	ネコさんの誕生日は２月１０日ですか。	ネコさんの誕生日（たんじょうび）は２月（にがつ）１０日（とおか）ですか。	Sinh nhật của anh Neko là ngày 10 tháng 2 phải không?	4	Nhà của Cáo N5
+85	ネコさんの誕生日は４月３日ですか。	ネコさんの誕生日（たんじょうび）は４月（しがつ）３日（みっか）ですか。	Sinh nhật của anh Neko là ngày 3 tháng 4 phải không?	4	Nhà của Cáo N5
+86	イヌさんの誕生日は７月１９日ですか。	イヌさんの誕生日（たんじょうび）は７月（しちがつ）１９日（じゅうきゅうにち）ですか。	Sinh nhật của anh Inu là ngày 19 tháng 7 phải không?	4	Nhà của Cáo N5
+87	イヌさんの誕生日は４月２９日ですか。	イヌさんの誕生日（たんじょうび）は４月（しがつ）２９日（にじゅうきゅうにち）ですか。	Sinh nhật của anh Inu là ngày 29 tháng 4 phải không?	4	Nhà của Cáo N5
+88	私の誕生日は７月１１日です。	私（わたし）の誕生日（たんじょうび）は７月（しちがつ）１１日（じゅういちにち）です。	Sinh nhật của mình là ngày 11 tháng 7.	4	Nhà của Cáo N5
+89	ネコさんの誕生日は２月１５日じゃありません。	ネコさんの誕生日（たんじょうび）は２月（にがつ）１５日（じゅうごにち）じゃありません。	Sinh nhật của anh Neko không phải là ngày 15 tháng 2.	4	Nhà của Cáo N5
+90	イヌさんの誕生日は９月８日です。	イヌさんの誕生日（たんじょうび）は９月（くがつ）８日（ようか）です。	Sinh nhật của anh Inu là ngày 8 tháng 9.	4	Nhà của Cáo N5
+91	イヌさんの誕生日は１１月２１日じゃありません。	イヌさんの誕生日（たんじょうび）は１１月（じゅういちがつ）２１日（にじゅういちにち）じゃありません。	Sinh nhật của anh Inu không phải là ngày 21 tháng 11.	4	Nhà của Cáo N5
+92	私の誕生日は８月２日ですか。	私（わたし）の誕生日（たんじょうび）は８月（はちがつ）２日（ふつか）ですか。	Sinh nhật của mình là ngày 2 tháng 8 phải không?	4	Nhà của Cáo N5
+93	イヌさんの誕生日は８月３０日ですか。	イヌさんの誕生日（たんじょうび）は８月（はちがつ）３０日（さんじゅうにち）ですか。	Sinh nhật của anh Inu là ngày 30 tháng 8 phải không?	4	Nhà của Cáo N5
+94	私の誕生日は５月２６日です。	私（わたし）の誕生日（たんじょうび）は５月（ごがつ）２６日（にじゅうろくにち）です。	Sinh nhật của mình là ngày 26 tháng 5.	4	Nhà của Cáo N5
+95	キツネさんの誕生日は7月2日です。	キツネさんの誕生日（たんじょうび）は7月（しちがつ）2日（ふつか）です。	Sinh nhật của anh Kitsune là ngày 2 tháng 7.	4	Nhà của Cáo N5
+96	キツネさんの誕生日は7月18日じゃありません。	キツネさんの誕生日（たんじょうび）は7月（しちがつ）18日（じゅうはちにち）じゃありません。	Sinh nhật của anh Kitsune không phải là ngày 18 tháng 7.	4	Nhà của Cáo N5
+97	イヌさんの誕生日は2月15日じゃありません。	イヌさんの誕生日（たんじょうび）は2月（にがつ）15日（じゅうごにち）じゃありません。	Sinh nhật của anh Inu không phải là ngày 15 tháng 2.	4	Nhà của Cáo N5
+98	私の誕生日は5月14日です。	私の誕生日（たんじょうび）は5月（ごがつ）14日（じゅうよっか）です。	Sinh nhật của mình là ngày 14 tháng 5.	4	Nhà của Cáo N5
+99	イヌさんの誕生日は11月21日です。	イヌさんの誕生日（たんじょうび）は11月（じゅういちがつ）21日（にじゅういちにち）です。	Sinh nhật của anh Inu là ngày 21 tháng 11.	4	Nhà của Cáo N5
+100	キツネさんの誕生日は6月16日です。	キツネさんの誕生日（たんじょうび）は6月（ろくがつ）16日（じゅうろくにち）です。	Sinh nhật của anh Kitsune là ngày 16 tháng 6.	4	Nhà của Cáo N5
