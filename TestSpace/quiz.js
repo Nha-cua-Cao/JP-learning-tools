@@ -830,7 +830,7 @@ const App = (() => {
     }
 
     DataManager.toggleFilter(book, unit);
-    UIRenderer.renderSidebar(); // Re-render sidebar với trạng thái mới
+    // UIRenderer.renderSidebar(); // Re-render sidebar với trạng thái mới
   }
 
   /**
