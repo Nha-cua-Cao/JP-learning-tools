@@ -105,7 +105,6 @@ const DataManager = (() => {
   function loadData(rawTSV) {
     // Add các câu hỏi mới vào allItems (giữ nguyên các câu đã load trước đó)
     allItems.push(...parseTSV(rawTSV));
-    selectedFilters.clear();
     return allItems.length;
   }
 
@@ -573,7 +572,6 @@ const UIRenderer = (() => {
           </div>
         </details>`;
     }).join('');
-    
 
     updateFilteredCount();
   } 
