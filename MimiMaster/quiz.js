@@ -550,7 +550,7 @@ const UIRenderer = (() => {
     scroll.innerHTML = groups.map(group => {
       const allActive = DataManager.isBookAllActive(group.book, group.units);
       return `
-        <details class="book-group">
+        <details class="book-group" open>
           <summary>
             <span>${escapeHtml(group.book)}</span>
           </summary>
