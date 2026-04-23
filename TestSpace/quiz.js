@@ -533,7 +533,7 @@ const UIRenderer = (() => {
   /**
    * renderSidebar — Vẽ danh sách giáo trình + unit trong sidebar
    */
-  function renderSidebar() {
+  function renderSidebar(isRenderCounterOnly = false) {
     const scroll = document.getElementById('sidebarScroll');
     const groups = DataManager.getGroupedData();
 
@@ -547,32 +547,34 @@ const UIRenderer = (() => {
       return;
     }
 
-    scroll.innerHTML = groups.map(group => {
-      const allActive = DataManager.isBookAllActive(group.book, group.units);
-      return `
-        <details class="book-group">
-          <summary>
-            <span>${escapeHtml(group.book)}</span>
-          </summary>
-          <!-- Nút chọn/bỏ chọn tất cả unit của sách -->
-          <div class="units-list">
-            <div class="select-all-row" onclick="App.toggleBookFilter('${escapeSingleQ(group.book)}', ${JSON.stringify(group.units).replaceAll('"', '\'')})">
-              <input type="checkbox" ${allActive ? 'checked' : ''}
-                style="accent-color:var(--accent);width:14px;height:14px;pointer-events:none" />
-              <span>Tất cả</span>
+    if (isRenderCounterOnly) {
+      scroll.innerHTML = groups.map(group => {
+        const allActive = DataManager.isBookAllActive(group.book, group.units);
+        return `
+          <details class="book-group">
+            <summary>
+              <span>${escapeHtml(group.book)}</span>
+            </summary>
+            <!-- Nút chọn/bỏ chọn tất cả unit của sách -->
+            <div class="units-list">
+              <div class="select-all-row" onclick="App.toggleBookFilter('${escapeSingleQ(group.book)}', ${JSON.stringify(group.units).replaceAll('"', '\'')})">
+                <input type="checkbox" ${allActive ? 'checked' : ''}
+                  style="accent-color:var(--accent);width:14px;height:14px;pointer-events:none" />
+                <span>Tất cả</span>
+              </div>
+              ${group.units.map(unit => {
+                const active = DataManager.isFilterActive(group.book, unit);
+                return `
+                  <label class="unit-chip ${active ? 'checked' : ''}">
+                    <input type="checkbox" ${active ? 'checked' : ''}
+                      style="pointer-events:none" onclick="App.toggleUnitFilter('${escapeSingleQ(group.book)}', '${escapeSingleQ(unit)}')" />
+                    Unit ${escapeHtml(unit)}
+                  </label>`;
+              }).join('')}
             </div>
-            ${group.units.map(unit => {
-              const active = DataManager.isFilterActive(group.book, unit);
-              return `
-                <label class="unit-chip ${active ? 'checked' : ''}">
-                  <input type="checkbox" ${active ? 'checked' : ''}
-                    style="pointer-events:none" onclick="App.toggleUnitFilter('${escapeSingleQ(group.book)}', '${escapeSingleQ(unit)}')" />
-                  Unit ${escapeHtml(unit)}
-                </label>`;
-            }).join('')}
-          </div>
-        </details>`;
-    }).join('');
+          </details>`;
+      }).join('');
+    }
 
     updateFilteredCount();
   } 
@@ -830,7 +832,7 @@ const App = (() => {
     }
 
     DataManager.toggleFilter(book, unit);
-    // UIRenderer.renderSidebar(); // Re-render sidebar với trạng thái mới
+    UIRenderer.renderSidebar(true); // Re-render sidebar với trạng thái mới
   }
 
   /**
