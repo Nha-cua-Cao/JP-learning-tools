@@ -547,7 +547,7 @@ const UIRenderer = (() => {
       return;
     }
 
-    if (isRenderCounterOnly) {
+    if (!isRenderCounterOnly) {
       scroll.innerHTML = groups.map(group => {
         const allActive = DataManager.isBookAllActive(group.book, group.units);
         return `
