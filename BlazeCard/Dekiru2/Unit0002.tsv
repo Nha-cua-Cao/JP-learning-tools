@@ -1,14 +1,14 @@
 STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
 1	画面	がめん	Màn hình	この電子辞書、画面が小さすぎますね。\nCái kim từ điển này, màn hình bé quá nhỉ.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
-2	腕時計	うでどけい	Đồng hồ đeo tay	その腕時計、高そうですね。一度見せてらえませんか？\nCái đồng hồ đó trông có vẻ đắt nhỉ. Bạn cho tôi xem một chút được không?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
-3	セーター	セーター	Áo len	イヌさん、このセーターを一度着てみます。\nAnh Inu ơi, tôi sẽ mặc thử cái áo len này nhé.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
+2	腕時計	うでどけい	Đồng hồ đeo tay	その腕時計、高そうですね。一度見せてもらえませんか？\nCái đồng hồ đó trông có vẻ đắt nhỉ. Bạn cho tôi xem một chút được không?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
+3	セーター	セーター	Áo len	イヌさん、このセーターを一度着てみてもいいですか。\nAnh Inu ơi, tôi mặc thử cái áo này một lần được không?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 4	スーツケース	スーツケース	Vali	ネコさんのスーツケースは重すぎて、運びにくいです。\nVali của chị Neko nặng quá nên khó mang đi quá.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 5	コート	コート	Áo khoác	このコートは厚くて、とても暖かそうです。\nCái áo khoác này dày, trông có vẻ ấm áp quá.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
-6	棚	たな	Cái kệ, giá	キツネさん、棚にカレンダーが貼ってありますよ。\nAnh Kitsune ơi, trên kệ có dán tờ lịch kìa.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
+6	棚	たな	Cái kệ, giá	棚にその本が置いてあります。\nTrên kệ có để sẵn sách.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 7	指輪	ゆびわ	Nhẫn	この指輪はきらきらしていて、高そうですね。\nChiếc nhẫn này lấp lánh, trông có vẻ đắt tiền nhỉ.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 8	サイズ	サイズ	Kích cỡ	この靴はサイズが小さすぎて、履きにくいです。\nĐôi giày này size nhỏ quá, khó xỏ chân vào quá.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 9	数字	すうじ	Con số	画面に数字が書いてあります。\nTrên màn hình có viết các con số.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
-10	ヒール	ヒール	Giày cao gót	ネコさん、そのヒールは歩きにくくないですか？\nChị Neko ơi, đôi cao gót đó không khó đi à?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
+10	ヒール	ヒール	Gót giày	ネコさん、そのヒールは歩きにくくないですか？\nChị Neko ơi, đôi cao gót đó không khó đi à?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 11	ボタン	ボタン	Nút bấm, cúc áo	このボタンは小さすぎて、押しにくいです。\nCái nút này nhỏ quá, khó bấm quá.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 12	ジーンズ	ジーンズ	Quần jean	イヌさん、新しいジーンズを履いてみました。\nAnh Inu đã mặc thử chiếc quần jean mới.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 13	売り場	うりば	Quầy bán hàng	売り場の場所を教えてもらえませんか？\nBạn chỉ cho tôi quầy bán hàng ở đâu được không?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
@@ -50,17 +50,17 @@ STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
 49	半額	はんがく	Nửa giá	このパンは半額で、とてもお得です。\nCái bánh mì này nửa giá, rẻ thật đấy.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 50	レディースデー	レディースデー	Ngày cho phụ nữ	今日はレディースデーなので、安くなります。\nHôm nay là ngày phụ nữ nên sẽ được rẻ hơn.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 51	量	りょう	Lượng	この料理は量が多すぎて、食べられません。\nMón này lượng nhiều quá, tôi không ăn hết được.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
-52	親子丼	おおこどん	Cơm gà trứng	親子丼にします。美味しそうですね。\nTôi chọn Oyakodon. Trông ngon quá nhỉ.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
+52	親子丼	おやこどん	Cơm gà trứng	親子丼にします。美味しそうですね。\nTôi chọn Oyakodon. Trông ngon quá nhỉ.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 53	牛丼	ぎゅうどん	Cơm thịt bò	牛丼の大盛りを注文しました。\nTôi đã gọi một suất cơm thịt bò tô lớn.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 54	サンドイッチ	サンドイッチ	Bánh mì sandwich	このサンドイッチは食べやすそうです。\nCái sandwich này trông có vẻ dễ ăn nhỉ.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 55	ソース	ソース	Nước sốt	ソースをかけて食べると美味しいですよ。\nRưới thêm nước sốt vào ăn sẽ ngon lắm đấy.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
-56	～券	～けん	Vé, phiếu	受付でチケット券を渡してもらえませんか？\nBạn đưa giúp tôi cái vé ở quầy lễ tân được không?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
+56	～券	～けん	Vé, phiếu	受付でチケット入場券を渡してもらえませんか？\nBạn đưa giúp tôi cái vé vào cửa ở quầy lễ tân được không?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 57	割引券	わりびきけん	Phiếu giảm giá	割引券を使って、安く買いました。\nTôi đã dùng phiếu giảm giá để mua được rẻ hơn.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 58	かける	かける	Rưới, treo, đeo	料理にソースをかけてみます。\nTôi sẽ rưới thử nước sốt vào món ăn.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 59	貼る	はる	Dán	壁にポスターが貼ってあります。\nTrên tường có dán sẵn một tấm áp phích.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 60	注文する	ちゅうもんする	Gọi món, đặt hàng	すみません、注文してもいいですか？\nXin lỗi, tôi gọi món được không?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 61	割引する	わりびきする	Giảm giá	もっと割引してもらえませんか？\nBạn có thể giảm giá thêm cho tôi được không?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
-62	得（な）	とく（な）	Có hời, giá hời	半額で買えたので、とても得をしました。\nMua được giá nửa tiền nên hời quá.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
+62	得（な）	とく（な）	Có hời, giá hời	ランチがお得なので、昼ごはんはいつもここにします。\nVì bữa trưa hời nên là cơm trưa tôi luôn chọn quán này.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 63	特別（な）	とくべつ（な）	Đặc biệt	今日は特別な料理を注文してみました。\nHôm nay tôi đã gọi thử một món ăn đặc biệt.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 64	どういう～	どういう～	... như thế nào?	「禁煙」はどういう意味ですか？\n"Kinen" có nghĩa là gì vậy?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 65	もう	もう	Đã, rồi	もうお腹がいっぱいすぎて、食べられません。\nTôi đã quá no rồi, không thể ăn thêm được nữa.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
@@ -83,4 +83,3 @@ STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
 82	次	つぎ	Tiếp theo	次の講義はいつですか？\nBài giảng tiếp theo là khi nào vậy?	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 83	植える	うえる	Trồng (cây)	庭に花が植えてあります。\nTrong vườn có trồng sẵn hoa.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
 84	掲示板	けいじばん	Bảng tin	掲示板にテストの時間が書いてあります。\nTrên bảng tin có viết thời gian thi.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
-85	お徳	おとく	Giá rẻ, hời	このセットは安くて、とてもお徳ですよ。\nSet này rẻ, hời lắm đấy.	2	できる日本語初中級 - Dekiru Nihongo Sơ Trung Cấp
