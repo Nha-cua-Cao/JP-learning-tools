@@ -14,7 +14,7 @@ STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
 13	５階	ごかい	Tầng 5	ネコさんの売り場は５階です。\nQuầy bán hàng của anh Neko ở tầng 5.	6	Nhà của Cáo N5
 14	６階	ろっかい	Tầng 6	イヌさんの売り場も６階です。\nQuầy bán hàng của anh Inu cũng ở tầng 6.	6	Nhà của Cáo N5
 15	７階	ななかい	Tầng 7	デパートは７階ですか。\nTrung tâm thương mại ở tầng 7 phải không?	6	Nhà của Cáo N5
-16	８階	 hachikai	Tầng 8	コンビニは８階じゃありません。\nCửa hàng tiện lợi không ở tầng 8.	6	Nhà của Cáo N5
+16	８階	はっかい・はちかい	Tầng 8	コンビニは８階じゃありません。\nCửa hàng tiện lợi không ở tầng 8.	6	Nhà của Cáo N5
 17	９階	きゅうかい	Tầng 9	喫煙所は９階です。\nNơi hút thuốc ở tầng 9.	6	Nhà của Cáo N5
 18	１０階	じゅっかい	Tầng 10	エスカレーターは１０階です。\nThang cuốn ở tầng 10.	6	Nhà của Cáo N5
 19	何階	なんがい	Tầng mấy?	ポストは何階ですか。\nHòm thư ở tầng mấy vậy?	6	Nhà của Cáo N5
@@ -22,7 +22,7 @@ STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
 21	ATM	エーティーエム	Cây ATM	ATMはあそこです。\nCây ATM ở đằng kia.	6	Nhà của Cáo N5
 22	トイレ	トイレ	Nhà vệ sinh	トイレはここですか。\nNhà vệ sinh ở đây phải không?	6	Nhà của Cáo N5
 23	お手洗い	おてあらい	Nhà vệ sinh (thường lịch sự hơn từ トイレ)	お手洗いはあちらです。\nNhà vệ sinh ở phía kia.	6	Nhà của Cáo N5
-24	100円ショップ	１００えんショップ	Cửa hàng đồng giá 100 yên	１００円ショップとスーパーは２階です。\nCửa hàng 100 yên và siêu thị đều ở tầng 2.	6	Nhà của Cáo N5
+24	１００円ショップ	１００えんショップ	Cửa hàng đồng giá 100 yên	１００円ショップとスーパーは２階です。\nCửa hàng 100 yên và siêu thị đều ở tầng 2.	6	Nhà của Cáo N5
 25	エスカレーター	エスカレーター	Thang cuốn	エスカレーターはそこです。\nThang cuốn ở đó.	6	Nhà của Cáo N5
 26	エレベーター	エレベーター	Thang máy	エレベーターは３階です。\nThang máy ở tầng 3.	6	Nhà của Cáo N5
 27	喫煙所	きつえんじょ	Nơi hút thuốc	喫煙所はあちらじゃありません。\nNơi hút thuốc không phải ở phía kia.	6	Nhà của Cáo N5
