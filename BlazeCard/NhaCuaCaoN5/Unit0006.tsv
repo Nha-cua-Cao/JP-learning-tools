@@ -1,0 +1,37 @@
+STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
+1	どこ	どこ	Ở đâu	１００円ショップはどこですか。\nCửa hàng đồng giá 100 yên ở đâu?	6	Nhà của Cáo N5
+2	ここ	ここ	Ở đây (gần người nói)	インフォメーションはここです。\nQuầy thông tin ở đây.	6	Nhà của Cáo N5
+3	こちら	こちら	Ở đây (gần người nói)	キツネさんの売り場はこちらです。\nQuầy bán hàng của anh Kitsune ở phía này.	6	Nhà của Cáo N5
+4	そこ	そこ	Ở kia (gần người nghe)	レジはそこですか。\nQuầy thu ngân ở đó phải không?	6	Nhà của Cáo N5
+5	そちら	そちら	Ở kia (gần người nghe)	郵便局はそちらじゃありません。\nBưu điện không phải ở phía đó đâu.	6	Nhà của Cáo N5
+6	あそこ	あそこ	Ở đó (xa cả người nghe và người nói)	トイレはあそこです。\nNhà vệ sinh ở đằng kia.	6	Nhà của Cáo N5
+7	あちら	あちら	Ở đó (xa cả người nghe và người nói)	エレベーターはあちらですか。\nThang máy ở phía kia phải không ạ?	6	Nhà của Cáo N5
+8	ありがとうございます。	ありがとうございます。	Cảm ơn	ありがとうございます。\nXin cảm ơn rất nhiều.	6	Nhà của Cáo N5
+9	１階	いっかい	Tầng 1	ATMは１階です。\nCây ATM ở tầng 1.	6	Nhà của Cáo N5
+10	２階	にかい	Tầng 2	レストランは２階ですか。\nNhà hàng ở tầng 2 phải không?	6	Nhà của Cáo N5
+11	３階	さんがい	Tầng 3	喫茶店は３階じゃありません。\nQuán cà phê không phải ở tầng 3.	6	Nhà của Cáo N5
+12	４階	よんかい	Tầng 4	スーパーは４階です。\nSiêu thị ở tầng 4.	6	Nhà của Cáo N5
+13	５階	ごかい	Tầng 5	ネコさんの売り場は５階です。\nQuầy bán hàng của anh Neko ở tầng 5.	6	Nhà của Cáo N5
+14	６階	ろっかい	Tầng 6	イヌさんの売り場も６階です。\nQuầy bán hàng của anh Inu cũng ở tầng 6.	6	Nhà của Cáo N5
+15	７階	ななかい	Tầng 7	デパートは７階ですか。\nTrung tâm thương mại ở tầng 7 phải không?	6	Nhà của Cáo N5
+16	８階	 hachikai	Tầng 8	コンビニは８階じゃありません。\nCửa hàng tiện lợi không ở tầng 8.	6	Nhà của Cáo N5
+17	９階	きゅうかい	Tầng 9	喫煙所は９階です。\nNơi hút thuốc ở tầng 9.	6	Nhà của Cáo N5
+18	１０階	じゅっかい	Tầng 10	エスカレーターは１０階です。\nThang cuốn ở tầng 10.	6	Nhà của Cáo N5
+19	何階	なんがい	Tầng mấy?	ポストは何階ですか。\nHòm thư ở tầng mấy vậy?	6	Nhà của Cáo N5
+20	インフォメーション	インフォメーション	Quầy thông tin	インフォメーションは１階です。\nQuầy thông tin ở tầng 1.	6	Nhà của Cáo N5
+21	ATM	エーティーエム	Cây ATM	ATMはあそこです。\nCây ATM ở đằng kia.	6	Nhà của Cáo N5
+22	トイレ	トイレ	Nhà vệ sinh	トイレはここですか。\nNhà vệ sinh ở đây phải không?	6	Nhà của Cáo N5
+23	お手洗い	おてあらい	Nhà vệ sinh (thường lịch sự hơn từ トイレ)	お手洗いはあちらです。\nNhà vệ sinh ở phía kia.	6	Nhà của Cáo N5
+24	100円ショップ	１００えんショップ	Cửa hàng đồng giá 100 yên	１００円ショップとスーパーは２階です。\nCửa hàng 100 yên và siêu thị đều ở tầng 2.	6	Nhà của Cáo N5
+25	エスカレーター	エスカレーター	Thang cuốn	エスカレーターはそこです。\nThang cuốn ở đó.	6	Nhà của Cáo N5
+26	エレベーター	エレベーター	Thang máy	エレベーターは３階です。\nThang máy ở tầng 3.	6	Nhà của Cáo N5
+27	喫煙所	きつえんじょ	Nơi hút thuốc	喫煙所はあちらじゃありません。\nNơi hút thuốc không phải ở phía kia.	6	Nhà của Cáo N5
+28	レジ	レジ	Quầy thu ngân	レジはここです。\nQuầy thu ngân ở đây.	6	Nhà của Cáo N5
+29	喫茶店	きっさてん	Quán cà phê	喫茶店とレストランは４階ですか。\nQuán cà phê và nhà hàng ở tầng 4 phải không?	6	Nhà của Cáo N5
+30	スーパー	スーパー	Siêu thị	スーパーはあそこです。\nSiêu thị ở đằng kia.	6	Nhà của Cáo N5
+31	レストラン	レストラン	Nhà hàng	レストランと喫茶店は５階です。\nNhà hàng và quán cà phê ở tầng 5.	6	Nhà của Cáo N5
+32	デパート	デパート	Trung tâm thương mại	デパートはここじゃありません。\nĐây không phải là trung tâm thương mại.	6	Nhà của Cáo N5
+33	コンビニ	コンビニ	Cửa hàng tiện lợi	コンビニは１階です。\nCửa hàng tiện lợi ở tầng 1.	6	Nhà của Cáo N5
+34	売り場	うりば	Quầy bán hàng	ネコさんの売り場はどこですか。\nQuầy bán hàng của anh Neko ở đâu vậy?	6	Nhà của Cáo N5
+35	郵便局	ゆうびんきょく	Bưu điện	郵便局はあちらです。\nBưu điện ở phía kia.	6	Nhà của Cáo N5
+36	ポスト	ポスト	Hòm thư	ポストはそこですか。\nHòm thư ở đó phải không?	6	Nhà của Cáo N5
