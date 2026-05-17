@@ -1,0 +1,82 @@
+STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
+1	どれ	どれ	Cái nào	へえ？どれですか。\nHở? Cái nào thế?	8	Nhà của Cáo N5
+2	これ	これ	Cái này	これは私の水です。\nĐây là nước của tôi.	8	Nhà của Cáo N5
+3	それ	それ	Cái đó	それは誰のジュースですか。\nCái đó là nước quả của ai thế?	8	Nhà của Cáo N5
+4	あれ	あれ	Cái kia	あれをください。\nCho tôi cái kia.	8	Nhà của Cáo N5
+5	ください	ください	Xin hãy cho tôi / làm ơn	お水をください。\nCho tôi xin nước.	8	Nhà của Cáo N5
+6	注文をお願いします。	ちゅうもんをおねがいします。	Xin cho tôi gọi món	すみません、注文をお願いします。\nXin lỗi, cho tôi gọi món với ạ.	8	Nhà của Cáo N5
+7	かしこまりました。	かしこまりました。	Vâng, tôi hiểu rồi	とんかつですね。かしこまりました。\nAnh gọi thịt chiên xù đúng không ạ? Tôi đã hiểu rồi.	8	Nhà của Cáo N5
+8	誰	だれ	Ai	これは誰の料理ですか。\nĐây là món ăn của ai thế?	8	Nhà của Cáo N5
+9	メニュー	メニュー	Thực đơn	メニューをください。\nCho tôi xin cái thực đơn.	8	Nhà của Cáo N5
+10	食べ物	たべもの	Đồ ăn	これは誰の食べ物ですか。\nĐây là đồ ăn của ai thế?	8	Nhà của Cáo N5
+11	飲み物	のみもの	Đồ uống	飲み物をください。\nCho tôi xin đồ uống.	8	Nhà của Cáo N5
+12	料理	りょうり	Món ăn / nấu ăn	それは誰の料理ですか。\nĐó là món ăn của ai vậy?	8	Nhà của Cáo N5
+13	肉	にく	Thịt	肉をください。\nCho tôi xin thịt.	8	Nhà của Cáo N5
+14	牛肉	ぎゅうにく	Thịt bò	牛肉をください。\nCho tôi xin thịt bò.	8	Nhà của Cáo N5
+15	鶏肉	とりにく	Thịt gà	あれは誰の鶏肉ですか。\nKia là thịt gà của ai thế?	8	Nhà của Cáo N5
+16	豚肉	ぶたにく	Thịt heo	豚肉をください。\nCho tôi xin thịt heo.	8	Nhà của Cáo N5
+17	魚	さかな	Cá	これは誰の魚ですか。\nĐây là cá của ai vậy?	8	Nhà của Cáo N5
+18	卵	たまご	Trứng	卵をください。\nCho tôi xin trứng.	8	Nhà của Cáo N5
+19	軟骨	なんこつ	Sụn (thường là sụn gà)	軟骨をください。\nCho tôi xin sụn.	8	Nhà của Cáo N5
+20	ウナギのかば焼き	ウナギのかばやき	Lươn nướng sốt	ウナギのかば焼きをください。\nCho tôi món lươn nướng sốt.	8	Nhà của Cáo N5
+21	刺身	さしみ	Sashimi / cá sống	それは誰の刺身ですか。\nĐó là sashimi của ai thế?	8	Nhà của Cáo N5
+22	野菜	やさい	Rau	野菜をください。\nCho tôi xin rau.	8	Nhà của Cáo N5
+23	枝豆	えだまめ	Đậu nành luộc	枝豆をください。\nCho tôi món đậu nành luộc.	8	Nhà của Cáo N5
+24	イチゴ	イチゴ	Dâu tây	あれは誰のイチゴですか。\nKia là dâu tây của ai vậy?	8	Nhà của Cáo N5
+25	リンゴ	リンゴ	Táo	リンゴをください。\nCho tôi xin quả táo.	8	Nhà của Cáo N5
+26	バナナ	バナナ	Chuối	バナナをください。\nCho tôi xin quả chuối.	8	Nhà của Cáo N5
+27	レモン	レモン	Chanh	あれは誰のレモンですか。\nKia là chanh của ai vậy?	8	Nhà của Cáo N5
+28	みかん	みかん	Quýt	みかんをください。\nCho tôi xin quả quýt.	8	Nhà của Cáo N5
+29	ご飯	ごはん	Cơm	ご飯をください。\nCho tôi xin cơm.	8	Nhà của Cáo N5
+30	ライス	ライス	Cơm (kiểu Tây)	これは誰のライスですか。\nĐây là cơm của ai thế?	8	Nhà của Cáo N5
+31	おにぎり	おにぎり	Cơm nắm	おにぎりをください。\nCho tôi xin cơm nắm.	8	Nhà của Cáo N5
+32	お弁当	おべんとう	Cơm hộp	それはお弁当ですか。\nCái đó là cơm hộp phải không?	8	Nhà của Cáo N5
+33	牛丼	ぎゅうどん	Cơm bò	牛丼をください。\nCho tôi món cơm bò.	8	Nhà của Cáo N5
+34	親子丼	おやこどん	Cơm gà trứng	それは誰の親子丼ですか。\nĐó là cơm gà trứng của ai vậy?	8	Nhà của Cáo N5
+35	カレーライス	カレーライス	Cơm cà ri	カレーライスをください。\nCho tôi món cơm cà ri.	8	Nhà của Cáo N5
+36	カツカレー	カツカレー	Cà ri thịt chiên xù	これは誰のカツカレーですか。\nĐây là cà ri thịt chiên xù của ai thế?	8	Nhà của Cáo N5
+37	お寿司	おすし	Sushi	お寿司をください。\nCho tôi món sushi.	8	Nhà của Cáo N5
+38	もち	もち	Bánh mochi	もちをください。\nCho tôi xin bánh mochi.	8	Nhà của Cáo N5
+39	ラーメン	ラーメン	Mì ramen	それは誰のラーメンですか。\nĐó là mì ramen của ai thế?	8	Nhà của Cáo N5
+40	パスタ	ぱすた	Mì Ý	パスタをください。\nCho tôi món mì Ý.	8	Nhà của Cáo N5
+41	うどん	うどん	Mì udon	これは誰のうどんですか。\nĐây là mì udon của ai thế?	8	Nhà của Cáo N5
+42	そば	そば	Mì soba	そばをください。\nCho tôi món mì soba.	8	Nhà của Cáo N5
+43	冷やし中華	ひやしちゅうか	Mì lạnh kiểu Trung Hoa	あれは誰の冷やし中華ですか。\nKia là mì lạnh của ai vậy?	8	Nhà của Cáo N5
+44	パン	パン	Bánh mì	パンをください。\nCho tôi xin bánh mì.	8	Nhà của Cáo N5
+45	サンドイッチ	サンドイッチ	Bánh sandwich	サンドイッチをください。\nCho tôi món bánh sandwich.	8	Nhà của Cáo N5
+46	ピザ	ピザ	Pizza	ピザをください。\nCho tôi bánh pizza.	8	Nhà của Cáo N5
+47	とんかつ	とんかつ	Thịt heo chiên xù	これは誰のとんかつですか。\nĐây là thịt heo chiên xù của ai thế?	8	Nhà của Cáo N5
+48	チキンカツ	チキンカツ	Gà chiên xù	チキンカツをください。\nCho tôi món gà chiên xù.	8	Nhà của Cáo N5
+49	唐揚げ	からあげ	Gà chiên kiểu Nhật	それは誰の唐揚げですか。\nĐó là gà chiên của ai vậy?	8	Nhà của Cáo N5
+50	生姜焼き	しょうがやき	Thịt xào gừng	生姜焼きをください。\nCho tôi món thịt xào gừng.	8	Nhà của Cáo N5
+51	焼き鳥	やきとり	Gà xiên nướng	あれは誰の焼き鳥ですか。\nKia là gà xiên nướng của ai thế?	8	Nhà của Cáo N5
+52	ハンバーグ	ハンバーグ	Thịt viên	ハンバーグをください。\nCho tôi món thịt viên.	8	Nhà của Cáo N5
+53	チーズハンバーグ	チーズハンバーグ	Thịt viên phủ burger	これは誰のチーズハンバーグですか。\nĐây là món thịt viên phủ phô mai của ai thế?	8	Nhà của Cáo N5
+54	しゃぶしゃぶ	しゃぶしゃぶ	Lẩu shabu-shabu	しゃぶしゃぶをください。\nCho tôi món lẩu shabu-shabu.	8	Nhà của Cáo N5
+55	すき焼き	すきやき	Lẩu sukiyaki	それは誰のすき焼きですか。\nĐó là lẩu sukiyaki của ai vậy?	8	Nhà của Cáo N5
+56	カレー	カレー	Cà ri	カレーをください。\nCho tôi món cà ri.	8	Nhà của Cáo N5
+57	スープ	スープ	Súp	あれは誰のスープですか。\nKia là súp của ai thế?	8	Nhà của Cáo N5
+58	天ぷら	てんぷら	Đồ chiên tempura	天ぷらをください。\nCho tôi món tempura.	8	Nhà của Cáo N5
+59	たこ焼き	たこやき	Bánh bạch tuộc nướng	これは誰のたこ焼きですか。\nĐây là bánh bạch tuộc nướng của ai thế?	8	Nhà của Cáo N5
+60	お好み焼き	おこのみやき	Bánh xèo Nhật	お好み焼きをください。\nCho tôi món bánh xèo Nhật.	8	Nhà của Cáo N5
+61	餃子	ぎょうざ	Bánh xếp Nhật (bánh gyoza)	それは誰の餃子ですか。\nĐó là bánh xếp của ai vậy?	8	Nhà của Cáo N5
+62	おでん	おでん	Lẩu oden	おでんをください。\nCho tôi món lẩu oden.	8	Nhà của Cáo N5
+63	朝ご飯	あさごはん	Bữa sáng	これは誰の朝ご飯ですか。\nĐây là bữa sáng của ai thế?	8	Nhà của Cáo N5
+64	昼ご飯	ひるごはん	Bữa trưa	昼ご飯をください。\nCho tôi phần ăn trưa.	8	Nhà của Cáo N5
+65	晩ご飯	ばんごはん	Bữa tối	あれは誰の晩ご飯ですか。\nKia là bữa tối của ai vậy?	8	Nhà của Cáo N5
+66	水	みず	Nước	水をください。\nCho tôi xin nước.	8	Nhà của Cáo N5
+67	お湯	おゆ	Nước nóng	これは誰のお湯ですか。\nĐây là nước nóng của ai thế?	8	Nhà của Cáo N5
+68	ジュース	ジュース	Nước ép	ジュースをください。\nCho tôi xin nước ép.	8	Nhà của Cáo N5
+69	コーヒー	コーヒー	Cà phê	それは誰のコーヒーですか。\nĐó là cà phê của ai vậy?	8	Nhà của Cáo N5
+70	紅茶	こうちゃ	Trà đen	紅茶をください。\nCho tôi xin trà đen.	8	Nhà của Cáo N5
+71	お茶	おちゃ	Trà	あれは誰のお茶ですか。\nKia là trà của ai thế?	8	Nhà của Cáo N5
+72	ミルク	ミルク	Sữa	ミルクをください。\nCho tôi xin sữa.	8	Nhà của Cáo N5
+73	牛乳	ぎゅうにゅう	Sữa bò	これは誰の牛乳ですか。\nĐây là sữa bò của ai thế?	8	Nhà của Cáo N5
+74	ビール	ビール	Bia	ビールをください。\nCho tôi bia.	8	Nhà của Cáo N5
+75	生ビール	なまビール	Bia tươi	それは誰の生ビールですか。\nĐó là bia tươi của ai vậy?	8	Nhà của Cáo N5
+76	ワイン	ワイン	Rượu vang	ワインをください。\nCho tôi rượu vang.	8	Nhà của Cáo N5
+77	お菓子	おかし	Bánh kẹo	あれは誰のお菓子ですか。\nKia là bánh kẹo của ai thế?	8	Nhà của Cáo N5
+78	チョコレート	チョコレート	Sô-cô-la	チョコレートをください。\nCho tôi xin sô-cô-la.	8	Nhà của Cáo N5
+79	ケーキ	ケーキ	Bánh ngọt	これは誰のケーキですか。\nĐây là bánh ngọt của ai thế?	8	Nhà của Cáo N5
+80	アイスクリーム	アイスクリーム	Kem	アイスクリームをください。\nCho tôi kem.	8	Nhà của Cáo N5
+81	どら焼き	どらやき	Bánh dorayaki	それは誰のどら焼きですか。\nĐó là bánh dorayaki của ai vậy?	8	Nhà của Cáo N5
