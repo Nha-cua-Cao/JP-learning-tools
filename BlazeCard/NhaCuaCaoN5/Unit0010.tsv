@@ -1,3 +1,4 @@
+STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
 1	今	いま	Bây giờ	今は何時ですか。\nGiờ là mấy giờ vậy?	10	Nhà của Cáo N5
 2	午前	ごぜん	Sáng	午前９時です。\nBây giờ là 9 giờ sáng.	10	Nhà của Cáo N5
 3	午後	ごご	Chiều	キツネさんは午後１時から５時までです。\nAnh Kitsune làm việc từ 1 giờ đến 5 giờ chiều.	10	Nhà của Cáo N5
@@ -28,24 +29,28 @@
 28	金曜日	きんようび	Thứ Sáu	金曜日は体育館の休みです。\nThứ Sáu là ngày nghỉ của phòng tập thể dục.	10	Nhà của Cáo N5
 29	土曜日	どようび	Thứ Bảy	イヌさんの休みは土曜日と日曜日です。\nNgày nghỉ của anh Inu là thứ Bảy và Chủ Nhật.	10	Nhà của Cáo N5
 30	日曜日	にちようび	Chủ Nhật	日曜日は休みですか。\nChủ Nhật có được nghỉ không?	10	Nhà của Cáo N5
-31	駅	えき	Nhà ga	駅は午前５時から午後１１時半までです。\nNhà ga mở cửa từ 5 giờ sáng đến 11 giờ rưỡi đêm.	10	Nhà của Cáo N5
-32	銀行	ぎんこう	Ngân hàng	銀行の休みは土曜日と日曜日です。\nNgày nghỉ của ngân hàng là thứ Bảy và Chủ Nhật.	10	Nhà của Cáo N5
-33	体育館	たいいくかん	Phòng tập thể dục	体育館の休みは何曜日ですか。\nNgày nghỉ của phòng tập thể dục là thứ mấy?	10	Nhà của Cáo N5
-34	図書館	としょかん	Thư viện	図書館は午前８時から午後６時までですか。\nThư viện mở cửa từ 8 giờ sáng đến 6 giờ tối phải không?	10	Nhà của Cáo N5
-35	病院	びょういん	Bệnh viện	病院は午後５時までです。\nBệnh viện làm việc đến 5 giờ chiều.	10	Nhà của Cáo N5
-36	郵便局	ゆうびんきょく	Bưu điện	郵便局は午前９時からです。\nBưu điện mở cửa từ 9 giờ sáng.	10	Nhà của Cáo N5
-37	市役所	しやくしょ	Ủy ban thành phố	市役所の休みは土曜日と日曜日です。\nNgày nghỉ của ủy ban thành phố là thứ Bảy và Chủ Nhật.	10	Nhà của Cáo N5
-38	区役所	くやくしょ	Ủy ban quận	区役所は午後４時半までです。\nỦy ban quận làm việc đến 4 giờ rưỡi chiều.	10	Nhà của Cáo N5
-39	ホテル	ホテル	Khách sạn	このホテルは何時から何時までですか。\nKhách sạn này mở cửa từ mấy giờ đến mấy giờ thế?	10	Nhà của Cáo N5
-40	空港	くうこう	Sân bay	空港は午前５時からです。\nSân bay mở cửa từ 5 giờ sáng.	10	Nhà của Cáo N5
-41	公園	こうえん	Công viên	公園は午前６時から午後１０時までです。\nCông viên mở cửa từ 6 giờ sáng đến 10 giờ tối.	10	Nhà của Cáo N5
-42	動物園	どうぶつえん	Sở thú	月曜日は動物園の休みです。\nThứ Hai là ngày nghỉ của sở thú.	10	Nhà của Cáo N5
-43	博物館	はくぶつかん	Bảo tàng	博物館は午前９時から午後５時までです。\nBảo tàng mở cửa từ 9 giờ sáng đến 5 giờ chiều.	10	Nhà của Cáo N5
-44	美術館	びじゅつかん	Bảo tàng mỹ thuật	火曜日は美術館の休みですか。\nThứ Ba là ngày nghỉ của bảo tàng mỹ thuật phải không?	10	Nhà của Cáo N5
-45	美容院	びよういん	Tiệm làm tóc	美容院の休みは火曜日です。\nNgày nghỉ của tiệm làm tóc là thứ Ba.	10	Nhà của Cáo N5
-46	ガソリンスタンド	ガソリンスタンド	Trạm xăng	ガソリンスタンドは午前６時からですか。\nTrạm xăng mở cửa từ 6 giờ sáng phải không?	10	Nhà của Cáo N5
-47	水族館	すいぞくかん	Thủy cung	水族館の休みは木曜日です。\nNgày nghỉ của thủy cung là thứ Năm.	10	Nhà của Cáo N5
-48	遊園地	ゆうえんち	Khu vui chơi	遊園地は午前９時から午後６時までです。\nKhu vui chơi mở cửa từ 9 giờ sáng đến 6 giờ tối.	10	Nhà của Cáo N5
-49	競技場	きょうぎじょう	Sân vận động	競技場は午後１０時までです。\nSân vận động mở cửa đến 10 giờ tối.	10	Nhà của Cáo N5
-50	旅行会社	りょこうがいしゃ	Công ty du lịch	旅行会社の休みは日曜日です。\nNgày nghỉ của công ty du lịch là Chủ Nhật.	10	Nhà của Cáo N5
-51	コインランドリー	コインランドリー	Tiệm giặt tự động	コインランドリーの休みは日曜日ですか。\nNgày nghỉ của tiệm giặt tự động là Chủ Nhật phải không?	10	Nhà của Cáo N5
+31	学校	がっこう	Trường học	すみません。この学校はいつからいつまでですか。\nXin thứ lỗi. Cho hỏi trường này mở cửa từ mấy giờ đến mấy giờ thế?	10	Nhà của Cáo N5
+32	日本語学校	にほんごがっこう	Trường tiếng Nhật	日本語学校は午前１０時から午後６時までです。\nTrường tiếng Nhật mở cửa từ 10 giờ sáng đến 6 giờ chiều.	10	Nhà của Cáo N5
+33	専門学校	せんもんがっこう	Trường nghề	その専門学校の休みは日曜日です。\nNgày nghỉ của trường nghề đó là Chủ Nhật.	10	Nhà của Cáo N5
+34	大学	だいがく	Đại học	この大学は５時からです。\nTrường đại học này mở cửa từ 5 giờ.	10	Nhà của Cáo N5
+35	駅	えき	Nhà ga	駅は午前５時から午後１１時半までです。\nNhà ga mở cửa từ 5 giờ sáng đến 11 giờ rưỡi đêm.	10	Nhà của Cáo N5
+36	銀行	ぎんこう	Ngân hàng	銀行の休みは土曜日と日曜日です。\nNgày nghỉ của ngân hàng là thứ Bảy và Chủ Nhật.	10	Nhà của Cáo N5
+37	体育館	たいいくかん	Phòng tập thể dục	体育館の休みは何曜日ですか。\nNgày nghỉ của phòng tập thể dục là thứ mấy?	10	Nhà của Cáo N5
+38	図書館	としょかん	Thư viện	図書館は午前８時から午後６時までですか。\nThư viện mở cửa từ 8 giờ sáng đến 6 giờ tối phải không?	10	Nhà của Cáo N5
+39	病院	びょういん	Bệnh viện	病院は午後５時までです。\nBệnh viện làm việc đến 5 giờ chiều.	10	Nhà của Cáo N5
+40	郵便局	ゆうびんきょく	Bưu điện	郵便局は午前９時からです。\nBưu điện mở cửa từ 9 giờ sáng.	10	Nhà của Cáo N5
+41	市役所	しやくしょ	Ủy ban thành phố	市役所の休みは土曜日と日曜日です。\nNgày nghỉ của ủy ban thành phố là thứ Bảy và Chủ Nhật.	10	Nhà của Cáo N5
+42	区役所	くやくしょ	Ủy ban quận	区役所は午後４時半までです。\nỦy ban quận làm việc đến 4 giờ rưỡi chiều.	10	Nhà của Cáo N5
+43	ホテル	ホテル	Khách sạn	このホテルは何時から何時までですか。\nKhách sạn này mở cửa từ mấy giờ đến mấy giờ thế?	10	Nhà của Cáo N5
+44	空港	くうこう	Sân bay	空港は午前５時からです。\nSân bay mở cửa từ 5 giờ sáng.	10	Nhà của Cáo N5
+45	公園	こうえん	Công viên	公園は午前６時から午後１０時までです。\nCông viên mở cửa từ 6 giờ sáng đến 10 giờ tối.	10	Nhà của Cáo N5
+46	動物園	どうぶつえん	Sở thú	月曜日は動物園の休みです。\nThứ Hai là ngày nghỉ của sở thú.	10	Nhà của Cáo N5
+47	博物館	はくぶつかん	Bảo tàng	博物館は午前９時から午後５時までです。\nBảo tàng mở cửa từ 9 giờ sáng đến 5 giờ chiều.	10	Nhà của Cáo N5
+48	美術館	びじゅつかん	Bảo tàng mỹ thuật	火曜日は美術館の休みですか。\nThứ Ba là ngày nghỉ của bảo tàng mỹ thuật phải không?	10	Nhà của Cáo N5
+49	美容院	びよういん	Tiệm làm tóc	美容院の休みは火曜日です。\nNgày nghỉ của tiệm làm tóc là thứ Ba.	10	Nhà của Cáo N5
+50	ガソリンスタンド	ガソリンスタンド	Trạm xăng	ガソリンスタンドは午前６時からですか。\nTrạm xăng mở cửa từ 6 giờ sáng phải không?	10	Nhà của Cáo N5
+51	水族館	すいぞくかん	Thủy cung	水族館の休みは木曜日です。\nNgày nghỉ của thủy cung là thứ Năm.	10	Nhà của Cáo N5
+52	遊園地	ゆうえんち	Khu vui chơi	遊園地は午前９時から午後６時までです。\nKhu vui chơi mở cửa từ 9 giờ sáng đến 6 giờ tối.	10	Nhà của Cáo N5
+53	競技場	きょうぎじょう	Sân vận động	競技場は午後１０時までです。\nSân vận động mở cửa đến 10 giờ tối.	10	Nhà của Cáo N5
+54	旅行会社	りょこうがいしゃ	Công ty du lịch	旅行会社の休みは日曜日です。\nNgày nghỉ của công ty du lịch là Chủ Nhật.	10	Nhà của Cáo N5
+55	コインランドリー	コインランドリー	Tiệm giặt tự động	コインランドリーの休みは日曜日ですか。\nNgày nghỉ của tiệm giặt tự động là Chủ Nhật phải không?	10	Nhà của Cáo N5
