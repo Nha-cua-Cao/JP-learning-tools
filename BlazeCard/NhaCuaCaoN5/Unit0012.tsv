@@ -1,22 +1,22 @@
 STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
-1	毎日	まいにち	Mỗi ngày	毎日、お茶を飲みます。\nMỗi ngày tôi uống trà.	12	Nhà của Cáo N5
-2	毎朝	まいあさ	Mỗi sáng	毎朝、何を食べますか。\nMỗi sáng bạn ăn gì?	12	Nhà của Cáo N5
-3	毎晩	まいばん	Mỗi tối	イヌさんは毎晩、テレビを見ません。\nAnh Inu không xem tivi mỗi tối.	12	Nhà của Cáo N5
-4	うち	うち	Nhà	キツネさんはうちでコーヒーを飲みます。\nAnh Kitsune uống cà phê ở nhà.	12	Nhà của Cáo N5
-5	会社	かいしゃ	Công ty	ネコさんは会社へ行きますか。\nAnh Neko có đến công ty không?	12	Nhà của Cáo N5
-6	果物	くだもの	Trái cây	イヌさんは果物を食べます。\nAnh Inu ăn trái cây.	12	Nhà của Cáo N5
-7	サラダ	サラダ	Salad	レストランでサラダを食べますか。\nBạn có ăn salad ở nhà hàng không?	12	Nhà của Cáo N5
-8	チーズ	チーズ	Phô mai	私はチーズを食べません。\nTôi không ăn phô mai.	12	Nhà của Cáo N5
-9	インターネット	インターネット	Internet	学校でインターネットをします。\nTôi dùng internet ở trường.	12	Nhà của Cáo N5
-10	新聞	しんぶん	Báo	どこで新聞を読みますか。\nBạn đọc báo ở đâu?	12	Nhà của Cáo N5
-11	テレビ	テレビ	Tivi	キツネさんはうちでテレビを見ません。\nAnh Kitsune không xem tivi ở nhà.	12	Nhà của Cáo N5
-12	ＣＤ	シーディー	Đĩa CD	ＣＤを聞きます。\nTôi nghe đĩa CD.	12	Nhà của Cáo N5
-13	ＤＶＤ	ディーブイディー	Đĩa DVD	ＤＶＤを見ますか。\nBạn có xem đĩa DVD không?	12	Nhà của Cáo N5
-14	買います	かいます	Mua	何も買いません。\nTôi không mua gì cả.	12	Nhà của Cáo N5
-15	聞きます	ききます	Nghe	音楽を聞きません。\nTôi không nghe nhạc.	12	Nhà của Cáo N5
-16	働きます	はたらきます	Làm việc	ネコさんは会社で働きます。\nAnh Neko làm việc ở công ty.	12	Nhà của Cáo N5
-17	読みます	よみます	Đọc	図書館で本を読みますか。\nBạn có đọc sách ở thư viện không?	12	Nhà của Cáo N5
-18	起きます	おきます	Thức dậy	ホテルで起きません。\nTôi không thức dậy ở khách sạn.	12	Nhà của Cáo N5
-19	寝ます	ねます	Ngủ	イヌさんは学校で寝ません。\nAnh Inu không ngủ ở trường.	12	Nhà của Cáo N5
-20	勉強します	べんきょうします	Học	大学で勉強します。\nTôi học ở trường đại học.	12	Nhà của Cáo N5
-21	来ます	きます	Đến	どこへも来ません。\nTôi không đến đâu cả.	12	Nhà của Cáo N5
+1	毎日	まいにち	Mỗi ngày	毎日７時に起きます。\nMỗi ngày tôi thức dậy lúc 7 giờ.	12	Nhà của Cáo N5
+2	毎朝	まいあさ	Mỗi sáng	毎朝７時にコーヒーを飲みます。\nMỗi sáng tôi uống cà phê lúc 7 giờ.	12	Nhà của Cáo N5
+3	毎晩	まいばん	Mỗi tối	毎晩１１時までアニメを見ます。\nMỗi tối tôi xem anime đến 11 giờ.	12	Nhà của Cáo N5
+4	うち	うち	Nhà	９時からうちで勉強します。\nTừ 9 giờ tôi học bài ở nhà.	12	Nhà của Cáo N5
+5	会社	かいしゃ	Công ty	９時から会社で働きます。\nTôi làm việc ở công ty từ 9 giờ.	12	Nhà của Cáo N5
+6	果物	くだもの	Trái cây	スーパーでリンゴやみかんなど果物を買います。\nTôi mua các loại trái cây như táo và quýt ở siêu thị.	12	Nhà của Cáo N5
+7	サラダ	サラダ	Sa-lát	昼ご飯にサラダやパンなどを食べます。\nTôi ăn những món như sa-lát và bánh mì vào bữa trưa.	12	Nhà của Cáo N5
+8	チーズ	チーズ	Phô mai	スーパーでチーズやミルクなどを買います。\nTôi mua những thứ như phô mai và sữa ở siêu thị.	12	Nhà của Cáo N5
+9	インターネット	インターネット	Mạng internet	夜１０時までインターネットをします。\nTôi dùng internet đến 10 giờ tối.	12	Nhà của Cáo N5
+10	新聞	しんぶん	Báo	毎朝７時に新聞を読みます。\nMỗi sáng tôi đọc báo lúc 7 giờ.	12	Nhà của Cáo N5
+11	テレビ	テレビ	Tivi	夜１１時までテレビを見ます。\nTôi xem tivi đến 11 giờ đêm.	12	Nhà của Cáo N5
+12	ＣＤ	シーディー	Đĩa CD	デパートでＣＤや本などを買います。\nTôi mua những thứ như đĩa CD và sách ở trung tâm thương mại.	12	Nhà của Cáo N5
+13	ＤＶＤ	ディーブイディー	Đĩa DVD	日曜日はどこへも行きません。うちでＤＶＤを見ます。\nChủ nhật tôi không đi đâu cả, tôi ở nhà xem đĩa DVD.	12	Nhà của Cáo N5
+14	買います	かいます	Mua	スーパーで何も買いません。\nTôi không mua gì ở siêu thị cả.	12	Nhà của Cáo N5
+15	聞きます	ききます	Nghe	夜９時に音楽を聞きます。\nTôi nghe nhạc lúc 9 giờ tối.	12	Nhà của Cáo N5
+16	働きます	はたらきます	Làm việc	キツネさんは午前９時から働きます。\nAnh Kitsune làm việc từ 9 giờ sáng.	12	Nhà của Cáo N5
+17	読みます	よみます	Đọc	午後４時まで本を読みます。\nTôi đọc sách đến 4 giờ chiều.	12	Nhà của Cáo N5
+18	起きます	おきます	Thức dậy	ネコさんは朝６時に起きます。\nAnh Neko thức dậy lúc 6 giờ sáng.	12	Nhà của Cáo N5
+19	寝ます	ねます	Ngủ	夜１０時に寝ます。\nTôi đi ngủ lúc 10 giờ tối.	12	Nhà của Cáo N5
+20	勉強します	べんきょうします	Học	学校で７時から勉強します。\nTôi học ở trường từ 7 giờ.	12	Nhà của Cáo N5
+21	来ます	きます	Đến	イヌさんは９時に学校へ来ます。\nAnh Inu đến trường lúc 9 giờ.	12	Nhà của Cáo N5
