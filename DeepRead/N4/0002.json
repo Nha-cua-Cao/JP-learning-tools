@@ -1,0 +1,79 @@
+{
+  "title": "暑い季節に注意すること",
+  "content": "雨の季節になりました。これから夏まで気温が高くなるので、食べ物に注意してください。買い物をしたらすぐ冷蔵庫に入れたり、料理をしたらすぐ食べたりするようにしてください。２時間以上も外に置いたものは、食べないで捨てるようにしてください。\nそれから、手を洗うことも大切です。手を洗ってから料理してください。水でしか洗わないのはだめです。石鹸を使って指の間までしっかり洗う必要があります。これは、おなかをこわさないようにするために大切なことです。\n気温が高くなったら、もう１つ注意することがあります。それは「熱中症」です。熱中症にならないように、スポーツをする人だけではなくて、外へ出る人は誰でも水やジュースを十分準備して出てください。",
+  "content_html": "<p>雨の<ruby>季節<rt>きせつ</rt></ruby>になりました。これから夏まで<ruby>気温<rt>きおん</rt></ruby>が高くなるので、食べ物に<ruby>注意<rt>ちゅうい</rt></ruby>してください。買い物をしたらすぐ<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>に入れたり、料理をしたらすぐ食べたりするようにしてください。２時間<ruby>以上<rt>いじょう</rt></ruby>も外に<ruby>置<rt>お</rt></ruby>いたものは、食べないで<ruby>捨<rt>す</rt></ruby>てるようにしてください。</p><p>それから、手を<ruby>洗<rt>あら</rt></ruby>うことも大切です。手を<ruby>洗<rt>あら</rt></ruby>ってから料理してください。水でしか<ruby>洗<rt>あら</rt></ruby>わないのはだめです。<ruby>石鹸<rt>せっけん</rt></ruby>を使って<ruby>指<rt>ゆび</rt></ruby>の間までしっかり<ruby>洗<rt>あら</rt></ruby>う<ruby>必要<rt>ひつよう</rt></ruby>があります。これは、おなかをこわさないようにするために大切なことです。</p><p><ruby>気温<rt>きおん</rt></ruby>が高くなったら、もう１つ<ruby>注意<rt>ちゅうい</rt></ruby>することがあります。それは「<ruby>熱中症<rt>ねっちゅうしょう</rt></ruby>」です。<ruby>熱中症<rt>ねっちゅうしょう</rt></ruby>にならないように、スポーツをする人だけではなくて、外へ出る人は誰でも水やジュースを<ruby>十分<rt>じゅうぶん</rt></ruby><ruby>準備<rt>じゅんび</rt></ruby>して出てください。</p>",
+  "questions": [
+    {
+      "id": "q1_1",
+      "question_text": "おなかをこわさないようにするために大切なこと、何ですか。",
+      "options": [
+        {
+          "key": "A",
+          "text": "水で指（ゆび）を洗うこと"
+        },
+        {
+          "key": "B",
+          "text": "せっけんで手を洗うこと"
+        },
+        {
+          "key": "C",
+          "text": "料理を捨（す）てること"
+        },
+        {
+          "key": "D",
+          "text": "料理をしてから手を洗うこと"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Bài viết chỉ ra rằng để không bị đau bụng, việc rửa tay bằng xà phòng (石鹸を使って) cẩn thận đến tận kẽ tay trước khi nấu ăn là rất quan trọng."
+    },
+    {
+      "id": "q1_2",
+      "question_text": "熱中症（ねっちゅうしょう）にならないように注意（ちゅうい）することは何ですか。",
+      "options": [
+        {
+          "key": "A",
+          "text": "スポーツをしない"
+        },
+        {
+          "key": "B",
+          "text": "水やジュースなどを準備（じゅんび）する"
+        },
+        {
+          "key": "C",
+          "text": "外で出ない"
+        },
+        {
+          "key": "D",
+          "text": "薬（くすり）を飲む"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Để tránh bị sốc nhiệt (熱中症), bài viết khuyên bất kỳ ai khi đi ra ngoài cũng nên chuẩn bị đầy đủ nước hoặc nước trái cây."
+    },
+    {
+      "id": "q1_3",
+      "question_text": "この文章で一番伝（つた）えたいことは何ですか。",
+      "options": [
+        {
+          "key": "A",
+          "text": "暑い季節（きせつ）には、食べ物や熱中症に気をつけることが大切だということ。"
+        },
+        {
+          "key": "B",
+          "text": "２時間以上外に置いた料理は、食べないで捨（す）てること。"
+        },
+        {
+          "key": "C",
+          "text": "外へ出るときは、水やジュースを準備（じゅんび）して出かけること。"
+        },
+        {
+          "key": "D",
+          "text": "雨の季節（きせつ）から夏までは、外でスポーツをしないほうがいいということ。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Ý chính của bài viết là tổng kết những điều cần lưu ý khi thời tiết trở nên nóng hơn, bao gồm việc chú ý bảo quản thực phẩm/vệ sinh tay và phòng tránh sốc nhiệt (熱中症). Phương án B và C chỉ là những chi tiết cụ thể được nhắc đến trong bài chứ không phải ý chính."
+    }
+  ]
+}
