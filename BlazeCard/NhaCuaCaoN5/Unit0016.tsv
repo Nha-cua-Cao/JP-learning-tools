@@ -1,0 +1,73 @@
+STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
+1	雨	あめ	Mưa	ダナンは１０月、雨が多いです。\nĐà Nẵng tháng 10 nhiều mưa.	16	Nhà của Cáo N5
+2	雪	ゆき	Tuyết	日本は冬、雪が多いです。\nNhật Bản vào mùa đông có nhiều tuyết.	16	Nhà của Cáo N5
+3	日	ひ	Mặt trời	日はとても綺麗です。\nMặt trời rất đẹp.	16	Nhà của Cáo N5
+4	春	はる	Mùa xuân	日本は春、どうですか。\nNhật Bản vào mùa xuân thì thế nào?	16	Nhà của Cáo N5
+5	夏	なつ	Mùa hè	ベトナムは夏、とても暑いです。\nViệt Nam vào mùa hè rất nóng.	16	Nhà của Cáo N5
+6	秋	あき	Mùa thu	カナダは秋、涼しいですか。\nCanada vào mùa thu có mát không?	16	Nhà của Cáo N5
+7	冬	ふゆ	Mùa đông	ロシアは冬、寒いです。\nNga vào mùa đông thì lạnh.	16	Nhà của Cáo N5
+8	天気がいい	てんきがいい	Thời tiết đẹp	オーストラリアは夏、天気がいいです。\nÚc vào mùa hè thời tiết đẹp.	16	Nhà của Cáo N5
+9	天気が悪い	てんきがわるい	Thời tiết xấu	イギリスは１月、天気が悪いです。\nAnh vào tháng 1 thời tiết xấu.	16	Nhà của Cáo N5
+10	暖かい	あたたかい	Ấm áp (thời tiết)	タイは一年中、暖かいです。\nThái Lan quanh năm ấm áp.	16	Nhà của Cáo N5
+11	温かい	あたたかい	Ấm (vật chất)	スープは少し温かいです。\nSúp hơi ấm.	16	Nhà của Cáo N5
+12	涼しい	すずしい	Mát mẻ	イギリスは秋、涼しいですか。\nAnh vào mùa thu có mát không?	16	Nhà của Cáo N5
+13	暑い	あつい	Nóng (thời tiết)	ベトナムは一年中、とても暑いです。\nViệt Nam quanh năm rất nóng.	16	Nhà của Cáo N5
+14	熱い	あつい	Nóng (vật chất)	お茶はとても熱いです。\nTrà rất nóng.	16	Nhà của Cáo N5
+15	寒い	さむい	Lạnh (thời tiết)	日本は冬、とても寒いです。\nNhật Bản vào mùa đông rất lạnh.	16	Nhà của Cáo N5
+16	冷たい	つめたい	Lạnh (vật chất)	水はあまり冷たくないです。\nNước không lạnh lắm.	16	Nhà của Cáo N5
+17	あけび	あけび	Quả nho tím akebi	あけびはとても甘いです。\nQuả nho tím akebi rất ngọt.	16	Nhà của Cáo N5
+18	アセロラ	アセロラ	Quả sơ ri	アセロラは少しすっぱいです。\nQuả sơ ri hơi chua.	16	Nhà của Cáo N5
+19	あんず	あんず	Quả mơ hạnh	あんずはとてもすっぱいです。\nQuả mơ hạnh rất chua.	16	Nhà của Cáo N5
+20	いちご	いちご	Quả dâu tây	キツネさんのいちごはとても大きいです。\nDâu tây của anh Kitsune rất to.	16	Nhà của Cáo N5
+21	いちじく	いちじく	Quả sung	いちじくはあまり甘くないです。\nQuả sung không ngọt lắm.	16	Nhà của Cáo N5
+22	梅	うめ	Quả mơ ta	梅はとてもすっぱいです。\nQuả mơ ta rất chua.	16	Nhà của Cáo N5
+23	オリーブ	オリーブ	Quả ô liu	オリーブは少ししょっぱいです。\nQuả ô liu hơi mặn.	16	Nhà của Cáo N5
+24	オレンジ	オレンジ	Quả cam	イヌさんのオレンジはとてもおいしいです。\nCam của anh Inu rất ngon.	16	Nhà của Cáo N5
+25	柿	かき	Quả hồng	柿は少し渋いです。\nQuả hồng hơi chát.	16	Nhà của Cáo N5
+26	かりん	かりん	Quả mộc qua	かりんはあまりおいしくないです。\nQuả mộc qua không ngon lắm.	16	Nhà của Cáo N5
+27	キウイ	キウイ	Quả kiwi	キウイはとてもすっぱいです。\nQuả kiwi rất chua.	16	Nhà của Cáo N5
+28	金柑	きんかん	Quả kim quất	金柑は少しすっぱいです。\nQuả kim quất hơi chua.	16	Nhà của Cáo N5
+29	グァバ	グァバ	Quả ổi	グァバはとてもおいしいです。\nQuả ổi rất ngon.	16	Nhà của Cáo N5
+30	クランベリー	クランベリー	Quả nam việt quất	クランベリーは少しすっぱいです。\nQuả nam việt quất hơi chua.	16	Nhà của Cáo N5
+31	栗	くり	Hạt dẻ	栗はとてもうまいです。\nHạt dẻ rất ngon.	16	Nhà của Cáo N5
+32	グレープフルーツ	グレープフルーツ	Quả bưởi chùm	グレープフルーツはとても大きいです。\nQuả bưởi chùm rất to.	16	Nhà của Cáo N5
+33	ココナッツ	ココナッツ	Quả dừa	ココナッツはとても甘いです。\nQuả dừa rất ngọt.	16	Nhà của Cáo N5
+34	さくらんぼ	さくらんぼ	Quả anh đào	さくらんぼはとても高いです。\nQuả anh đào rất đắt.	16	Nhà của Cáo N5
+35	ざくろ	ざくろ	Quả lựu	ざくろは少し甘いです。\nQuả lựu hơi ngọt.	16	Nhà của Cáo N5
+36	シークワーサー	シークワーサー	Quả chanh lõm	シークワーサーはとてもすっぱいです。\nQuả chanh lõm rất chua.	16	Nhà của Cáo N5
+37	すいか	すいか	Quả dưa hấu	ネコさんのすいかはとても大きいです。\nDưa hấu của anh Neko rất to.	16	Nhà của Cáo N5
+38	スターフルーツ	スターフルーツ	Quả khế	スターフルーツは少しすっぱいです。\nQuả khế hơi chua.	16	Nhà của Cáo N5
+39	すだち	すだち	Quả chanh Nhật/Quả cam Sudachi	すだちはとてもすっぱいです。\nQuả chanh Nhật rất chua.	16	Nhà của Cáo N5
+40	すもも	すもも	Quả mận Nhật/Quả mận Bắc	すももは少し甘いです。\nQuả mận Nhật hơi ngọt.	16	Nhà của Cáo N5
+41	でこぽん	でこぽん	Quả quýt dekopon	でこぽんはとても甘いです。\nQuả quýt dekopon rất ngọt.	16	Nhà của Cáo N5
+42	ドラゴンフルーツ	ドラゴンフルーツ	Quả thanh long	ドラゴンフルーツはとても有名です。\nQuả thanh long rất nổi tiếng.	16	Nhà của Cáo N5
+43	ドリアン	ドリアン	Quả sầu riêng	ドリアンはとても大きいです。\nQuả sầu riêng rất to.	16	Nhà của Cáo N5
+44	梨	なし	Quả lê	梨は少し高いです。\nQuả lê hơi đắt.	16	Nhà của Cáo N5
+45	なつめ	なつめ	Quả táo tàu	なつめはとても小さいです。\nQuả táo tàu rất nhỏ.	16	Nhà của Cáo N5
+46	パイナップル	パイナップル	Quả dứa	パイナップルはとても甘いです。\nQuả dứa rất ngọt.	16	Nhà của Cáo N5
+47	パッションフルーツ	パッションフルーツ	Quả chanh dây	パッションフルーツは少しすっぱいです。\nQuả chanh dây hơi chua.	16	Nhà của Cáo N5
+48	パパイヤ	パパイヤ	Quả đu đủ	パパイヤは全然すっぱくないです。\nQuả đu đủ hoàn toàn không chua.	16	Nhà của Cáo N5
+49	びわ	びわ	Quả nhót tây; Quả lô quất	びわは少し甘いです。\nQuả nhót tây hơi ngọt.	16	Nhà của Cáo N5
+50	ぶどう	ぶどう	Quả nho	ぶどうはとてもおいしいです。\nQuả nho rất ngon.	16	Nhà của Cáo N5
+51	ブラックベリー	ブラックベリー	Quả mâm xôi đen	ブラックベリーはあまり甘くないです。\nQuả mâm xôi đen không ngọt lắm.	16	Nhà của Cáo N5
+52	ブルーベリー	ブルーベリー	Quả việt quất	ブルーベリーはとても小さいです。\nQuả việt quất rất nhỏ.	16	Nhà của Cáo N5
+53	プルーン	プルーン	Quả mận khô	プルーンは少し甘いです。\nQuả mận khô hơi ngọt.	16	Nhà của Cáo N5
+54	マンゴー	マンゴー	Quả xoài	マンゴーはとても有名です。\nQuả xoài rất nổi tiếng.	16	Nhà của Cáo N5
+55	メロン	メロン	Quả dưa lưới	キツネさんのメロンはとても高いです。\nDưa lưới của anh Kitsune rất đắt.	16	Nhà của Cáo N5
+56	桃	もも	Quả đào	桃はとても甘いです。\nQuả đào rất ngọt.	16	Nhà của Cáo N5
+57	ライチ	ライチ	Quả vải	ライチはとてもおいしいです。\nQuả vải rất ngon.	16	Nhà của Cáo N5
+58	りんご	りんご	Quả táo	りんごはあまり高くないです。\nQuả táo không đắt lắm.	16	Nhà của Cáo N5
+59	おいしい	おいしい	Ngon	イヌさんの料理はとてもおいしいです。\nMón ăn của anh Inu rất ngon.	16	Nhà của Cáo N5
+60	甘い	あまい	Ngọt	ケーキはとても甘いです。\nBánh kem rất ngọt.	16	Nhà của Cáo N5
+61	辛い	からい	Cay	カレーはあまり辛くないです。\nMón cà ri không cay lắm.	16	Nhà của Cáo N5
+62	すっぱい	すっぱい	Chua	レモンはとてもすっぱいです。\nQuả chanh rất chua.	16	Nhà của Cáo N5
+63	しょっぱい	しょっぱい	Mặn	肉は少ししょっぱいです。\nThịt hơi mặn.	16	Nhà của Cáo N5
+64	うまい	うまい	Ngon / Giỏi	豚肉はとてもうまいです。\nThịt lợn rất ngon.	16	Nhà của Cáo N5
+65	渋い	しぶい	Chát	お茶は少し渋いです。\nTrà hơi chát.	16	Nhà của Cáo N5
+66	一年中	いちねんじゅう	Suốt năm	ベトナムは一年中、どうですか。\nViệt Nam quanh năm thì thế nào?	16	Nhà của Cáo N5
+67	全然	ぜんぜん	Hoàn toàn không	ネコさんは全然静かじゃありません。\nAnh Neko hoàn toàn không yên tĩnh.	16	Nhà của Cáo N5
+68	あまり	あまり	Không lắm	コーヒーはあまり高くないです。\nCà phê không đắt lắm.	16	Nhà của Cáo N5
+69	少し	すこし	Một chút	カメラは少し高いです。\nMáy ảnh hơi đắt.	16	Nhà của Cáo N5
+70	とても	とても	Rất	日本はとても綺麗です。\nNhật Bản rất đẹp.	16	Nhà của Cáo N5
+71	どう	どう	Như thế nào	カナダは夏、どうですか。\nCanada vào mùa hè thì thế nào?	16	Nhà của Cáo N5
+72	そうですね。	そうですね。	À, để xem nào / Đúng vậy nhỉ	そうですね。少し高いです。\nĐể xem nào. Hơi đắt một chút.	16	Nhà của Cáo N5
