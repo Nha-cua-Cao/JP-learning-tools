@@ -1,0 +1,285 @@
+STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
+1	父親	ちちおや	Bố/Cha	出かけようとしているとき、父親に呼び止められた。\nKhi tôi đang định ra ngoài thì bị bố gọi lại.	1	Nhà của Cáo - Trung Cấp
+2	母親	ははおや	Mẹ	母親にはいつも元気でいてほしい。\nTôi muốn mẹ luôn khỏe mạnh.	1	Nhà của Cáo - Trung Cấp
+3	長女	ちょうじょ	Con gái lớn/Trưởng nữ	長女はきっと家族を大切にするだろう。\nNgười con gái lớn chắc chắn sẽ biết quý trọng gia đình.	1	Nhà của Cáo - Trung Cấp
+4	長男	ちょうなん	Con trai lớn/Trưởng nam	長男はサッカーとかテニスとかが好きだ。\nCon trai lớn thích bóng đá, quần vợt này nọ.	1	Nhà của Cáo - Trung Cấp
+5	次女	じじょ	Con gái thứ hai	次女はたまに料理することがある。\nCô con gái thứ hai thỉnh thoảng có nấu ăn.	1	Nhà của Cáo - Trung Cấp
+6	次男	じなん	Con trai thứ hai	次男は急に泣き出した。\nCậu con trai thứ hai bỗng nhiên khóc òa.	1	Nhà của Cáo - Trung Cấp
+7	三女	さんじょ	Con gái thứ ba	三女はテニスにおいて、クラスで一番強い。\nCô con gái thứ ba về môn quần vợt thì mạnh nhất lớp.	1	Nhà của Cáo - Trung Cấp
+8	三男	さんなん	Con trai thứ ba	三男は春から夏にかけて、よく山を歩く。\nCậu con trai thứ ba từ xuân sang hạ thường đi bộ trên núi.	1	Nhà của Cáo - Trung Cấp
+9	末っ子	すえっこ	Con út	テレビがきっかけで、末っ子は日本語に興味を持った。\nNhờ TV, đứa con út bắt đầu hứng thú với tiếng Nhật.	1	Nhà của Cáo - Trung Cấp
+10	一人っ子	ひとりっこ	Con một	一人っ子は泣きたいだけ泣いた。\nĐứa con một đã khóc đến khi không còn muốn khóc nữa.	1	Nhà của Cáo - Trung Cấp
+11	姉妹	しまい	Chị em gái	キツネさんは姉妹の写真を見たとたん、子供の頃を思い出した。\nAnh Kitsune vừa nhìn thấy ảnh chị em gái thì ngay lập tức nhớ lại thời thơ ấu.	1	Nhà của Cáo - Trung Cấp
+12	一人娘	ひとりむすめ	Con gái duy nhất	一人娘はなかなか結婚しようとしない。\nCô con gái duy nhất mãi không chịu kết hôn.	1	Nhà của Cáo - Trung Cấp
+13	一人息子	ひとりむすこ	Con trai duy nhất	一人息子はよく考えた上で、留学を決めた。\nCậu con trai duy nhất sau khi suy nghĩ kỹ đã quyết định du học.	1	Nhà của Cáo - Trung Cấp
+14	親子	おやこ	Cha mẹ và con cái	あの親子はきっと仲が良いでしょう。\nHai mẹ con kia chắc chắn rất thân thiết.	1	Nhà của Cáo - Trung Cấp
+15	夫婦	ふうふ	Vợ chồng	夫婦はときどきけんかをすることもある。\nVợ chồng đôi khi cũng có cãi nhau.	1	Nhà của Cáo - Trung Cấp
+16	ご夫妻	ごふさい	Hai vợ chồng (kính ngữ)	ご夫妻は若い頃から現在にかけて、一緒に頑張ってきた。\nHai vợ chồng từ lúc trẻ đến nay đã cùng nhau cố gắng.	1	Nhà của Cáo - Trung Cấp
+17	親類	しんるい	Họ hàng (huyết thống/pháp lý, văn viết, lịch sự hơn 親戚)	親類とか友達とか、たくさんの人が来た。\nHọ hàng, bạn bè v.v., nhiều người đã đến.	1	Nhà của Cáo - Trung Cấp
+18	親戚	しんせき	Họ hàng (thường dùng đời thường, thân mật hơn 親類)	お正月がきっかけで、親戚とまた会った。\nNhân dịp Tết, tôi lại gặp họ hàng.	1	Nhà của Cáo - Trung Cấp
+19	先祖	せんぞ	Tổ tiên (trực hệ)	先祖の話を教えてほしい。\nTôi muốn được nghe kể về tổ tiên.	1	Nhà của Cáo - Trung Cấp
+20	祖先	そせん	Tổ tiên (trang trọng, chỉ chung nguồn gốc)	祖先の代から現在にかけて、私たちはこの土地に住んでいる。\nTừ đời tổ tiên đến nay, chúng tôi vẫn sống trên mảnh đất này.	1	Nhà của Cáo - Trung Cấp
+21	尊敬する	そんけいする	Kính trọng, tôn kính	イヌさんに父親を尊敬してほしい。\nTôi muốn anh Inu kính trọng bố.	1	Nhà của Cáo - Trung Cấp
+22	叔父	おじ	Chú/Bác trai	叔父が来たとたん、ネコさんは部屋を出た。\nVừa lúc chú đến, anh Neko đã ra khỏi phòng.	1	Nhà của Cáo - Trung Cấp
+23	叔母	おば	Cô/Dì/Bác gái	叔母は電話をかけようとしない。\nCô ấy không chịu gọi điện.	1	Nhà của Cáo - Trung Cấp
+24	いとこ	いとこ	Anh/chị/em họ	いとこと遊ぶことがある。\nTôi có lúc chơi với anh em họ.	1	Nhà của Cáo - Trung Cấp
+25	おい	おい	Cháu trai (gọi bằng vai chú/bác/cô/dì)	おいはサッカーとか野球とかが好きだ。\nCháu trai thích bóng đá, bóng chày này nọ.	1	Nhà của Cáo - Trung Cấp
+26	めい	めい	Cháu gái (gọi bằng vai chú/bác/cô/dì)	めいはまだ子供っぽい。\nCháu gái vẫn còn trẻ con.	1	Nhà của Cáo - Trung Cấp
+27	つれる	つれる	Dẫn đi cùng, đưa đi cùng	イヌさんは子供を公園につれて行くことがある。\nAnh Inu có lúc dẫn bọn trẻ ra công viên.	1	Nhà của Cáo - Trung Cấp
+28	似る	にる	Giống, giống nhau	ネコさんは父親によく似ているでしょう。\nAnh Neko chắc hẳn rất giống bố.	1	Nhà của Cáo - Trung Cấp
+29	そっくり（な）	そっくり（な）	Giống hệt, giống như đúc	キツネさんはお母さんにそっくりだろう。\nAnh Kitsune chắc là giống hệt mẹ.	1	Nhà của Cáo - Trung Cấp
+30	親友	しんゆう	Bạn thân	イヌさんは親友と電話することがある。\nAnh Inu có lúc gọi điện cho bạn thân.	1	Nhà của Cáo - Trung Cấp
+31	仲間	なかま	Bạn bè/Đồng đội/Nhóm	ネコさんは春から夏にかけて、仲間とテニスをする。\nAnh Neko từ xuân sang hạ chơi quần vợt với bạn bè.	1	Nhà của Cáo - Trung Cấp
+32	遊び仲間	あそびなかま	Bạn chơi cùng	同窓会がきっかけで、遊び仲間とまた会った。\nNhân buổi họp lớp, tôi lại gặp bạn chơi thời xưa.	1	Nhà của Cáo - Trung Cấp
+33	テニス仲間	テニスなかま	Bạn chơi quần vợt	イヌさんはテニス仲間に試合に出てほしい。\nAnh Inu muốn bạn chơi quần vợt cùng mình tham gia trận đấu.	1	Nhà của Cáo - Trung Cấp
+34	仲良し	なかよし	Thân thiết, chơi thân (thân mật)	ネコさんとキツネさんは仲良しだろう。\nAnh Neko và anh Kitsune chắc là chơi thân.	1	Nhà của Cáo - Trung Cấp
+35	幼馴染	おさななじみ	Bạn thời thơ ấu	再会がきっかけで、幼馴染と結婚した。\nNhờ cuộc gặp lại, tôi đã kết hôn với bạn thời thơ ấu.	1	Nhà của Cáo - Trung Cấp
+36	友情	ゆうじょう	Tình bạn	友情は何よりも大切でしょう。\nTình bạn chắc hẳn quan trọng hơn mọi thứ.	1	Nhà của Cáo - Trung Cấp
+37	親しい	したしい	Thân thiết, gần gũi	ネコさんとキツネさんは子供の頃から現在にかけて、ずっと親しい。\nAnh Neko và anh Kitsune từ thời thơ ấu đến nay luôn thân thiết.	1	Nhà của Cáo - Trung Cấp
+38	知人	ちじん	Người quen (văn viết, lịch sự hơn 知り合い)	知人に会ったとたん、その人の名前を思い出した。\nVừa gặp người quen, tôi liền nhớ ra tên người ấy.	1	Nhà của Cáo - Trung Cấp
+39	知り合い	しりあい	Người quen (văn nói, thân mật hơn 知人)	知り合いに会うことがある。\nCó lúc tôi gặp người quen.	1	Nhà của Cáo - Trung Cấp
+40	メンバー	メンバー	Thành viên	キツネさんはチームにおいて、大切なメンバーだ。\nAnh Kitsune là thành viên quan trọng trong đội.	1	Nhà của Cáo - Trung Cấp
+41	つなぐ	つなぐ	Nối, kết nối	地図を見た上で、二つの道をつないだ。\nSau khi xem bản đồ, tôi đã nối hai con đường.	1	Nhà của Cáo - Trung Cấp
+42	つながる	つながる	Được nối, liên kết	電話をかけたとたん、つながった。\nVừa bấm gọi thì người kia đã nối máy.	1	Nhà của Cáo - Trung Cấp
+43	当時	とうじ	Lúc đó, thời điểm đó (trong quá khứ)	当時、イヌさんは学生だったでしょう。\nHồi đó, anh Inu chắc là sinh viên.	1	Nhà của Cáo - Trung Cấp
+44	当日	とうじつ	Ngày hôm đó, đúng ngày đó	当日、朝から夜にかけて雨が降った。\nNgày hôm đó, trời mưa từ sáng đến đêm.	1	Nhà của Cáo - Trung Cấp
+45	祝う	いわう	Chúc mừng	友達に誕生日を祝ってほしい。\nTôi muốn bạn bè chúc mừng sinh nhật mình.	1	Nhà của Cáo - Trung Cấp
+46	遠慮する	えんりょする	Ngần ngại, e dè, khách sáo	キツネさんは遠慮することもある。\nAnh Kitsune có lúc cũng khách sáo/ngần ngại.	1	Nhà của Cáo - Trung Cấp
+47	遠慮なく	えんりょなく	Không khách sáo, thoải mái	遠慮なく食べてほしい。\nCứ thoải mái ăn, không cần khách sáo.	1	Nhà của Cáo - Trung Cấp
+48	しょっちゅう	しょっちゅう	Thường xuyên, luôn luôn (thân mật)	イヌさんはしょっちゅう遅刻するでしょう。\nAnh Inu chắc là thường xuyên đến muộn.	1	Nhà của Cáo - Trung Cấp
+49	たびたび	たびたび	Nhiều lần, thường xuyên (trang trọng hơn しょっちゅう)	春から夏にかけて、たびたび図書館へ行く。\nTừ xuân sang hạ, tôi nhiều lần đi thư viện.	1	Nhà của Cáo - Trung Cấp
+50	たまに	たまに	Thỉnh thoảng	キツネさんはたまにテニスをしないこともある。\nAnh Kitsune cũng có lúc không chơi quần vợt.	1	Nhà của Cáo - Trung Cấp
+51	たまたま	たまたま	Tình cờ, ngẫu nhiên	駅でたまたま元彼に会ったとたん、心臓がドキドキし出した。\nVừa tình cờ gặp bạn trai cũ ở ga, tim tôi bỗng đập thình thịch.	1	Nhà của Cáo - Trung Cấp
+52	めったに	めったに	Ít khi, hiếm khi (thường đi với phủ định)	イヌさんはめったに怒らないが、怒ることもある。\nAnh Inu hiếm khi giận, nhưng cũng có lúc giận.	1	Nhà của Cáo - Trung Cấp
+53	しばらく	しばらく	Một lúc, một thời gian	イヌさんにしばらく待ってほしい。\nTôi muốn anh Inu đợi một lát.	1	Nhà của Cáo - Trung Cấp
+54	別々	べつべつ	Khác nhau/Tách biệt	親友なのに別々の大学に入ることもある。\nDù là bạn thân nhưng cũng có khi mỗi người vào một trường đại học khác nhau.	1	Nhà của Cáo - Trung Cấp
+55	別々（な）	べつべつ（な）	Riêng biệt	恋人にしては、別々にお金を払っている。\nDù là người yêu nhưng lại thanh toán riêng biệt.	1	Nhà của Cáo - Trung Cấp
+56	彼女	かのじょ	Cô ấy; bạn gái	彼女ができたとたん、彼は毎日楽しそうになった。\nVừa có bạn gái, anh ấy bỗng trở nên vui vẻ mỗi ngày.	1	Nhà của Cáo - Trung Cấp
+57	彼	かれ	Anh ấy; bạn trai	彼は私の話を聞こうとしない。\nAnh ấy không chịu nghe tôi nói.	1	Nhà của Cáo - Trung Cấp
+58	彼氏	かれし	Bạn trai	彼氏ができたとか、別れたとか、よく聞く。\nTôi thường nghe chuyện có bạn trai rồi chia tay các thứ.	1	Nhà của Cáo - Trung Cấp
+59	愛情	あいじょう	Tình yêu, tình cảm yêu thương	愛情において、年齢差なんて問題じゃないでしょう。\nTrong tình yêu, chênh lệch tuổi tác chẳng là vấn đề, đúng không?	1	Nhà của Cáo - Trung Cấp
+60	出会う	であう	Gặp gỡ, gặp nhau (duyên phận)	春に出会ったことがきっかけで、日本語を勉強し始めた。\nCuộc gặp gỡ vào mùa xuân là cơ duyên khiến tôi bắt đầu học tiếng Nhật.	1	Nhà của Cáo - Trung Cấp
+61	付き合う	つきあう	Hẹn hò/Trong một mối quan hệ hẹn hò	ネコさんは彼女と３年も付き合っているにしては、彼女の誕生日を知らない。\nAnh Neko hẹn hò với bạn gái những 3 năm, vậy mà lại không biết sinh nhật cô ấy.	1	Nhà của Cáo - Trung Cấp
+62	付き合う	つきあう	Cùng nhau (làm gì đó)	買い物に付き合ってほしい。\nTôi muốn anh đi mua sắm cùng tôi.	1	Nhà của Cáo - Trung Cấp
+63	交際する	こうさいする	Giao thiệp, hẹn hò (trang trọng hơn 付き合う)	交際するうちに、相手の良いところが見えてきた。\nTrong khi hẹn hò, tôi dần thấy được điểm tốt của đối phương.	1	Nhà của Cáo - Trung Cấp
+64	記念する	きねんする	Kỷ niệm, ghi nhớ	付き合って１年を記念するかなと思って、彼女に指輪を買った。\nTôi nghĩ hay là kỷ niệm một năm hẹn hò, nên đã mua nhẫn cho cô ấy.	1	Nhà của Cáo - Trung Cấp
+65	記念日	きねんび	Ngày kỷ niệm	記念日を忘れたとたん、彼女は怒り出した。\nVừa quên ngày kỷ niệm, cô ấy đã nổi giận.	1	Nhà của Cáo - Trung Cấp
+66	喧嘩する	けんかする	Cãi nhau, đánh nhau	二人の性格からして、また喧嘩するだろう。\nNgay từ tính cách của hai người đã có thể đoán rằng họ sẽ lại cãi nhau.	1	Nhà của Cáo - Trung Cấp
+67	口喧嘩	くちげんか	Cãi vã bằng lời	口喧嘩をしているうちに、本当の気持ちが分かった。\nTrong lúc cãi vã, tôi hiểu ra cảm xúc thật.	1	Nhà của Cáo - Trung Cấp
+68	謝る	あやまる	Xin lỗi	彼は何度注意されても、すぐに謝ろうとしない。\nDù bị nhắc nhở nhiều lần, anh ấy vẫn không chịu xin lỗi ngay.	1	Nhà của Cáo - Trung Cấp
+69	仲直りする	なかなおりする	Làm lành, hòa giải	仲直りした上で、またゆっくり話し合おう。\nSau khi làm lành rồi, mình lại nói chuyện từ từ nhé.	1	Nhà của Cáo - Trung Cấp
+70	秘密	ひみつ	Bí mật	秘密を守る限り、私はあなたを信じる。\nMiễn là anh giữ bí mật, tôi sẽ tin anh.	1	Nhà của Cáo - Trung Cấp
+71	内緒	ないしょ	Bí mật (thân mật hơn 秘密; thường là chuyện riêng tư)	内緒にしてほしい。\nTôi muốn anh giữ kín chuyện này.	1	Nhà của Cáo - Trung Cấp
+72	好かれる	すかれる	Được yêu mến	試験前は、好かれるとか嫌われるとか気にしているどころじゃない。\nTrước kỳ thi, không phải lúc để bận tâm chuyện được yêu hay bị ghét.	1	Nhà của Cáo - Trung Cấp
+73	モテる	もてる	Được yêu thích (thường là được người khác giới để ý; khác 好かれる ở chỗ nhấn mạnh sức hút)	彼はモテるから、彼女ができるのも早いもんだ。\nAnh ấy được yêu thích nên có bạn gái cũng nhanh thật.	1	Nhà của Cáo - Trung Cấp
+74	振る	ふる	Từ chối lời tỏ tình	彼女は告白して振られたとたん、泣き出した。\nTỏ tình rồi bị từ chối, cô ấy liền bật khóc.	1	Nhà của Cáo - Trung Cấp
+75	振る	ふる	Bỏ/Đá (thành người yêu cũ)	彼に振られて、しばらく泣きたいだけ泣いた。\nBị anh ấy đá, tôi đã khóc cho đến khi thỏa.	1	Nhà của Cáo - Trung Cấp
+76	お見合い	おみあい	Xem mắt (có mai mối, trang trọng)	お見合いの相手は、同い年にしては、ずっと大人っぽかった。\nĐối tượng xem mắt trông chững chạc hơn nhiều so với người cùng tuổi.	1	Nhà của Cáo - Trung Cấp
+77	見合いする	みあいする	Xem mắt	見合いする人１人につき、写真を１枚送る。\nVới mỗi người xem mắt, gửi một tấm ảnh.	1	Nhà của Cáo - Trung Cấp
+78	見合い結婚	みあいけっこん	Kết hôn qua xem mắt	見合い結婚は今では少ないながらも、まだある。\nKết hôn qua xem mắt ngày nay tuy ít nhưng vẫn còn.	1	Nhà của Cáo - Trung Cấp
+79	恋愛する	れんあいする	Yêu đương	恋愛するうちに、相手の欠点も見えるようになる。\nTrong khi yêu nhau, bạn dần thấy cả khuyết điểm của đối phương.	1	Nhà của Cáo - Trung Cấp
+80	恋愛結婚	れんあいけっこん	Kết hôn vì tình yêu	恋愛結婚とか、見合い結婚とか、人によって考えが違う。\nKết hôn vì tình yêu hay kết hôn qua xem mắt, mỗi người có suy nghĩ khác nhau.	1	Nhà của Cáo - Trung Cấp
+81	存在	そんざい	Sự tồn tại; sự hiện diện	彼女の存在を思うにつけ、頑張ろうと思う。\nMỗi khi nghĩ đến sự hiện diện của cô ấy, tôi lại muốn cố gắng.	1	Nhà của Cáo - Trung Cấp
+82	存在する	そんざいする	Tồn tại	この世に完璧な人間なんて存在しないでしょう。\nTrên đời này làm gì có người hoàn hảo, đúng không?	1	Nhà của Cáo - Trung Cấp
+83	相手	あいて	Đối phương, đối tác, người kia	相手の気持ちさえ考えないなんて、ひどい。\nĐến cả cảm xúc của đối phương cũng không nghĩ tới, thật tệ.	1	Nhà của Cáo - Trung Cấp
+84	助ける	たすける	Giúp đỡ, cứu	困っている人を見たとたん、彼は助け出した。\nVừa thấy người gặp khó khăn, anh ấy đã lao ra cứu giúp.	1	Nhà của Cáo - Trung Cấp
+85	助かる	たすかる	Được giúp, thoát nạn; nhẹ nhõm	困ったときに手伝ってもらえるのは、本当に助かるもんだ。\nKhi gặp khó khăn mà được người khác giúp đỡ thì quả thật rất đáng quý.	1	Nhà của Cáo - Trung Cấp
+86	支える	ささえる	Nâng đỡ, hỗ trợ	家族に支えられている限り、頑張れる。\nMiễn là được gia đình nâng đỡ, tôi có thể cố gắng.	1	Nhà của Cáo - Trung Cấp
+87	誘う	さそう	Rủ rê, mời	キツネさんはネコさんを映画に誘おうとしたが、断られた。\nAnh Kitsune định rủ anh Neko đi xem phim, nhưng bị từ chối.	1	Nhà của Cáo - Trung Cấp
+88	待ち合わせる	まちあわせる	Hẹn gặp (ở địa điểm)	待ち合わせる場所を決めた上で、出かけた。\nSau khi quyết định địa điểm hẹn gặp, chúng tôi đã ra ngoài.	1	Nhà của Cáo - Trung Cấp
+89	交換する	こうかんする	Trao đổi, đổi	期待に反して、連絡先を交換しても何も起こらなかった。\nTrái với mong đợi, dù đã trao đổi thông tin liên lạc nhưng chẳng có gì xảy ra.	1	Nhà của Cáo - Trung Cấp
+90	交流する	こうりゅうする	Giao lưu, trao đổi	交流するうちに、お互いの文化が分かってきた。\nTrong quá trình giao lưu, chúng tôi dần hiểu văn hóa của nhau.	1	Nhà của Cáo - Trung Cấp
+91	断る	ことわる	Từ chối; xin phép trước	誘われたが、忙しいので断ることもある。\nCó khi được rủ nhưng vì bận nên tôi từ chối.	1	Nhà của Cáo - Trung Cấp
+92	預ける	あずける	Gửi, ký gửi	ネコさんは荷物を預けようとしたが、ロッカーが満杯だった。\nAnh Neko định gửi hành lý, nhưng tủ khóa đã đầy.	1	Nhà của Cáo - Trung Cấp
+93	預かる	あずかる	Giữ, trông coi hộ	イヌさんは友達の犬を預かろうかなと思って、準備した。\nAnh Inu nghĩ hay là trông chó giúp bạn, nên đã chuẩn bị.	1	Nhà của Cáo - Trung Cấp
+94	かわいがる	かわいがる	Yêu quý, cưng chiều (trẻ con/vật nuôi)	キツネさんは子犬をかわいがることもある。\nAnh Kitsune cũng có khi cưng chiều chó con.	1	Nhà của Cáo - Trung Cấp
+95	甘やかす	あまやかす	Nuông chiều	子どもを甘やかすと、わがままになることがある。\nNếu nuông chiều trẻ con, đôi khi chúng sẽ trở nên ích kỷ.	1	Nhà của Cáo - Trung Cấp
+96	ついて来る	ついてくる	Đi theo, đi kèm (hướng đến người nói)	イヌさんは私の後をついて来ようとしたが、途中でやめた。\nAnh Inu định đi theo sau tôi, nhưng giữa đường lại thôi.	1	Nhà của Cáo - Trung Cấp
+97	ついて行く	ついていく	Đi theo, đi cùng (hướng xa người nói)	キツネさんについていけば、駅に着くでしょう。\nNếu đi theo anh Kitsune thì sẽ đến ga thôi.	1	Nhà của Cáo - Trung Cấp
+98	抱く	だく	Ôm; ấp ủ	彼女を抱いたとたん、彼は自分が本当に幸せだと感じた。\nVừa ôm cô ấy, anh ấy cảm thấy mình thật hạnh phúc.	1	Nhà của Cáo - Trung Cấp
+99	話し掛ける	はなしかける	Bắt chuyện	話し掛けようとしたが、勇気が出なかった。\nTôi định bắt chuyện, nhưng không đủ can đảm.	1	Nhà của Cáo - Trung Cấp
+100	無視する	むしする	Phớt lờ, lơ đi	無視するなんて、ひどいもんだ。\nPhớt lờ như vậy thật là tệ.	1	Nhà của Cáo - Trung Cấp
+101	振り向く	ふりむく	Quay lại, ngoảnh lại	後ろから声をかけられたとたん、振り向いた。\nVừa bị gọi từ phía sau, tôi đã quay lại.	1	Nhà của Cáo - Trung Cấp
+102	与える	あたえる	Cho, ban cho, cung cấp	この学校において、先生は学生に多くの知識を与える。\nỞ ngôi trường này, giáo viên truyền cho học sinh nhiều kiến thức.	1	Nhà của Cáo - Trung Cấp
+103	味方	みかた	Đồng minh, người cùng phe	味方である限り、最後まで一緒に戦う。\nMiễn là còn là đồng minh, tôi sẽ chiến đấu cùng đến cuối.	1	Nhà của Cáo - Trung Cấp
+104	味方する	みかたする	Đứng về phía, xem là đồng minh	キツネさんはイヌさんに味方しようとした。\nAnh Kitsune đã cố đứng về phía anh Inu.	1	Nhà của Cáo - Trung Cấp
+105	悪口	わるぐち	Lời nói xấu	悪口とか陰口とかは言わない方がいい。\nNhững lời nói xấu hay nói xấu sau lưng thì không nên nói.	1	Nhà của Cáo - Trung Cấp
+106	我々	われわれ	Chúng tôi, chúng ta (trang trọng)	我々はもっと努力すべきだろう。\nChúng ta lẽ ra nên cố gắng hơn.	1	Nhà của Cáo - Trung Cấp
+107	真似	まね	Sự bắt chước, việc mô phỏng	キツネさんの真似がきっかけで、日本語を勉強し始めた。\nChính việc bắt chước anh Kitsune đã khiến tôi bắt đầu học tiếng Nhật.	1	Nhà của Cáo - Trung Cấp
+108	真似する	まねする	Bắt chước, làm theo	好きじゃない人を真似するのは子どもっぽいよ。\nNhại theo hành động của người mình không ưa nó trẻ con lắm ấy.	1	Nhà của Cáo - Trung Cấp
+109	名字	みょうじ	Họ (trong tên)	この名字は日本人っぽい。\nHọ này trông giống người Nhật.	1	Nhà của Cáo - Trung Cấp
+110	性別	せいべつ	Giới tính	名前からして性別が分かることもある。\nNgay từ tên cũng có khi đoán được giới tính.	1	Nhà của Cáo - Trung Cấp
+111	男性	だんせい	Nam giới, đàn ông	彼は男性にしては声が高い。\nAnh ấy là nam mà giọng cao nhỉ.	1	Nhà của Cáo - Trung Cấp
+112	女性	じょせい	Nữ giới, phụ nữ	予想に反して、女性の参加者が多かった。\nTrái với dự đoán, người tham gia nữ nhiều.	1	Nhà của Cáo - Trung Cấp
+113	年齢	ねんれい	Tuổi tác	相談のとき、性別とか年齢とか気にしないで。\nKhi thảo luận, đừng để ý đến tuổi tác hay giới tính.	1	Nhà của Cáo - Trung Cấp
+114	高齢	こうれい	Cao tuổi, già	中年から高齢にかけて、体が弱くなる。\nTừ trung niên đến tuổi già, cơ thể yếu đi.	1	Nhà của Cáo - Trung Cấp
+115	高齢者	こうれいしゃ	Người cao tuổi (từ lịch sự hơn 老人/年寄り)	高齢者にやさしい社会を作ってほしい。\nTôi muốn xã hội được xây dựng thân thiện với người cao tuổi.	1	Nhà của Cáo - Trung Cấp
+116	高齢化	こうれいか	Sự già hóa (dân số)	政府に高齢化問題を解決してほしいな。\nTôi muốn chính phủ giải quyết vấn đề già hóa dân số.	1	Nhà của Cáo - Trung Cấp
+117	（お）年寄り	（お）としより	Người già (cách nói thân mật; 高齢者 lịch sự hơn)	お年寄りさえ使えるスマホがほしい。\nTôi muốn một chiếc smartphone đến cả người già cũng dùng được.	1	Nhà của Cáo - Trung Cấp
+118	老人	ろうじん	Người già (từ cũ; có thể thiếu tôn trọng; 高齢者 lịch sự hơn)	老人ながらも、彼は毎日走っている。\nDù đã già nhưng ông ấy vẫn chạy mỗi ngày.	1	Nhà của Cáo - Trung Cấp
+119	幼児	ようじ	Trẻ nhỏ, trẻ mẫu giáo	幼児が熱を出したら、仕事どころじゃない。\nNếu trẻ nhỏ bị sốt thì không còn tâm trí làm việc.	1	Nhà của Cáo - Trung Cấp
+120	乳児	にゅうじ	Trẻ sơ sinh, trẻ còn bú sữa	乳児のうちに、たくさん抱っこしてあげたい。\nKhi còn là trẻ sơ sinh, tôi muốn ôm cháu thật nhiều.	1	Nhà của Cáo - Trung Cấp
+121	児童	じどう	Trẻ em, học sinh tiểu học (từ hành chính/giáo dục)	この本は児童さえ読める。\nCuốn sách này đến cả trẻ em cũng đọc được.	1	Nhà của Cáo - Trung Cấp
+122	出身	しゅっしん	Xuất thân, quê quán	出身が同じだったことがきっかけで、友達になった。\nVì cùng quê nên chúng tôi trở thành bạn.	1	Nhà của Cáo - Trung Cấp
+123	出身地	しゅっしんち	Nơi xuất thân, quê quán	彼は出身地において有名な歌手だ。\nAnh ấy là ca sĩ nổi tiếng ở quê nhà.	1	Nhà của Cáo - Trung Cấp
+124	出身大学	しゅっしんだいがく	Trường đại học đã tốt nghiệp	出身大学はどこだろう。\nKhông biết trường đại học anh ấy đã tốt nghiệp là trường nào nhỉ.	1	Nhà của Cáo - Trung Cấp
+125	生まれる	うまれる	Được sinh ra	子どもが生まれたとたん、生活が変わった。\nVừa sinh con xong, cuộc sống đã thay đổi.	1	Nhà của Cáo - Trung Cấp
+126	育つ	そだつ	Lớn lên, được nuôi dạy	この写真を見るにつけ、田舎で育った日々を思い出す。\nHễ nhìn tấm ảnh này, tôi lại nhớ những ngày lớn lên ở quê.	1	Nhà của Cáo - Trung Cấp
+127	行儀	ぎょうぎ	Cách cư xử, phép tắc	行儀が悪いとは知りながらも、つい足の上に足を組んでしまう。\nDù biết là sai phép tắc cư xử, nhưng tôi lỡ gác chân lên chân kia.	1	Nhà của Cáo - Trung Cấp
+128	マナー	マナー	Cách ứng xử, phép lịch sự	緊急事態ではマナーどころじゃない。\nTrong tình huống khẩn cấp thì không còn chuyện phép lịch sự nữa.	1	Nhà của Cáo - Trung Cấp
+129	礼儀	れいぎ	Lễ nghĩa, phép tắc lịch sự	あいさつからして、彼は礼儀正しい。\nNgay từ cách chào hỏi đã thấy anh ấy lễ phép.	1	Nhà của Cáo - Trung Cấp
+130	個人	こじん	Cá nhân	個人の自由は、現代社会において最も大切な権利の一つだ。\nTự do cá nhân là một trong những quyền quan trọng nhất trong xã hội hiện đại.	1	Nhà của Cáo - Trung Cấp
+131	個人的（な）	こじんてき（な）	Mang tính cá nhân	個人的な意見ですが、賛成かなと思って。\nĐây là ý kiến cá nhân, tôi nghĩ là mình tán thành.	1	Nhà của Cáo - Trung Cấp
+132	個人情報	こじんじょうほう	Thông tin cá nhân	個人情報を勝手に使うのは法律に反する。\nTự ý dùng thông tin cá nhân là trái pháp luật.	1	Nhà của Cáo - Trung Cấp
+133	（メール）アドレス	（メール）アドレス	Địa chỉ (email)	正しいメールアドレスを教えてほしい。\nTôi muốn bạn cho tôi địa chỉ email đúng.	1	Nhà của Cáo - Trung Cấp
+134	本人	ほんにん	Bản thân, chính người đó	本人が望まない限り、無理に勧めない。\nMiễn là bản thân người đó không muốn, tôi sẽ không ép.	1	Nhà của Cáo - Trung Cấp
+135	独身	どくしん	Độc thân	彼はまだ独身だろう。\nAnh ấy chắc vẫn còn độc thân.	1	Nhà của Cáo - Trung Cấp
+136	主婦	しゅふ	Nội trợ, bà nội trợ	主婦にしては、料理があまり上手じゃない。\nDù là nội trợ nhưng nấu ăn không giỏi lắm.	1	Nhà của Cáo - Trung Cấp
+137	専業主婦	せんぎょうしゅふ	Người nội trợ toàn thời gian; người chỉ làm nội trợ	専業主婦も楽じゃないもんだ。\nLàm nội trợ toàn thời gian cũng không nhàn đâu.	1	Nhà của Cáo - Trung Cấp
+138	フリーター	フリーター	Người làm việc bán thời gian, không phải nhân viên chính thức	フリーターながらも、彼は夢を追っている。\nDù là lao động bán thời gian nhưng anh ấy vẫn theo đuổi ước mơ.	1	Nhà của Cáo - Trung Cấp
+139	無職	むしょく	Thất nghiệp, không nghề	無職の間は旅行どころじゃない。\nTrong lúc thất nghiệp thì không còn tâm trí đi du lịch.	1	Nhà của Cáo - Trung Cấp
+140	名前を付ける	なまえをつける	Đặt tên	子どもに名前を付けようとしたが、なかなか決まらない。\nTôi định đặt tên cho con nhưng mãi không quyết được.	1	Nhà của Cáo - Trung Cấp
+141	反対する	はんたいする	Phản đối	キツネさんは反対する人に説明しようとしない。\nAnh Kitsune không cố giải thích với người phản đối.	1	Nhà của Cáo - Trung Cấp
+142	その代わり、…	そのかわり、…	Thay vào đó, bù lại	その代わり、春から夏にかけて、家でゆっくりできる。\nBù lại, từ xuân sang hạ tôi có thể thư giãn ở nhà.	1	Nhà của Cáo - Trung Cấp
+143	何度も	なんども	Nhiều lần	何度も失敗することもある。\nCũng có khi thất bại nhiều lần.	1	Nhà của Cáo - Trung Cấp
+144	必ず	かならず	Nhất định	必ず連絡してほしい。\nNhất định phải liên lạc cho tôi.	1	Nhà của Cáo - Trung Cấp
+145	約束	やくそく	Lời hứa, cuộc hẹn	今の状況では、約束するどころじゃないよ。\nTình cảnh hiện giờ, tâm trí nào mà hứa với hẹn chứ.	1	Nhà của Cáo - Trung Cấp
+146	日課	にっか	Lịch trình hàng ngày; Thói quen trong ngày	この音楽を聞くにつけ、毎朝の日課を思い出す。\nHễ nghe bản nhạc này, tôi lại nhớ đến thói quen mỗi sáng.	1	Nhà của Cáo - Trung Cấp
+147	鳴く	なく	Kêu (động vật), hót	鳥が急に鳴き出した。\nCon chim bỗng nhiên kêu lên.	1	Nhà của Cáo - Trung Cấp
+148	ひも	ひも	Dây, dây buộc	ひもさえあれば、荷物を縛れる。\nChỉ cần có dây là có thể buộc hành lý.	1	Nhà của Cáo - Trung Cấp
+149	ひもを付ける	ひもをつける	Buộc dây, gắn dây	名札にひもを付けてほしい。\nTôi muốn bạn gắn dây vào thẻ tên.	1	Nhà của Cáo - Trung Cấp
+150	尻尾	しっぽ	Đuôi (của động vật)	私のネコはもう年を取ったから、尻尾さえ動かしにくそうだ。\nCon mèo nhà tôi đã có tuổi nên có vẻ đến cả đuôi cũng khó cử động.	1	Nhà của Cáo - Trung Cấp
+151	尻尾を振る	しっぽをふる	Vẫy đuôi	飼い犬は飼い主が帰ってくるのを見たとたん、尻尾を振った。\nCon chó vừa thấy chủ về liền vẫy đuôi.	1	Nhà của Cáo - Trung Cấp
+152	玄関	げんかん	Tiền sảnh, cửa ra vào	玄関に入ったとたん、いい匂いがした。\nVừa bước vào tiền sảnh, tôi đã ngửi thấy mùi thơm.	1	Nhà của Cáo - Trung Cấp
+153	全～	ぜん～	Toàn ~, cả ~ (tiền tố)	全員がそろったとたん、先生が話し出した。\nNgay khi tất cả mọi người có mặt đông đủ, giáo viên bắt đầu nói.	1	Nhà của Cáo - Trung Cấp
+154	全速力	ぜんそくりょく	Hết tốc lực	ネコさんは遅刻しそうになって、駅まで全速力で走り出した。\nAnh Neko sắp muộn giờ nên bắt đầu chạy hết tốc lực đến nhà ga.	1	Nhà của Cáo - Trung Cấp
+155	全身	ぜんしん	Toàn thân	冷たい水を浴びたとたん、全身が震え出した。\nVừa dội nước lạnh lên người, tôi đã bắt đầu run cầm cập.	1	Nhà của Cáo - Trung Cấp
+156	全般	ぜんぱん	Toàn diện, nói chung	日本語全般において、敬語は難しい。\nTrong tiếng Nhật nói chung, kính ngữ rất khó.	1	Nhà của Cáo - Trung Cấp
+157	全日本	ぜんにほん	Toàn Nhật Bản	彼は全日本大会に出ようとして、毎日練習している。\nAnh ấy đang luyện tập mỗi ngày để cố gắng tham gia giải đấu toàn Nhật Bản.	1	Nhà của Cáo - Trung Cấp
+158	全力	ぜんりょく	Toàn lực, hết sức	最後まで全力を尽くしてほしい。\nTôi muốn bạn nỗ lực hết sức cho đến phút cuối.	1	Nhà của Cáo - Trung Cấp
+159	全面的（な）	ぜんめんてき（な）	Toàn diện, hoàn toàn	予想に反して、彼は全面的に賛成した。\nTrái với dự đoán, anh ấy đã hoàn toàn tán thành.	1	Nhà của Cáo - Trung Cấp
+160	全世界	ぜんせかい	Toàn thế giới	このニュースは発表されたとたん、全世界に広がり始めた。\nTin tức này vừa được công bố đã bắt đầu lan rộng ra toàn thế giới.	1	Nhà của Cáo - Trung Cấp
+161	全校	ぜんこう	Toàn trường	全校生徒が集まったとたん、校長先生が話し出した。\nNgay khi toàn thể học sinh tập trung đông đủ, thầy hiệu trưởng bắt đầu phát biểu.	1	Nhà của Cáo - Trung Cấp
+162	取り出す	とりだす	Lấy ra, rút ra	かばんを開けたとたん、ネコさんは財布を取り出した。\nVừa mở cặp ra, anh Neko liền lấy ví ra.	1	Nhà của Cáo - Trung Cấp
+163	喜ぶ	よろこぶ	Vui mừng	プレゼントをもらったとたん、イヌさんは喜んで笑い出した。\nVừa nhận quà, anh Inu vui mừng bật cười.	1	Nhà của Cáo - Trung Cấp
+164	寄る	よる	Ghé qua; đến gần	家に帰る途中で、コンビニに寄ることがある。\nTrên đường về nhà, đôi khi tôi ghé qua cửa hàng tiện lợi.	1	Nhà của Cáo - Trung Cấp
+165	くすぐったい	くすぐったい	Nhột; ngượng ngùng	首を触られたとたん、くすぐったくて笑い出した。\nVừa bị chạm vào cổ, tôi đã nhột đến mức bật cười.	1	Nhà của Cáo - Trung Cấp
+166	広場	ひろば	Quảng trường, bãi đất rộng	広場に着いたとたん、子どもたちは走り出した。\nVừa đến quảng trường, bọn trẻ đã bắt đầu chạy.	1	Nhà của Cáo - Trung Cấp
+167	日時	にちじ	Ngày giờ	参加する前に、日時を確認してほしい。\nTôi muốn bạn xác nhận ngày giờ trước khi tham gia.	1	Nhà của Cáo - Trung Cấp
+168	参加費	さんかひ	Phí tham gia	このイベントでは、参加費として一人につき千円を支払う。\nỞ sự kiện này, mỗi người phải trả phí tham gia là 1.000 yên.	1	Nhà của Cáo - Trung Cấp
+169	申し込む	もうしこむ	Đăng ký, nộp đơn	定員に達する前に、早めに申し込んでほしい。\nTôi muốn bạn đăng ký sớm trước khi đủ số lượng người tham gia.	1	Nhà của Cáo - Trung Cấp
+170	または	または	Hoặc, hay là (trang trọng)	電話またはメールで申し込んでほしい。\nTôi muốn bạn đăng ký qua điện thoại hoặc email.	1	Nhà của Cáo - Trung Cấp
+171	協会	きょうかい	Hiệp hội	この協会に入ったことがきっかけで、友達ができた。\nNhờ việc vào hiệp hội này, tôi đã có thêm bạn.	1	Nhà của Cáo - Trung Cấp
+172	支払う	しはらう	Thanh toán, chi trả	申し込んだ後で、参加費を支払ってほしい。\nTôi muốn bạn thanh toán phí tham gia sau khi đăng ký.	1	Nhà của Cáo - Trung Cấp
+173	雨天	うてん	Trời mưa (dùng trong thông báo)	雨天の場合は、イベントを中止することがある。\nTrong trường hợp trời mưa, sự kiện có thể bị hủy.	1	Nhà của Cáo - Trung Cấp
+174	掲示板	けいじばん	Bảng thông báo	掲示板を見たとたん、イベントの日を間違えていたことに気づいた。\nVừa nhìn bảng thông báo, tôi nhận ra mình đã nhớ nhầm ngày diễn ra sự kiện.	1	Nhà của Cáo - Trung Cấp
+175	お知らせ	おしらせ	Thông báo (lịch sự)	大切なお知らせがあるので、最後まで聞いてほしい。\nVì có thông báo quan trọng nên tôi muốn mọi người nghe đến cuối.	1	Nhà của Cáo - Trung Cấp
+176	機会	きかい	Cơ hội, dịp	日本にいるうちに、日本人と話す機会を増やしたい。\nTôi muốn tăng cơ hội trò chuyện với người Nhật khi còn ở Nhật.	1	Nhà của Cáo - Trung Cấp
+177	友達ができる	ともだちができる	Kết bạn, có thêm bạn	日本語教室に通ったことがきっかけで、友達ができた。\nNhờ đi học lớp tiếng Nhật mà tôi đã có thêm bạn mới.	1	Nhà của Cáo - Trung Cấp
+178	ラッキー（な）	ラッキー（な）	May mắn (thân mật)	学生一人につき、百円の割引がある。ラッキーな制度だろう。\nMỗi học sinh được giảm 100 yên. Đây hẳn là một chính sách thật may mắn.	1	Nhà của Cáo - Trung Cấp
+179	定員	ていいん	Số người tối đa, chỉ tiêu	この講座は定員が三十人なので、早めに申し込んだほうがいいだろう。\nKhóa học này có giới hạn 30 người, nên có lẽ đăng ký sớm thì hơn.	1	Nhà của Cáo - Trung Cấp
+180	しっかり	しっかり	Chắc chắn, cẩn thận	出発する前に、持ち物をしっかり確認してほしい。\nTôi muốn bạn kiểm tra kỹ đồ đạc mang theo trước khi xuất phát.	1	Nhà của Cáo - Trung Cấp
+181	おっちょこちょい	おっちょこちょい	Hậu đậu, hấp tấp (thân mật)	イヌさんはおっちょこちょいで、急いでいると財布を忘れることがある。\nAnh Inu khá hậu đậu nên đôi khi quên ví lúc vội vàng.	1	Nhà của Cáo - Trung Cấp
+182	性格	せいかく	Tính cách	ネコさんは静かな性格にしては、友達が多い。\nDù có tính cách trầm lặng, anh Neko lại có nhiều bạn bè.	1	Nhà của Cáo - Trung Cấp
+183	明るい	あかるい	Sáng; vui vẻ, cởi mở	彼は明るい性格でありながらも、悩みを一人で抱え込むことがある。\nDù có tính cách vui vẻ, anh ấy có lúc lại ôm nỗi buồn một mình.	1	Nhà của Cáo - Trung Cấp
+184	ストーリー	ストーリー	Cốt truyện, câu chuyện	このストーリーでは、第一章から第三章にかけて主人公の成長が描かれている。\nTrong câu chuyện này, sự trưởng thành của nhân vật chính được khắc họa từ chương một đến chương ba.	1	Nhà của Cáo - Trung Cấp
+185	お勧め	おすすめ	Điều được giới thiệu, món đáng thử	友達にこの店のラーメンを勧められたことがきっかけで、来てみた。\nNhờ được bạn giới thiệu món ramen của quán này mà tôi đã đến thử.	1	Nhà của Cáo - Trung Cấp
+186	中心	ちゅうしん	Trung tâm, tâm điểm	この町において、広場は文化の中心となっている。\nỞ thị trấn này, quảng trường trở thành trung tâm văn hóa.	1	Nhà của Cáo - Trung Cấp
+187	立場	たちば	Lập trường, hoàn cảnh	相手の立場に立って考えた上で、返事をしたほうがいい。\nBạn nên suy nghĩ từ góc độ của đối phương rồi hãy trả lời.	1	Nhà của Cáo - Trung Cấp
+188	試す	ためす	Thử, thử nghiệm	新しい方法を試そうとしたが、時間が足りなかった。\nTôi đã định thử phương pháp mới nhưng không đủ thời gian.	1	Nhà của Cáo - Trung Cấp
+189	旅	たび	Chuyến đi, hành trình	この写真を見るにつけ、あの旅を思い出す。\nHễ nhìn tấm ảnh này, tôi lại nhớ chuyến đi đó.	1	Nhà của Cáo - Trung Cấp
+190	旅に出る	たびにでる	Lên đường đi xa	キツネさんは新しい世界を見ようとして、旅に出た。\nAnh Kitsune đã lên đường vì muốn khám phá một thế giới mới.	1	Nhà của Cáo - Trung Cấp
+191	お供	おとも	Người đi cùng, bạn đồng hành	イヌさんはキツネさんの旅のお供をしようとした。\nAnh Inu đã cố gắng đi cùng anh Kitsune trong chuyến hành trình.	1	Nhà của Cáo - Trung Cấp
+192	羊	ひつじ	Cừu	羊は危険を感じると、仲間の後ろに隠れようとすることがある。\nKhi cảm thấy nguy hiểm, cừu đôi khi cố gắng trốn phía sau đồng loại.	1	Nhà của Cáo - Trung Cấp
+193	協力する	きょうりょくする	Hợp tác, chung sức	問題を解決するには、みんなに協力してほしい。\nĐể giải quyết vấn đề, tôi muốn mọi người cùng hợp tác.	1	Nhà của Cáo - Trung Cấp
+194	さて	さて	Nào, vậy thì (chuyển sang việc tiếp theo)	さて、どうしたものだろう。\nGiờ, tôi nên làm sao nhỉ?	1	Nhà của Cáo - Trung Cấp
+195	順に	じゅんに	Theo thứ tự, lần lượt	番号の順に、一人ずつ名前を呼んでほしい。\nTôi muốn bạn gọi tên từng người theo thứ tự số.	1	Nhà của Cáo - Trung Cấp
+196	手放す	てばなす	Buông, rời tay; từ bỏ	大切な本なので、手放そうとしない。\nVì đó là cuốn sách quý nên tôi chẳng nỡ buông tay.	1	Nhà của Cáo - Trung Cấp
+197	なぜ	なぜ	Tại sao	なぜ彼が来なかったのかを考えるどころじゃない。\nBây giờ không phải lúc để nghĩ tại sao anh ấy không đến.	1	Nhà của Cáo - Trung Cấp
+198	番号を付ける	ばんごうをつける	Đánh số	間違えないように、書類に番号を付けてほしい。\nTôi muốn bạn đánh số vào các tài liệu để tránh nhầm lẫn.	1	Nhà của Cáo - Trung Cấp
+199	それぞれ	それぞれ	Mỗi người, mỗi cái	種類をそれぞれ数えた上で、円グラフを描いてください。\nSau khi đếm từng loại, hãy vẽ biểu đồ tròn.	1	Nhà của Cáo - Trung Cấp
+200	象徴する	しょうちょうする	Tượng trưng, biểu trưng	この祭りにおいて、狐の仮面は豊作を象徴する。\nTrong lễ hội này, mặt nạ cáo tượng trưng cho mùa màng bội thu.	1	Nhà của Cáo - Trung Cấp
+201	そば	そば	Bên cạnh, ngay cạnh	困っている人がいたら、そばに行って助けようとすることが大切だ。\nKhi thấy ai đó gặp khó khăn, điều quan trọng là cố gắng đến bên cạnh và giúp đỡ họ.	1	Nhà của Cáo - Trung Cấp
+202	ほっと	ほっと	Thở phào, nhẹ nhõm	試験が終わったとたん、ほっとして力が抜けた。\nVừa thi xong, tôi thở phào nhẹ nhõm và cảm thấy người nhẹ bẫng.	1	Nhà của Cáo - Trung Cấp
+203	移動する	いどうする	Di chuyển	雨が降り出したので、みんなで駅の中に移動した。\nVì trời bắt đầu mưa nên mọi người đã di chuyển vào trong nhà ga.	1	Nhà của Cáo - Trung Cấp
+204	手段	しゅだん	Phương tiện, cách thức	目的を達成するためには、どんな手段を使うべきだろう。\nĐể đạt được mục tiêu, chúng ta nên sử dụng phương pháp nào đây?	1	Nhà của Cáo - Trung Cấp
+205	表す	あらわす	Biểu thị, thể hiện	言葉だけでは表せない気持ちもあるもんだ。\nQuả thật, có những cảm xúc không thể diễn tả chỉ bằng lời nói.	1	Nhà của Cáo - Trung Cấp
+206	困難（な）	こんなん（な）	Khó khăn, gian nan (trang trọng hơn 大変)	困難な状況においても、最後まであきらめないでほしい。\nTôi mong bạn đừng bỏ cuộc cho đến phút cuối, ngay cả trong hoàn cảnh khó khăn.	1	Nhà của Cáo - Trung Cấp
+207	守る	まもる	Bảo vệ; tuân thủ	約束したからには、最後まで守ってほしい。\nSau khi đã hứa, tôi mong bạn sẽ giữ lời hứa đến cùng.	1	Nhà của Cáo - Trung Cấp
+208	たっぷり	たっぷり	Đầy đủ, dồi dào	休みの日は、時間がたっぷりあるので、好きなだけ本を読める。\nVào ngày nghỉ, tôi có nhiều thời gian nên có thể đọc sách thỏa thích.	1	Nhà của Cáo - Trung Cấp
+209	順番	じゅんばん	Thứ tự, lượt	一人につき一回ずつ、順番に発表してください。\nMỗi người hãy lần lượt trình bày một lần.	1	Nhà của Cáo - Trung Cấp
+210	人生	じんせい	Cuộc đời	人生において、失敗がきっかけで大きく成長することもある。\nTrong cuộc đời, đôi khi chính thất bại lại là cơ hội để trưởng thành vượt bậc.	1	Nhà của Cáo - Trung Cấp
+211	自然（な）	しぜん（な）	Tự nhiên; thiên nhiên	日本語を毎日使っているうちに、自然な会話ができるようになった。\nTrong quá trình sử dụng tiếng Nhật hằng ngày, tôi dần có thể trò chuyện một cách tự nhiên.	1	Nhà của Cáo - Trung Cấp
+212	昔話	むかしばなし	Truyện cổ tích, chuyện xưa	子どものころ、この昔話を聞くたびに、鬼退治の場面を想像したもんだ。\nHồi nhỏ, mỗi lần nghe câu chuyện dân gian này, tôi lại tưởng tượng ra cảnh diệt quỷ.	1	Nhà của Cáo - Trung Cấp
+213	キジ	キジ	Chim trĩ	森の中を歩いていたら、キジが突然走り出した。\nKhi đang đi trong rừng, một con chim trĩ bất chợt chạy vụt đi.	1	Nhà của Cáo - Trung Cấp
+214	鬼退治	おにたいじ	Diệt quỷ	鬼退治に出かけようとしたとたん、空が暗くなった。\nNgay khi định lên đường diệt quỷ, bầu trời bỗng tối sầm lại.	1	Nhà của Cáo - Trung Cấp
+215	重大（な）	じゅうだい（な）	Nghiêm trọng, trọng đại	これは重大な問題だから、よく考えた上で決めよう。\nĐây là vấn đề nghiêm trọng nên hãy suy nghĩ kỹ rồi quyết định.	1	Nhà của Cáo - Trung Cấp
+216	海岸	かいがん	Bờ biển	夏になると、この海岸には朝から夕方にかけて多くの人が集まる。\nVào mùa hè, rất đông người tụ tập ở bờ biển này từ sáng đến chiều.	1	Nhà của Cáo - Trung Cấp
+217	あっという間に	あっというまに	Trong chớp mắt	話に夢中になっているうちに、時間があっという間に過ぎてしまった。\nMải mê trò chuyện một lúc mà thời gian đã trôi qua nhanh như chớp mắt.	1	Nhà của Cáo - Trung Cấp
+218	時間が経つ	じかんがたつ	Thời gian trôi qua	年を取るにつれて、時間が経つのは早いもんだと感じる。\nCàng lớn tuổi, người ta càng cảm thấy thời gian trôi nhanh thật.	1	Nhà của Cáo - Trung Cấp
+219	年代の人	ねんだいのひと	Người ở độ tuổi ~	この店では、二十代から六十代にかけて、幅広い年代の人が働いている。\nỞ cửa hàng này, có nhiều người thuộc các nhóm tuổi khác nhau làm việc, từ độ tuổi 20 đến độ tuổi 60.	1	Nhà của Cáo - Trung Cấp
+220	グループ分け	グループわけ	Chia nhóm	グループ分けをした上で、各グループの意見を聞きましょう。\nSau khi chia nhóm, hãy lắng nghe ý kiến của từng nhóm.	1	Nhà của Cáo - Trung Cấp
+221	年配	ねんぱい	Cao tuổi, lớn tuổi	年配の人向けの店にしては、少しにぎやかすぎるかもしれない。\nDù là cửa hàng hướng đến người lớn tuổi, nơi này có lẽ hơi quá ồn ào.	1	Nhà của Cáo - Trung Cấp
+222	年配者	ねんぱいしゃ	Người cao tuổi	電車では、年配者に席を譲ってほしい。\nTôi mong mọi người nhường ghế cho người cao tuổi trên tàu điện.	1	Nhà của Cáo - Trung Cấp
+223	ごみ拾い	ごみひろい	Nhặt rác	町のごみ拾いをきっかけに、自然を守る大切さを学んだ。\nNhờ hoạt động nhặt rác trong thị trấn, tôi đã hiểu được tầm quan trọng của việc bảo vệ thiên nhiên.	1	Nhà của Cáo - Trung Cấp
+224	以外	いがい	Ngoài ~, ngoại trừ	この料理以外は、好きなだけ取って構いません。\nNgoài món này ra thì lấy bao nhiêu cũng được.	1	Nhà của Cáo - Trung Cấp
+225	普段	ふだん	Thường ngày, bình thường	普段は静かなキツネさんも、好きな話になると急に話し出す。\nNgay cả anh Kitsune vốn thường ngày ít nói cũng đột nhiên bắt đầu nói liên tục khi nhắc đến chủ đề mình thích.	1	Nhà của Cáo - Trung Cấp
+226	世界	せかい	Thế giới; lĩnh vực	世界において、環境問題はますます重大な問題になっている。\nTrên thế giới, vấn đề môi trường đang ngày càng trở nên nghiêm trọng.	1	Nhà của Cáo - Trung Cấp
+227	広がる	ひろがる	Lan rộng, mở rộng (tự động từ)	うわさを聞いたとたん、驚きの声が町中に広がった。\nNgay khi nghe tin đồn, những tiếng kêu kinh ngạc đã lan khắp thị trấn.	1	Nhà của Cáo - Trung Cấp
+228	広げる	ひろげる	Mở rộng, trải ra (tha động từ)	計画に反して、あまり空間を広げられなかった。\nTrái với kế hoạch, chúng tôi chẳng thể mở rộng không gian thêm bao nhiêu cả.	1	Nhà của Cáo - Trung Cấp
+229	次回	じかい	Lần tới, kỳ tới	次回は、今日よりも分かりやすい説明をしてほしい。\nTôi mong lần tới sẽ có phần giải thích dễ hiểu hơn hôm nay.	1	Nhà của Cáo - Trung Cấp
+230	僕	ぼく	Tôi, tớ (nam giới dùng)	僕は失敗することもあるけれど、何度でも挑戦しようと思っている。\nTôi cũng có lúc thất bại, nhưng vẫn muốn thử sức hết lần này đến lần khác.	1	Nhà của Cáo - Trung Cấp
+231	ベンチ	ベンチ	Ghế băng, ghế dài	疲れたので、ベンチに座って少し休憩しようとした。\nVì mệt nên tôi định ngồi xuống ghế băng nghỉ một lát.	1	Nhà của Cáo - Trung Cấp
+232	～代	～だい	Độ tuổi ~ (20代: 20–29 tuổi)	二十代のうちに、いろいろな場所へ旅行してみたい。\nTôi muốn thử đi du lịch nhiều nơi khi còn ở độ tuổi hai mươi.	1	Nhà của Cáo - Trung Cấp
+233	偶然	ぐうぜん	Tình cờ, ngẫu nhiên	駅で偶然会ったとたん、二人とも大きな声で笑い出した。\nVừa tình cờ gặp nhau ở nhà ga, cả hai đã bật cười thật lớn.	1	Nhà của Cáo - Trung Cấp
+234	掛け声	かけごえ	Tiếng hô	みんなの掛け声を聞くと、疲れていてももう一度頑張ろうとするものだ。\nKhi nghe tiếng hô của mọi người, dù mệt mỏi người ta vẫn thường cố gắng thêm lần nữa.	1	Nhà của Cáo - Trung Cấp
+235	瞬間	しゅんかん	Khoảnh khắc	イヌさんは彼女を見た瞬間、好きになったっぽい。\nNgay khoảnh khắc nhìn thấy cô ấy, dường như anh Inu đã thích cô ấy rồi.	1	Nhà của Cáo - Trung Cấp
+236	ハイタッチ	ハイタッチ	Đập tay (ăn mừng)	試合に勝ったとたん、選手たちは笑いながらハイタッチをした。\nNgay khi thắng trận, các cầu thủ vừa cười vừa đập tay ăn mừng.	1	Nhà của Cáo - Trung Cấp
+237	最高	さいこう	Đỉnh, tuyệt vời	観光地にしては、このレストランの料理は安くて、景色も最高だ。\nDù là điểm du lịch nhưng món ăn ở nhà hàng này vừa rẻ, cảnh lại còn rất đỉnh nữa.	1	Nhà của Cáo - Trung Cấp
+238	気分	きぶん	Tâm trạng, cảm giác	好きな音楽を聞いているうちに、気分がよくなってきた。\nTrong lúc nghe bản nhạc yêu thích, tâm trạng tôi dần tốt lên.	1	Nhà của Cáo - Trung Cấp
+239	実は	じつは	Thật ra, thực ra	実は、イヌさんは人前で話そうとしないことがある。\nThật ra, đôi khi anh Inu không chịu nói chuyện trước đám đông.	1	Nhà của Cáo - Trung Cấp
+240	中古品	ちゅうこひん	Đồ cũ, hàng đã qua sử dụng	中古品にしては、ずいぶんきれいな状態だ。\nSo với một món đồ đã qua sử dụng thì tình trạng của nó sạch đẹp hơn nhiều.	1	Nhà của Cáo - Trung Cấp
+241	評判	ひょうばん	Danh tiếng, lời đánh giá	評判がいい店にしては、客が少ない。\nDù là một quán có tiếng tốt, nhưng khách lại khá ít.	1	Nhà của Cáo - Trung Cấp
+242	しかも	しかも	Hơn nữa, vả lại	この店は安くて、しかもおいしいから、行ってみてほしいよ。\nCửa hàng này vừa rẻ, lại còn ngon, nên là tớ muốn cậu đi thử đi.	1	Nhà của Cáo - Trung Cấp
+243	売上	うりあげ	Doanh thu	今月の売上を確認した上で、来月の計画を立てます。\nSau khi kiểm tra doanh thu tháng này, chúng tôi sẽ lập kế hoạch cho tháng sau.	1	Nhà của Cáo - Trung Cấp
+244	一部	いちぶ	Một phần	ネコさんは資料の一部しか読もうとしない。\nAnh Neko không chịu đọc dù chỉ một phần của tài liệu.	1	Nhà của Cáo - Trung Cấp
+245	介助犬	かいじょけん	Chó hỗ trợ người khuyết tật	介助犬である限り、利用する人を安全に助けることが大切だ。\nMột khi đã là chó hỗ trợ, việc giúp đỡ người sử dụng một cách an toàn là điều quan trọng.	1	Nhà của Cáo - Trung Cấp
+246	育成	いくせい	Đào tạo, nuôi dưỡng	キツネさんは新人育成に時間がかかることを知りながらも、親切に教えている。\nDù biết việc đào tạo nhân viên mới mất nhiều thời gian, anh Kitsune vẫn nhiệt tình hướng dẫn.	1	Nhà của Cáo - Trung Cấp
+247	寄付する	きふする	Quyên góp	古い服を寄付しようとしたが、まだ使える服が少なかった。\nTôi định quyên góp quần áo cũ, nhưng số quần áo vẫn còn dùng được lại không nhiều.	1	Nhà của Cáo - Trung Cấp
+248	延期	えんき	Hoãn, dời lại	雨のため、イベントは来週に延期されるでしょう。\nDo trời mưa, sự kiện có lẽ sẽ được hoãn sang tuần sau.	1	Nhà của Cáo - Trung Cấp
+249	休憩する	きゅうけいする	Nghỉ giải lao	疲れているなら、無理をせず、好きなだけ休憩してほしい。\nNếu đã mệt thì tôi mong bạn đừng cố quá sức, hãy nghỉ ngơi tùy thích.	1	Nhà của Cáo - Trung Cấp
+250	ずいぶん	ずいぶん	Khá, rất (đánh giá chủ quan)	イヌ君、ずいぶん元気そうだね。この試合に参加したいかなと思って。\nAnh Inu trông khỏe khoắn ghê. Tôi tự hỏi liệu anh có muốn tham gia trận đấu này không?	1	Nhà của Cáo - Trung Cấp
+251	偉い	えらい	Giỏi, đáng khen	ネコさんは普段は頼りないが、困った時には偉いところを見せることもある。\nAnh Neko bình thường trông có vẻ thiếu tin cậy, nhưng khi gặp khó khăn, đôi khi anh ấy cũng có những hành động rất đáng khen.	1	Nhà của Cáo - Trung Cấp
+252	定年退職	ていねんたいしょく	Nghỉ hưu theo tuổi quy định	父は三月に定年退職した上で、ふるさとに帰って畑を始めた。\nSau khi nghỉ hưu vào tháng Ba, bố tôi trở về quê và bắt đầu làm ruộng.	1	Nhà của Cáo - Trung Cấp
+253	かみさん	かみさん	Vợ (thân mật, khi nói về vợ mình)	イヌさんは、かみさんと孫を連れて旅行に行こうとしている。\nAnh Inu định đưa vợ và cháu đi du lịch.	1	Nhà của Cáo - Trung Cấp
+254	うらやましい	うらやましい	Đáng ghen tị, đáng ngưỡng mộ	キツネさんは若いうちに世界一周旅行をしてみたいと言っており、その自由な生活がうらやましい。\nAnh Kitsune nói rằng muốn đi vòng quanh thế giới khi còn trẻ, cuộc sống tự do đó khiến tôi thấy thật đáng ghen tị.	1	Nhà của Cáo - Trung Cấp
+255	緊張	きんちょう	Căng thẳng, hồi hộp	大勢の人の前に立ったとたん、緊張して何も話せなくなった。\nNgay khi đứng trước đông người, tôi đã hồi hộp đến mức không nói được gì.	1	Nhà của Cáo - Trung Cấp
+256	予測	よそく	Dự đoán, dự báo	当初の予測に反して、今日は朝から雨が降り出した。\nTrái với dự báo ban đầu, hôm nay trời bắt đầu đổ mưa từ sáng.	1	Nhà của Cáo - Trung Cấp
+257	ホストファミリー	ホストファミリー	Gia đình bản xứ (homestay)	ホストファミリーの家にいるうちに、日本の生活習慣をたくさん学びたい。\nTrong thời gian ở cùng gia đình bản xứ, tôi muốn học hỏi nhiều về thói quen sinh hoạt của người Nhật.	1	Nhà của Cáo - Trung Cấp
+258	笑顔	えがお	Nụ cười, vẻ mặt tươi cười	孫の写真を見たとたん、おじいさんは笑顔になった。\nNgay khi nhìn thấy ảnh cháu mình, ông lão đã nở nụ cười.	1	Nhà của Cáo - Trung Cấp
+259	だんだん	だんだん	Dần dần	日本語で話す練習を続けるうちに、だんだん緊張しなくなった。\nTrong quá trình tiếp tục luyện nói tiếng Nhật, tôi dần dần không còn hồi hộp nữa.	1	Nhà của Cáo - Trung Cấp
+260	故郷	ふるさと	Quê hương	両親が元気なうちに、ふるさとに帰って家族との時間を過ごしたい。\nKhi cha mẹ còn khỏe mạnh, tôi muốn trở về quê hương để dành thời gian bên gia đình.	1	Nhà của Cáo - Trung Cấp
+261	囲む	かこむ	Vây quanh, quây quần	今回のパーティーにおいて、イヌさんとネコさんはテーブルを囲んで楽しそうに話していた。\nTại buổi tiệc lần này, anh Inu và anh Neko quây quần bên bàn ăn trò chuyện rất vui vẻ.	1	Nhà của Cáo - Trung Cấp
+262	感動する	かんどうする	Cảm động, xúc động	キツネさんが孫のために作った絵本を見て、みんなが感動して涙が流れ出した。\nNhìn cuốn sách tranh anh Kitsune làm cho cháu mình, mọi người đều xúc động đến rơi nước mắt.	1	Nhà của Cáo - Trung Cấp
+263	畑	はたけ	Ruộng, vườn (trồng rau màu)	この畑では、季節によってトマトとかキュウリとか、いろいろな野菜を育てている。\nỞ mảnh ruộng này, người ta trồng nhiều loại rau như cà chua, dưa chuột tùy theo mùa.	1	Nhà của Cáo - Trung Cấp
+264	若々しい	わかわかしい	Trẻ trung, tràn đầy sức sống	イヌさんは７０歳にしては若々しくて、いつも元気に散歩している。\nAnh Inu dù đã 70 tuổi nhưng vẫn vô cùng trẻ trung và lúc nào cũng khỏe khoắn đi dạo.	1	Nhà của Cáo - Trung Cấp
+265	持ち上げる	もちあげる	Nhấc lên, nâng lên; tâng bốc	重い箱を持ち上げようとしたとたん、腰が痛くなった。\nNgay khi tôi cố nhấc chiếc hộp nặng lên, lưng dưới đã đau nhói.	1	Nhà của Cáo - Trung Cấp
+266	トラック	トラック	Xe tải	大きなトラックが通る時は、家が揺れることもある。\nNhững lúc xe tải lớn chạy qua, đôi khi ngôi nhà cũng bị rung rinh.	1	Nhà của Cáo - Trung Cấp
+267	悲しい	かなしい	Buồn	悲しい時は、泣きたいだけ泣いてもいいんだよ。\nMỗi khi buồn, bạn cứ khóc cho thỏa thích cũng được mà.	1	Nhà của Cáo - Trung Cấp
+268	涙	なみだ	Nước mắt	孫の成長した姿を見たとたん、うれしさのあまり涙が出てきた。\nNgay khi nhìn thấy cháu đã lớn khôn, tôi xúc động đến mức nước mắt trào ra.	1	Nhà của Cáo - Trung Cấp
+269	孫	まご	Cháu (con của con)	孫が生まれたのをきっかけに、イヌさんは仕事を減らして家族と過ごす時間を増やした。\nTừ khi có cháu ra đời, anh Inu giảm bớt công việc để dành nhiều thời gian hơn cho gia đình.	1	Nhà của Cáo - Trung Cấp
+270	同年代	どうねんだい	Cùng độ tuổi, cùng thế hệ	同年代の人と話すと、共通する話題が多くて楽しいと感じることがある。\nKhi trò chuyện với những người cùng độ tuổi, đôi khi tôi thấy rất vui vì có nhiều chủ đề chung.	1	Nhà của Cáo - Trung Cấp
+271	せっかく	せっかく	Cất công, mất công; nhân dịp hiếm có	せっかく日本に来たのだから、時間がある限り、いろいろな町を見て回りたい。\nĐã cất công đến Nhật rồi nên tôi muốn đi thăm nhiều thị trấn nhất có thể khi còn thời gian.	1	Nhà của Cáo - Trung Cấp
+272	すると	すると	Thế rồi, ngay sau đó	ドアを開けた。すると、部屋の中から懐かしい音楽が聞こえ出した。\nTôi mở cửa. Rồi ngay sau đó nghe thấy tiếng nhạc quen thuộc vang lên từ trong phòng.	1	Nhà của Cáo - Trung Cấp
+273	返る	かえる	Quay lại, trở về; được hồi âm/trả lời lại	なかなか返事が返ってこないことがきっかけで、彼女と別れました。\nVì mãi không nhận được hồi âm, tôi đã chia tay bạn gái.	1	Nhà của Cáo - Trung Cấp
+274	ため口	ためぐち	Nói suồng sã (không dùng kính ngữ)	初対面なのに、ネコさんはいきなりため口で話し出した。\nDù mới gặp lần đầu, anh Neko đã bất chợt bắt đầu nói chuyện bằng giọng suồng sã.	1	Nhà của Cáo - Trung Cấp
+275	違和感	いわかん	Cảm giác không tự nhiên, thấy sai sai	イヌさんの今日の服装は、いつものスタイルに反してどこか違和感がある。\nTrái với phong cách hàng ngày, trang phục hôm nay của anh Inu có gì đó hơi là lạ.	1	Nhà của Cáo - Trung Cấp
+276	共通する	きょうつうする	Có điểm chung	ネコさんとキツネさんは、趣味からして共通する部分が多い。\nNgay từ sở thích, anh Neko và anh Kitsune đã có rất nhiều điểm chung.	1	Nhà của Cáo - Trung Cấp
+277	対等（な）	たいとう（な）	Bình đẳng, ngang hàng	会社においては、年齢に関係なく対等な立場で意見を言い合えるべきだ。\nTại công ty, dù ở độ tuổi nào cũng nên trao đổi ý kiến dựa trên lập trường bình đẳng.	1	Nhà của Cáo - Trung Cấp
+278	回答する	かいとうする	Trả lời, hồi đáp (khảo sát, chính thức)	アンケートに回答した上で、受付の人に用紙を渡してください。\nSau khi trả lời khảo sát, hãy đưa phiếu cho nhân viên tiếp nhận.	1	Nhà của Cáo - Trung Cấp
+279	タイミング	タイミング	Thời điểm, thời cơ	イヌさんが話そうとしたとたん、電話が鳴り出してしまった。\nNgay khi anh Inu định lên tiếng, điện thoại bắt đầu đổ chuông.	1	Nhà của Cáo - Trung Cấp
+280	話題	わだい	Chủ đề, đề tài	食事のとき、旅行とか料理とか、みんなが好きな話題について話した。\nTrong bữa ăn, mọi người trò chuyện về những chủ đề yêu thích như du lịch và nấu ăn.	1	Nhà của Cáo - Trung Cấp
+281	判断する	はんだんする	Phán đoán, đánh giá	十分に情報を集めた上で、どの大学に進むか判断したい。\nTôi muốn thu thập đầy đủ thông tin rồi mới quyết định sẽ theo học trường đại học nào.	1	Nhà của Cáo - Trung Cấp
+282	思い切る	おもいきる	Mạnh dạn quyết định	自分の可能性を信じて、思い切って新しい事業を始めてみようかなと思って。\nTin vào khả năng của bản thân, tôi đang nghĩ đến việc sẽ thử mạnh dạn bắt đầu một công việc kinh doanh mới.	1	Nhà của Cáo - Trung Cấp
+283	発展する	はってんする	Phát triển, tiến bộ	この町は交通が便利になったことをきっかけに、大きく発展した。\nThị trấn này đã phát triển mạnh nhờ giao thông trở nên thuận tiện hơn.	1	Nhà của Cáo - Trung Cấp
+284	ただし	ただし	Tuy nhiên (nêu điều kiện/giới hạn)	誰でもこの図書室を利用できます。ただし、一度につき５冊までしか借りられません。\nAi cũng có thể sử dụng phòng đọc sách này. Tuy nhiên, mỗi lần chỉ được phép mượn tối đa 5 quyển.	1	Nhà của Cáo - Trung Cấp
