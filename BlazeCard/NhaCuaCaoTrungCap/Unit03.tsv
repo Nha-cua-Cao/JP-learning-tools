@@ -1,0 +1,232 @@
+STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
+1	本日	ほんじつ	Hôm nay (văn viết, trang trọng hơn 今日)	本日の試験は、私にとって大きな挑戦です。\nKỳ thi hôm nay là một thử thách lớn đối với tôi.	3	Nhà của Cáo - Trung Cấp
+2	今日	きょう	Hôm nay (văn nói, thân mật hơn 本日)	今日は天気もいいことだし、公園でも散歩しませんか。\nHôm nay trời cũng đẹp, hay mình đi dạo công viên một chút nhé?	3	Nhà của Cáo - Trung Cấp
+3	明日	あす	Ngày mai (cách đọc trang trọng, dùng trong văn viết, thông báo; trang trọng hơn あした)	明日の会議はとても大切なので、イヌさんが遅れるはずがない。\nCuộc họp ngày mai rất quan trọng nên anh Inu không đời nào đến muộn đâu.	3	Nhà của Cáo - Trung Cấp
+4	前日	ぜんじつ	Ngày hôm trước (của một sự kiện)	旅行の前日なんて、楽しみでなかなか眠れないよ。\nMột hôm trước trước chuyến du lịch, tôi háo hức đến mức khó mà ngủ được.	3	Nhà của Cáo - Trung Cấp
+5	翌日	よくじつ	Ngày hôm sau	飲み会の翌日も元気がないなんて、キツネさんは昨日飲みすぎたんじゃないかな。\nĐến ngày hôm sau mà vẫn uể oải thế kia thì chắc hôm qua anh Kitsune uống quá chén rồi.	3	Nhà của Cáo - Trung Cấp
+6	翌週	よくしゅう	Tuần sau đó, tuần kế tiếp	雨で中止になったことだし、試合は翌週に延期しましょう。\nTrận đấu đã bị hủy vì mưa rồi, mình dời sang tuần kế tiếp nhé.	3	Nhà của Cáo - Trung Cấp
+7	翌月	よくげつ	Tháng sau đó, tháng kế tiếp	カードで買った物の代金は翌月に払うので、使えば使うほど来月が大変になる。\nTiền mua bằng thẻ sẽ trả vào tháng sau, nên càng tiêu nhiều thì tháng sau càng vất vả.	3	Nhà của Cáo - Trung Cấp
+8	翌年	よくねん	Năm sau đó, năm kế tiếp	日本に来た翌年にN2に合格したことで、イヌさんはいい会社に入れた。\nNhờ đỗ N2 vào năm sau khi đến Nhật mà anh Inu đã vào được một công ty tốt.	3	Nhà của Cáo - Trung Cấp
+9	明々後日	しあさって	Ba ngày nữa (ngày kia nữa, tính từ hôm nay)	明々後日なら時間があるから、ネコさん、ランチでもどう？\nBa ngày nữa thì tôi rảnh, anh Neko đi ăn trưa chút không?	3	Nhà của Cáo - Trung Cấp
+10	一昨昨日	さきおととい	Hôm kìa (ba ngày trước, tính từ hôm nay)	一昨昨日会ったばかりなのに、キツネさんが私の名前を忘れるはずがない。\nMới gặp nhau hôm kìa thôi, anh Kitsune không thể nào quên tên tôi được.	3	Nhà của Cáo - Trung Cấp
+11	昨日	さくじつ	Hôm qua (cách đọc trang trọng, dùng trong văn viết, kinh doanh; trang trọng hơn きのう)	昨日お送りした資料ですが、こういうふうに直してもよろしいでしょうか。\nVề tài liệu tôi đã gửi hôm qua, tôi sửa lại theo cách này có được không ạ?	3	Nhà của Cáo - Trung Cấp
+12	おととい	おととい	Hôm kia (văn nói, thân mật hơn 一昨日 đọc là いっさくじつ)	おとといからずっと雨なんて、洗濯物が乾かなくて困るね。\nMưa suốt từ hôm kia đến giờ thế này thì đồ giặt không khô được, khổ thật.	3	Nhà của Cáo - Trung Cấp
+13	一昨日	いっさくじつ	Hôm kia (văn viết, trang trọng hơn おととい)	一昨日ご連絡した件について、お客様にとって一番よい方法を考えました。\nVề vấn đề đã liên lạc hôm kia, chúng tôi đã cân nhắc phương án tốt nhất cho quý khách.	3	Nhà của Cáo - Trung Cấp
+14	昨年	さくねん	Năm ngoái (văn viết, trang trọng hơn 去年)	昨年より売り上げが下がったのは、宣伝が足りなかったからではないか。\nDoanh thu giảm so với năm ngoái, phải chăng là do quảng cáo chưa đủ?	3	Nhà của Cáo - Trung Cấp
+15	一昨年	おととし	Năm kia (văn nói, thân mật hơn 一昨年 đọc là いっさくねん)	一昨年に始めた日本語だけど、勉強すればするほど面白くなる。\nTiếng Nhật tôi bắt đầu học từ năm kia, nhưng càng học càng thấy thú vị.	3	Nhà của Cáo - Trung Cấp
+16	一昨年	いっさくねん	Năm kia (văn viết, trang trọng hơn おととし)	一昨年に新しい機械を入れたことで、工場の効率が大きく上がりました。\nNhờ đưa máy móc mới vào từ năm kia mà hiệu suất nhà máy đã tăng lên đáng kể.	3	Nhà của Cáo - Trung Cấp
+17	先日	せんじつ	Hôm trước, mấy hôm trước (trang trọng hơn この間)	先日のパーティーは、キツネさんにとっても楽しい時間だったのではないでしょうか。\nBữa tiệc hôm trước có lẽ cũng là khoảng thời gian vui vẻ đối với anh Kitsune nhỉ.	3	Nhà của Cáo - Trung Cấp
+18	再来週	さらいしゅう	Tuần sau nữa	再来週の試験まであまり時間がないことだし、今週末は遊ばないで勉強します。\nKhông còn nhiều thời gian đến kỳ thi tuần sau nữa nên cuối tuần này tôi sẽ ở nhà học, không đi chơi.	3	Nhà của Cáo - Trung Cấp
+19	再来月	さらいげつ	Tháng sau nữa	再来月の旅行だけど、ホテルは早く予約すればするほど安くなるよ。\nChuyến du lịch tháng sau nữa ấy, khách sạn càng đặt sớm thì càng rẻ đấy.	3	Nhà của Cáo - Trung Cấp
+20	再来年	さらいねん	Năm sau nữa	再来年に結婚するなんて、イヌさんはもうそこまで決めているんですか。\nCưới vào năm sau nữa á, anh Inu đã tính xa đến thế rồi sao?	3	Nhà của Cáo - Trung Cấp
+21	先々週	せんせんしゅう	Tuần trước nữa	先々週貸した本を、ネコさんはもう読み終わったんじゃないかな。\nCuốn sách tôi cho mượn từ tuần trước nữa, chắc anh Neko đọc xong rồi nhỉ.	3	Nhà của Cáo - Trung Cấp
+22	先々月	せんせんげつ	Tháng trước nữa	先々月から毎日運動したことで、体重が3キロ減りました。\nNhờ tập thể dục mỗi ngày từ tháng trước nữa mà tôi đã giảm được 3 kg.	3	Nhà của Cáo - Trung Cấp
+23	上旬	じょうじゅん	Thượng tuần, 10 ngày đầu tháng (từ thông dụng hơn 初旬)	来月の上旬に、キツネさんと温泉でも行こうと思っています。\nĐầu tháng sau tôi đang định cùng anh Kitsune đi suối nước nóng chẳng hạn.	3	Nhà của Cáo - Trung Cấp
+24	初旬	しょじゅん	Đầu tháng, những ngày đầu tháng (văn viết, ít dùng hơn 上旬)	まだ3月の初旬なのに、こんなに暑いなんて信じられない。\nMới đầu tháng 3 mà đã nóng thế này thì thật không tin nổi.	3	Nhà của Cáo - Trung Cấp
+25	中旬	ちゅうじゅん	Trung tuần, khoảng giữa tháng (ngày 11–20)	まだ6月中旬なのに夏休みの話をしているなんて、ネコさんは気が早いね。\nMới giữa tháng 6 mà đã bàn chuyện nghỉ hè, anh Neko đúng là nóng vội thật.	3	Nhà của Cáo - Trung Cấp
+26	下旬	げじゅん	Hạ tuần, khoảng cuối tháng (từ ngày 21 trở đi)	月の下旬になればなるほど、財布の中のお金が少なくなって困る。\nCàng về cuối tháng thì tiền trong ví càng vơi đi, khổ thật.	3	Nhà của Cáo - Trung Cấp
+27	深夜	しんや	Đêm khuya (văn viết, trang trọng hơn 真夜中; hay dùng trong tin tức, thông báo)	深夜にこんな大きな音で音楽を聞くなんて、隣の人に迷惑だよ。\nĐêm khuya mà nghe nhạc to thế này thì làm phiền hàng xóm đấy.	3	Nhà của Cáo - Trung Cấp
+28	真夜中	まよなか	Nửa đêm, giữa đêm (văn nói, thân mật hơn 深夜)	真夜中にイヌさんが電話してくるはずがないから、きっと間違い電話だよ。\nAnh Inu không đời nào gọi điện lúc nửa đêm đâu, chắc chắn là gọi nhầm số rồi.	3	Nhà của Cáo - Trung Cấp
+29	深夜番組	しんやばんぐみ	Chương trình truyền hình đêm khuya	深夜番組を見れば見るほど、朝起きるのがつらくなる。\nCàng xem chương trình đêm khuya thì sáng dậy càng mệt.	3	Nhà của Cáo - Trung Cấp
+30	未来	みらい	Tương lai (tương lai xa, mang tính khái quát của xã hội, thế giới; khác 将来 thường nói về tương lai của bản thân)	100年後の未来は、どんなふうになっているでしょうか。\nTương lai 100 năm sau sẽ trở nên như thế nào nhỉ?	3	Nhà của Cáo - Trung Cấp
+31	将来	しょうらい	Tương lai, sau này (thường gắn với bản thân như nghề nghiệp, ước mơ; gần gũi, cụ thể hơn 未来)	将来どういうふうに働きたいか、キツネさんとゆっくり話した。\nTôi đã nói chuyện thong thả với anh Kitsune về việc sau này muốn làm việc theo cách như thế nào.	3	Nhà của Cáo - Trung Cấp
+32	数日	すうじつ	Vài ngày, mấy ngày	数日ゆっくり休んだことで、体の調子がずいぶんよくなった。\nNhờ nghỉ ngơi thong thả vài ngày mà sức khỏe đã khá lên nhiều.	3	Nhà của Cáo - Trung Cấp
+33	数ヶ月	すうかげつ	Vài tháng, mấy tháng	数ヶ月で日本語がペラペラになるはずがない。\nKhông thể nào chỉ trong vài tháng mà nói tiếng Nhật trôi chảy được.	3	Nhà của Cáo - Trung Cấp
+34	数年	すうねん	Vài năm, mấy năm	数年でこの町がこんなに変わったなんて、驚きました。\nChỉ vài năm mà thị trấn này đã thay đổi nhiều thế này, tôi thật bất ngờ.	3	Nhà của Cáo - Trung Cấp
+35	数回	すうかい	Vài lần, mấy lần	数回練習すれば、ネコさんもすぐできるようになるんじゃないか。\nChỉ cần luyện tập vài lần là chắc anh Neko cũng làm được ngay thôi.	3	Nhà của Cáo - Trung Cấp
+36	以降	いこう	Từ ~ trở đi (nhấn mạnh mốc bắt đầu và trạng thái kéo dài liên tục; hay dùng trong thông báo, văn bản)	午後3時以降は会議がないことだし、少し休憩しましょう。\nTừ 3 giờ chiều trở đi không còn cuộc họp nào nên mình nghỉ giải lao một chút đi.	3	Nhà của Cáo - Trung Cấp
+37	以後	いご	Từ đó về sau, sau đó (nhấn mạnh "kể từ sau sự việc đó", hay dùng trong lời hứa, nhắc nhở như 以後気をつけます; khác 以降 thiên về mốc thời gian)	「以後気をつけます」と言ったのに、また遅刻するなんて、ネコさんは本当に困った人だ。\nĐã nói "từ nay sẽ chú ý" vậy mà lại đi muộn nữa, anh Neko đúng là hết cách.	3	Nhà của Cáo - Trung Cấp
+38	以来	いらい	Kể từ khi (một sự việc trong quá khứ) đến nay	大学を卒業して以来一度も会っていないので、イヌさんが私の顔を覚えているはずがない。\nTừ khi tốt nghiệp đại học đến giờ chưa gặp lại lần nào, anh Inu không thể nào nhớ mặt tôi được.	3	Nhà của Cáo - Trung Cấp
+39	以前	いぜん	Trước đây, trước khi	以前に比べて、キツネさんは日本語がずいぶん上手になったんじゃない？\nSo với trước đây thì tiếng Nhật của anh Kitsune giỏi lên nhiều rồi phải không?	3	Nhà của Cáo - Trung Cấp
+40	散らかる	ちらかる	Bừa bộn, lộn xộn (tự động từ; khác 散らかす là tha động từ)	部屋がこんなに散らかっているなんて、ネコさんらしくないね。\nPhòng bừa bộn thế này, chẳng giống anh Neko chút nào.	3	Nhà của Cáo - Trung Cấp
+41	散らかす	ちらかす	Bày bừa, làm bừa bộn (tha động từ; khác 散らかる là tự động từ)	子どもにとって、おもちゃを散らかすのも遊びの一つなのです。\nĐối với trẻ con, bày bừa đồ chơi ra cũng là một cách chơi.	3	Nhà của Cáo - Trung Cấp
+42	片付ける	かたづける	Dọn dẹp, sắp xếp gọn gàng (tha động từ; khác 片付く là tự động từ)	もうすぐお客さんが来ることだし、リビングを片付けておこう。\nSắp có khách đến rồi nên mình dọn phòng khách trước đã.	3	Nhà của Cáo - Trung Cấp
+43	片付く	かたづく	Được dọn gọn; (công việc) được giải quyết xong (tự động từ; khác 片付ける là tha động từ)	仕事が早く片付いたから、キツネさんとお茶でも飲みに行こう。\nCông việc xong sớm rồi, đi uống trà chút với anh Kitsune thôi.	3	Nhà của Cáo - Trung Cấp
+44	清潔（な）	せいけつ（な）	Sạch sẽ, hợp vệ sinh (trái nghĩa với 不潔)	台所は清潔にすればするほど、料理をするのが楽しくなる。\nNhà bếp càng giữ sạch sẽ thì nấu ăn càng vui.	3	Nhà của Cáo - Trung Cấp
+45	不潔（な）	ふけつ（な）	Bẩn thỉu, mất vệ sinh (trái nghĩa với 清潔)	こんな不潔な手で料理を作るなんて、信じられない！\nNấu ăn với đôi tay bẩn thế này thì thật không thể tin nổi!	3	Nhà của Cáo - Trung Cấp
+46	掃く	はく	Quét (bằng chổi)	毎朝玄関を掃くことで、気持ちよく一日を始められる。\nNhờ quét lối vào nhà mỗi sáng mà tôi có thể bắt đầu một ngày thật sảng khoái.	3	Nhà của Cáo - Trung Cấp
+47	箒	ほうき	Cái chổi	掃除機が壊れているなら、箒でもいいから床を掃いておいてね。\nNếu máy hút bụi hỏng thì dùng chổi chẳng hạn cũng được, quét sàn giúp mình nhé.	3	Nhà của Cáo - Trung Cấp
+48	ちりとり	ちりとり	Cái hót rác, xẻng hốt rác	ちりとりがないなんて、どうやってごみを集めればいいの？\nKhông có cái hót rác thì biết gom rác kiểu gì đây?	3	Nhà của Cáo - Trung Cấp
+49	～機	～き	Máy ~ (hậu tố chỉ máy móc)	新しい掃除機は音が静かなことだし、夜でも気にしないで使える。\nMáy hút bụi mới chạy êm nên dùng cả buổi tối cũng không lo.	3	Nhà của Cáo - Trung Cấp
+50	掃除機	そうじき	Máy hút bụi	新しい掃除機は音が静かなことだし、夜でも気にしないで使える。\nMáy hút bụi mới chạy êm nên dùng cả buổi tối cũng không lo.	3	Nhà của Cáo - Trung Cấp
+51	洗濯機	せんたくき	Máy giặt	一人暮らしの学生にとって、洗濯機は一番大切な家電かもしれない。\nĐối với sinh viên sống một mình, có lẽ máy giặt là đồ điện gia dụng quan trọng nhất.	3	Nhà của Cáo - Trung Cấp
+52	発電機	はつでんき	Máy phát điện	地震で停電した時、発電機があったことで、スマホを充電できた。\nKhi mất điện do động đất, nhờ có máy phát điện mà tôi đã sạc được điện thoại.	3	Nhà của Cáo - Trung Cấp
+53	乾燥機	かんそうき	Máy sấy (quần áo, bát đĩa...)	梅雨で洗濯物がなかなか乾かないことだし、乾燥機を買おうと思う。\nMùa mưa đồ giặt mãi không khô nên tôi định mua một cái máy sấy.	3	Nhà của Cáo - Trung Cấp
+54	拭く	ふく	Lau, chùi	テーブルはこういうふうに上から下へ拭くときれいになりますよ。\nCái bàn mà lau từ trên xuống dưới như thế này thì sẽ sạch đấy.	3	Nhà của Cáo - Trung Cấp
+55	雑巾	ぞうきん	Giẻ lau	古いタオルを雑巾として使うことで、ごみを減らせます。\nNhờ dùng khăn cũ làm giẻ lau mà có thể giảm được rác thải.	3	Nhà của Cáo - Trung Cấp
+56	バケツ	バケツ	Cái xô	これから掃除するから、バケツに水でも入れておいてくれる？\nTôi sắp dọn dẹp, cậu đổ chút nước vào xô giúp tôi được không?	3	Nhà của Cáo - Trung Cấp
+57	絞る	しぼる	Vắt nước	雑巾はこんなふうにしっかり絞ってから使ってください。\nGiẻ lau thì hãy vắt thật kỹ như thế này rồi mới dùng nhé.	3	Nhà của Cáo - Trung Cấp
+58	絞る	しぼる	Giới hạn phạm vi	旅行先を二つに絞ったことだし、あとはみんなで決めましょう。\nĐã thu hẹp điểm đến du lịch còn hai nơi rồi, phần còn lại cả nhóm cùng quyết định nhé.	3	Nhà của Cáo - Trung Cấp
+59	絞り込む	しぼりこむ	Thu hẹp, sàng lọc (nhấn mạnh việc lọc kỹ dần đến kết quả cuối cùng, mạnh hơn 絞る)	条件を絞り込むことで、欲しい商品がすぐ見つかった。\nNhờ thu hẹp điều kiện tìm kiếm mà tôi đã tìm ra ngay món hàng mình muốn.	3	Nhà của Cáo - Trung Cấp
+60	零れる	こぼれる	Tràn ra, đổ ra, rơi vãi	コップにそんなに水を入れたら、零れるんじゃない？\nRót nước đầy cốc thế kia thì chẳng phải sẽ tràn ra sao?	3	Nhà của Cáo - Trung Cấp
+61	洗剤	せんざい	Chất tẩy rửa (bột giặt, nước rửa chén...)	洗剤は入れれば入れるほどきれいになるわけではない。\nKhông phải cứ cho càng nhiều chất tẩy rửa thì càng sạch đâu.	3	Nhà của Cáo - Trung Cấp
+62	カビ	カビ	Nấm mốc	お風呂場は湿気が多いことだし、カビが生えないように窓を開けておこう。\nPhòng tắm nhiều hơi ẩm nên mình mở cửa sổ ra để khỏi bị mốc nhé.	3	Nhà của Cáo - Trung Cấp
+63	埃	ほこり	Bụi	毎日掃除しているネコさんの部屋に、埃があるはずがない。\nPhòng của anh Neko ngày nào cũng dọn thì không thể nào có bụi được.	3	Nhà của Cáo - Trung Cấp
+64	磨く	みがく	Đánh bóng, chà sạch; trau dồi (kỹ năng)	靴をピカピカに磨くことで、気持ちまで明るくなる気がする。\nNhờ đánh giày bóng loáng mà tôi thấy tâm trạng cũng tươi tắn hơn.	3	Nhà của Cáo - Trung Cấp
+65	歯を磨く	はをみがく	Đánh răng	子どもにとって、毎日歯を磨くのは面倒なことだ。\nĐối với trẻ con, đánh răng mỗi ngày là việc phiền phức.	3	Nhà của Cáo - Trung Cấp
+66	ブラシ	ブラシ	Bàn chải	このブラシでこんなふうにこすれば、汚れがよく落ちますよ。\nDùng bàn chải này cọ như thế này thì vết bẩn sẽ sạch đấy.	3	Nhà của Cáo - Trung Cấp
+67	泡	あわ	Bọt	泡が多ければ多いほどよく洗えると思っている人は多い。\nNhiều người nghĩ rằng càng nhiều bọt thì càng giặt sạch.	3	Nhà của Cáo - Trung Cấp
+68	臭う	におう	Bốc mùi, có mùi hôi (dùng cho mùi khó chịu; khác 匂う dùng cho mùi thơm)	冷蔵庫が臭うのは、古い食べ物が入っているからではないか。\nTủ lạnh bốc mùi, phải chăng là do có đồ ăn cũ bên trong?	3	Nhà của Cáo - Trung Cấp
+69	臭い	くさい	Hôi, thối	この靴下がこんなに臭いなんて、いったい何日はいているの？\nĐôi tất này hôi thế này, rốt cuộc cậu đi mấy ngày rồi vậy?	3	Nhà của Cáo - Trung Cấp
+70	匂う	におう	Tỏa hương, có mùi thơm (dùng cho mùi dễ chịu; khác 臭う dùng cho mùi hôi)	台所でカレーがおいしそうに匂っていることだし、そろそろ晩ご飯にしよう。\nTừ bếp đã thoang thoảng mùi cà ri thơm phức rồi, mình ăn tối thôi.	3	Nhà của Cáo - Trung Cấp
+71	洗濯物	せんたくもの	Đồ giặt (quần áo cần giặt hoặc vừa giặt xong)	雨が降りそうだから、洗濯物を中に入れたほうがいいんじゃない？\nTrời có vẻ sắp mưa, chẳng phải nên mang đồ giặt vào trong sao?	3	Nhà của Cáo - Trung Cấp
+72	汚れる	よごれる	Bị bẩn	白い服は着れば着るほど汚れやすいので、洗うのが大変だ。\nQuần áo trắng càng mặc càng dễ bị bẩn nên giặt rất vất vả.	3	Nhà của Cáo - Trung Cấp
+73	汚れ	よごれ	Vết bẩn	この洗剤を使ったことで、なかなか落ちなかった汚れがきれいに落ちた。\nNhờ dùng loại chất tẩy này mà vết bẩn mãi không sạch đã được tẩy sạch hoàn toàn.	3	Nhà của Cáo - Trung Cấp
+74	油汚れ	あぶらよごれ	Vết dầu mỡ	油汚れは時間がたてばたつほど落ちにくくなる。\nVết dầu mỡ càng để lâu thì càng khó tẩy.	3	Nhà của Cáo - Trung Cấp
+75	干す	ほす	Phơi	今日は天気もいいことだし、布団を干しましょう。\nHôm nay trời cũng đẹp nên mình phơi chăn nệm đi.	3	Nhà của Cáo - Trung Cấp
+76	乾燥する	かんそうする	Khô, hanh khô	冬は空気が乾燥するので、加湿器でも置いたらどうですか。\nMùa đông không khí hanh khô, anh thử đặt máy tạo ẩm chẳng hạn xem sao?	3	Nhà của Cáo - Trung Cấp
+77	畳む	たたむ	Gấp (quần áo, chăn...)	シャツはこういうふうに畳むと、しわになりにくいよ。\nÁo sơ mi mà gấp theo cách này thì khó bị nhăn đấy.	3	Nhà của Cáo - Trung Cấp
+78	アイロン	アイロン	Bàn là, bàn ủi	明日は大事な面接があることだし、今夜シャツにアイロンをかけておこう。\nNgày mai có buổi phỏng vấn quan trọng nên tối nay mình ủi áo sơ mi sẵn.	3	Nhà của Cáo - Trung Cấp
+79	敷く	しく	Trải (nệm, thảm...)	床に布団を敷いて寝るのは、外国人にとって珍しい経験だろう。\nTrải nệm xuống sàn để ngủ có lẽ là trải nghiệm lạ lẫm đối với người nước ngoài.	3	Nhà của Cáo - Trung Cấp
+80	敷布団	しきぶとん	Nệm trải (lót bên dưới khi ngủ kiểu Nhật)	敷布団が薄ければ薄いほど、朝起きた時に背中が痛くなる。\nNệm càng mỏng thì sáng dậy lưng càng đau.	3	Nhà của Cáo - Trung Cấp
+81	掛ける	かける	Treo; đắp, phủ lên	イヌさんが寝ちゃったから、毛布でも掛けてあげて。\nAnh Inu ngủ mất rồi, đắp cho anh ấy cái chăn mỏng chẳng hạn đi.	3	Nhà của Cáo - Trung Cấp
+82	掛け布団	かけぶとん	Chăn đắp (kiểu Nhật)	こんなに寒い夜に、薄い掛け布団一枚で眠れるはずがない。\nĐêm lạnh thế này mà chỉ có một cái chăn mỏng thì không thể nào ngủ được.	3	Nhà của Cáo - Trung Cấp
+83	育児	いくじ	Việc nuôi dạy con (từ Hán, trang trọng, hay dùng trong văn bản, chính sách như 育児休暇; trang trọng hơn 子育て)	育児休暇を取ったことで、イヌさんは子どもと過ごす時間が増えた。\nNhờ nghỉ phép chăm con mà anh Inu có thêm thời gian ở bên con.	3	Nhà của Cáo - Trung Cấp
+84	子育て	こそだて	Việc nuôi con (từ thuần Nhật, văn nói, thân mật hơn 育児)	子育てなんて大変なだけだと思っていたけど、楽しいこともたくさんあるよ。\nTôi cứ tưởng nuôi con thì chỉ có vất vả, nhưng cũng có nhiều niềm vui lắm đấy.	3	Nhà của Cáo - Trung Cấp
+85	起こす	おこす	Đánh thức	明日は早いことだし、6時にネコさんを起こしてあげてね。\nNgày mai phải dậy sớm nên 6 giờ nhớ đánh thức anh Neko nhé.	3	Nhà của Cáo - Trung Cấp
+86	意図	いと	Ý đồ, ý định	先生がどういう意図でこの問題を出したのか、キツネさんならわかるんじゃないか。\nThầy ra bài này với ý đồ gì, nếu là anh Kitsune thì chắc sẽ hiểu nhỉ.	3	Nhà của Cáo - Trung Cấp
+87	針	はり	Kim (kim khâu, kim đồng hồ...)	細い針に糸を通すのは、目が悪い祖母にとって大変な作業だ。\nXỏ chỉ vào cây kim nhỏ là việc vất vả đối với bà tôi vốn mắt kém.	3	Nhà của Cáo - Trung Cấp
+88	生～	なま～	~ sống, ~ tươi; ~ trực tiếp (tiền tố)	「生」がつく食べ物は、新しければ新しいほどおいしい。\nNhững món có chữ "sống/tươi" thì càng tươi càng ngon.	3	Nhà của Cáo - Trung Cấp
+89	生ビール	なまビール	Bia tươi	仕事も終わったことだし、生ビールでも飲みに行きましょう。\nXong việc rồi, mình đi làm cốc bia tươi chẳng hạn đi.	3	Nhà của Cáo - Trung Cấp
+90	生卵	なまたまご	Trứng sống	生卵をご飯にかけて食べるなんて、最初はびっくりしました。\nĂn cơm trộn trứng sống thì lúc đầu tôi đã rất bất ngờ.	3	Nhà của Cáo - Trung Cấp
+91	生野菜	なまやさい	Rau sống	生野菜を毎日食べることで、肌の調子がよくなった。\nNhờ ăn rau sống mỗi ngày mà làn da đã đẹp hơn.	3	Nhà của Cáo - Trung Cấp
+92	生臭い	なまぐさい	Tanh (mùi cá, thịt sống)	この魚が生臭いのは、あまり新鮮ではないからではないか。\nCon cá này có mùi tanh, phải chăng là vì không được tươi lắm?	3	Nhà của Cáo - Trung Cấp
+93	生中継	なまちゅうけい	Truyền hình trực tiếp	好きな歌手のコンサートを生中継で見られるなんて、夢みたいだ。\nĐược xem trực tiếp buổi hòa nhạc của ca sĩ mình thích, cứ như mơ vậy.	3	Nhà của Cáo - Trung Cấp
+94	生ごみ	なまごみ	Rác hữu cơ, rác thực phẩm	夏は生ごみがすぐ臭くなることだし、こまめに捨てましょう。\nMùa hè rác thực phẩm nhanh bốc mùi nên hãy vứt thường xuyên nhé.	3	Nhà của Cáo - Trung Cấp
+95	燃えるごみ	もえるごみ	Rác cháy được	燃えるごみの日に瓶を出すなんて、ルールを知らないんじゃないか。\nĐem chai lọ ra vào ngày đổ rác cháy được thì chắc là không biết quy định rồi.	3	Nhà của Cáo - Trung Cấp
+96	燃えないごみ	もえないごみ	Rác không cháy được	燃えないごみはどういうふうに分ければいいか、イヌさんに教えてもらった。\nTôi đã được anh Inu chỉ cho cách phân loại rác không cháy được.	3	Nhà của Cáo - Trung Cấp
+97	空き缶	あきかん	Lon rỗng	空き缶をリサイクルすることで、資源を大切にできる。\nNhờ tái chế lon rỗng mà ta có thể tiết kiệm tài nguyên.	3	Nhà của Cáo - Trung Cấp
+98	空き瓶	あきびん	Chai lọ rỗng	この空き瓶、形がきれいだから、花でも飾ったらどう？\nCái chai rỗng này dáng đẹp đấy, cắm hoa chẳng hạn vào thì sao?	3	Nhà của Cáo - Trung Cấp
+99	ごみを出す	ごみをだす	Đổ rác, mang rác ra	朝8時までにごみを出すなんて、夜型のネコさんにできるはずがない。\nPhải đổ rác trước 8 giờ sáng ư, anh Neko cú đêm thì không thể nào làm được.	3	Nhà của Cáo - Trung Cấp
+100	覚ます	さます	Làm cho tỉnh (rượu, cơn buồn ngủ, con mắt,...)	冷たい水で顔を洗うことで、眠気を覚ました。\nNhờ rửa mặt bằng nước lạnh mà tôi đã tỉnh ngủ.	3	Nhà của Cáo - Trung Cấp
+101	目を覚ます	めをさます	Thức dậy, tỉnh giấc (nhấn mạnh hành động; khác 目が覚める là tự nhiên tỉnh)	赤ちゃんが目を覚まさないように、こんなふうに静かに歩いてね。\nĐi nhẹ nhàng như thế này để em bé không thức giấc nhé.	3	Nhà của Cáo - Trung Cấp
+102	目覚まし時計	めざましどけい	Đồng hồ báo thức	目覚まし時計を三つもセットしたことだし、明日は寝坊するはずがない。\nĐã đặt tới ba cái đồng hồ báo thức rồi nên mai không thể nào ngủ quên được.	3	Nhà của Cáo - Trung Cấp
+103	覚める	さめる	Tỉnh, tỉnh táo (tự động từ; khác 覚ます là tha động từ)	夢から覚めたら全部忘れてしまうなんて、残念だ。\nTỉnh dậy khỏi giấc mơ mà quên hết mọi thứ, thật đáng tiếc.	3	Nhà của Cáo - Trung Cấp
+104	目が覚める	めがさめる	Tỉnh giấc (tự nhiên tỉnh; khác 目を覚ます nhấn mạnh hành động)	濃いコーヒーを飲めば飲むほど目が覚めて、夜眠れなくなる。\nCàng uống cà phê đậm thì càng tỉnh, tối không ngủ được.	3	Nhà của Cáo - Trung Cấp
+105	夜が明ける	よがあける	Trời sáng, bình minh lên	夜が明けるまでゲームをするなんて、体に悪いよ。\nChơi game đến tận sáng thì có hại cho sức khỏe đấy.	3	Nhà của Cáo - Trung Cấp
+106	支度する	したくする	Chuẩn bị, sửa soạn	ネコさんは支度するのが遅いから、まだ家にいるんじゃないかな。\nAnh Neko sửa soạn chậm lắm, chắc giờ vẫn còn ở nhà.	3	Nhà của Cáo - Trung Cấp
+107	合わせる	あわせる	Kết hợp, gộp; điều chỉnh cho khớp	みんなの予定に合わせることで、全員がパーティーに参加できた。\nNhờ điều chỉnh theo lịch của mọi người mà ai cũng tham gia được bữa tiệc.	3	Nhà của Cáo - Trung Cấp
+108	手を合わせる	てをあわせる	Chắp tay (khi cầu nguyện, trước bữa ăn)	日本人はご飯の前にこんなふうに手を合わせて「いただきます」と言います。\nNgười Nhật trước bữa ăn sẽ chắp tay như thế này và nói "Itadakimasu".	3	Nhà của Cáo - Trung Cấp
+109	力を合わせる	ちからをあわせる	Hợp sức, chung sức	みんなで力を合わせたことで、難しいプロジェクトが成功した。\nNhờ mọi người chung sức mà dự án khó khăn đã thành công.	3	Nhà của Cáo - Trung Cấp
+110	仕舞う	しまう	Cất	大事な書類だから、引き出しにでも仕舞っておいてください。\nTài liệu quan trọng nên hãy cất vào ngăn kéo chẳng hạn nhé.	3	Nhà của Cáo - Trung Cấp
+111	ひげをそる	ひげをそる	Cạo râu	毎朝ひげをそるなんて面倒くさい、とイヌさんはいつも言っている。\nAnh Inu lúc nào cũng bảo cạo râu mỗi sáng thật phiền.	3	Nhà của Cáo - Trung Cấp
+112	髪をとかす	かみをとかす	Chải tóc	髪はこういうふうに下からとかすと、からまりにくいよ。\nChải tóc từ dưới lên theo cách này thì tóc ít bị rối đấy.	3	Nhà của Cáo - Trung Cấp
+113	そろえる	そろえる	Sắp xếp cho đều, ngay ngắn; chuẩn bị đầy đủ (tha động từ; khác そろう là tự động từ)	玄関で靴をそろえることで、家がきれいに見える。\nNhờ xếp giày ngay ngắn ở lối vào mà nhà cửa trông gọn gàng hơn.	3	Nhà của Cáo - Trung Cấp
+114	そろう	そろう	Đầy đủ, tề tựu; đồng đều (tự động từ; khác そろえる là tha động từ)	全員そろったことだし、会議を始めましょう。\nMọi người đã có mặt đầy đủ rồi, chúng ta bắt đầu cuộc họp thôi.	3	Nhà của Cáo - Trung Cấp
+115	昼寝する	ひるねする	Ngủ trưa	15分だけ昼寝することで、午後も集中して働ける。\nNhờ ngủ trưa chỉ 15 phút mà buổi chiều vẫn tập trung làm việc được.	3	Nhà của Cáo - Trung Cấp
+116	腰掛ける	こしかける	Ngồi xuống (ghế, ghế đá...)	疲れたなら、あのベンチにでも腰掛けて休もうか。\nNếu mệt thì mình ngồi xuống cái băng ghế dài kia chẳng hạn mà nghỉ nhé.	3	Nhà của Cáo - Trung Cấp
+117	日が暮れる	ひがくれる	Mặt trời lặn, trời tối	冬は日が暮れるのが早いことだし、そろそろ帰りましょう。\nMùa đông trời tối sớm nên mình về thôi.	3	Nhà của Cáo - Trung Cấp
+118	年が暮れる	としがくれる	Năm cũ qua đi, hết năm	もう年が暮れるなんて、一年は本当にあっという間だね。\nĐã sắp hết năm rồi sao, một năm trôi qua thật nhanh.	3	Nhà của Cáo - Trung Cấp
+119	年の暮れ	としのくれ	Cuối năm, những ngày cuối năm	年の暮れはどこの店も混むから、買い物は早めにしたほうがいいんじゃない？\nCuối năm cửa hàng nào cũng đông, chẳng phải nên đi mua sắm sớm sao?	3	Nhà của Cáo - Trung Cấp
+120	おしゃべりする	おしゃべりする	Tán gẫu, nói chuyện phiếm	ネコさんとおしゃべりすればするほど、時間がたつのを忘れてしまう。\nCàng tán gẫu với anh Neko thì càng quên cả thời gian.	3	Nhà của Cáo - Trung Cấp
+121	リラックスする	リラックスする	Thư giãn	お風呂にゆっくり入ることで、心も体もリラックスできる。\nNhờ ngâm bồn thong thả mà cả tâm trí lẫn cơ thể đều được thư giãn.	3	Nhà của Cáo - Trung Cấp
+122	普段	ふだん	Thường ngày, lúc bình thường (nhấn mạnh trạng thái "lúc bình thường"; khác 日常 chỉ cuộc sống thường nhật nói chung)	普段はまじめなイヌさんが、宿題を忘れるはずがない。\nAnh Inu bình thường rất nghiêm túc, không thể nào quên bài tập được.	3	Nhà của Cáo - Trung Cấp
+123	普段着	ふだんぎ	Quần áo mặc thường ngày	普段着でパーティーに来るなんて、キツネさんらしいね。\nĐến bữa tiệc với bộ đồ thường ngày, đúng là phong cách của anh Kitsune.	3	Nhà của Cáo - Trung Cấp
+124	相変わらず	あいかわらず	Vẫn như mọi khi, vẫn như cũ	相変わらず忙しそうだけど、ネコさん、たまにはお茶でもどう？\nTrông anh vẫn bận như mọi khi nhỉ, anh Neko, thỉnh thoảng đi uống trà chút không?	3	Nhà của Cáo - Trung Cấp
+125	たいてい	たいてい	Thường thì, phần lớn, hầu hết	週末はたいてい家にいるので、遊びに来るなら土曜日でもいいですよ。\nCuối tuần tôi thường ở nhà, nếu đến chơi thì thứ Bảy chẳng hạn cũng được đấy.	3	Nhà của Cáo - Trung Cấp
+126	ざっくり	ざっくり	Đại khái, sơ lược (văn nói)	ざっくりでいいから、どんなふうに進めるつもりか説明してくれる？\nĐại khái thôi cũng được, cậu giải thích xem định tiến hành như thế nào nhé?	3	Nhà của Cáo - Trung Cấp
+127	夜更かしする	よふかしする	Thức khuya	夜更かしすればするほど、次の日がつらくなる。\nCàng thức khuya thì hôm sau càng mệt.	3	Nhà của Cáo - Trung Cấp
+128	電源	でんげん	Nguồn điện; công tắc nguồn	パソコンが動かないのは、電源が入っていないからじゃないか。\nMáy tính không chạy, chẳng phải là do chưa bật nguồn sao?	3	Nhà của Cáo - Trung Cấp
+129	充電する	じゅうでんする	Sạc điện	昨夜ちゃんと充電したことだし、今日一日はスマホの電池が持つだろう。\nTối qua đã sạc đầy rồi nên chắc pin điện thoại đủ dùng cả hôm nay.	3	Nhà của Cáo - Trung Cấp
+130	セットする	セットする	Cài đặt, đặt (đồng hồ, máy móc...); làm (tóc)	目覚ましをこういうふうにセットすれば、毎朝同じ時間に鳴りますよ。\nNếu cài đồng hồ báo thức theo cách này thì sáng nào nó cũng reo đúng giờ đấy.	3	Nhà của Cáo - Trung Cấp
+131	撫でる	なでる	Vuốt ve, xoa	犬にとって、飼い主に頭を撫でてもらうのは一番うれしいことだ。\nĐối với chó, được chủ xoa đầu là điều hạnh phúc nhất.	3	Nhà của Cáo - Trung Cấp
+132	ぐっすり	ぐっすり	(Ngủ) say, ngon giấc	昨日ぐっすり眠れたことで、今日は朝から元気だ。\nNhờ hôm qua ngủ ngon mà hôm nay tôi khỏe khoắn từ sáng.	3	Nhà của Cáo - Trung Cấp
+133	運	うん	Vận may, số phận	試験は運ではなく、勉強すればするほど結果がよくなるものだ。\nThi cử không phải do vận may, mà là càng học thì kết quả càng tốt.	3	Nhà của Cáo - Trung Cấp
+134	運がいい	うんがいい	May mắn (văn nói, thân mật hơn 幸運)	宝くじが二回も当たるなんて、イヌさんは本当に運がいいね。\nTrúng xổ số những hai lần, anh Inu đúng là may mắn thật.	3	Nhà của Cáo - Trung Cấp
+135	運が悪い	うんがわるい	Xui xẻo, không may (văn nói, thân mật hơn 不運)	出かけるたびに雨が降るのは、私の運が悪いからじゃないかと思う。\nCứ mỗi lần ra ngoài là trời mưa, tôi nghĩ có lẽ là do mình xui xẻo.	3	Nhà của Cáo - Trung Cấp
+136	幸運	こううん	Vận may, sự may mắn (từ Hán, trang trọng hơn 運がいい)	こんなにいい先生に出会えたことは、私にとって大きな幸運でした。\nĐược gặp một người thầy tốt như vậy là may mắn lớn đối với tôi.	3	Nhà của Cáo - Trung Cấp
+137	不運	ふうん	Vận rủi, sự bất hạnh (từ Hán, trang trọng hơn 運が悪い)	試合の前日にけがをするなんて、ネコさんにとって本当に不運だった。\nBị thương ngay ngày trước trận đấu, đối với anh Neko thật là xui xẻo.	3	Nhà của Cáo - Trung Cấp
+138	運よく	うんよく	May mắn thay, may là	運よくキャンセルが出たことで、人気のレストランを予約できた。\nMay mắn có người hủy bàn nên tôi đã đặt được nhà hàng nổi tiếng.	3	Nhà của Cáo - Trung Cấp
+139	運悪く	うんわるく	Không may, xui là	運悪く道が混んでいたので、キツネさんは約束の時間に間に合わなかったんじゃないか。\nKhông may đường lại tắc, chắc anh Kitsune đã không kịp giờ hẹn rồi.	3	Nhà của Cáo - Trung Cấp
+140	日常	にちじょう	Thường nhật, hằng ngày (chỉ cuộc sống thường ngày nói chung; khác 普段 nhấn mạnh "lúc bình thường")	留学生にとって、日本での日常は毎日が新しい発見の連続だ。\nĐối với du học sinh, cuộc sống thường ngày ở Nhật mỗi ngày đều là một khám phá mới.	3	Nhà của Cáo - Trung Cấp
+141	日常生活	にちじょうせいかつ	Cuộc sống hằng ngày, sinh hoạt thường ngày	スマホがあることで、日常生活がとても便利になった。\nNhờ có điện thoại thông minh mà cuộc sống hằng ngày trở nên rất tiện lợi.	3	Nhà của Cáo - Trung Cấp
+142	日常会話	にちじょうかいわ	Hội thoại hằng ngày, giao tiếp thông thường	日常会話なら、日本人と話せば話すほど上手になりますよ。\nNếu chỉ là hội thoại hằng ngày thì càng nói chuyện với người Nhật, bạn sẽ càng giỏi lên đấy.	3	Nhà của Cáo - Trung Cấp
+143	常に	つねに	Luôn luôn (văn viết, trang trọng hơn いつも)	常に笑顔のネコさんが怒るなんて、よっぽどのことがあったんだろう。\nAnh Neko lúc nào cũng tươi cười mà lại nổi giận, chắc hẳn đã có chuyện gì nghiêm trọng lắm.	3	Nhà của Cáo - Trung Cấp
+144	出迎える	でむかえる	Ra đón (khách, người đến)	遠くから来るお客様を、駅でどういうふうに出迎えればいいでしょうか。\nNên ra ga đón vị khách từ xa đến như thế nào thì được ạ?	3	Nhà của Cáo - Trung Cấp
+145	見送る	みおくる	Tiễn	友達を空港で見送るのは、私にとっていつも寂しい時間だ。\nTiễn bạn ở sân bay luôn là khoảnh khắc buồn đối với tôi.	3	Nhà của Cáo - Trung Cấp
+146	郵送する	ゆうそうする	Gửi qua bưu điện	書類を郵送することで、会社に行かなくても手続きができます。\nNhờ gửi hồ sơ qua bưu điện mà có thể làm thủ tục không cần đến công ty.	3	Nhà của Cáo - Trung Cấp
+147	小包	こづつみ	Bưu kiện, gói hàng nhỏ	母から届いた小包は、一人暮らしの私にとって何よりのプレゼントだ。\nGói bưu kiện mẹ gửi là món quà quý nhất đối với tôi, người đang sống một mình.	3	Nhà của Cáo - Trung Cấp
+148	送料	そうりょう	Phí vận chuyển, phí gửi	送料が商品より高いなんて、おかしいんじゃない？\nPhí vận chuyển mà đắt hơn cả món hàng thì chẳng phải vô lý sao?	3	Nhà của Cáo - Trung Cấp
+149	宛先	あてさき	Địa chỉ nhận, nơi nhận (dùng cả cho email; khác 宛名 là tên người nhận)	宛先を間違えたのではないかと思って、もう一度メールを確認した。\nTôi nghĩ có khi mình đã nhập nhầm địa chỉ người nhận nên đã kiểm tra lại email lần nữa.	3	Nhà của Cáo - Trung Cấp
+150	宛名	あてな	Tên người nhận (ghi trên thư, bưu phẩm; khác 宛先 là địa chỉ nhận)	宛名はこういうふうに、名前の後に「様」をつけて書きます。\nTên người nhận thì viết theo cách này, thêm chữ "Sama" sau tên.	3	Nhà của Cáo - Trung Cấp
+151	差出人	さしだしにん	Người gửi	差出人の名前がない手紙なんて、ちょっと怖いね。\nLá thư không có tên người gửi thì hơi đáng sợ nhỉ.	3	Nhà của Cáo - Trung Cấp
+152	とりあえず	とりあえず	Trước mắt, tạm thời	とりあえず、ビールでも頼みましょうか。\nTrước mắt cứ gọi bia chẳng hạn đã nhé?	3	Nhà của Cáo - Trung Cấp
+153	出前	でまえ	Đồ ăn gọi giao tận nơi (từ truyền thống, thường dùng với quán sushi, mì...; khác デリバリー là từ ngoại lai, hiện đại hơn)	今日は料理する時間もないことだし、出前でも取ろうか。\nHôm nay không có thời gian nấu ăn nên gọi đồ ăn về chẳng hạn nhé.	3	Nhà của Cáo - Trung Cấp
+154	デリバリー	デリバリー	Giao hàng, giao đồ ăn tận nơi (từ ngoại lai, hiện đại, thường đặt qua app; khác 出前 mang sắc thái truyền thống)	デリバリーは便利だけど、使えば使うほどお金がかかる。\nGiao đồ ăn thì tiện thật, nhưng càng dùng càng tốn tiền.	3	Nhà của Cáo - Trung Cấp
+155	ほどく	ほどく	Tháo, cởi (nút thắt, dây buộc)	こんなに固く結んだひもを、子どもがほどけるはずがない。\nSợi dây buộc chặt thế này, trẻ con không thể nào tháo ra được.	3	Nhà của Cáo - Trung Cấp
+156	結ぶ	むすぶ	Buộc, thắt; kết nối	ネクタイはどういうふうに結べばいいか、イヌさんに教えてもらった。\nTôi đã được anh Inu chỉ cách thắt cà vạt.	3	Nhà của Cáo - Trung Cấp
+157	留守	るす	Vắng nhà	何度電話しても出ないから、ネコさんは留守なんじゃないか。\nGọi mấy lần cũng không ai nghe, chắc anh Neko vắng nhà rồi.	3	Nhà của Cáo - Trung Cấp
+158	留守番電話	るすばんでんわ	Hộp thư thoại, máy nhắn tin thoại	留守番電話にメッセージを残したことだし、キツネさんからの連絡を待とう。\nĐã để lại lời nhắn trong hộp thư thoại rồi, giờ chờ anh Kitsune liên lạc lại thôi.	3	Nhà của Cáo - Trung Cấp
+159	早め（な）	はやめ（な）	Sớm hơn một chút (so với bình thường)	雪が降りそうなことだし、今日は早めに帰りましょう。\nTrời có vẻ sắp có tuyết nên hôm nay về sớm một chút nhé.	3	Nhà của Cáo - Trung Cấp
+160	遅め（な）	おそめ（な）	Muộn hơn một chút (so với bình thường)	会議が長引いたから、遅めの昼ご飯でも食べに行きませんか。\nCuộc họp kéo dài quá, mình đi ăn bữa trưa muộn chẳng hạn không?	3	Nhà của Cáo - Trung Cấp
+161	長め（な）	ながめ（な）	Dài hơn một chút, hơi dài	カレーは長めに煮れば煮るほど、おいしくなる。\nCà ri càng hầm lâu hơn một chút thì càng ngon.	3	Nhà của Cáo - Trung Cấp
+162	リサイクルする	リサイクルする	Tái chế (biến thành nguyên liệu để làm sản phẩm mới; khác 再利用 là dùng lại nguyên dạng)	ペットボトルをリサイクルすることで、新しい服が作れるそうです。\nNghe nói nhờ tái chế chai nhựa mà có thể làm ra quần áo mới.	3	Nhà của Cáo - Trung Cấp
+163	再利用する	さいりようする	Tái sử dụng (dùng lại nguyên dạng, có thể cho mục đích khác; khác リサイクル là tái chế thành nguyên liệu)	空き瓶は、こんなふうに花瓶として再利用できますよ。\nChai rỗng có thể tái sử dụng làm bình hoa như thế này đấy.	3	Nhà của Cáo - Trung Cấp
+164	どける	どける	Dời đi, dẹp sang một bên	机の上の本をどけたことで、勉強するスペースができた。\nNhờ dẹp mấy cuốn sách trên bàn sang một bên mà có chỗ để học.	3	Nhà của Cáo - Trung Cấp
+165	有効	ゆうこう	Có hiệu lực, có hiệu quả	このクーポンが有効なのは今月までだから、ネコさん、今週末にでも使ったら？\nPhiếu giảm giá này chỉ có hiệu lực đến hết tháng, anh Neko thử dùng vào cuối tuần này xem sao?	3	Nhà của Cáo - Trung Cấp
+166	早起きは三文の徳	はやおきはさんもんのとく	Dậy sớm thì được lợi (tục ngữ)	「早起きは三文の徳」と言うけど、本当に早く起きれば起きるほどいいことがあるのかな。\nNgười ta bảo dậy sớm thì được lợi, nhưng không biết có thật là càng dậy sớm càng gặp nhiều điều tốt không nhỉ.	3	Nhà của Cáo - Trung Cấp
+167	早朝	そうちょう	Sáng sớm, tinh mơ	早朝に出発すれば、道も空いているんじゃないか。\nNếu xuất phát lúc sáng sớm thì chắc đường cũng vắng.	3	Nhà của Cáo - Trung Cấp
+168	ぴったり	ぴったり	Vừa vặn, vừa khít; rất hợp	このシャツ、イヌさんにぴったりなんじゃない？\nCái áo này chẳng phải rất hợp với anh Inu sao?	3	Nhà của Cáo - Trung Cấp
+169	キャリアアップ	キャリアアップ	Thăng tiến sự nghiệp, nâng cao năng lực nghề nghiệp	資格を取ることで、キャリアアップにつながる。\nNhờ lấy chứng chỉ mà có thể thăng tiến trong sự nghiệp.	3	Nhà của Cáo - Trung Cấp
+170	出勤	しゅっきん	Đi làm, có mặt ở chỗ làm	雨の日の出勤なんて、本当に面倒だ。\nĐi làm vào ngày mưa thì thật là phiền phức.	3	Nhà của Cáo - Trung Cấp
+171	講座	こうざ	Khóa học, lớp học (thường ngắn hạn)	週末に料理の講座でも受けてみようかな。\nCuối tuần thử đi học khóa nấu ăn chẳng hạn xem sao.	3	Nhà của Cáo - Trung Cấp
+172	過ぎる	すぎる	Qua, trôi qua; vượt quá	約束の時間を30分も過ぎたのに、キツネさんが来ないなんて、何かあったのではないか。\nĐã quá giờ hẹn tận 30 phút mà anh Kitsune vẫn chưa đến, chẳng lẽ đã có chuyện gì sao.	3	Nhà của Cáo - Trung Cấp
+173	だらだら	だらだら	Lề mề, uể oải, dây dưa	休みの日をだらだら過ごすなんて、もったいない。\nNgày nghỉ mà cứ uể oải lề mề thì phí lắm.	3	Nhà của Cáo - Trung Cấp
+174	頭に浮かぶ	あたまにうかぶ	Hiện lên trong đầu, nảy ra (ý tưởng)	散歩をすることで、いいアイデアが頭に浮かぶことがある。\nNhờ đi dạo mà đôi khi ý tưởng hay chợt nảy ra trong đầu.	3	Nhà của Cáo - Trung Cấp
+175	手帳	てちょう	Sổ tay	スマホがあることだし、紙の手帳はもういらないんじゃないか。\nĐã có điện thoại rồi, chắc không cần sổ tay giấy nữa nhỉ.	3	Nhà của Cáo - Trung Cấp
+176	落ち着く	おちつく	Bình tĩnh; ổn định, lắng xuống	この部屋は静かなことだし、落ち着いて勉強できる。\nPhòng này yên tĩnh nên có thể bình tâm mà học.	3	Nhà của Cáo - Trung Cấp
+177	感想	かんそう	Cảm tưởng, cảm nghĩ	映画の感想を聞かれても、どんなふうに言えばいいかわからない。\nDù được hỏi cảm nghĩ về bộ phim nhưng tôi không biết nên nói thế nào.	3	Nhà của Cáo - Trung Cấp
+178	宝物	たからもの	Báu vật, đồ quý giá	祖父にもらった時計は、私にとって一番の宝物だ。\nChiếc đồng hồ ông tặng là báu vật quý nhất đối với tôi.	3	Nhà của Cáo - Trung Cấp
+179	習い事	ならいごと	Việc học thêm (năng khiếu, sở thích như piano, bơi lội...)	習い事が多ければ多いほど、子どもは疲れてしまう。\nCàng học thêm nhiều môn thì trẻ con càng mệt.	3	Nhà của Cáo - Trung Cấp
+180	せっかく	せっかく	Mất công, khó khăn lắm mới; nhân dịp hiếm có	せっかく日本に来たことだし、温泉にでも行ってみたい。\nĐã mất công sang Nhật rồi nên tôi muốn thử đi suối nước nóng chẳng hạn.	3	Nhà của Cáo - Trung Cấp
+181	実際	じっさい	Thực tế, trên thực tế	実際にやってみなければ、難しいかどうかわかるはずがない。\nNếu không thực sự làm thử thì không thể nào biết được có khó hay không.	3	Nhà của Cáo - Trung Cấp
+182	丁寧	ていねい	Cẩn thận; Có tâm	丁寧に説明すればするほど、お客さんに信頼される。\nCàng giải thích tận tình thì càng được khách hàng tin tưởng.	3	Nhà của Cáo - Trung Cấp
+183	効率	こうりつ	Hiệu suất, hiệu quả	仕事の順番を変えたことで、効率がずいぶん上がった。\nNhờ thay đổi thứ tự công việc mà hiệu suất đã tăng lên đáng kể.	3	Nhà của Cáo - Trung Cấp
+184	管理する	かんりする	Quản lý	お金をどういうふうに管理すればいいか、キツネさんに相談した。\nTôi đã hỏi ý kiến anh Kitsune về việc nên quản lý tiền bạc như thế nào.	3	Nhà của Cáo - Trung Cấp
+185	～法	～ほう	Phương pháp ~, cách ~ (hậu tố)	新しい勉強法を試したことで、単語を覚えるのが速くなった。\nNhờ thử phương pháp học mới mà tôi nhớ từ vựng nhanh hơn.	3	Nhà của Cáo - Trung Cấp
+186	管理法	かんりほう	Phương pháp quản lý	時間の管理法を変えれば、自由な時間がもっと増えるんじゃないか。\nNếu thay đổi phương pháp quản lý thời gian, chẳng phải sẽ có thêm nhiều thời gian rảnh hơn sao?	3	Nhà của Cáo - Trung Cấp
+187	注目する	ちゅうもくする	Chú ý, quan tâm, để mắt tới	多くの会社が注目している技術なら、これから伸びるんじゃないか。\nNếu là công nghệ được nhiều công ty chú ý thì chắc từ giờ sẽ phát triển mạnh.	3	Nhà của Cáo - Trung Cấp
+188	タイマー	タイマー	Đồng hồ hẹn giờ	タイマーを使うことで、勉強時間を上手に管理できる。\nNhờ dùng đồng hồ hẹn giờ mà có thể quản lý tốt thời gian học.	3	Nhà của Cáo - Trung Cấp
+189	活用する	かつようする	Tận dụng, vận dụng	通勤時間をうまく活用すれば、毎日30分は勉強できるんじゃないか。\nNếu tận dụng tốt thời gian đi làm thì chẳng phải mỗi ngày học được 30 phút sao?	3	Nhà của Cáo - Trung Cấp
+190	集中	しゅうちゅう	Sự tập trung	こんなにうるさい場所で、勉強に集中できるはずがない。\nỞ chỗ ồn ào thế này thì không thể nào tập trung học được.	3	Nhà của Cáo - Trung Cấp
+191	～力	～りょく	Năng lực ~, sức ~ (hậu tố)	読解力や聴解力などの「～力」は、練習すればするほど伸びる。\nNhững "năng lực ~" như khả năng đọc hiểu hay nghe hiểu thì càng luyện tập càng tiến bộ.	3	Nhà của Cáo - Trung Cấp
+192	集中力	しゅうちゅうりょく	Khả năng tập trung	スマホを見ながら勉強するなんて、集中力が続くはずがない。\nVừa xem điện thoại vừa học thì không thể nào duy trì sự tập trung được.	3	Nhà của Cáo - Trung Cấp
+193	記憶力	きおくりょく	Trí nhớ, khả năng ghi nhớ	年を取れば取るほど、記憶力が落ちると言われている。\nNgười ta nói càng lớn tuổi thì trí nhớ càng giảm sút.	3	Nhà của Cáo - Trung Cấp
+194	リスト	リスト	Danh sách (từ ngoại lai, thường là danh sách liệt kê việc cần làm, đồ cần mua...; thân mật hơn 一覧)	買い物リストを作ったことで、無駄な物を買わなくなった。\nNhờ lập danh sách mua sắm mà tôi không còn mua đồ thừa nữa.	3	Nhà của Cáo - Trung Cấp
+195	一覧	いちらん	Bảng danh sách, bảng tổng hợp (để nhìn bao quát toàn bộ; trang trọng hơn リスト)	参加者の一覧は、こんなふうに名前の順に並べてください。\nDanh sách người tham gia hãy sắp xếp theo thứ tự tên như thế này nhé.	3	Nhà của Cáo - Trung Cấp
+196	休憩する	きゅうけいする	Nghỉ giải lao	2時間も働いたことだし、少し休憩しましょう。\nĐã làm việc tận 2 tiếng rồi, nghỉ giải lao một chút thôi.	3	Nhà của Cáo - Trung Cấp
+197	繰り返す	くりかえす	Lặp lại	単語は繰り返せば繰り返すほど、忘れにくくなる。\nTừ vựng càng lặp lại nhiều thì càng khó quên.	3	Nhà của Cáo - Trung Cấp
+198	利点	りてん	Ưu điểm, lợi thế	在宅勤務の一番の利点は、通勤しなくていいことではないか。\nƯu điểm lớn nhất của làm việc tại nhà, chẳng phải là không cần đi làm sao?	3	Nhà của Cáo - Trung Cấp
+199	終了する	しゅうりょうする	Kết thúc, hoàn thành (trang trọng hơn 終わる)	試験も終了したことだし、今夜はみんなで焼肉でも食べに行こう。\nKỳ thi cũng kết thúc rồi, tối nay cả nhóm đi ăn thịt nướng chẳng hạn đi.	3	Nhà của Cáo - Trung Cấp
+200	鳴る	なる	Kêu, reo	授業中にスマホが鳴るなんて、本当に恥ずかしい。\nĐiện thoại reo giữa giờ học thì thật là xấu hổ.	3	Nhà của Cáo - Trung Cấp
+201	つい	つい	Lỡ, vô tình (làm điều không nên)	おいしそうなケーキを見るとつい食べてしまうので、ダイエットが続くはずがない。\nCứ thấy bánh ngon là lỡ ăn mất nên việc ăn kiêng không thể nào kéo dài được.	3	Nhà của Cáo - Trung Cấp
+202	触る	さわる	Sờ, chạm vào	美術館の作品に触るなんて、絶対にだめですよ。\nChạm vào tác phẩm trong bảo tàng mỹ thuật là tuyệt đối không được đâu.	3	Nhà của Cáo - Trung Cấp
+203	関係	かんけい	Mối quan hệ, sự liên quan	ネコさんとキツネさんの関係は、どんなふうに始まったんですか。\nMối quan hệ giữa anh Neko và anh Kitsune đã bắt đầu như thế nào vậy?	3	Nhà của Cáo - Trung Cấp
+204	関係ない	かんけいない	Không liên quan	年齢なんて関係ないから、いくつになっても新しいことに挑戦できる。\nTuổi tác chẳng liên quan gì, bao nhiêu tuổi cũng có thể thử sức với điều mới.	3	Nhà của Cáo - Trung Cấp
+205	リズム	リズム	Nhịp điệu, nhịp sinh hoạt	毎日同じ時間に寝ることで、生活のリズムが整う。\nNhờ đi ngủ cùng một giờ mỗi ngày mà nhịp sinh hoạt trở nên đều đặn.	3	Nhà của Cáo - Trung Cấp
+206	～気	～き／～け	Cảm giác ~, tâm trạng ~ (hậu tố; đọc "き" như やる気, đọc "け" như 眠気, 寒気)	昼ご飯を食べすぎたことで、午後は眠気が止まらなかった。\nVì ăn trưa quá no nên cả buổi chiều cứ buồn ngủ mãi.	3	Nhà của Cáo - Trung Cấp
+207	やる気	やるき	Động lực, ý chí muốn làm	やる気が出ない時は、好きな音楽でも聞いてみたらどう？\nKhi không có động lực, thử nghe nhạc mình thích chẳng hạn xem sao?	3	Nhà của Cáo - Trung Cấp
+208	やる気が出る	やるきがでる	Có động lực, hăng hái lên	先生にほめられたことで、やる気が出た。\nNhờ được thầy khen mà tôi có thêm động lực.	3	Nhà của Cáo - Trung Cấp
+209	どれだけ	どれだけ	Bao nhiêu, đến mức nào	どれだけ練習しても上手にならないなんて、やり方が間違っているんじゃないか。\nLuyện tập bao nhiêu cũng không giỏi lên, chẳng phải là do cách làm sai sao?	3	Nhà của Cáo - Trung Cấp
+210	設定	せってい	Cài đặt, thiết lập	スマホの設定はどういうふうに変えればいいか、イヌさんに聞いてみよう。\nThử hỏi anh Inu xem nên thay đổi cài đặt điện thoại như thế nào.	3	Nhà của Cáo - Trung Cấp
+211	立てる	たてる	Lập (kế hoạch, mục tiêu); dựng đứng	計画を立てたことで、やるべきことがはっきりした。\nNhờ lập kế hoạch mà những việc cần làm trở nên rõ ràng.	3	Nhà của Cáo - Trung Cấp
+212	ただ	ただ	Chỉ, chỉ là (phó từ)	ただ見ているだけでは、上手になるはずがない。\nChỉ đứng nhìn thôi thì không thể nào giỏi lên được.	3	Nhà của Cáo - Trung Cấp
+213	ただ	ただ	Miễn phí (văn nói, thân mật hơn 無料)	こんなにいい物がただでもらえるはずがないから、何か理由があるんじゃないか。\nĐồ tốt thế này không thể nào được cho không, chắc là có lý do gì đó.	3	Nhà của Cáo - Trung Cấp
+214	受信する	じゅしんする	Nhận (tin nhắn, email, tín hiệu; trái nghĩa với 送信する)	電波が弱い山の中で、メールを受信できるはずがない。\nỞ trong núi sóng yếu thì không thể nào nhận được email.	3	Nhà của Cáo - Trung Cấp
+215	送信する	そうしんする	Gửi (tin nhắn, email, dữ liệu; trái nghĩa với 受信する)	メールを送信する前に、宛先が正しいかこんなふうに確認しましょう。\nTrước khi gửi email, hãy kiểm tra địa chỉ người nhận như thế này nhé.	3	Nhà của Cáo - Trung Cấp
+216	気が散る	きがちる	Mất tập trung, phân tâm	テレビをつけたままだと、気が散って勉強できないんじゃないか。\nĐể ti vi bật như thế thì chẳng phải sẽ phân tâm không học được sao?	3	Nhà của Cáo - Trung Cấp
+217	宣伝	せんでん	Quảng cáo, tuyên truyền	SNSで宣伝したことで、店にお客さんがたくさん来るようになった。\nNhờ quảng cáo trên mạng xã hội mà quán có rất nhiều khách đến.	3	Nhà của Cáo - Trung Cấp
+218	気に入る	きにいる	Thích, ưng ý	このかばん、ネコさんが気に入るんじゃないかと思って買ってきた。\nTôi mua cái túi này vì nghĩ chắc anh Neko sẽ thích.	3	Nhà của Cáo - Trung Cấp
+219	あふれる	あふれる	Tràn ngập, tràn ra	駅は人であふれていることだし、少し時間をずらして帰ろう。\nNhà ga đang đông nghẹt người nên mình lùi giờ về một chút đi.	3	Nhà của Cáo - Trung Cấp
+220	当たり前	あたりまえ	Đương nhiên, hiển nhiên	日本人にとって当たり前のことが、外国人には不思議に見えることもある。\nNhững điều hiển nhiên đối với người Nhật đôi khi lại trông kỳ lạ trong mắt người nước ngoài.	3	Nhà của Cáo - Trung Cấp
+221	実行する	じっこうする	Thực hiện, thực thi	計画を立てても、実行しなければ意味がないんじゃないか。\nDù có lập kế hoạch nhưng không thực hiện thì chẳng phải là vô nghĩa sao?	3	Nhà của Cáo - Trung Cấp
+222	重ねる	かさねる	Chồng lên, xếp chồng; tích lũy (kinh nghiệm)	経験を重ねれば重ねるほど、仕事に自信がつく。\nCàng tích lũy kinh nghiệm thì càng tự tin trong công việc.	3	Nhà của Cáo - Trung Cấp
+223	～台	～だい	Lượng từ cho máy móc	家に車が2台もあるなんて、キツネさんはお金持ちなんですね。\nNhà có tận 2 chiếc ô tô, anh Kitsune giàu thật đấy.	3	Nhà của Cáo - Trung Cấp
+224	全く	まったく	Hoàn toàn (thường đi với thể phủ định: hoàn toàn không)	全く勉強していないのに、試験に合格できるはずがない。\nHoàn toàn không học gì thì không thể nào đỗ kỳ thi được.	3	Nhà của Cáo - Trung Cấp
+225	怒る	おこる	Tức giận; mắng	約束を3回も忘れたことだし、ネコさんが怒るのも当然だ。\nĐã quên hẹn tận 3 lần rồi, anh Neko tức giận cũng là đương nhiên thôi.	3	Nhà của Cáo - Trung Cấp
+226	もったいない	もったいない	Lãng phí, phí phạm, đáng tiếc	まだ使えるのに捨てるなんて、もったいない。\nVẫn còn dùng được mà vứt đi thì phí quá.	3	Nhà của Cáo - Trung Cấp
+227	不要品	ふようひん	Đồ không cần thiết, đồ không dùng đến	不要品を売ったことで、部屋が片付いたうえにお金も入った。\nNhờ bán đồ không dùng đến mà phòng gọn gàng lại còn có thêm tiền.	3	Nhà của Cáo - Trung Cấp
+228	カーテン	カーテン	Rèm cửa	部屋が暗いのは、カーテンが厚すぎるからじゃないか。\nPhòng tối thế này, chẳng phải là do rèm cửa quá dày sao?	3	Nhà của Cáo - Trung Cấp
+229	明るい	あかるい	Sáng sủa; vui vẻ, cởi mở	明るい人と一緒にいればいるほど、自分も元気になる。\nCàng ở bên người vui vẻ cởi mở thì bản thân càng thấy phấn chấn.	3	Nhà của Cáo - Trung Cấp
+230	重要	じゅうよう	Quan trọng (văn viết, trang trọng hơn 大切)	留学生にとって、ビザの手続きは何よりも重要なことだ。\nĐối với du học sinh, thủ tục visa là việc quan trọng hơn hết.	3	Nhà của Cáo - Trung Cấp
+231	時期	じき	Thời kỳ, thời điểm, mùa	桜の時期なら、京都にでも行ってみたいな。\nNếu là mùa hoa anh đào thì tôi muốn đi Kyoto chẳng hạn.	3	Nhà của Cáo - Trung Cấp
