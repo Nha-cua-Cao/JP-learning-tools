@@ -1,0 +1,881 @@
+/* ══════════════════════════════════════════════════════
+   BIẾN TRẠNG THÁI
+══════════════════════════════════════════════════════ */
+let starMode = false          // Có đang ở chế độ ôn sao không
+let rawData  = []             // Toàn bộ dữ liệu sau khi parse TSV
+let deck     = []             // Bộ thẻ hiện tại (đã lọc và xáo)
+let index    = 0              // Vị trí thẻ hiện tại trong deck
+let isRecording = false       // Có đang ghi âm hay không
+let recognition = null
+let metaData = []
+
+// Đọc danh sách thẻ đã gắn sao từ localStorage (nếu có)
+let starred = new Set(JSON.parse(localStorage.getItem("kq_starred") || "[]"))
+
+/* ══════════════════════════════════════════════════════
+   THAM CHIẾU DOM — Lấy một lần để dùng lại
+══════════════════════════════════════════════════════ */
+const flashcard        = document.getElementById("flashcard")
+const cardArea         = document.getElementById("cardArea")
+const emptyState       = document.getElementById("emptyState")
+const starBtn          = document.getElementById("starBtn")
+const mainArea         = document.getElementById("mainArea")
+const micBtn           = document.getElementById("micBtn")
+const recordingOverlay = document.getElementById("recordingOverlay")
+const pronunResult     = document.getElementById("pronunResult")
+
+/* ══════════════════════════════════════════════════════
+   SIDEBAR MOBILE — Mở/đóng sidebar dạng drawer
+   (chỉ có tác dụng trên màn hình nhỏ, xem style.css)
+══════════════════════════════════════════════════════ */
+function toggleSidebar() {
+  document.body.classList.toggle("sidebar-open")
+}
+
+function closeSidebar() {
+  document.body.classList.remove("sidebar-open")
+}
+
+// Tự đóng drawer khi xoay/thay đổi kích thước lên màn hình lớn
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) closeSidebar()
+})
+
+/* ══════════════════════════════════════════════════════
+   LẬT THẺ — Flip 3D + phát âm khi lật về mặt trước
+══════════════════════════════════════════════════════ */
+function flipCard() {
+  // Nếu đang ghi âm thì dừng lại
+  if (isRecording && recognition) {
+    recognition.stop()
+    setRecordingState(false)
+  }
+
+  const flipped = flashcard.classList.toggle("flipped")
+
+  // Phát âm tự động khi lật về mặt trước
+  if (!flipped && deck.length) {
+    speak(deck[index].reading)
+  }
+}
+
+/* ══════════════════════════════════════════════════════
+   IMPORT FILE — Xử lý file .tsv người dùng kéo vào
+══════════════════════════════════════════════════════ */
+document.getElementById("fileInput").addEventListener("change", e => {
+  const file = e.target.files[0]
+  if (!file) return
+
+  const reader = new FileReader()
+  reader.onload = () => {
+    // Reset sao khi import bộ từ mới
+    starred = new Set()
+    saveStarred()
+    parseTSV(reader.result)
+    toast("✅ Đã import: " + file.name)
+  }
+  reader.readAsText(file, "UTF-8")
+
+  // Reset input để có thể chọn lại cùng file
+  e.target.value = ""
+})
+
+/* ══════════════════════════════════════════════════════
+   PARSE TSV — Chuyển text TSV thành mảng đối tượng
+   Cấu trúc cột: STT | Kanji | Reading | Meaning | Example | Unit | Book
+══════════════════════════════════════════════════════ */
+function parseTSV(text) {
+  const lines = text.trim().split("\n")
+  lines.shift() // Bỏ dòng tiêu đề
+
+  rawData = lines
+    .filter(r => r.trim())
+    .map(r => {
+      const c = r.split("\t")
+      return {
+        stt:     c[0]?.trim() || "",
+        kanji:   c[1]?.trim() || "",
+        reading: c[2]?.trim() || "",
+        meaning: c[3]?.trim() || "",
+        example: c[4]?.trim() || "",
+        unit:    parseInt(c[5]) || 0,
+        book:    c[6]?.trim() || "Unknown",
+        raw:     r
+      }
+    })
+
+  buildSidebar()
+}
+
+/* ══════════════════════════════════════════════════════
+   XÂY SIDEBAR — Tạo nhóm sách và danh sách unit
+══════════════════════════════════════════════════════ */
+function buildSidebar() {
+  const container = document.getElementById("unitSelect")
+  container.innerHTML = ""
+
+  // Lấy danh sách sách duy nhất
+  const books = [...new Set(rawData.map(r => r.book))]
+
+  books.forEach(book => {
+    // Lấy danh sách unit của sách này, sắp xếp tăng dần
+    const units = [...new Set(
+      rawData.filter(r => r.book === book).map(r => r.unit)
+    )].sort((a, b) => a - b)
+
+    // Tạo nhóm có thể thu gọn (details/summary)
+    const group = document.createElement("details")
+    group.className = "book-group"
+    group.open = true
+
+    const summary = document.createElement("summary")
+    summary.textContent = book
+    group.appendChild(summary)
+
+    const list = document.createElement("div")
+    list.className = "units-list"
+
+    units.forEach(u => {
+      // Đếm số thẻ trong unit này
+      const count = rawData.filter(r => r.book === book && r.unit === u).length
+
+      const chip = document.createElement("label")
+      chip.className = "unit-chip"
+      chip.innerHTML = `
+        <input type="checkbox"
+               class="unitCheck"
+               data-book="${escHtml(book)}"
+               value="${u}">
+        <span>Unit ${u}</span>
+        <span class="unit-count">${count}</span>
+      `
+
+      // Cập nhật UI chip và tải lại deck khi thay đổi
+      chip.querySelector("input").addEventListener("change", function() {
+        chip.classList.toggle("checked", this.checked)
+        updateSelectedCount()
+        loadDeck()
+      })
+
+      list.appendChild(chip)
+    })
+
+    group.appendChild(list)
+    container.appendChild(group)
+  })
+
+  updateSelectedCount()
+}
+
+/* ══════════════════════════════════════════════════════
+   CẬP NHẬT SỐ UNIT ĐÃ CHỌN — Hiện trên header sidebar
+══════════════════════════════════════════════════════ */
+function updateSelectedCount() {
+  const n = document.querySelectorAll(".unitCheck:checked").length
+  const el = document.getElementById("selectedCount")
+  el.textContent = n > 0 ? `${n} unit` : ""
+}
+
+/* ══════════════════════════════════════════════════════
+   TẢI DECK — Lọc và xáo bài theo unit đã chọn
+══════════════════════════════════════════════════════ */
+function loadDeck() {
+  const checks = [...document.querySelectorAll(".unitCheck:checked")]
+
+  if (checks.length === 0) {
+    deck = []
+    index = 0
+    showEmptyState("🦊", "Chọn một bài học từ sidebar để bắt đầu học flashcard.")
+    return
+  }
+
+  // Lọc theo unit đã tick
+  deck = rawData.filter(r =>
+    checks.some(c => c.dataset.book === r.book && parseInt(c.value) === r.unit)
+  )
+
+  // Trong chế độ ôn sao: chỉ giữ thẻ có sao
+  if (starMode) {
+    deck = deck.filter(r => starred.has(r.raw))
+  }
+
+  if (deck.length === 0) {
+    const msg = starMode
+      ? "⭐ Không có thẻ nào được gắn sao trong unit này."
+      : "Không có thẻ nào phù hợp."
+    showEmptyState("📭", msg)
+    return
+  }
+
+  shuffle(deck)
+  index = 0
+  showCardArea()
+  showCard()
+}
+
+/* ══════════════════════════════════════════════════════
+   TOGGLE EMPTY / CARD AREA
+══════════════════════════════════════════════════════ */
+function showEmptyState(icon, msg) {
+  emptyState.querySelector(".empty-icon").textContent = icon
+  emptyState.querySelector("p").textContent = msg
+  emptyState.style.display = "flex"
+  cardArea.style.display   = "none"
+  document.getElementById("progressBar").style.width = "0%"
+}
+
+function showCardArea() {
+  emptyState.style.display = "none"
+  cardArea.style.display   = "flex"
+}
+
+/* ══════════════════════════════════════════════════════
+   HIỂN THỊ THẺ — Điền nội dung và cập nhật UI
+══════════════════════════════════════════════════════ */
+function showCard() {
+  if (!deck.length) return
+
+  const c = deck[index]
+
+  // Điền Kanji (ẩn nếu không có)
+  const kanjiEl = document.getElementById("kanji")
+  kanjiEl.textContent = c.kanji || ""
+  kanjiEl.style.display = c.kanji ? "block" : "none"
+
+  // Điền các trường còn lại
+  document.getElementById("reading").textContent  = c.reading  || ""
+  document.getElementById("meaning").textContent  = c.meaning  || ""
+  const exampleEle = document.getElementById("example")
+  exampleEle.textContent  = c.example  || ""
+  exampleEle.innerHTML = exampleEle.innerHTML.replace(/\\n/g, "<br />") + "&nbsp;&nbsp;" // Allow new line char
+
+  // Đặt về mặt trước khi chuyển thẻ
+  flashcard.classList.remove("flipped")
+
+  // Ẩn kết quả phát âm cũ khi chuyển thẻ
+  closePronunResult()
+
+  // Cập nhật trạng thái nút sao
+  const isStarred = starred.has(c.raw)
+  starBtn.classList.toggle("starred", isStarred)
+
+  // Cập nhật thanh tiến trình
+  const pct = ((index + 1) / deck.length) * 100
+  document.getElementById("progressBar").style.width = pct + "%"
+  document.getElementById("deckInfo").textContent = `${index + 1} / ${deck.length}`
+
+  speakCurrent({stopPropagation: () => {}});
+}
+
+/* ══════════════════════════════════════════════════════
+   ĐIỀU HƯỚNG — Tiếp / Trước
+══════════════════════════════════════════════════════ */
+function nextCard() {
+  if (!deck.length) return
+  index++
+
+  // Hết bộ: xáo lại từ đầu
+  if (index >= deck.length) {
+    shuffle(deck)
+    index = 0
+    toast("🔁 Đã học hết! Xáo bài lại…")
+  }
+
+  showCard()
+}
+
+function prevCard() {
+  if (!deck.length) return
+  index = (index - 1 + deck.length) % deck.length
+  showCard()
+}
+
+/* ══════════════════════════════════════════════════════
+   TOGGLE SAO — Thêm/bỏ thẻ khỏi danh sách đã sao
+══════════════════════════════════════════════════════ */
+function toggleStar() {
+  if (!deck.length) return
+
+  const c = deck[index]
+
+  if (starred.has(c.raw)) {
+    starred.delete(c.raw)
+  } else {
+    starred.add(c.raw)
+    // Reset animation để trigger lại hiệu ứng nảy
+    starBtn.classList.remove("starred")
+    void starBtn.offsetWidth // buộc reflow
+  }
+
+  saveStarred()
+  showCard()
+}
+
+/* Lưu danh sách sao vào localStorage */
+function saveStarred() {
+  localStorage.setItem("kq_starred", JSON.stringify([...starred]))
+}
+
+/* ══════════════════════════════════════════════════════
+   CHẾ ĐỘ ÔN SAO — Bật/tắt và đổi màu nền main
+══════════════════════════════════════════════════════ */
+function toggleStarMode() {
+  starMode = !starMode
+
+  // Cập nhật nút sidebar
+  const btn = document.getElementById("starModeBtn")
+  btn.classList.toggle("active", starMode)
+
+  // Đổi màu nền main để phân biệt chế độ
+  mainArea.classList.toggle("star-mode", starMode)
+
+  // Tải lại deck với bộ lọc mới
+  loadDeck()
+}
+
+/* ══════════════════════════════════════════════════════
+   EXPORT SAO — Tải xuống file TSV các thẻ đã sao
+══════════════════════════════════════════════════════ */
+function exportStarred() {
+  if (starred.size === 0) {
+    toast("⚠️ Chưa có thẻ nào được gắn sao!")
+    return
+  }
+
+  const header = "STT\tChữ Hán\tCách đọc\tÝ nghĩa\tVí dụ\tUnit\tTên Giáo Trình\n"
+  const rows   = [...starred].join("\n")
+  const blob   = new Blob([header + rows], { type: "text/tab-separated-values" })
+
+  const a      = document.createElement("a")
+  a.href       = URL.createObjectURL(blob)
+  a.download   = "starred.tsv"
+  a.click()
+
+  toast(`✅ Đã export ${starred.size} thẻ`)
+}
+
+/* ══════════════════════════════════════════════════════
+   TẢI FILE data.tsv MẶC ĐỊNH — Gọi khi khởi động
+══════════════════════════════════════════════════════ */
+async function loadDefault() {
+  try {
+    const r = await fetch("UnitMetaData.tsv")
+    if (!r.ok) return
+    const t = await r.text()
+    parseMetadata(t)
+  } catch(e) {
+    // Không có file — người dùng có thể import thủ công
+  }
+}
+
+function parseMetadata(text) {
+  const lines = text.trim().split("\n");
+  lines.shift(); // Bỏ header
+  metadata = lines.map(line => {
+    const c = line.split("\t");
+    return {
+      book: c[0]?.trim(),
+      unit: parseInt(c[1]),
+      count: c[2]?.trim(),
+      url: c[3]?.trim()
+    };
+  });
+  buildSidebarFromMeta();
+}
+
+function buildSidebarFromMeta() {
+  const container = document.getElementById("unitSelect");
+  container.innerHTML = "";
+
+  const books = [...new Set(metadata.map(m => m.book))];
+
+  books.forEach(book => {
+    const group = document.createElement("details");
+    group.className = "book-group";
+    // group.open = true; // Mặc định đóng nhóm, người dùng click để mở
+
+    const summary = document.createElement("summary");
+    summary.textContent = book;
+    group.appendChild(summary);
+
+    const list = document.createElement("div");
+    list.className = "units-list";
+
+    metadata.filter(m => m.book === book).forEach(m => {
+      const chip = document.createElement("label");
+      chip.className = "unit-chip";
+      chip.innerHTML = `
+        <input type="checkbox" class="unitCheck"
+               data-url="${m.url}"
+               data-book="${escHtml(m.book)}"
+               value="${m.unit}">
+        <span>Unit ${m.unit}</span>
+        <span class="unit-count">${m.count}</span>
+      `;
+
+      chip.querySelector("input").addEventListener("change", async function() {
+        chip.classList.toggle("checked", this.checked);
+        updateSelectedCount();
+        await loadDeckDynamic(); // Hàm tải data mới
+      });
+
+      list.appendChild(chip);
+    });
+
+    group.appendChild(list);
+    container.appendChild(group);
+  });
+}
+
+async function loadDeckDynamic() {
+  const selectedChecks = [...document.querySelectorAll(".unitCheck:checked")];
+
+  if (selectedChecks.length === 0) {
+    rawData = [];
+    loadDeck(); // Sẽ hiện Empty State
+    return;
+  }
+
+  // Hiển thị loading nhẹ nếu muốn
+  toast("⏳ Đang tải dữ liệu...");
+
+  // Tạo danh sách các Unit cần tải (những cái chưa có trong rawData)
+  const promises = selectedChecks.map(async (chk) => {
+    const url = chk.dataset.url;
+    const book = chk.dataset.book;
+    const unit = parseInt(chk.value);
+
+    // Kiểm tra xem dữ liệu Unit này đã được tải vào rawData chưa
+    const alreadyLoaded = rawData.some(r => r.book === book && r.unit === unit);
+
+    if (!alreadyLoaded) {
+      try {
+        const res = await fetch(url);
+        const text = await res.text();
+        // Parse và gộp vào rawData
+        const newItems = parseSingleTSV(text, book, unit);
+        rawData = [...rawData, ...newItems];
+      } catch (e) {
+        console.error("Lỗi tải file:", url);
+      }
+    }
+  });
+
+  await Promise.all(promises);
+
+  // Sau khi tải xong xuôi, lọc lại rawData để loại bỏ những unit đã bị bỏ tick
+  const activeUnits = selectedChecks.map(c => ({ book: c.dataset.book, unit: parseInt(c.value) }));
+
+  const filteredData = rawData.filter(r =>
+    activeUnits.some(u => u.book === r.book && u.unit === r.unit)
+  );
+
+  // Gán data đã lọc cho deck và hiển thị
+  deck = [...filteredData];
+
+  if (starMode) {
+    deck = deck.filter(r => starred.has(r.raw));
+  }
+
+  if (deck.length === 0) {
+    showEmptyState("📭", "Không có thẻ nào.");
+  } else {
+    shuffle(deck);
+    index = 0;
+    showCardArea();
+    showCard();
+  }
+}
+
+// Hàm bổ trợ để parse từng file nhỏ
+function parseSingleTSV(text, book, unit) {
+  const lines = text.trim().split("\n");
+  if (lines[0].includes("STT")) lines.shift(); // Bỏ header nếu có
+
+  return lines.filter(r => r.trim()).map(r => {
+    const c = r.split("\t");
+    return {
+      stt: c[0]?.trim() || "",
+      kanji: c[1]?.trim() || "",
+      reading: c[2]?.trim() || "",
+      meaning: c[3]?.trim() || "",
+      example: c[4]?.trim() || "",
+      unit: unit,
+      book: book,
+      raw: r
+    };
+  });
+}
+
+/* ══════════════════════════════════════════════════════
+   RELOAD data.tsv — Khi nhấn nút "Tải lại"
+══════════════════════════════════════════════════════ */
+async function reloadData() {
+  try {
+    // Thêm timestamp để tránh cache
+    const r = await fetch("UnitMetaData.tsv?t=" + Date.now())
+    if (!r.ok) throw new Error(`Status ${r.status}`)
+    const t = await r.text()
+
+    // Reset toàn bộ
+    rawData = []; deck = []; index = 0
+    document.getElementById("unitSelect").innerHTML = ""
+
+    parseMetadata(t)
+    toast("✅ Đã reload data.tsv")
+  } catch(e) {
+    toast("❌ Không tìm thấy data.tsv: " + e.message)
+  }
+}
+
+/* ══════════════════════════════════════════════════════
+   XÁO BÀI — Fisher-Yates shuffle
+══════════════════════════════════════════════════════ */
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+}
+
+/* ══════════════════════════════════════════════════════
+   ESCAPE HTML — Ngăn XSS khi chèn dữ liệu vào HTML
+══════════════════════════════════════════════════════ */
+function escHtml(s) {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+}
+
+/* ══════════════════════════════════════════════════════
+   TOAST THÔNG BÁO — Hiện popup ngắn ở đáy màn hình
+══════════════════════════════════════════════════════ */
+function toast(msg) {
+  const wrap = document.getElementById("toastWrap")
+  wrap.innerHTML = ""
+
+  const t = document.createElement("div")
+  t.className = "toast-msg"
+  t.textContent = msg
+  wrap.appendChild(t)
+
+  // Tự ẩn sau 2.5 giây
+  setTimeout(() => { if (wrap.contains(t)) wrap.removeChild(t) }, 2500)
+}
+
+/* ══════════════════════════════════════════════════════
+   PHÁT ÂM — Dùng Web Speech Synthesis để đọc text Nhật
+══════════════════════════════════════════════════════ */
+function speak(text) {
+  if (!text) return
+
+  const readingEl = document.getElementById("reading")
+  const utter = new SpeechSynthesisUtterance(text)
+  utter.lang  = "ja-JP"
+  utter.rate  = 0.9
+  utter.pitch = 1
+
+  // Thêm class nhảy khi đang đọc
+  utter.onstart = () => readingEl.classList.add("speaking")
+  utter.onend   = () => readingEl.classList.remove("speaking")
+
+  speechSynthesis.cancel()
+  speechSynthesis.speak(utter)
+}
+
+/* Phát âm thẻ hiện tại (gắn vào nút loa) */
+function speakCurrent(e) {
+  e.stopPropagation() // Tránh vô tình lật thẻ
+  if (!deck.length) return
+  speak(deck[index].reading)
+}
+
+/* ══════════════════════════════════════════════════════
+   PHÍM TẮT BÀN PHÍM
+══════════════════════════════════════════════════════ */
+document.addEventListener("keydown", e => {
+  // Bỏ qua khi đang nhập liệu
+  if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return
+
+  if (e.code === "Space")            { e.preventDefault(); flipCard() }
+  if (e.key === "ArrowRight")        nextCard()
+  if (e.key === "ArrowLeft")         prevCard()
+  if (e.key.toLowerCase() === "s")   toggleStar()
+})
+
+/* ══════════════════════════════════════════════════════
+   KIỂM TRA PHÁT ÂM — Dùng Web Speech Recognition
+   Ghi âm giọng người dùng và so sánh với cách đọc đúng
+══════════════════════════════════════════════════════ */
+function checkPronunciation(e) {
+  e.stopPropagation()
+  if (!deck.length) return
+
+  // Nếu đang ghi âm → bấm lần nữa để dừng
+  if (isRecording && recognition) {
+    recognition.stop()
+    setRecordingState(false)
+    return
+  }
+
+  recognition = new SpeechRecognition()
+  recognition.lang            = "ja-JP"
+  recognition.interimResults  = false
+  recognition.maxAlternatives = 3  // Lấy 3 ứng viên để chọn tốt nhất
+
+  // ── Contextual Biasing — Gợi ý từ mong đợi ─────────
+  // SpeechGrammarList giúp recognizer ưu tiên nhận dạng
+  // đúng từ đang học thay vì đoán lung tung
+  if (window.SpeechGrammarList || window.webkitSpeechGrammarList) {
+    const GrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList
+    const card        = deck[index]
+
+    // Tập hợp các biến thể: reading + kanji (nếu có)
+    const hints = [card.reading, card.kanji].filter(Boolean)
+
+    // Định dạng JSGF chuẩn cho SpeechGrammarList
+    const grammar = `#JSGF V1.0; grammar hint; public <hint> = ${hints.join(" | ")};`
+    const list    = new GrammarList()
+    list.addFromString(grammar, 1)  // weight = 1 (cao nhất)
+    recognition.grammars = list
+  }
+
+  // ── Bật trạng thái ghi âm ──────────────────────────
+  setRecordingState(true)
+  recognition.start()
+
+  recognition.onresult = function(event) {
+    const card    = deck[index]
+    const targets = [card.reading, card.kanji].filter(Boolean).map(normalize)
+
+    // ── Duyệt tất cả alternatives, chọn cái cho điểm cao nhất ──
+    let bestScore  = 0
+    let bestSpoken = ""
+
+    const result = event.results[0]
+    for (let i = 0; i < result.length; i++) {
+      const transcript = result[i].transcript.trim()
+      const spokenN    = normalize(transcript)
+
+      // So với từng target (reading + kanji), lấy max
+      for (const targetN of targets) {
+        const s = similarity(spokenN, targetN)
+        if (s > bestScore) {
+          bestScore  = s
+          bestSpoken = transcript
+        }
+      }
+    }
+
+    // Fallback nếu không có alternative nào
+    if (!bestSpoken) bestSpoken = result[0].transcript.trim()
+
+    // Tắt trạng thái ghi âm và hiện kết quả
+    setRecordingState(false)
+    showPronunResult(bestScore, bestSpoken)
+  }
+
+  recognition.onerror = function(err) {
+    setRecordingState(false)
+
+    // Hiển thị lỗi phù hợp
+    if      (err.error === "no-speech")     toast("🎤 Không nghe thấy gì, thử nói lại nhé")
+    else if (err.error === "not-allowed")   toast("❌ Trình duyệt chưa được cấp quyền micro")
+    else if (err.error === "audio-capture") toast("🎤 Không tìm thấy micro")
+    else                                    toast("⚠️ Lỗi: " + err.error)
+  }
+}
+
+/* ── Bật/tắt UI trạng thái ghi âm ───────────────────── */
+function setRecordingState(active) {
+  isRecording = active
+
+  // Nút mic đổi màu đỏ + animation
+  micBtn.classList.toggle("recording", active)
+
+  // Overlay sóng âm hiện trên thẻ
+  recordingOverlay.classList.toggle("visible", active)
+
+  // Ẩn kết quả cũ khi bắt đầu ghi mới
+  if (active) {
+    pronunResult.classList.remove("visible")
+  }
+}
+
+/* ── Hiện bảng kết quả phát âm ───────────────────────── */
+function showPronunResult(score, spoken) {
+  // Xác định mức: great ≥80%, ok 50-79%, poor <50%
+  const level = score >= 80 ? "great" : score >= 50 ? "ok" : "poor"
+  const label = score >= 80 ? "Tốt lắm! 🎉" : score >= 50 ? "Ổn đó 👍" : "Cần luyện thêm 📖"
+
+  // Cập nhật số điểm và màu
+  const scoreNum = document.getElementById("pronunScoreNum")
+  scoreNum.textContent = score + "%"
+  scoreNum.className   = "pronun-score-num " + level
+
+  // Cập nhật nhãn
+  const scoreLbl = document.getElementById("pronunScoreLabel")
+  scoreLbl.textContent = label
+  scoreLbl.className   = "pronun-score-label " + level
+
+  // Cập nhật thanh tiến trình
+  const barFill = document.getElementById("pronunBarFill")
+  barFill.className = "pronun-bar-fill " + level
+  // Timeout nhỏ để animation chạy mượt sau khi hiện
+  setTimeout(() => { barFill.style.width = score + "%" }, 50)
+
+  // Hiện text người dùng nói
+  document.getElementById("pronunSpokenText").textContent = spoken || "—"
+
+  // Hiện bảng kết quả
+  pronunResult.classList.add("visible")
+}
+
+/* ── Đóng bảng kết quả phát âm ───────────────────────── */
+function closePronunResult(e) {
+  if (e) e.stopPropagation()
+  pronunResult.classList.remove("visible")
+  // Reset thanh để animation lại lần sau
+  document.getElementById("pronunBarFill").style.width = "0%"
+}
+
+/* ══════════════════════════════════════════════════════
+   CHUẨN HOÁ TEXT NHẬT
+   Pipeline: NFKC → katakana→hiragana → romaji thống nhất
+             → bỏ dấu câu → bỏ khoảng trắng → lowercase
+══════════════════════════════════════════════════════ */
+
+/* Bảng ánh xạ romaji không thống nhất → dạng chuẩn */
+const ROMAJI_MAP = [
+  // Phụ âm đặc biệt — khớp dài trước để tránh sai
+  [/shi/g,  "si"],
+  [/chi/g,  "ti"],
+  [/tsu/g,  "tu"],
+  [/tchi/g, "tti"],
+  [/cchi/g, "tti"],
+  [/cci/g,  "tti"],
+  [/sshi/g, "ssi"],
+  [/ffu/g,  "hhu"],
+  [/fu/g,   "hu"],
+  [/sha/g,  "sya"],
+  [/she/g,  "sye"],
+  [/sho/g,  "syo"],
+  [/shu/g,  "syu"],
+  [/cha/g,  "tya"],
+  [/che/g,  "tye"],
+  [/cho/g,  "tyo"],
+  [/chu/g,  "tyu"],
+  [/ja/g,   "zya"],
+  [/ji/g,   "zi"],
+  [/ju/g,   "zyu"],
+  [/jo/g,   "zyo"],
+  // r/l — tiếng Nhật không phân biệt khi nói
+  [/l/g,    "r"],
+  // n trước b/p/m → m (biến thể phát âm)
+  [/nb/g,   "mb"],
+  [/np/g,   "mp"],
+]
+
+/* Chuyển Katakana → Hiragana */
+function katakanaToHiragana(str) {
+  return str.replace(/[\u30a1-\u30f6]/g,
+    ch => String.fromCharCode(ch.charCodeAt(0) - 0x60)
+  )
+}
+
+/* Chuẩn hoá tổng quát */
+function normalize(str) {
+  if (!str) return ""
+
+  str = str.normalize("NFKC")
+  str = katakanaToHiragana(str)
+  str = str.toLowerCase()
+
+  // Bỏ dấu câu tiếng Nhật + ASCII phổ biến
+  str = str.replace(/[。、（）！？…・ー〜.,!?~\-]/g, "")
+
+  // Bỏ khoảng trắng
+  str = str.replace(/\s+/g, "")
+
+  // Thống nhất romaji
+  for (const [pat, rep] of ROMAJI_MAP) {
+    str = str.replace(pat, rep)
+  }
+
+  return str
+}
+
+/* ══════════════════════════════════════════════════════
+   WEIGHTED LEVENSHTEIN — Khoảng cách chỉnh sửa có trọng số
+   Các cặp âm gần nhau (shi/si, chi/ti…) bị phạt nhẹ hơn
+══════════════════════════════════════════════════════ */
+
+/* Danh sách cặp âm thay thế nhau với chi phí thấp
+   Ghi theo dạng đã normalize (romaji chuẩn hoá) */
+const LOW_COST_PAIRS = [
+  // Đã được normalize về cùng dạng nên cost = 0,
+  // nhưng giữ lại để handle edge-case chưa normalize
+  ["si",  "shi",  0.1],
+  ["ti",  "chi",  0.1],
+  ["tu",  "tsu",  0.1],
+  ["hu",  "fu",   0.1],
+  ["zi",  "ji",   0.1],
+  ["zu",  "dzu",  0.15],
+  ["o",   "wo",   0.15],
+  ["e",   "we",   0.15],
+  ["wa",  "ha",   0.2],   // particle は đọc là "wa"
+  ["he",  "e",    0.2],   // particle へ đọc là "e"
+  ["n",   "m",    0.2],   // n biến âm
+  ["r",   "l",    0.1],
+]
+
+/* Tra bảng chi phí thay thế cho 2 ký tự/chuỗi */
+function substitutionCost(ca, cb) {
+  if (ca === cb) return 0
+  for (const [x, y, cost] of LOW_COST_PAIRS) {
+    if ((ca === x && cb === y) || (ca === y && cb === x)) return cost
+  }
+  return 1 // lỗi thật sự
+}
+
+/* Weighted Levenshtein — ma trận DP với chi phí tuỳ chỉnh */
+function weightedLevenshtein(a, b) {
+  const la = a.length, lb = b.length
+  if (la === 0) return lb
+  if (lb === 0) return la
+
+  // Tạo ma trận (la+1) × (lb+1)
+  const dp = Array.from({ length: la + 1 }, (_, i) =>
+    Array.from({ length: lb + 1 }, (_, j) => (i === 0 ? j : j === 0 ? i : 0))
+  )
+
+  for (let i = 1; i <= la; i++) {
+    for (let j = 1; j <= lb; j++) {
+      const cost = substitutionCost(a[i - 1], b[j - 1])
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,          // xoá
+        dp[i][j - 1] + 1,          // thêm
+        dp[i - 1][j - 1] + cost    // thay thế (có thể cost thấp)
+      )
+    }
+  }
+
+  return dp[la][lb]
+}
+
+/* Chuyển khoảng cách → điểm phần trăm 0–100 */
+function similarity(a, b) {
+  if (!a && !b) return 100
+  const maxLen = Math.max(a.length, b.length)
+  if (maxLen === 0) return 100
+  const dist  = weightedLevenshtein(a, b)
+  const score = Math.max(0, 1 - dist / maxLen)
+  return Math.round(score * 100)
+}
+
+/* ══════════════════════════════════════════════════════
+   KHỞI ĐỘNG — Tải data mặc định khi trang load xong
+══════════════════════════════════════════════════════ */
+loadDefault()
