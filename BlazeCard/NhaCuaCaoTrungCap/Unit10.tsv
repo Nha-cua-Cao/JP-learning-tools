@@ -1,0 +1,197 @@
+STT	Chữ Hán	Cách đọc	Ý nghĩa	Ví dụ	Unit	Giáo trình
+1	街	まち	Phố; khu phố	この街を研究対象として、アンケート調査を行うつもりです。\nTôi dự định tiến hành khảo sát với thành phố này là phạm vi nghiên cứu.	10	Nhà của Cáo - Trung Cấp
+2	都市	とし	Đô thị; thành phố (cách nói mang tính hành chính, quy mô hơn 街)	人口の多少にかかわらず、住みやすい都市には安全な交通機関が必要です。\nBất kể dân số nhiều hay ít, một đô thị đáng sống cần có hệ thống giao thông an toàn.	10	Nhà của Cáo - Trung Cấp
+3	大都市	だいとし	Thành phố lớn; đại đô thị	大都市で暮らすには、家賃やら交通費やら多くのお金がかかります。\nĐể sống ở thành phố lớn, nào là tiền nhà, nào là phí đi lại, đều tốn rất nhiều tiền.	10	Nhà của Cáo - Trung Cấp
+4	地方都市	ちほうとし	Thành phố địa phương; đô thị ngoài các trung tâm lớn	地方都市を観光の拠点として、周辺の村も訪れました。\nTôi dùng thành phố địa phương làm điểm xuất phát du lịch rồi ghé thăm cả các làng xung quanh.	10	Nhà của Cáo - Trung Cấp
+5	下町	したまち	Khu phố bình dân lâu đời	この下町には、昔の映画に出てくるような店が並んでいます。\nỞ khu phố cổ bình dân này có những cửa hàng giống như trong phim ngày xưa.	10	Nhà của Cáo - Trung Cấp
+6	土地	とち	Đất; mảnh đất; vùng đất	土地を買う場合は、駅からの距離も確認したほうがいいです。\nKhi mua đất, bạn nên kiểm tra cả khoảng cách đến ga.	10	Nhà của Cáo - Trung Cấp
+7	活気	かっき	Sức sống; sự nhộn nhịp	祭りの日の市場の活気には、人を元気にするものがある。\nKhu chợ trong ngày hội có sức sống khiến người ta cảm thấy tràn đầy năng lượng.	10	Nhà của Cáo - Trung Cấp
+8	活気がある	かっきがある	Nhộn nhịp; tràn đầy sức sống	昼夜にかかわらず、この商店街は活気があります。\nBất kể ngày hay đêm, khu phố mua sắm này đều rất nhộn nhịp.	10	Nhà của Cáo - Trung Cấp
+9	人通り	ひとどおり	Lượng người qua lại	人通りが絶えないことには、この店の売り上げは伸びません。\nNếu không có người qua lại liên tục thì doanh thu của cửa hàng này khó tăng.	10	Nhà của Cáo - Trung Cấp
+10	絶える	たえる	Chấm dứt; ngừng	雨がやんだかと思うと、客足も絶えて静かになりました。\nVừa tưởng mưa tạnh thì khách cũng ngớt hẳn và nơi đây trở nên yên tĩnh.	10	Nhà của Cáo - Trung Cấp
+11	坂	さか	Dốc; con dốc	この坂を上るには、ゆっくり歩いたほうがいいです。\nĐể leo con dốc này, bạn nên đi chậm.	10	Nhà của Cáo - Trung Cấp
+12	付近	ふきん	Khu vực lân cận; gần	駅付近で事故が起きた場合は、別の道を通ってください。\nNếu xảy ra tai nạn gần ga, hãy đi đường khác.	10	Nhà của Cáo - Trung Cấp
+13	住宅	じゅうたく	Nhà ở; nhà dân	高齢者向けの住宅を福祉施設として利用しています。\nNgười ta đang sử dụng nhà ở dành cho người cao tuổi làm cơ sở phúc lợi.	10	Nhà của Cáo - Trung Cấp
+14	住宅街	じゅうたくがい	Khu dân cư	住宅街を見回り次第、交番に戻ります。\nNgay sau khi tuần tra khu dân cư xong, tôi sẽ quay lại đồn cảnh sát.	10	Nhà của Cáo - Trung Cấp
+15	地区	ちく	Khu vực; quận nhỏ	計画に沿って、この地区の道路を広げます。\nChúng tôi sẽ mở rộng đường sá ở khu vực này theo kế hoạch.	10	Nhà của Cáo - Trung Cấp
+16	エリア	エリア	Khu vực (từ ngoại lai, thường dùng trong hội thoại và dịch vụ)	このエリアに入る場合は、身分証明書を見せてください。\nNếu vào khu vực này, vui lòng xuất trình giấy tờ tùy thân.	10	Nhà của Cáo - Trung Cấp
+17	区域	くいき	Khu vực; phạm vi được phân định chính thức	地図の赤い線によって、立入禁止区域が示されています。\nKhu vực cấm vào được thể hiện bằng đường màu đỏ trên bản đồ.	10	Nhà của Cáo - Trung Cấp
+18	地帯	ちたい	Vùng; vành đai có đặc điểm địa lý hoặc chức năng chung	この地帯は雪が多いため、冬は通行できません。\nVì vùng này có nhiều tuyết nên mùa đông không thể đi qua.	10	Nhà của Cáo - Trung Cấp
+19	中間	ちゅうかん	Khoảng giữa; trung gian	二つの駅の中間の地点を待ち合わせ場所にしました。\nChúng tôi đã chọn điểm giữa hai ga làm nơi hẹn gặp.	10	Nhà của Cáo - Trung Cấp
+20	境	さかい	Ranh giới; mốc phân chia	川を境にして、東側は住宅街、西側は商業地区です。\nLấy con sông làm ranh giới, phía đông là khu dân cư còn phía tây là khu thương mại.	10	Nhà của Cáo - Trung Cấp
+21	抽選する	ちゅうせんする	Bốc thăm; tuyển chọn bằng cách rút thăm	応募者が多い場合は、入場希望者を抽選します。\nNếu có nhiều người đăng ký, sẽ bốc thăm chọn người được vào.	10	Nhà của Cáo - Trung Cấp
+22	くじ引き	くじびき	Việc rút thăm; bốc thăm	説明どおりにくじ引きをして、席を決めました。\nChúng tôi rút thăm đúng như hướng dẫn để quyết định chỗ ngồi.	10	Nhà của Cáo - Trung Cấp
+23	避難する	ひなんする	Sơ tán; lánh nạn	警報を聞き次第、指定された場所へ避難してください。\nNgay khi nghe cảnh báo, hãy sơ tán đến địa điểm được chỉ định.	10	Nhà của Cáo - Trung Cấp
+24	避難場所	ひなんばしょ	Địa điểm sơ tán	災害が起きた場合に備えるには、避難場所を確認しておく必要があります。\nĐể chuẩn bị cho trường hợp xảy ra thiên tai, cần xác nhận trước địa điểm sơ tán.	10	Nhà của Cáo - Trung Cấp
+25	訓練する	くんれんする	Huấn luyện; diễn tập	地震が起きた場合に備えて、住民は避難の手順どおりに訓練しました。\nĐể phòng khi có động đất, người dân đã diễn tập đúng theo trình tự sơ tán.	10	Nhà của Cáo - Trung Cấp
+26	見回る	みまわる	Đi tuần; đi kiểm tra xung quanh	事故があったため、毎晩この辺を見回るようになりました。\nVì đã xảy ra tai nạn nên tôi bắt đầu đi tuần quanh khu vực này mỗi tối.	10	Nhà của Cáo - Trung Cấp
+27	見当	けんとう	Ước chừng; dự đoán; manh mối	住所が分からないことには、家がどこにあるのか見当もつきません。\nNếu không biết địa chỉ thì cũng không thể đoán được ngôi nhà ở đâu.	10	Nhà của Cáo - Trung Cấp
+28	落書きする	らくがきする	Vẽ bậy; viết bậy	壁に落書きした人を見た場合は、管理人に知らせてください。\nNếu thấy người vẽ bậy lên tường, hãy báo cho quản lý.	10	Nhà của Cáo - Trung Cấp
+29	強化する	きょうかする	Tăng cường; củng cố	自治体は住民の声に沿って、防犯対策を強化しました。\nChính quyền địa phương đã tăng cường biện pháp phòng chống tội phạm theo ý kiến người dân.	10	Nhà của Cáo - Trung Cấp
+30	自治体	じちたい	Chính quyền địa phương; đơn vị hành chính tự quản	自治体を通じて、子育て支援の情報が配布されます。\nThông tin hỗ trợ nuôi dạy trẻ được phát qua chính quyền địa phương.	10	Nhà của Cáo - Trung Cấp
+31	知事	ちじ	Thống đốc tỉnh	知事はこの計画をご存じでしょうか。\nNgài thống đốc có biết về kế hoạch này không ạ?	10	Nhà của Cáo - Trung Cấp
+32	市長	しちょう	Thị trưởng	市長がお戻り次第、会議を始めます。\nNgay khi ngài thị trưởng trở lại, chúng tôi sẽ bắt đầu cuộc họp.	10	Nhà của Cáo - Trung Cấp
+33	町長	ちょうちょう	Thị trưởng thị trấn; trưởng thị trấn	町長は住民の希望に沿った案を提案しました。\nTrưởng thị trấn đã đề xuất phương án phù hợp với nguyện vọng của người dân.	10	Nhà của Cáo - Trung Cấp
+34	応える	こたえる	Đáp lại; đáp ứng (kỳ vọng, yêu cầu)	打ち出した対策は市民の期待に応えそうにないため、反対されました。\nVì các biện pháp đưa ra có vẻ không đáp ứng được kỳ vọng của người dân nên đã bị phản đối.	10	Nhà của Cáo - Trung Cấp
+35	住民	じゅうみん	Cư dân; người dân địa phương	年齢にかかわらず、住民なら誰でも参加できます。\nBất kể tuổi tác, mọi cư dân đều có thể tham gia.	10	Nhà của Cáo - Trung Cấp
+36	住民票	じゅうみんひょう	Phiếu cư trú; giấy chứng nhận cư trú	住民票を取るには、本人確認書類が必要です。\nĐể lấy giấy chứng nhận cư trú, cần có giấy tờ xác minh danh tính.	10	Nhà của Cáo - Trung Cấp
+37	身分証明書	みぶんしょうめいしょ	Giấy tờ tùy thân; giấy chứng minh nhân thân	身分証明書をお持ちでしょうか。\nQuý khách có mang theo giấy tờ tùy thân không ạ?	10	Nhà của Cáo - Trung Cấp
+38	生年月日	せいねんがっぴ	Ngày tháng năm sinh	申込書の記入例のとおりに、生年月日を書いてください。\nHãy viết ngày tháng năm sinh đúng như mẫu ghi trong đơn đăng ký.	10	Nhà của Cáo - Trung Cấp
+39	署名する	しょめいする	Ký tên; ký xác nhận	内容を確認しないことには、この書類に署名できません。\nNếu chưa kiểm tra nội dung thì tôi không thể ký vào giấy tờ này.	10	Nhà của Cáo - Trung Cấp
+40	サインする	サインする	Ký tên (cách nói thông dụng, thân mật hơn 署名する)	キツネさんは説明を聞き終わり次第、申込書にサインしました。\nAnh Kitsune ký vào đơn ngay sau khi nghe giải thích xong.	10	Nhà của Cáo - Trung Cấp
+41	修正する	しゅうせいする	Sửa chữa; chỉnh sửa nội dung	間違いを見つけた場合は、すぐに修正してください。\nNếu phát hiện sai sót, hãy sửa ngay.	10	Nhà của Cáo - Trung Cấp
+42	修正テープ	しゅうせいテープ	Băng xóa kéo	公文書を直すのに、修正テープは使えません。\nKhông thể dùng băng xóa kéo để sửa văn bản hành chính.	10	Nhà của Cáo - Trung Cấp
+43	年金	ねんきん	Lương hưu	老後の生活を支えるには、年金だけでは足りない場合もあります。\nĐể trang trải cuộc sống tuổi già, có trường hợp chỉ lương hưu thôi là không đủ.	10	Nhà của Cáo - Trung Cấp
+44	介護施設	かいごしせつ	Cơ sở chăm sóc người cao tuổi; cơ sở điều dưỡng	この建物を介護施設として利用する予定です。\nTòa nhà này dự kiến được sử dụng làm cơ sở chăm sóc người cao tuổi.	10	Nhà của Cáo - Trung Cấp
+45	ロッカー	ロッカー	Tủ có khóa; tủ gửi đồ	ロッカーをご利用の場合は、受付で鍵をお受け取りください。\nNếu quý khách sử dụng tủ khóa, vui lòng nhận chìa khóa tại quầy lễ tân.	10	Nhà của Cáo - Trung Cấp
+46	コインロッカー	コインロッカー	Tủ gửi đồ dùng tiền xu	駅のコインロッカーに荷物を預け次第、観光に出かけます。\nNgay sau khi gửi hành lý vào tủ khóa ở ga, tôi sẽ đi tham quan.	10	Nhà của Cáo - Trung Cấp
+47	建築する	けんちくする	Xây dựng; kiến trúc	環境への影響を検討しないことには、ここにホテルを建築できません。\nNếu chưa xem xét ảnh hưởng đến môi trường thì không thể xây khách sạn ở đây.	10	Nhà của Cáo - Trung Cấp
+48	木造建築	もくぞうけんちく	Công trình kiến trúc bằng gỗ	この町には、寺のような美しい木造建築が残っています。\nỞ thị trấn này vẫn còn công trình gỗ đẹp như ngôi chùa.	10	Nhà của Cáo - Trung Cấp
+49	建築家	けんちくか	Kiến trúc sư	有名な建築家によって、この図書館は設計されました。\nThư viện này được thiết kế bởi một kiến trúc sư nổi tiếng.	10	Nhà của Cáo - Trung Cấp
+50	リニューアルする	リニューアルする	Cải tạo; đổi mới; làm mới	店内をリニューアルし次第、営業を再開します。\nNgay sau khi cải tạo nội thất xong, cửa hàng sẽ mở cửa trở lại.	10	Nhà của Cáo - Trung Cấp
+51	近づける	ちかづける	Đưa lại gần; làm cho gần hơn (tha động từ)	机を窓に近づける場合は、床を傷つけないでください。\nNếu đưa bàn lại gần cửa sổ, xin đừng làm xước sàn.	10	Nhà của Cáo - Trung Cấp
+52	近づく	ちかづく	Tiến lại gần; đến gần (tự động từ)	春が近づいたかと思うと、急に暖かくなりました。\nVừa cảm thấy mùa xuân đến gần thì trời bỗng ấm lên.	10	Nhà của Cáo - Trung Cấp
+53	福祉	ふくし	Phúc lợi; an sinh xã hội	福祉を通じて、誰もが安心して暮らせる町を目指します。\nThông qua chính sách phúc lợi, chúng tôi hướng tới một thành phố nơi ai cũng sống an tâm.	10	Nhà của Cáo - Trung Cấp
+54	年度	ねんど	Năm tài chính; niên độ	年度にかかわらず、古い記録も保存してください。\nBất kể thuộc năm tài chính nào, hãy lưu cả hồ sơ cũ.	10	Nhà của Cáo - Trung Cấp
+55	年度末	ねんどまつ	Cuối năm tài chính	年度末は、報告書やら予算案やらの作成で忙しくなります。\nCuối năm tài chính trở nên bận rộn vì nào là báo cáo, nào là dự toán ngân sách.	10	Nhà của Cáo - Trung Cấp
+56	交代する	こうたいする	Thay ca; luân phiên; đổi người	担当者が交代する場合は、仕事の内容をきちんと伝えてください。\nNếu đổi người phụ trách, hãy bàn giao nội dung công việc cẩn thận.	10	Nhà của Cáo - Trung Cấp
+57	収集する	しゅうしゅうする	Thu thập; thu gom	アンケートを通じて、住民の意見を収集しました。\nThông qua khảo sát, chúng tôi đã thu thập ý kiến cư dân.	10	Nhà của Cáo - Trung Cấp
+58	ごみ収集車	ごみしゅうしゅうしゃ	Xe thu gom rác	ごみ収集車が来たかと思うと、道がすぐきれいになりました。\nXe thu gom rác vừa đến thì con đường đã nhanh chóng sạch sẽ.	10	Nhà của Cáo - Trung Cấp
+59	配布する	はいふする	Phân phát; phát rộng rãi tài liệu, vật phẩm	資料が届き次第、参加者に配布します。\nNgay khi tài liệu tới, chúng tôi sẽ phát cho người tham gia.	10	Nhà của Cáo - Trung Cấp
+60	配付する	はいふする	Phân phát; cấp phát (cách viết nhấn mạnh giao từng phần, thường dùng cho giấy tờ)	学校は名簿に沿って、学生一人一人に資料を配付しました。\nNhà trường phát tài liệu cho từng học sinh theo danh sách.	10	Nhà của Cáo - Trung Cấp
+61	処理する	しょりする	Xử lý	この機械によって、大量のごみを安全に処理できます。\nNhờ chiếc máy này, lượng rác lớn có thể được xử lý an toàn.	10	Nhà của Cáo - Trung Cấp
+62	需要	じゅよう	Nhu cầu	需要にかかわらず生産を続けると、在庫が増えてしまいます。\nNếu tiếp tục sản xuất bất kể nhu cầu, hàng tồn kho sẽ tăng.	10	Nhà của Cáo - Trung Cấp
+63	提供する	ていきょうする	Cung cấp	身分を確認できないことには、このサービスを提供できません。\nNếu không xác minh được danh tính, chúng tôi không thể cung cấp dịch vụ này.	10	Nhà của Cáo - Trung Cấp
+64	用途	ようと	Mục đích sử dụng; công dụng	建物の用途を変更する場合は、自治体への申請が必要です。\nNếu thay đổi mục đích sử dụng của tòa nhà, cần nộp đơn cho chính quyền địa phương.	10	Nhà của Cáo - Trung Cấp
+65	故郷	こきょう	Quê hương (cách nói giàu cảm xúc, văn viết hơn 地元)	故郷を離れて初めて、その景色には心を動かすものがあると気づきました。\nChỉ sau khi rời quê, tôi mới nhận ra phong cảnh ấy có sức lay động lòng người.	10	Nhà của Cáo - Trung Cấp
+66	地元	じもと	Địa phương; quê nhà (thông dụng, nhấn mạnh nơi mình sinh sống hoặc lớn lên)	地元の人を通じて、おいしい店を教えてもらいました。\nThông qua người địa phương, tôi được giới thiệu một quán ăn ngon.	10	Nhà của Cáo - Trung Cấp
+67	つかむ	つかむ	Nắm lấy (cơ hội,…)	機会をつかむには、失敗を恐れず行動することが大切です。\nĐể nắm bắt cơ hội, điều quan trọng là hành động mà không sợ thất bại.	10	Nhà của Cáo - Trung Cấp
+68	つかむ	つかむ	Nắm lấy; Bắt lấy (dùng tay, nắm về mặt vật lí)	子どもは電車が動き出すか動き出さないかのうちに、母親の手をつかみました。\nTàu vừa bắt đầu chuyển bánh thì đứa trẻ đã nắm lấy tay mẹ.	10	Nhà của Cáo - Trung Cấp
+69	帰省する	きせいする	Về quê thăm nhà	年末に帰省する場合は、早めに切符を予約したほうがいいです。\nNếu về quê dịp cuối năm, bạn nên đặt vé sớm.	10	Nhà của Cáo - Trung Cấp
+70	アクセスする	アクセスする	Đi đến (vùng nào đó); Tiếp cận (khu vực nào đó)	この島へアクセスするには、港から船に乗る必要があります。\nĐể đến hòn đảo này, cần đi tàu từ cảng.	10	Nhà của Cáo - Trung Cấp
+71	アクセスする	アクセスする	Truy cập (qua Internet,...)	個人情報にアクセスする場合は、管理者の許可が必要です。\nKhi truy cập thông tin cá nhân, cần có sự cho phép của quản trị viên.	10	Nhà của Cáo - Trung Cấp
+72	改善する	かいぜんする	Cải thiện; khắc phục vấn đề để tốt hơn	利用者の意見に沿って、案内表示を改善しました。\nChúng tôi đã cải thiện biển chỉ dẫn theo ý kiến người dùng.	10	Nhà của Cáo - Trung Cấp
+73	改良する	かいりょうする	Cải tiến; nâng cấp sản phẩm hoặc kỹ thuật	技術者によって、この機械は少ない電力で動くように改良されました。\nNhờ các kỹ sư, chiếc máy này đã được cải tiến để hoạt động với ít điện hơn.	10	Nhà của Cáo - Trung Cấp
+74	行事	ぎょうじ	Sự kiện; hoạt động tổ chức theo dịp	天候にかかわらず、学校行事は体育館で行われます。\nBất kể thời tiết, sự kiện của trường sẽ được tổ chức trong nhà thi đấu.	10	Nhà của Cáo - Trung Cấp
+75	遥か（な）	はるか（な）	Xa xôi	遥かな海まで見渡すには、山頂まで登る必要があります。\nĐể có thể nhìn bao quát đến tận biển xa, bạn cần phải leo lên đỉnh núi.	10	Nhà của Cáo - Trung Cấp
+76	遥か（な）	はるか（な）	Xa xưa	この寺は遥か昔から、地域の人々の信仰を通じて守られてきました。\nNgôi chùa này từ thuở xa xưa đã được gìn giữ qua tín ngưỡng của người dân địa phương.	10	Nhà của Cáo - Trung Cấp
+77	誇る	ほこる	Tự hào; nổi tiếng vì có điều đáng tự hào	この町は、全国一の生産量を誇る果物を通じて、広く知られるようになりました。\nThị trấn này đã trở nên được biết đến rộng rãi thông qua loại trái cây có sản lượng đứng đầu cả nước.	10	Nhà của Cáo - Trung Cấp
+78	載る	のる	Được đăng; xuất hiện trên báo, sách hoặc trang mạng	自分の写真が新聞に載ったかと思うと、急に恥ずかしくなりました。\nVừa thấy ảnh mình được đăng báo, tôi bỗng cảm thấy ngượng.	10	Nhà của Cáo - Trung Cấp
+79	載せる	のせる	Đăng; đưa thông tin hoặc hình ảnh lên báo, sách, mạng	個人の写真をサイトに載せる場合は、本人の許可を取ってください。\nKhi đăng ảnh cá nhân lên trang web, hãy xin phép người đó.	10	Nhà của Cáo - Trung Cấp
+80	作成する	さくせいする	Tạo; soạn thảo tài liệu hoặc dữ liệu	見本どおりに、申込書を作成してください。\nHãy lập đơn đăng ký đúng như mẫu.	10	Nhà của Cáo - Trung Cấp
+81	見慣れる	みなれる	Trở nên quen mắt; nhìn quen	見慣れた街なのに、雪が積もると別世界のように見えます。\nDù là khu phố quen mắt, khi tuyết phủ lên lại trông như một thế giới khác.	10	Nhà của Cáo - Trung Cấp
+82	聞き慣れる	ききなれる	Trở nên quen tai; nghe quen	毎日聞かないことには、この地方の言葉に聞き慣れることはできません。\nNếu không nghe hằng ngày thì không thể quen tai với tiếng địa phương này.	10	Nhà của Cáo - Trung Cấp
+83	近郊	きんこう	Vùng ngoại ô; khu vực lân cận thành phố	都市近郊に住む場合は、通勤時間も考える必要があります。\nNếu sống ở vùng ven đô, cần tính cả thời gian đi làm.	10	Nhà của Cáo - Trung Cấp
+84	描く	えがく	Tưởng tượng; Vẽ nên (trong đầu, trong mơ)	ネコさんは、住民の意見に沿って、将来の町の姿を心に描いています。\nAnh Neko đang hình dung trong lòng diện mạo thành phố tương lai theo ý kiến của cư dân.	10	Nhà của Cáo - Trung Cấp
+85	描く	えがく	Vẽ (tranh)	先生の説明どおりに、山の景色を描きました。\nTôi vẽ phong cảnh núi đúng như lời thầy hướng dẫn.	10	Nhà của Cáo - Trung Cấp
+86	若者	わかもの	Người trẻ; thanh niên	若者の意見を町づくりに生かすには、対話の場が必要です。\nĐể tận dụng ý kiến của người trẻ vào việc xây dựng thị trấn, cần có nơi đối thoại.	10	Nhà của Cáo - Trung Cấp
+87	Ｕターンする	ユーターンする	Quay về quê	イヌさんは地元にＵターンし次第、農業を始めました。\nNgay sau khi trở về quê, anh Inu bắt đầu làm nông nghiệp.	10	Nhà của Cáo - Trung Cấp
+88	Ｕターンする	ユーターンする	Quay đầu (xe cộ)	この道路でＵターンする場合は、後ろの車に注意してください。\nKhi quay đầu trên con đường này, hãy chú ý xe phía sau.	10	Nhà của Cáo - Trung Cấp
+89	行き来	いきき	Sự đi lại; qua lại	橋ができたため、二つの村の行き来が便利になりました。\nNhờ cây cầu được xây, việc đi lại giữa hai làng đã thuận tiện hơn.	10	Nhà của Cáo - Trung Cấp
+90	担う	になう	Đảm nhiệm; gánh vác vai trò	若者が地域の未来を担うには、学ぶ機会が必要です。\nĐể người trẻ gánh vác tương lai địa phương, cần có cơ hội học tập.	10	Nhà của Cáo - Trung Cấp
+91	方面	ほうめん	Phương hướng; khu vực theo hướng	空港方面へお急ぎの場合は、次の快速にお乗りください。\nNếu quý khách vội đi hướng sân bay, vui lòng lên chuyến tàu nhanh tiếp theo.	10	Nhà của Cáo - Trung Cấp
+92	生き返る	いきかえる	Sự sống lại; hồi sinh	商店街を生き返らせるには、若者の新しい発想が不可欠です。\nĐể hồi sinh khu phố thương mại, những ý tưởng mới của giới trẻ là điều không thể thiếu.	10	Nhà của Cáo - Trung Cấp
+93	横断	おうだん	Sự băng qua; xuyên ngang	道路を横断する場合は、左右をよく確認してください。\nKhi băng qua đường, hãy nhìn kỹ hai bên.	10	Nhà của Cáo - Trung Cấp
+94	横断歩道	おうだんほどう	Vạch sang đường; lối qua đường dành cho người đi bộ	子どもたちは信号が青になるかならないかのうちに、横断歩道へ進みました。\nĐèn vừa chuyển xanh thì lũ trẻ đã bước vào vạch qua đường.	10	Nhà của Cáo - Trung Cấp
+95	通行する	つうこうする	Đi qua; lưu thông	工事中にこの道路を通行する場合は、許可証が必要です。\nKhi đi qua con đường này trong thời gian thi công, cần có giấy phép.	10	Nhà của Cáo - Trung Cấp
+96	通行禁止	つうこうきんし	Cấm lưu thông; cấm đi qua	大雪のため、この道路は通行禁止になりました。\nDo tuyết lớn, con đường này đã bị cấm lưu thông.	10	Nhà của Cáo - Trung Cấp
+97	通行人	つうこうにん	Người qua đường	事件を見た通行人の話を通じて、詳しい状況が分かりました。\nNhờ lời kể của người qua đường chứng kiến vụ việc, chúng tôi đã biết tình hình chi tiết.	10	Nhà của Cáo - Trung Cấp
+98	歩行者	ほこうしゃ	Người đi bộ	運転手は天候にかかわらず、歩行者を優先しなければなりません。\nBất kể thời tiết, tài xế phải ưu tiên người đi bộ.	10	Nhà của Cáo - Trung Cấp
+99	絶えず	たえず	Không ngừng; liên tục	駅前では車やら人やらが絶えず行き来しています。\nTrước ga, nào xe nào người cứ qua lại không ngừng.	10	Nhà của Cáo - Trung Cấp
+100	次々	つぎつぎ	Lần lượt; liên tiếp	電車が着いたかと思うと、乗客が次々と降りてきました。\nTàu vừa tới thì hành khách lần lượt bước xuống.	10	Nhà của Cáo - Trung Cấp
+101	連絡手段	れんらくしゅだん	Phương tiện liên lạc	災害の場合に備えるには、複数の連絡手段を決めておくべきです。\nĐể phòng trường hợp thiên tai, nên thống nhất trước nhiều phương tiện liên lạc.	10	Nhà của Cáo - Trung Cấp
+102	捕まる	つかまる	Bị bắt; bị giữ; bắt được xe hoặc bám được vào	タクシーが捕まり次第、そちらへ向かいます。\nNgay khi bắt được taxi, tôi sẽ đến chỗ bạn.	10	Nhà của Cáo - Trung Cấp
+103	アナウンス	アナウンス	Thông báo bằng lời qua loa hoặc hệ thống phát thanh	駅のアナウンスどおりに、三番線へ移動してください。\nHãy di chuyển đến đường ray số 3 theo thông báo của nhà ga.	10	Nhà của Cáo - Trung Cấp
+104	見合わせる	みあわせる	Tạm hoãn; ngừng lại để theo dõi tình hình	安全を確認できないことには、運転の再開を見合わせざるを得ません。\nNếu chưa xác nhận được an toàn thì buộc phải tiếp tục hoãn vận hành.	10	Nhà của Cáo - Trung Cấp
+105	人身事故	じんしんじこ	Tai nạn có thương vong trên đường sắt	人身事故のため、電車の運転を見合わせています。\nDo tai nạn có thương vong, tàu đang tạm ngừng hoạt động.	10	Nhà của Cáo - Trung Cấp
+106	乱れる	みだれる	Bị xáo trộn (lịch trình, nhịp điệu,…)	台風のため、電車のダイヤが大きく乱れました。\nDo bão, lịch tàu đã bị xáo trộn nghiêm trọng.	10	Nhà của Cáo - Trung Cấp
+107	乱れる	みだれる	Rối bời (tóc, đầu, cảm xúc, ngôn ngữ,…)	彼の乱れた言葉からして、本当のことではあるまい。\nXét từ lời lẽ rối bời của anh ta, hẳn không phải là sự thật.	10	Nhà của Cáo - Trung Cấp
+108	乱す	みだす	Làm rối; gây xáo trộn	一人の遅刻が全体の予定を乱す場合もあります。\nCó trường hợp một người đến muộn làm xáo trộn lịch của cả nhóm.	10	Nhà của Cáo - Trung Cấp
+109	再開する	さいかいする	Bắt đầu lại; tiếp tục lại sau khi tạm dừng	安全を確認し次第、列車の運転を再開します。\nNgay sau khi xác nhận an toàn, tàu sẽ hoạt động trở lại.	10	Nhà của Cáo - Trung Cấp
+110	ＩＣカード	アイシーカード	Thẻ IC; thẻ thông minh gắn chip	ＩＣカードをお持ちの場合は、改札機にタッチしてください。\nNếu có thẻ IC, vui lòng chạm thẻ vào cổng soát vé.	10	Nhà của Cáo - Trung Cấp
+111	免許証	めんきょしょう	Giấy phép; bằng lái xe	車を借りるには、免許証を見せる必要があります。\nĐể thuê xe, cần xuất trình bằng lái.	10	Nhà của Cáo - Trung Cấp
+112	左右	さゆう	Trái phải; hai bên	道を渡る前に、説明されたとおり左右を確認しました。\nTrước khi qua đường, tôi kiểm tra trái phải đúng như được hướng dẫn.	10	Nhà của Cáo - Trung Cấp
+113	前後	ぜんご	Trước sau; khoảng chừng quanh một mốc	祭りの前後は、時間にかかわらず駅が混みます。\nTrước và sau lễ hội, nhà ga đông bất kể giờ giấc.	10	Nhà của Cáo - Trung Cấp
+114	直線	ちょくせん	Đường thẳng	この直線を基準にして、道路の幅を測ります。\nChúng tôi lấy đường thẳng này làm chuẩn để đo chiều rộng con đường.	10	Nhà của Cáo - Trung Cấp
+115	なだらか（な）	なだらか（な）	Thoai thoải; nhẹ và đều	このなだらかな坂を上っていくと、博物館がありますよ。\nNếu đi lên con dốc thoai thoải này, bạn sẽ thấy một bảo tàng đấy.	10	Nhà của Cáo - Trung Cấp
+116	間隔	かんかく	Khoảng cách; khoảng thời gian giữa hai điểm	席の間隔を広げる場合は、机も一緒に動かしてください。\nNếu nới khoảng cách giữa các ghế, hãy di chuyển cả bàn.	10	Nhà của Cáo - Trung Cấp
+117	スムーズ（な）	スムーズ（な）	Trôi chảy; suôn sẻ (thông dụng trong hội thoại)	案内に沿って手続きしたため、入場がスムーズでした。\nVì tôi đã làm thủ tục theo hướng dẫn nên việc vào cửa diễn ra suôn sẻ.	10	Nhà của Cáo - Trung Cấp
+118	円滑（な）	えんかつ（な）	Thuận lợi; trôi chảy (trang trọng hơn スムーズ)	話し合いを円滑に進めるには、相手の意見を聞くことが大切です。\nĐể cuộc thảo luận diễn ra thuận lợi, điều quan trọng là lắng nghe ý kiến đối phương.	10	Nhà của Cáo - Trung Cấp
+119	指す	さす	Chỉ; trỏ; biểu thị	係員が指すとおりに進んでください。\nHãy đi theo đúng hướng nhân viên chỉ.	10	Nhà của Cáo - Trung Cấp
+120	のろのろ	のろのろ	Chậm chạp, từ từ (phó từ mô tả dáng chuyển động)	前の車がのろのろ走っているため、道が混んでいます。\nVì chiếc xe phía trước chạy chậm chạp nên đường đang ùn tắc.	10	Nhà của Cáo - Trung Cấp
+121	のろい	のろい	Chậm chạp	作業がのろいからといって、急がせると間違いが増える場合があります。\nDù công việc chậm, nếu thúc ép thì đôi khi lỗi lại tăng.	10	Nhà của Cáo - Trung Cấp
+122	ぐるぐる	ぐるぐる	Vòng vòng; xoay tròn nhiều lần	道が分からないことには、駅の周りをぐるぐる回るしかありません。\nNếu không biết đường thì chỉ còn cách đi vòng vòng quanh nhà ga.	10	Nhà của Cáo - Trung Cấp
+123	慎重（な）	しんちょう（な）	Thận trọng; cẩn thận	重要な案を検討する場合は、慎重な判断が必要です。\nKhi xem xét phương án quan trọng, cần phán đoán thận trọng.	10	Nhà của Cáo - Trung Cấp
+124	気を抜く	きをぬく	Lơ là; mất cảnh giác; thả lỏng	運転中は、道が空いていても気を抜くまいと思っています。\nKhi lái xe, tôi tự nhủ tuyệt đối không lơ là dù đường vắng.	10	Nhà của Cáo - Trung Cấp
+125	生産する	せいさんする	Sản xuất	需要に沿って商品を生産しないことには、利益は出ません。\nNếu không sản xuất hàng hóa theo nhu cầu thì không thể có lợi nhuận.	10	Nhà của Cáo - Trung Cấp
+126	供給する	きょうきゅうする	Cung cấp; tiếp tế hàng hóa, điện, nước	停電の場合でも、この設備によって病院へ電気を供給できます。\nNgay cả khi mất điện, thiết bị này có thể cung cấp điện cho bệnh viện.	10	Nhà của Cáo - Trung Cấp
+127	栽培する	さいばいする	Trồng trọt; canh tác	農家は地域の気候に沿って、さまざまな作物を栽培しています。\nNông dân trồng nhiều loại cây theo khí hậu địa phương.	10	Nhà của Cáo - Trung Cấp
+128	農家	のうか	Nông hộ; gia đình hoặc người làm nông	地元の農家を通じて、新鮮な野菜を買っています。\nTôi mua rau tươi thông qua nông hộ địa phương.	10	Nhà của Cáo - Trung Cấp
+129	作物	さくもつ	Cây trồng; nông sản	雨が少ないため、この作物は今年あまり育ちませんでした。\nDo ít mưa, cây trồng này năm nay không phát triển tốt.	10	Nhà của Cáo - Trung Cấp
+130	漁業	ぎょぎょう	Ngành đánh cá; ngư nghiệp	海の環境を守らないことには、漁業を続けることはできません。\nNếu không bảo vệ môi trường biển thì không thể tiếp tục nghề cá.	10	Nhà của Cáo - Trung Cấp
+131	漁村	ぎょそん	Làng chài	この漁村には、昔の日本のような静かな風景が残っています。\nLàng chài này vẫn còn phong cảnh yên bình như Nhật Bản ngày xưa.	10	Nhà của Cáo - Trung Cấp
+132	商業	しょうぎょう	Thương nghiệp; hoạt động buôn bán	交通の発達によって、この地域では商業が栄えました。\nNhờ giao thông phát triển, thương nghiệp ở khu vực này đã phồn thịnh.	10	Nhà của Cáo - Trung Cấp
+133	農業	のうぎょう	Nông nghiệp	天候にかかわらず安定した農業を行うには、設備が必要です。\nĐể làm nông nghiệp ổn định bất kể thời tiết, cần có thiết bị.	10	Nhà của Cáo - Trung Cấp
+134	工業	こうぎょう	Công nghiệp	この土地を工業地域として開発する案が検討されています。\nPhương án phát triển vùng đất này thành khu công nghiệp đang được xem xét.	10	Nhà của Cáo - Trung Cấp
+135	栄える	さかえる	Phồn thịnh; phát triển thịnh vượng	港ができたかと思うと、町は商業都市として急速に栄えました。\nNgay sau khi có cảng, thị trấn nhanh chóng phồn thịnh như một đô thị thương mại.	10	Nhà của Cáo - Trung Cấp
+136	普及する	ふきゅうする	Phổ cập; lan rộng	インターネットが普及するには、地方の通信環境も改善する必要があります。\nĐể Internet phổ cập, cần cải thiện cả hạ tầng truyền thông ở địa phương.	10	Nhà của Cáo - Trung Cấp
+137	急増する	きゅうぞうする	Tăng nhanh; tăng đột biến	観光客が急増したため、ホテルやらバスやらが不足しています。\nDo khách du lịch tăng đột biến, khách sạn hay xe buýt hay gì cũng đều thiếu.	10	Nhà của Cáo - Trung Cấp
+138	激減する	げきげんする	Giảm mạnh	海水温の上昇を抑えないことには、魚の激減は止められません。\nNếu không kiềm chế việc nhiệt độ nước biển tăng thì không thể ngăn cá giảm mạnh.	10	Nhà của Cáo - Trung Cấp
+139	激増する	げきぞうする	Tăng mạnh; tăng vọt	注文が激増した場合は、臨時のスタッフを増やします。\nNếu đơn đặt hàng tăng vọt, chúng tôi sẽ tăng nhân viên tạm thời.	10	Nhà của Cáo - Trung Cấp
+140	情緒	じょうちょ	Cảm xúc; nét nên thơ; bầu không khí gợi cảm	古い町並みの情緒には、人の心を引きつけるものがあります。\nNét nên thơ của dãy phố cổ có sức cuốn hút lòng người.	10	Nhà của Cáo - Trung Cấp
+141	異国情緒	いこくじょうちょ	Không khí; vẻ đẹp mang màu sắc nước ngoài	港町には、外国に来たような異国情緒があります。\nThành phố cảng có không khí ngoại quốc như thể ta đã đến một nước khác.	10	Nhà của Cáo - Trung Cấp
+142	向上する	こうじょうする	Nâng cao; tiến bộ	サービスの質を向上させるには、利用者の声を聞くことが必要です。\nĐể nâng cao chất lượng dịch vụ, cần lắng nghe ý kiến người dùng.	10	Nhà của Cáo - Trung Cấp
+143	構成する	こうせいする	Cấu thành; cấu tạo; tổ chức	このチームは、経験にかかわらず選ばれた十人で構成されています。\nĐội này gồm mười người được chọn bất kể kinh nghiệm.	10	Nhà của Cáo - Trung Cấp
+144	重視する	じゅうしする	Coi trọng; chú trọng	会社は社員との話し合いを通じて、働きやすさを重視する方針を決めました。\nCông ty thông qua thảo luận với nhân viên đã quyết định phương châm coi trọng môi trường làm việc dễ chịu.	10	Nhà của Cáo - Trung Cấp
+145	提案する	ていあんする	Đề xuất	住民への調査を通じて、新しい交通計画を提案しました。\nThông qua khảo sát cư dân, chúng tôi đã đề xuất kế hoạch giao thông mới.	10	Nhà của Cáo - Trung Cấp
+146	案	あん	Phương án; ý tưởng; đề án	この案を実行する場合は、予算をもう一度確認しましょう。\nNếu thực hiện phương án này, chúng ta hãy kiểm tra lại ngân sách.	10	Nhà của Cáo - Trung Cấp
+147	検討する	けんとうする	Xem xét; cân nhắc kỹ	現地の状況を確認しないことには、計画を検討できません。\nNếu chưa xác nhận tình hình thực địa thì không thể xem xét kế hoạch.	10	Nhà của Cáo - Trung Cấp
+148	不可欠（な）	ふかけつ（な）	Không thể thiếu; thiết yếu	地域を発展させるには、若者の力が不可欠です。\nĐể phát triển địa phương, sức trẻ là không thể thiếu.	10	Nhà của Cáo - Trung Cấp
+149	妨げる	さまたげる	Cản trở; gây trở ngại	道路に物を置くと、歩行者の通行を妨げる場合があります。\nĐặt đồ trên đường có thể cản trở người đi bộ.	10	Nhà của Cáo - Trung Cấp
+150	生える	はえる	Mọc; sinh trưởng	雨が降ったかと思うと、庭に草が次々と生えてきました。\nMưa vừa rơi thì cỏ trong vườn lần lượt mọc lên.	10	Nhà của Cáo - Trung Cấp
+151	著しい	いちじるしい	Đáng kể; rõ rệt	技術の進歩によって、生産量が著しく向上しました。\nNhờ tiến bộ kỹ thuật, sản lượng đã tăng lên rõ rệt.	10	Nhà của Cáo - Trung Cấp
+152	リスク	リスク	Rủi ro; nguy cơ	リスクを理解しないことには、慎重な判断はできません。\nNếu không hiểu rủi ro thì không thể đưa ra phán đoán thận trọng.	10	Nhà của Cáo - Trung Cấp
+153	現地	げんち	Hiện trường; địa phương nơi sự việc diễn ra	現地に到着し次第、詳しい状況を報告します。\nNgay khi đến hiện trường, tôi sẽ báo cáo tình hình chi tiết.	10	Nhà của Cáo - Trung Cấp
+154	今～	こん～	Tiền tố “này/hiện tại”, dùng trong từ chỉ khoảng thời gian đang xét	今学期の予定に沿って、勉強を進めています。\nTôi đang học theo kế hoạch của học kỳ này.	10	Nhà của Cáo - Trung Cấp
+155	今世紀	こんせいき	Thế kỷ này	今世紀中に、環境問題を解決するには国際協力が不可欠です。\nĐể giải quyết vấn đề môi trường trong thế kỷ này, hợp tác quốc tế là không thể thiếu.	10	Nhà của Cáo - Trung Cấp
+156	今年度	こんねんど	Năm tài chính này; niên độ hiện tại	今年度の予算が決まり次第、新しい事業を始めます。\nNgay khi ngân sách năm tài chính này được quyết định, chúng tôi sẽ bắt đầu dự án mới.	10	Nhà của Cáo - Trung Cấp
+157	今学期	こんがっき	Học kỳ này	今学期は、試験やら発表やらで忙しくなりそうです。\nHọc kỳ này có vẻ sẽ bận rộn vì nào thi cử nào thuyết trình.	10	Nhà của Cáo - Trung Cấp
+158	今大会	こんたいかい	Giải đấu; đại hội lần này	今大会では、年齢にかかわらず多くの選手が活躍しました。\nTại giải lần này, nhiều vận động viên đã thi đấu nổi bật bất kể tuổi tác.	10	Nhà của Cáo - Trung Cấp
+159	現～	げん～	Tiền tố “hiện tại/đương nhiệm”, nhấn mạnh trạng thái đang có	現時点の情報を基準にして、計画を見直します。\nChúng tôi sẽ lấy thông tin hiện tại làm cơ sở để xem xét lại kế hoạch.	10	Nhà của Cáo - Trung Cấp
+160	現時点	げんじてん	Thời điểm hiện tại	現時点では、計画が予定どおりに進むとは言えません。\nỞ thời điểm hiện tại, chưa thể nói kế hoạch sẽ tiến triển đúng dự kiến.	10	Nhà của Cáo - Trung Cấp
+161	現段階	げんだんかい	Giai đoạn hiện tại	現段階で安全を確認できないことには、工事を始められません。\nỞ giai đoạn hiện tại, nếu chưa xác nhận an toàn thì không thể bắt đầu thi công.	10	Nhà của Cáo - Trung Cấp
+162	現住所	げんじゅうしょ	Địa chỉ hiện tại	申込書の記入例のとおりに、現住所を記入してください。\nHãy điền địa chỉ hiện tại đúng như mẫu đơn.	10	Nhà của Cáo - Trung Cấp
+163	現物	げんぶつ	Hiện vật; vật thật; hàng thật để đối chiếu	写真だけでなく、現物を見ないことには品質を判断できません。\nNếu chỉ xem ảnh mà không xem vật thật thì không thể đánh giá chất lượng.	10	Nhà của Cáo - Trung Cấp
+164	現品	げんぴん	Hàng thực tế; Sản phẩm thực tế	現品を確認しないことには、受取書にサインできません。\nNếu không kiểm tra hàng thực tế thì không thể ký giấy nhận hàng.	10	Nhà của Cáo - Trung Cấp
+165	新～	しん～	Tiền tố “mới”, dùng trong nhiều từ ghép Hán–Nhật	新体制に沿って、各部署の役割が変わります。\nVai trò của từng bộ phận sẽ thay đổi theo cơ cấu mới.	10	Nhà của Cáo - Trung Cấp
+166	新学期	しんがっき	Học kỳ mới	新学期が始まったかと思うと、教室が急に活気づきました。\nHọc kỳ mới vừa bắt đầu thì lớp học bỗng nhộn nhịp hẳn.	10	Nhà của Cáo - Trung Cấp
+167	新入学	しんにゅうがく	Việc mới nhập học	新入学の場合は、指定された日に制服を受け取ってください。\nNếu là học sinh mới nhập học, hãy nhận đồng phục vào ngày được chỉ định.	10	Nhà của Cáo - Trung Cấp
+168	新入生	しんにゅうせい	Học sinh; sinh viên mới	新入生が学校生活に慣れるには、先輩の支えも必要です。\nĐể học sinh mới quen với đời sống trường học, cũng cần sự hỗ trợ của đàn anh đàn chị.	10	Nhà của Cáo - Trung Cấp
+169	新体制	しんたいせい	Cơ cấu; chế độ tổ chức mới	新体制が整い次第、新しい方針を発表します。\nNgay khi cơ cấu mới hoàn tất, chúng tôi sẽ công bố phương châm mới.	10	Nhà của Cáo - Trung Cấp
+170	新記録	しんきろく	Kỷ lục mới	キツネさんが新記録を出したかと思うと、会場から大きな拍手が起こりました。\nAnh Kitsune vừa lập kỷ lục mới thì cả hội trường vang lên tiếng vỗ tay lớn.	10	Nhà của Cáo - Trung Cấp
+171	新世界	しんせかい	Thế giới mới; vùng đất hoặc lĩnh vực hoàn toàn mới	留学を通じて、今まで知らなかった新世界に出会いました。\nThông qua du học, tôi đã gặp một thế giới mới mà trước đây mình chưa biết.	10	Nhà của Cáo - Trung Cấp
+172	新体操	しんたいそう	Thể dục nhịp điệu; thể dục nghệ thuật	新体操の選手は、音楽に沿って楽しげに演技しました。\nVận động viên thể dục nghệ thuật biểu diễn vui tươi theo nhạc.	10	Nhà của Cáo - Trung Cấp
+173	新天地	しんてんち	Vùng đất mới; môi trường mới để bắt đầu sự nghiệp	ネコさんは大阪を新天地として、店を開きました。\nAnh Neko chọn Osaka làm vùng đất mới và mở cửa hàng.	10	Nhà của Cáo - Trung Cấp
+174	新生児	しんせいじ	Trẻ sơ sinh	新生児を守るには、部屋の温度を一定に保つことが大切です。\nĐể bảo vệ trẻ sơ sinh, điều quan trọng là giữ nhiệt độ phòng ổn định.	10	Nhà của Cáo - Trung Cấp
+175	再～	さい～	Tiền tố “lại/lần nữa”, chỉ sự lặp lại	内容を再確認し次第、メールを送ります。\nNgay sau khi kiểm tra lại nội dung, tôi sẽ gửi email.	10	Nhà của Cáo - Trung Cấp
+176	再利用	さいりよう	Tái sử dụng	年齢、性別、学歴、仕事にかかわらず、再利用につながる良いアイデアを募集しています。\nBất kể tuổi tác, giới tính, trình độ học vấn hay nghề nghiệp, tôi rất mong nhận được những ý tưởng tái sử dụng hay ho từ mọi người.	10	Nhà của Cáo - Trung Cấp
+177	再開発	さいかいはつ	Tái phát triển; chỉnh trang đô thị	住民の意見に沿って、駅前の再開発が進められています。\nViệc tái phát triển khu vực trước ga đang được tiến hành theo ý kiến cư dân.	10	Nhà của Cáo - Trung Cấp
+178	再発見	さいはっけん	Khám phá lại; nhận ra lại giá trị	旅行を通じて、故郷の魅力を再発見しました。\nThông qua chuyến đi, tôi đã khám phá lại sức hấp dẫn của quê hương.	10	Nhà của Cáo - Trung Cấp
+179	再試験	さいしけん	Thi lại	再試験を受ける場合は、事務室で申し込んでください。\nNếu thi lại, hãy đăng ký tại phòng hành chính.	10	Nhà của Cáo - Trung Cấp
+180	再検討	さいけんとう	Xem xét lại	費用を確認しないことには、この案の再検討はできません。\nNếu chưa xác nhận chi phí thì không thể xem xét lại phương án này.	10	Nhà của Cáo - Trung Cấp
+181	再認識	さいにんしき	Nhận thức lại; nhận ra lại tầm quan trọng	災害訓練を通じて、準備の大切さを再認識しました。\nThông qua buổi diễn tập thiên tai, tôi nhận thức lại tầm quan trọng của việc chuẩn bị.	10	Nhà của Cáo - Trung Cấp
+182	再出発	さいしゅっぱつ	Khởi đầu lại; xuất phát lại	失敗を新しい経験として、今日から再出発します。\nTôi coi thất bại là một kinh nghiệm mới và bắt đầu lại từ hôm nay.	10	Nhà của Cáo - Trung Cấp
+183	再放送	さいほうそう	Phát sóng lại	再放送の日程が決まり次第、お知らせします。\nNgay khi lịch phát sóng lại được quyết định, chúng tôi sẽ thông báo.	10	Nhà của Cáo - Trung Cấp
+184	再生産	さいせいさん	Tái sản xuất; sản xuất lại	需要が確認できないことには、この商品を再生産できません。\nNếu chưa xác nhận được nhu cầu thì không thể sản xuất lại mặt hàng này.	10	Nhà của Cáo - Trung Cấp
+185	通学	つうがく	Đi học hằng ngày	学校へ通学するには、毎朝このバスに乗ります。\nĐể đi học, mỗi sáng tôi đi chuyến xe buýt này.	10	Nhà của Cáo - Trung Cấp
+186	通勤	つうきん	Đi làm hằng ngày	ご通勤でしょうか。それとも、ご通学でしょうか。\nAnh/chị đang đi làm ạ? Hay là đang đi học ạ?	10	Nhà của Cáo - Trung Cấp
+187	つらい	つらい	Khổ sở; đau đớn; vất vả	毎日の通勤はつらいものがありますが、仕事は好きです。\nViệc đi làm hằng ngày có phần rất vất vả, nhưng tôi thích công việc.	10	Nhà của Cáo - Trung Cấp
+188	日々	ひび	Ngày ngày; từng ngày	日々の努力を通して、少しずつ日本語が上達しました。\nThông qua nỗ lực mỗi ngày, tiếng Nhật của tôi đã dần tiến bộ.	10	Nhà của Cáo - Trung Cấp
+189	耐える	たえる	Chịu đựng; chống chọi	この厳しい暑さに耐えるには、水分を十分に取る必要があります。\nĐể chịu được cái nóng khắc nghiệt này, cần uống đủ nước.	10	Nhà của Cáo - Trung Cấp
+190	路線	ろせん	Tuyến đường; tuyến xe, tàu	事故の場合は、この路線を使わず別の電車に乗ってください。\nTrong trường hợp có tai nạn, đừng dùng tuyến này mà hãy đi tàu khác.	10	Nhà của Cáo - Trung Cấp
+191	階段	かいだん	Cầu thang	電車が着いたかと思うと、乗客は階段へ次々と向かいました。\nTàu vừa đến thì hành khách lần lượt đi về phía cầu thang.	10	Nhà của Cáo - Trung Cấp
+192	車両	しゃりょう	Toa xe; phương tiện giao thông	この車両をご利用になる場合は、指定席券が必要です。\nNếu sử dụng toa này, quý khách cần vé ghế chỉ định.	10	Nhà của Cáo - Trung Cấp
+193	態度	たいど	Thái độ	相手の立場にかかわらず、丁寧な態度で接するべきです。\nBất kể địa vị của đối phương, ta nên cư xử với thái độ lịch sự.	10	Nhà của Cáo - Trung Cấp
+194	文庫本	ぶんこぼん	Sách khổ bỏ túi; sách bìa mềm khổ nhỏ	電車で読むのに、軽い文庫本はとても便利です。\nSách bỏ túi nhẹ rất tiện để đọc trên tàu.	10	Nhà của Cáo - Trung Cấp
+195	結局	けっきょく	Rốt cuộc; cuối cùng	資格の勉強をすると言ったのに、結局、家事が終わり次第力尽きて寝てしまった。\nDù đã định học để lấy chứng chỉ, nhưng rốt cuộc, ngay khi làm xong việc nhà, tôi đã kiệt sức và lăn ra ngủ mất.	10	Nhà của Cáo - Trung Cấp
+196	ぐいぐい	ぐいぐい	Mạnh mẽ; dồn dập; kéo hoặc thúc liên tục	強い言葉遣いを通して、聴衆をぐいぐいひっぱっていった。\nThông qua cách dùng từ ngữ mạnh mẽ, [người nói] đã lôi cuốn/dẫn dắt khán giả một cách mạnh mẽ.	10	Nhà của Cáo - Trung Cấp
