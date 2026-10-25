@@ -341,17 +341,26 @@ const QuizEngine = (() => {
    * Dùng để chọn câu nhiễu "gần giống" với đáp án đúng
    * Thuật toán: Bigram overlap (cặp ký tự)
    */
-  function similarityScore(a, b) {
-    if (!a || !b) return 0;
-    const bigrams = (s) => {
-      const set = new Set();
+  // Cache bigram theo chuỗi: mỗi câu chỉ tách bigram 1 lần duy nhất
+  // (trước đây bị tính lại trong từng lần so sánh của hàm sort → rất chậm)
+  const bigramCache = new Map();
+
+  function getBigrams(s) {
+    let set = bigramCache.get(s);
+    if (!set) {
+      set = new Set();
       for (let i = 0; i < s.length - 1; i++) {
         set.add(s.slice(i, i + 2));
       }
-      return set;
-    };
-    const ba = bigrams(a);
-    const bb = bigrams(b);
+      bigramCache.set(s, set);
+    }
+    return set;
+  }
+
+  function similarityScore(a, b) {
+    if (!a || !b) return 0;
+    const ba = getBigrams(a);
+    const bb = getBigrams(b);
     let common = 0;
     ba.forEach(g => { if (bb.has(g)) common++; });
     return (2 * common) / (ba.size + bb.size + 0.001);
@@ -379,34 +388,30 @@ const QuizEngine = (() => {
     const correctAnswer = useVietnamese ? item.vietnamese : item.synonym;
     const correctType   = useVietnamese ? 'vi' : 'jp';
 
-    // Các item khác làm pool cho đáp án sai
-    const pool = allItems.filter(i => i.id !== item.id);
+    // Chọn top 6 câu nhiễu "gần giống" nhất trong 1 lượt duyệt O(N)
+    // (thay cho việc sort toàn bộ pool O(N log N) như trước).
+    // Danh sách `top` luôn được giữ theo thứ tự điểm giảm dần; hòa điểm thì ưu tiên câu đứng trước.
+    const TOP_N = 6;
+    const top = [];
+    for (let k = 0; k < allItems.length; k++) {
+      const other = allItems[k];
+      if (other.id === item.id) continue;                 // Bỏ chính câu đang hỏi
+      const text = useVietnamese ? other.vietnamese : other.synonym;
+      if (!text || text === correctAnswer) continue;
 
-    // Lấy text đáp án từ pool theo loại giống đáp án đúng
-    const poolTexts = pool.map(i => ({
-      text: useVietnamese ? i.vietnamese : i.synonym,
-      item: i,
-    })).filter(p => p.text && p.text !== correctAnswer);
+      const s = similarityScore(text, correctAnswer);
+      if (top.length === TOP_N && s <= top[TOP_N - 1].s) continue; // Không đủ điểm vào top
 
-    // Sắp xếp theo độ tương đồng giảm dần (câu nhiễu gần giống)
-    poolTexts.sort((a, b) =>
-      similarityScore(b.text, correctAnswer) - similarityScore(a.text, correctAnswer)
-    );
-
-    // Lấy top 6 để có sự đa dạng, rồi chọn ngẫu nhiên 3
-    const topPool = poolTexts.slice(0, Math.min(6, poolTexts.length));
-    shuffle(topPool);
-    const wrongAnswers = topPool.slice(0, 3).map(p => p.text);
-
-    // Nếu không đủ 3 câu nhiễu, fallback random từ toàn bộ pool
-    while (wrongAnswers.length < 3 && poolTexts.length > wrongAnswers.length) {
-      const fallback = poolTexts[wrongAnswers.length];
-      if (!wrongAnswers.includes(fallback.text)) {
-        wrongAnswers.push(fallback.text);
-      } else {
-        break;
-      }
+      // Chèn vào đúng vị trí (sau các phần tử có điểm >= s)
+      let pos = top.length;
+      while (pos > 0 && top[pos - 1].s < s) pos--;
+      top.splice(pos, 0, { text, s });
+      if (top.length > TOP_N) top.pop();
     }
+
+    // Xáo trộn top 6 để có sự đa dạng, rồi chọn ngẫu nhiên 3
+    const topPool = shuffle(top);
+    const wrongAnswers = topPool.slice(0, 3).map(p => p.text);
 
     // Ghép đáp án đúng vào rồi xáo trộn
     const options = shuffle([correctAnswer, ...wrongAnswers]);
@@ -420,16 +425,48 @@ const QuizEngine = (() => {
   }
 
   /**
-   * init — Khởi tạo quiz với danh sách item
+   * Tạo câu hỏi "lười" (lazy): chỉ dựng câu hỏi khi cần tới, rồi nhớ lại (memo).
+   * - Bắt đầu quiz gần như tức thì dù chọn hàng nghìn câu.
+   * - Câu kế tiếp được dựng sẵn ở lúc rảnh, nên bấm "Tiếp" không bị khựng.
+   * - prev() dùng lại đúng câu hỏi/đáp án cũ (đã memo).
    */
-  function init(items) {
-    const allItems = DataManager.getAllItems();
-    // Xáo trộn thứ tự câu hỏi
-    questionQueue = shuffle([...items]).map(item => buildQuestion(item, allItems));
+  let builtQuestions = [];
+
+  function getQuestionAt(index) {
+    if (index < 0 || index >= questionQueue.length) return null;
+    if (!builtQuestions[index]) {
+      builtQuestions[index] = buildQuestion(questionQueue[index], DataManager.getAllItems());
+    }
+    return builtQuestions[index];
+  }
+
+  // Dựng sẵn câu kế tiếp khi trình duyệt rảnh
+  function prefetchNext() {
+    const queueRef = questionQueue;
+    const nextIndex = currentIndex + 1;
+    const run = () => {
+      if (queueRef === questionQueue) getQuestionAt(nextIndex); // Bỏ qua nếu đã bắt đầu quiz mới
+    };
+    if (typeof requestIdleCallback === 'function') requestIdleCallback(run, { timeout: 500 });
+    else setTimeout(run, 0);
+  }
+
+  function setQueue(items) {
+    // Xáo trộn thứ tự câu hỏi (chưa dựng đáp án)
+    questionQueue = shuffle([...items]);
+    builtQuestions = new Array(questionQueue.length);
     currentIndex = 0;
     answered = false;
     score = { correct: 0, total: 0 };
-    currentQuestion = questionQueue[currentIndex] || null;
+    currentQuestion = getQuestionAt(0);
+    prefetchNext();
+  }
+
+  /**
+   * init — Khởi tạo quiz với danh sách item
+   */
+  function init(items) {
+    setQueue(items);
     retryMode = false;
   }
 
@@ -438,12 +475,7 @@ const QuizEngine = (() => {
    */
   function initRetry() {
     if (wrongItems.length === 0) return false;
-    const allItems = DataManager.getAllItems();
-    questionQueue = shuffle([...wrongItems]).map(item => buildQuestion(item, allItems));
-    currentIndex = 0;
-    answered = false;
-    score = { correct: 0, total: 0 };
-    currentQuestion = questionQueue[currentIndex] || null;
+    setQueue(wrongItems);
     retryMode = true;
     return true;
   }
@@ -487,7 +519,8 @@ const QuizEngine = (() => {
       currentQuestion = null;
       return false; // Hết câu hỏi
     }
-    currentQuestion = questionQueue[currentIndex];
+    currentQuestion = getQuestionAt(currentIndex);
+    prefetchNext();
     return true;
   }
 
@@ -497,7 +530,7 @@ const QuizEngine = (() => {
   function prev() {
     if (currentIndex <= 0) return false;
     currentIndex--;
-    currentQuestion = questionQueue[currentIndex];
+    currentQuestion = getQuestionAt(currentIndex);
     answered = true; // Câu đã trả lời rồi, không cho đổi
     return true;
   }
@@ -790,6 +823,12 @@ const App = (() => {
     // Lắng nghe phím tắt
     document.addEventListener('keydown', handleKeyDown);
 
+    // Responsive: tự đóng ngăn kéo sidebar khi phóng to lên màn hình lớn
+    const desktopQuery = window.matchMedia('(min-width: 861px)');
+    const onBreakpointChange = (e) => { if (e.matches) closeSidebar(); };
+    if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', onBreakpointChange);
+    else if (desktopQuery.addListener) desktopQuery.addListener(onBreakpointChange); // Safari cũ
+
     // Load dữ liệu từ DB
     const r = await fetch("UnitMetaData.tsv?t=" + Date.now());
     const tsv = await r.text();
@@ -797,6 +836,22 @@ const App = (() => {
 
     // Render sidebar trống
     UIRenderer.renderSidebar();
+  }
+
+  /**
+   * openSidebar / closeSidebar / toggleSidebar — Ngăn kéo chọn bài học (điện thoại)
+   * Trên desktop sidebar luôn hiện nên các hàm này không ảnh hưởng.
+   */
+  function setSidebarOpen(open) {
+    document.getElementById('sidebar').classList.toggle('open', open);
+    document.getElementById('sidebarBackdrop').classList.toggle('visible', open);
+    document.getElementById('btnMenu').setAttribute('aria-expanded', String(open));
+  }
+
+  function openSidebar()  { setSidebarOpen(true); }
+  function closeSidebar() { setSidebarOpen(false); }
+  function toggleSidebar() {
+    setSidebarOpen(!document.getElementById('sidebar').classList.contains('open'));
   }
 
   /**
@@ -873,6 +928,9 @@ const App = (() => {
     // Xoá card kết thúc nếu có
     UIRenderer.removeEndCard();
 
+    // Điện thoại: đóng ngăn kéo để thấy câu hỏi
+    closeSidebar();
+
     // Tắt retry mode
     inRetryMode = false;
     document.getElementById('btnRetryMode').classList.remove('active');
@@ -905,6 +963,7 @@ const App = (() => {
     }
 
     UIRenderer.removeEndCard();
+    closeSidebar(); // Điện thoại: đóng ngăn kéo
     inRetryMode = true;
 
     // Khởi tạo retry mode
@@ -1040,6 +1099,12 @@ const App = (() => {
    * handleKeyDown — Xử lý phím tắt
    */
   function handleKeyDown(e) {
+    // Esc: đóng ngăn kéo sidebar (điện thoại / bàn phím rời)
+    if (e.key === 'Escape') {
+      closeSidebar();
+      return;
+    }
+
     // Phím 1–4: chọn đáp án
     if (['1', '2', '3', '4'].includes(e.key)) {
       const idx = parseInt(e.key) - 1;
@@ -1080,6 +1145,9 @@ const App = (() => {
   // Export các hàm cần dùng từ HTML
   return {
     init,
+    openSidebar,
+    closeSidebar,
+    toggleSidebar,
     handleFileImport,
     toggleUnitFilter,
     toggleBookFilter,
