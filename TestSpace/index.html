@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
   <title>MimiMaster  — Nhà của Cáo</title>
   <!-- Font chữ nhật Nhật -->
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -19,10 +20,16 @@
        HEADER — Thanh tiêu đề trên cùng
   ═══════════════════════════════════════════════════ -->
   <header class="header">
-    <div class="header-brand">
-    <i class="fa-solid fa-torii-gate gate-icon"></i>
-    Nhà của Cáo &nbsp;·&nbsp; MimiMaster
-  </div>
+    <div class="header-left">
+      <!-- Nút mở sidebar — chỉ hiện trên điện thoại / máy tính bảng -->
+      <button class="btn-menu" id="btnMenu" onclick="App.toggleSidebar()" aria-label="Chọn bài học" aria-controls="sidebar" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="header-brand">
+        <i class="fa-solid fa-torii-gate gate-icon"></i>
+        <span class="brand-text">Nhà của Cáo &nbsp;·&nbsp; MimiMaster</span>
+      </div>
+    </div>
     <div class="header-hint">
       <!-- Điểm số hiển thị trên header -->
       <span id="headerScore" class="header-score" style="display:none">
@@ -42,11 +49,17 @@
   <div class="layout">
 
     <!-- ─── SIDEBAR — Cột trái lọc và điều khiển ─────── -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <span>Chọn bài học</span>
-        <!-- Số lượng câu hỏi được lọc -->
-        <span id="filteredCount" class="filtered-count">0 câu</span>
+        <div class="sidebar-header-right">
+          <!-- Số lượng câu hỏi được lọc -->
+          <span id="filteredCount" class="filtered-count">0 câu</span>
+          <!-- Nút đóng sidebar — chỉ hiện trên điện thoại -->
+          <button class="btn-close-sidebar" onclick="App.closeSidebar()" aria-label="Đóng">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
       </div>
 
       <!-- Vùng cuộn danh sách unit / giáo trình -->
@@ -73,6 +86,9 @@
       </div>
     </aside>
 
+    <!-- Lớp nền mờ phía sau sidebar (điện thoại) — bấm để đóng -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop" onclick="App.closeSidebar()"></div>
+
     <!-- ─── MAIN — Vùng hiển thị câu hỏi quiz ────────── -->
     <main class="main" id="mainArea">
 
@@ -86,6 +102,10 @@
       <div class="empty-state" id="emptyState">
         <div class="empty-icon">🦊</div>
         <p>Chọn bài học từ sidebar và nhấn<br/><strong>Bắt đầu Quiz</strong> để học.</p>
+        <!-- Nút mở danh sách bài học — chỉ hiện trên điện thoại -->
+        <button class="btn-open-lessons" onclick="App.openSidebar()">
+          <i class="fa-solid fa-list-check"></i> Chọn bài học
+        </button>
       </div>
 
       <!-- Vùng quiz — ẩn ban đầu -->

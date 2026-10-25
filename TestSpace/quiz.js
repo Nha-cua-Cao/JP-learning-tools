@@ -790,6 +790,12 @@ const App = (() => {
     // Lắng nghe phím tắt
     document.addEventListener('keydown', handleKeyDown);
 
+    // Responsive: tự đóng ngăn kéo sidebar khi phóng to lên màn hình lớn
+    const desktopQuery = window.matchMedia('(min-width: 861px)');
+    const onBreakpointChange = (e) => { if (e.matches) closeSidebar(); };
+    if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', onBreakpointChange);
+    else if (desktopQuery.addListener) desktopQuery.addListener(onBreakpointChange); // Safari cũ
+
     // Load dữ liệu từ DB
     const r = await fetch("UnitMetaData.tsv?t=" + Date.now());
     const tsv = await r.text();
@@ -797,6 +803,22 @@ const App = (() => {
 
     // Render sidebar trống
     UIRenderer.renderSidebar();
+  }
+
+  /**
+   * openSidebar / closeSidebar / toggleSidebar — Ngăn kéo chọn bài học (điện thoại)
+   * Trên desktop sidebar luôn hiện nên các hàm này không ảnh hưởng.
+   */
+  function setSidebarOpen(open) {
+    document.getElementById('sidebar').classList.toggle('open', open);
+    document.getElementById('sidebarBackdrop').classList.toggle('visible', open);
+    document.getElementById('btnMenu').setAttribute('aria-expanded', String(open));
+  }
+
+  function openSidebar()  { setSidebarOpen(true); }
+  function closeSidebar() { setSidebarOpen(false); }
+  function toggleSidebar() {
+    setSidebarOpen(!document.getElementById('sidebar').classList.contains('open'));
   }
 
   /**
@@ -873,6 +895,9 @@ const App = (() => {
     // Xoá card kết thúc nếu có
     UIRenderer.removeEndCard();
 
+    // Điện thoại: đóng ngăn kéo để thấy câu hỏi
+    closeSidebar();
+
     // Tắt retry mode
     inRetryMode = false;
     document.getElementById('btnRetryMode').classList.remove('active');
@@ -905,6 +930,7 @@ const App = (() => {
     }
 
     UIRenderer.removeEndCard();
+    closeSidebar(); // Điện thoại: đóng ngăn kéo
     inRetryMode = true;
 
     // Khởi tạo retry mode
@@ -1040,6 +1066,12 @@ const App = (() => {
    * handleKeyDown — Xử lý phím tắt
    */
   function handleKeyDown(e) {
+    // Esc: đóng ngăn kéo sidebar (điện thoại / bàn phím rời)
+    if (e.key === 'Escape') {
+      closeSidebar();
+      return;
+    }
+
     // Phím 1–4: chọn đáp án
     if (['1', '2', '3', '4'].includes(e.key)) {
       const idx = parseInt(e.key) - 1;
@@ -1080,6 +1112,9 @@ const App = (() => {
   // Export các hàm cần dùng từ HTML
   return {
     init,
+    openSidebar,
+    closeSidebar,
+    toggleSidebar,
     handleFileImport,
     toggleUnitFilter,
     toggleBookFilter,

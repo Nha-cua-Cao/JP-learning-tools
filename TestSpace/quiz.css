@@ -99,11 +99,13 @@
   position: relative;
 }
 
-.speak-big-btn:hover {
-  background: var(--accent);
-  color: #fff;
-  transform: scale(1.08);
-  box-shadow: 0 6px 24px rgba(255, 122, 107, 0.45);
+@media (hover: hover) {
+  .speak-big-btn:hover:not(:disabled) {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.08);
+    box-shadow: 0 6px 24px rgba(255, 122, 107, 0.45);
+  }
 }
 
 .speak-big-btn:active {
@@ -190,15 +192,27 @@
   overflow: hidden;
 }
 
-.answer-btn:hover:not(:disabled) {
-  border-color: var(--accent);
-  background: var(--accent-light);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow);
+/* Chỉ hiệu ứng hover trên thiết bị có chuột (tránh "dính" hover trên cảm ứng) */
+@media (hover: hover) {
+  .answer-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: var(--accent-light);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+  }
 }
 
 .answer-btn:active:not(:disabled) {
   transform: translateY(0);
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* Câu dài (tiếng Nhật không có dấu cách) tự xuống dòng, không tràn nút */
+.answer-btn > span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 /* Badge số thứ tự (1, 2, 3, 4) */
@@ -468,18 +482,108 @@
 /* ══════════════════════════════════════════════════════
    RESPONSIVE — Điều chỉnh màn nhỏ
 ══════════════════════════════════════════════════════ */
+@media (max-width: 860px) {
+  /* Badge "Ôn câu sai" nằm sát góc, không đè lên thanh tiến trình */
+  #retryBadge {
+    top: 6px;
+    right: 10px;
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+
+  .main.retry-mode {
+    padding-top: 36px;
+  }
+}
+
 @media (max-width: 760px) {
   .answers-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .quiz-question-card {
-    height: 180px;
+    height: 176px;
+    margin-bottom: 14px;
+  }
+
+  .qcard-body { gap: 10px; }
+
+  .speak-big-btn {
+    width: 68px;
+    height: 68px;
+    font-size: 24px;
+  }
+
+  .play-count { font-size: 12.5px; }
+
+  /* Đáp án: vùng chạm lớn, chữ dễ đọc */
+  .answer-btn {
+    padding: 14px 14px;
+    font-size: 15px;
+    min-height: 58px;
+    gap: 12px;
+  }
+
+  .answer-badge {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+
+  /* Overlay đúng/sai nhỏ lại cho vừa màn hình */
+  .overlay-emoji { font-size: 72px; }
+  .overlay-text  { font-size: 22px; }
+
+  /* Màn hình kết thúc */
+  .quiz-end-card {
+    width: 100%;
+    padding: 28px 20px;
+  }
+
+  .quiz-end-emoji { font-size: 48px; }
+  .quiz-end-score { font-size: 36px; margin-bottom: 20px; }
+
+  .quiz-end-btns {
+    flex-wrap: wrap;
+  }
+
+  .quiz-end-btns .ctrl-btn {
+    flex: 1 1 140px;
+    justify-content: center;
+  }
+}
+
+/* Điện thoại xoay ngang: màn hình thấp → thu gọn thẻ câu hỏi */
+@media (max-height: 480px) and (orientation: landscape) {
+  .quiz-question-card {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .qcard-body {
+    flex-direction: row;
+    gap: 16px;
   }
 
   .speak-big-btn {
-    width: 64px;
-    height: 64px;
-    font-size: 22px;
+    width: 56px;
+    height: 56px;
+    font-size: 20px;
   }
+
+  .deck-meta { margin-bottom: 10px !important; }
+
+  .answers-grid { grid-template-columns: 1fr 1fr; }
+
+  .answer-btn {
+    min-height: 48px;
+    padding: 8px 12px;
+  }
+}
+
+/* Điện thoại rất nhỏ */
+@media (max-width: 360px) {
+  .answer-btn { font-size: 14px; }
+  .header-score { padding: 2px 8px; }
 }
